@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-10T15:46:16.313Z",
-  "total": 147,
+  "generated_at": "2026-04-10T15:49:38.085Z",
+  "total": 148,
   "skills": [
     {
       "slug": "case-study-generator",
@@ -2693,6 +2693,31 @@
       "file_path": "skills/personal/frontend/frontend-patterns.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/frontend/frontend-patterns.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/frontend/frontend-patterns.md"
+    },
+    {
+      "slug": "playwright-cli",
+      "name": "playwright-cli",
+      "description": "Automate browser interactions, test web pages, scrape content, and run Playwright tests using the playwright-cli tool. Use when user says 'automate browser', 'playwright', 'browser automation', 'test a webpage', 'scrape a page', 'click a button on a website', 'fill a form', 'take a screenshot', 'playwright-cli'.",
+      "tab": "personal",
+      "domain": "frontend",
+      "industry_vertical": null,
+      "difficulty": "intermediate",
+      "source_type": "ragnar-custom",
+      "tags": [
+        "frontend",
+        "playwright",
+        "browser-automation",
+        "testing"
+      ],
+      "version": "1.0.0",
+      "icon_emoji": "⚡",
+      "is_coming_soon": false,
+      "is_featured": false,
+      "author": "Ragnar Pitla | skill.rbuild.ai",
+      "has_example": true,
+      "file_path": "skills/personal/frontend/playwright-cli.md",
+      "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/frontend/playwright-cli.md",
+      "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/frontend/playwright-cli.md"
     },
     {
       "slug": "golang-patterns",
