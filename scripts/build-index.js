@@ -4,6 +4,12 @@
  * Walks all .md files under skills/, parses YAML frontmatter,
  * and writes skills-index.json to the repo root.
  *
+ * Supports two frontmatter formats:
+ *   NEW (minimal): name + description + tags: [difficulty, source_type, ...keywords]
+ *   OLD (explicit): name + slug + description + tab + domain + difficulty + source_type + tags
+ *
+ * Tab and domain are always inferred from file path when not explicit.
+ *
  * Run: node scripts/build-index.js
  */
 
@@ -15,26 +21,47 @@ const BRANCH = 'main';
 const SKILLS_DIR = path.join(__dirname, '..', 'skills');
 const OUTPUT_FILE = path.join(__dirname, '..', 'skills-index.json');
 
-// Minimal YAML frontmatter parser (no dependencies needed)
+// Known tag values that map to structured fields
+const DIFFICULTIES  = new Set(['starter', 'intermediate', 'advanced']);
+const SOURCE_TYPES  = new Set(['ragnar-custom', 'ragnar-curated', 'ragnar-modified', 'community']);
+
+// Path segment → domain slug
+const PATH_TO_DOMAIN = {
+  'software-engineering':    'software-engineering',
+  'ai-agent-dev':            'ai-agent-dev',
+  'frontend':                'frontend',
+  'language-specific':       'language-specific',
+  'backend-data':            'backend-data',
+  'content-creation':        'content-creation',
+  'productivity':            'productivity',
+  'security':                'security',
+  'devops':                  'devops',
+  'copilot-studio':          'copilot-studio',
+  'd365-fno':                'd365-fno',
+  'mcp':                     'mcp',
+  'power-platform':          'power-platform',
+  'enterprise-ai':           'enterprise-ai',
+  'supply-chain':            'supply-chain',
+  'content-business':        'content-business',
+  'industry-verticals':      'industry-verticals',
+};
+
+// ── Minimal YAML frontmatter parser ──────────────────────────────────────────
 function parseFrontmatter(content) {
   const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
   if (!match) return null;
 
   const yaml = match[1];
   const result = {};
-
-  // Parse line by line
   const lines = yaml.split('\n');
   let currentKey = null;
   let inList = false;
   let listBuffer = [];
 
   for (const line of lines) {
-    // List item
     if (line.match(/^\s+-\s+/)) {
       const val = line.replace(/^\s+-\s+/, '').trim().replace(/^["']|["']$/g, '');
       if (currentKey === 'references') {
-        // references items are objects with title/url — handle below
         listBuffer.push(line);
       } else {
         listBuffer.push(val);
@@ -43,16 +70,12 @@ function parseFrontmatter(content) {
       continue;
     }
 
-    // New key-value
     const kvMatch = line.match(/^(\w[\w_-]*)\s*:\s*(.*)/);
     if (kvMatch) {
-      // Save previous list
       if (inList && currentKey) {
-        if (currentKey === 'references') {
-          result[currentKey] = parseReferencesList(listBuffer);
-        } else {
-          result[currentKey] = listBuffer;
-        }
+        result[currentKey] = currentKey === 'references'
+          ? parseReferencesList(listBuffer)
+          : listBuffer;
         listBuffer = [];
         inList = false;
       }
@@ -60,32 +83,29 @@ function parseFrontmatter(content) {
       currentKey = kvMatch[1];
       const rawVal = kvMatch[2].trim();
 
-      if (rawVal === '' || rawVal === null) {
-        // Will be filled by list items below
+      // Inline array: tags: [a, b, c]
+      if (rawVal.startsWith('[') && rawVal.endsWith(']')) {
+        result[currentKey] = rawVal
+          .slice(1, -1)
+          .split(',')
+          .map(v => v.trim().replace(/^["']|["']$/g, ''))
+          .filter(Boolean);
+        inList = false;
+      } else if (rawVal === '' || rawVal === null) {
         result[currentKey] = null;
         inList = false;
-      } else if (rawVal === 'true') {
-        result[currentKey] = true;
-      } else if (rawVal === 'false') {
-        result[currentKey] = false;
-      } else if (rawVal === 'null' || rawVal === '~') {
-        result[currentKey] = null;
-      } else if (!isNaN(rawVal)) {
-        result[currentKey] = Number(rawVal);
-      } else {
-        result[currentKey] = rawVal.replace(/^["']|["']$/g, '');
-        inList = false;
-      }
+      } else if (rawVal === 'true')  { result[currentKey] = true;  inList = false; }
+      else if (rawVal === 'false') { result[currentKey] = false; inList = false; }
+      else if (rawVal === 'null' || rawVal === '~') { result[currentKey] = null; inList = false; }
+      else if (!isNaN(rawVal))     { result[currentKey] = Number(rawVal); inList = false; }
+      else { result[currentKey] = rawVal.replace(/^["']|["']$/g, ''); inList = false; }
     }
   }
 
-  // Flush final list
   if (inList && currentKey) {
-    if (currentKey === 'references') {
-      result[currentKey] = parseReferencesList(listBuffer);
-    } else {
-      result[currentKey] = listBuffer;
-    }
+    result[currentKey] = currentKey === 'references'
+      ? parseReferencesList(listBuffer)
+      : listBuffer;
   }
 
   return result;
@@ -96,20 +116,55 @@ function parseReferencesList(lines) {
   let current = {};
   for (const line of lines) {
     const titleMatch = line.match(/title:\s*["']?(.+?)["']?\s*$/);
-    const urlMatch = line.match(/url:\s*["']?(.+?)["']?\s*$/);
-    if (titleMatch) {
-      if (current.title) refs.push(current);
-      current = { title: titleMatch[1], url: '' };
-    }
-    if (urlMatch) {
-      current.url = urlMatch[1];
-    }
+    const urlMatch   = line.match(/url:\s*["']?(.+?)["']?\s*$/);
+    if (titleMatch) { if (current.title) refs.push(current); current = { title: titleMatch[1], url: '' }; }
+    if (urlMatch)   { current.url = urlMatch[1]; }
   }
   if (current.title) refs.push(current);
   return refs;
 }
 
-// Walk directory recursively, return all .md file paths
+// ── Infer tab + domain from file path ────────────────────────────────────────
+function inferFromPath(filePath) {
+  const rel = path.relative(SKILLS_DIR, filePath).replace(/\\/g, '/');
+  const parts = rel.split('/');
+
+  // parts[0] = personal | business
+  // parts[1] = domain slug
+  // parts[2+] = possible vertical subfolder or file
+  const tab    = parts[0] || 'personal';
+  const domain = PATH_TO_DOMAIN[parts[1]] || parts[1] || 'software-engineering';
+
+  // Industry vertical: if parts[1] === 'industry-verticals', parts[2] is the vertical
+  const vertical = domain === 'industry-verticals' && parts.length > 3
+    ? parts[2]
+    : null;
+
+  return { tab, domain, vertical };
+}
+
+// ── Parse tags array into structured fields ───────────────────────────────────
+function parseTags(rawTags) {
+  const tags = Array.isArray(rawTags) ? rawTags : [];
+  let difficulty  = null;
+  let sourceType  = null;
+  let isFeatured  = false;
+  let isComingSoon = false;
+  const displayTags = [];
+
+  for (const tag of tags) {
+    const t = String(tag).toLowerCase().trim();
+    if (DIFFICULTIES.has(t))  { difficulty = t; continue; }
+    if (SOURCE_TYPES.has(t))  { sourceType = t; continue; }
+    if (t === 'featured')     { isFeatured = true; continue; }
+    if (t === 'coming-soon')  { isComingSoon = true; continue; }
+    displayTags.push(t);
+  }
+
+  return { difficulty, sourceType, isFeatured, isComingSoon, displayTags };
+}
+
+// ── Walk directory ────────────────────────────────────────────────────────────
 function walkMd(dir) {
   const results = [];
   if (!fs.existsSync(dir)) return results;
@@ -117,16 +172,17 @@ function walkMd(dir) {
     const fullPath = path.join(dir, entry.name);
     if (entry.isDirectory()) {
       results.push(...walkMd(fullPath));
-    } else if (entry.name.endsWith('.md')) {
+    } else if (entry.name.endsWith('.md') && !entry.name.endsWith('-example.md')) {
       results.push(fullPath);
     }
   }
   return results;
 }
 
-// Main
+// ── Main ──────────────────────────────────────────────────────────────────────
 const allFiles = walkMd(SKILLS_DIR);
 const skills = [];
+let skipped = 0;
 
 for (const filePath of allFiles) {
   const content = fs.readFileSync(filePath, 'utf8');
@@ -134,47 +190,57 @@ for (const filePath of allFiles) {
 
   if (!meta) {
     console.warn(`⚠️  No frontmatter: ${filePath}`);
+    skipped++;
     continue;
   }
 
-  // Validate required fields
-  const required = ['name', 'slug', 'description', 'tab', 'domain', 'difficulty', 'source_type'];
-  const missing = required.filter(f => !meta[f]);
-  if (missing.length > 0) {
-    console.warn(`⚠️  Missing fields [${missing.join(', ')}]: ${filePath}`);
+  if (!meta.name || !meta.description) {
+    console.warn(`⚠️  Missing name/description: ${filePath}`);
+    skipped++;
     continue;
   }
 
-  // Compute relative path and URLs
-  const relPath = path.relative(path.join(__dirname, '..'), filePath).replace(/\\/g, '/');
-  const rawUrl = `https://raw.githubusercontent.com/${REPO}/${BRANCH}/${relPath}`;
-  const githubUrl = `https://github.com/${REPO}/blob/${BRANCH}/${relPath}`;
+  // Infer from path (always authoritative for tab + domain)
+  const { tab, domain, vertical } = inferFromPath(filePath);
+
+  // Parse tags for difficulty, source_type, flags, display tags
+  const { difficulty, sourceType, isFeatured, isComingSoon, displayTags } = parseTags(meta.tags);
+
+  // Slug: prefer explicit meta.slug, fall back to meta.name, fall back to filename
+  const slug = meta.slug
+    || (typeof meta.name === 'string' ? meta.name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '') : null)
+    || path.basename(filePath, '.md');
+
+  // Explicit fields override inferred (for old-format skills)
+  const finalDifficulty  = meta.difficulty  || difficulty  || 'intermediate';
+  const finalSourceType  = meta.source_type || sourceType  || 'ragnar-custom';
+  const finalFeatured    = meta.is_featured   === true ? true  : isFeatured;
+  const finalComingSoon  = meta.is_coming_soon === true ? true : isComingSoon;
+
+  const relPath    = path.relative(path.join(__dirname, '..'), filePath).replace(/\\/g, '/');
+  const rawUrl     = `https://raw.githubusercontent.com/${REPO}/${BRANCH}/${relPath}`;
+  const githubUrl  = `https://github.com/${REPO}/blob/${BRANCH}/${relPath}`;
+  const hasExample = fs.existsSync(filePath.replace('.md', '-example.md'));
 
   skills.push({
-    slug: meta.slug,
-    name: meta.name,
-    description: meta.description,
-    tab: meta.tab,
-    domain: meta.domain,
-    industry_vertical: meta.industry_vertical || null,
-    difficulty: meta.difficulty,
-    source_type: meta.source_type,
-    tags: Array.isArray(meta.tags) ? meta.tags : [],
-    version: meta.version || '1.0',
-    icon_emoji: meta.icon_emoji || '⚡',
-    is_coming_soon: meta.is_coming_soon === true,
-    is_featured: meta.is_featured === true,
-    author: meta.author || 'ragnar',
-    learning_path: meta.learning_path || null,
-    learning_path_position: meta.learning_path_position || null,
-    prerequisites: Array.isArray(meta.prerequisites) ? meta.prerequisites : [],
-    references: Array.isArray(meta.references) ? meta.references.filter(r => r && r.title) : [],
-    requires: meta.requires || 'None',
-    mcp_tools: Array.isArray(meta.mcp_tools) ? meta.mcp_tools : [],
-    has_example: fs.existsSync(filePath.replace('.md', '-example.md')),
-    file_path: relPath,
-    raw_url: rawUrl,
-    github_url: githubUrl,
+    slug,
+    name:              meta.name,
+    description:       meta.description,
+    tab:               meta.tab    || tab,
+    domain:            meta.domain || domain,
+    industry_vertical: meta.industry_vertical || vertical || null,
+    difficulty:        finalDifficulty,
+    source_type:       finalSourceType,
+    tags:              displayTags,
+    version:           meta.version    || '1.0',
+    icon_emoji:        meta.icon_emoji || '⚡',
+    is_coming_soon:    finalComingSoon,
+    is_featured:       finalFeatured,
+    author:            meta.author || 'Ragnar Pitla | skill.rbuild.ai',
+    has_example:       hasExample,
+    file_path:         relPath,
+    raw_url:           rawUrl,
+    github_url:        githubUrl,
   });
 }
 
@@ -185,4 +251,4 @@ const index = {
 };
 
 fs.writeFileSync(OUTPUT_FILE, JSON.stringify(index, null, 2));
-console.log(`✅ Built skills-index.json — ${skills.length} skills`);
+console.log(`✅ Built skills-index.json — ${skills.length} skills (${skipped} skipped)`);
