@@ -265,11 +265,50 @@ for (const filePath of allFiles) {
   });
 }
 
+// ── Duplicate detection ───────────────────────────────────────────────────────
+const seenSlugs = {};
+const seenNames = {};
+const seenDescPrefixes = {};
+let dupWarnings = 0;
+
+skills.forEach(s => {
+  // Slug duplicates
+  if (seenSlugs[s.slug]) {
+    console.warn(`⚠️  DUPLICATE SLUG "${s.slug}":\n     ${seenSlugs[s.slug]}\n     ${s.file_path}`);
+    dupWarnings++;
+  } else {
+    seenSlugs[s.slug] = s.file_path;
+  }
+
+  // Name duplicates (case-insensitive)
+  const nameKey = s.name.toLowerCase().trim();
+  if (seenNames[nameKey]) {
+    console.warn(`⚠️  DUPLICATE NAME "${s.name}":\n     ${seenNames[nameKey]}\n     ${s.file_path}`);
+    dupWarnings++;
+  } else {
+    seenNames[nameKey] = s.file_path;
+  }
+
+  // Near-identical description (first 80 chars)
+  const descKey = s.description.slice(0, 80).toLowerCase().trim();
+  if (seenDescPrefixes[descKey]) {
+    console.warn(`⚠️  NEAR-DUPLICATE DESCRIPTION "${s.description.slice(0, 60)}...":\n     ${seenDescPrefixes[descKey]}\n     ${s.file_path}`);
+    dupWarnings++;
+  } else {
+    seenDescPrefixes[descKey] = s.file_path;
+  }
+});
+
+if (dupWarnings > 0) {
+  console.warn(`\n⚠️  ${dupWarnings} duplicate warning(s) — review before publishing.\n`);
+}
+
 const index = {
   generated_at: new Date().toISOString(),
   total: skills.length,
+  duplicates_found: dupWarnings,
   skills,
 };
 
 fs.writeFileSync(OUTPUT_FILE, JSON.stringify(index, null, 2));
-console.log(`✅ Built skills-index.json — ${skills.length} skills (${skipped} skipped)`);
+console.log(`✅ Built skills-index.json — ${skills.length} skills (${skipped} skipped, ${dupWarnings} duplicate warnings)`);
