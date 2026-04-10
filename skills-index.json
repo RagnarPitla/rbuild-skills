@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-09T20:02:27.272Z",
+  "generated_at": "2026-04-10T04:53:25.620Z",
   "total": 128,
   "skills": [
     {
       "slug": "case-study-generator",
       "name": "Case Study Generator",
-      "description": "Generate customer case studies from project data, interviews, and outcome metrics.",
+      "description": "Write compelling customer case studies from project data — pain points, solution architecture, measurable outcomes, and Microsoft story format.",
       "tab": "business",
       "domain": "content-business",
       "industry_vertical": null,
@@ -13,22 +13,27 @@
       "source_type": "ragnar-custom",
       "tags": [],
       "version": "1.0",
-      "icon_emoji": "📖",
-      "is_coming_soon": true,
+      "icon_emoji": "📋",
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
       "learning_path": null,
       "learning_path_position": null,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "Microsoft Customer Stories",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/content-business/case-study-generator.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/content-business/case-study-generator.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/content-business/case-study-generator.md"
     },
     {
       "slug": "conference-talk-prep",
-      "name": "Conference Talk Prep",
-      "description": "Prepare conference talks from abstract through slide outline, script, and speaker notes.",
+      "name": "Conference Talk Preparation",
+      "description": "Structure a 30-45 minute conference talk on AI/enterprise topics — abstract, narrative arc, demo plan, slide outline, and speaker notes.",
       "tab": "business",
       "domain": "content-business",
       "industry_vertical": null,
@@ -37,13 +42,18 @@
       "tags": [],
       "version": "1.0",
       "icon_emoji": "🎤",
-      "is_coming_soon": true,
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
       "learning_path": null,
       "learning_path_position": null,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "Ragnar Pitla LinkedIn",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/content-business/conference-talk-prep.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/content-business/conference-talk-prep.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/content-business/conference-talk-prep.md"
@@ -97,7 +107,7 @@
     {
       "slug": "cs-first-agent",
       "name": "Your First Copilot Studio Agent",
-      "description": "Build and deploy your first Copilot Studio agent — from blank canvas to live bot in 30 minutes.",
+      "description": "Build your first Copilot Studio agent in 30 minutes — from blank canvas to published, working agent.",
       "tab": "business",
       "domain": "copilot-studio",
       "industry_vertical": null,
@@ -106,21 +116,26 @@
       "tags": [],
       "version": "1.0",
       "icon_emoji": "🤖",
-      "is_coming_soon": true,
-      "is_featured": true,
+      "is_coming_soon": false,
+      "is_featured": false,
       "author": "ragnar",
-      "learning_path": null,
-      "learning_path_position": null,
+      "learning_path": "copilot-studio-path",
+      "learning_path_position": 1,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "Microsoft Copilot Studio Docs",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/copilot-studio/cs-first-agent.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/copilot-studio/cs-first-agent.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/copilot-studio/cs-first-agent.md"
     },
     {
       "slug": "cs-knowledge-sources",
-      "name": "Knowledge Sources",
-      "description": "Add and configure knowledge sources in Copilot Studio: websites, SharePoint, uploaded files.",
+      "name": "Copilot Studio Knowledge Sources",
+      "description": "Configure SharePoint, website, and Dataverse knowledge sources for accurate grounded answers in your Copilot Studio agent.",
       "tab": "business",
       "domain": "copilot-studio",
       "industry_vertical": null,
@@ -129,21 +144,26 @@
       "tags": [],
       "version": "1.0",
       "icon_emoji": "📚",
-      "is_coming_soon": true,
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
-      "learning_path": null,
-      "learning_path_position": null,
+      "learning_path": "copilot-studio-path",
+      "learning_path_position": 3,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "Add knowledge to your agent",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/copilot-studio/cs-knowledge-sources.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/copilot-studio/cs-knowledge-sources.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/copilot-studio/cs-knowledge-sources.md"
     },
     {
       "slug": "cs-multi-agent-orchestration",
-      "name": "Multi-Agent Orchestration",
-      "description": "Parent/child agent architecture and description-based routing patterns in Copilot Studio.",
+      "name": "Copilot Studio Multi-Agent Orchestration",
+      "description": "Design parent/child agent architecture with description-based routing, context passing, and the Niyam pattern for enterprise agents.",
       "tab": "business",
       "domain": "copilot-studio",
       "industry_vertical": null,
@@ -152,21 +172,26 @@
       "tags": [],
       "version": "1.0",
       "icon_emoji": "🕸️",
-      "is_coming_soon": true,
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
-      "learning_path": null,
-      "learning_path_position": null,
+      "learning_path": "copilot-studio-path",
+      "learning_path_position": 10,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "Multi-agent orchestration in Copilot Studio",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/copilot-studio/cs-multi-agent-orchestration.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/copilot-studio/cs-multi-agent-orchestration.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/copilot-studio/cs-multi-agent-orchestration.md"
     },
     {
       "slug": "cs-topic-basics",
-      "name": "Topic Basics",
-      "description": "Create Copilot Studio topics: trigger phrases, questions, conditions, messages, and variables.",
+      "name": "Copilot Studio Topic Basics",
+      "description": "Build well-structured topics — trigger phrases, question nodes, conditions, variables, and the anti-patterns to avoid.",
       "tab": "business",
       "domain": "copilot-studio",
       "industry_vertical": null,
@@ -175,13 +200,18 @@
       "tags": [],
       "version": "1.0",
       "icon_emoji": "💬",
-      "is_coming_soon": true,
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
-      "learning_path": null,
-      "learning_path_position": null,
+      "learning_path": "copilot-studio-path",
+      "learning_path_position": 2,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "Create and edit topics",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/copilot-studio/cs-topic-basics.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/copilot-studio/cs-topic-basics.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/copilot-studio/cs-topic-basics.md"
@@ -428,22 +458,31 @@
     {
       "slug": "d365-data-migration",
       "name": "D365 Data Migration",
-      "description": "Data packages, DIXF entity mapping, migration testing, and cutover planning for D365 F&O.",
+      "description": "Plan and execute D365 F&O data migration — data entities, DIXF packages, cutover strategy, and validation patterns.",
       "tab": "business",
       "domain": "d365-fno",
       "industry_vertical": null,
-      "difficulty": "advanced",
+      "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
       "version": "1.0",
-      "icon_emoji": "🔄",
-      "is_coming_soon": true,
+      "icon_emoji": "📦",
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
-      "learning_path": null,
-      "learning_path_position": null,
+      "learning_path": "d365-fno-path",
+      "learning_path_position": 8,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "Data management and integration in D365",
+          "url": ""
+        },
+        {
+          "title": "Data import/export framework (DIXF)",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/d365-fno/d365-data-migration.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/d365-fno/d365-data-migration.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/d365-fno/d365-data-migration.md"
@@ -483,7 +522,7 @@
     {
       "slug": "d365-order-to-cash",
       "name": "D365 Order to Cash",
-      "description": "Sales orders, pricing, fulfilment, invoicing, and collections in D365 Finance & Operations.",
+      "description": "Configure O2C in D365 — customer setup, sales orders, pricing, invoicing, collections, and AI agent automation patterns.",
       "tab": "business",
       "domain": "d365-fno",
       "industry_vertical": null,
@@ -491,14 +530,23 @@
       "source_type": "ragnar-custom",
       "tags": [],
       "version": "1.0",
-      "icon_emoji": "💵",
-      "is_coming_soon": true,
+      "icon_emoji": "💰",
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
-      "learning_path": null,
-      "learning_path_position": null,
+      "learning_path": "d365-fno-path",
+      "learning_path_position": 4,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "D365 Sales and Marketing",
+          "url": ""
+        },
+        {
+          "title": "Accounts receivable in D365 Finance",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/d365-fno/d365-order-to-cash.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/d365-fno/d365-order-to-cash.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/d365-fno/d365-order-to-cash.md"
@@ -506,7 +554,7 @@
     {
       "slug": "d365-plan-to-produce",
       "name": "D365 Plan to Produce",
-      "description": "Master planning, production orders, and shop floor management in D365 Supply Chain Management.",
+      "description": "Configure the Plan to Produce process in D365 SCM — BOMs, routes, production orders, shop floor, and manufacturing agent patterns.",
       "tab": "business",
       "domain": "d365-fno",
       "industry_vertical": null,
@@ -515,13 +563,18 @@
       "tags": [],
       "version": "1.0",
       "icon_emoji": "🏭",
-      "is_coming_soon": true,
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
-      "learning_path": null,
-      "learning_path_position": null,
+      "learning_path": "d365-fno-path",
+      "learning_path_position": 5,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "D365 Supply Chain — Manufacturing",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/d365-fno/d365-plan-to-produce.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/d365-fno/d365-plan-to-produce.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/d365-fno/d365-plan-to-produce.md"
@@ -529,7 +582,7 @@
     {
       "slug": "d365-record-to-report",
       "name": "D365 Record to Report",
-      "description": "Chart of accounts, journal entries, financial reporting, and period close in D365 Finance.",
+      "description": "Configure the R2R process in D365 Finance — chart of accounts, journal posting, period close, financial reporting, and agent patterns.",
       "tab": "business",
       "domain": "d365-fno",
       "industry_vertical": null,
@@ -538,13 +591,22 @@
       "tags": [],
       "version": "1.0",
       "icon_emoji": "📒",
-      "is_coming_soon": true,
+      "is_coming_soon": false,
       "is_featured": true,
       "author": "ragnar",
-      "learning_path": null,
-      "learning_path_position": null,
+      "learning_path": "d365-fno-path",
+      "learning_path_position": 2,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "D365 Finance — General Ledger",
+          "url": ""
+        },
+        {
+          "title": "Financial period close in D365",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/d365-fno/d365-record-to-report.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/d365-fno/d365-record-to-report.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/d365-fno/d365-record-to-report.md"
@@ -575,7 +637,7 @@
     {
       "slug": "d365-source-to-pay",
       "name": "D365 Source to Pay",
-      "description": "Vendor management, purchase orders, invoice matching, and payment processing in D365 Finance.",
+      "description": "Configure S2P in D365 — vendor onboarding, purchase requisitions, POs, invoice matching, payment runs, and agent automation patterns.",
       "tab": "business",
       "domain": "d365-fno",
       "industry_vertical": null,
@@ -583,14 +645,23 @@
       "source_type": "ragnar-custom",
       "tags": [],
       "version": "1.0",
-      "icon_emoji": "💳",
-      "is_coming_soon": true,
+      "icon_emoji": "🛒",
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
-      "learning_path": null,
-      "learning_path_position": null,
+      "learning_path": "d365-fno-path",
+      "learning_path_position": 3,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "D365 Supply Chain — Procurement",
+          "url": ""
+        },
+        {
+          "title": "Accounts payable in D365 Finance",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/d365-fno/d365-source-to-pay.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/d365-fno/d365-source-to-pay.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/d365-fno/d365-source-to-pay.md"
@@ -649,7 +720,7 @@
     {
       "slug": "agentic-enterprise-blueprint",
       "name": "Agentic Enterprise Blueprint",
-      "description": "Ragnar's framework for making your company agentic — strategy, roadmap, and governance patterns.",
+      "description": "Ragnar's framework for making your company agentic — how to identify agent opportunities, sequence the rollout, and measure success.",
       "tab": "business",
       "domain": "enterprise-ai",
       "industry_vertical": null,
@@ -658,13 +729,18 @@
       "tags": [],
       "version": "1.0",
       "icon_emoji": "🗺️",
-      "is_coming_soon": true,
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
-      "learning_path": null,
-      "learning_path_position": null,
+      "learning_path": "enterprise-ai-path",
+      "learning_path_position": 5,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "Ragnar Pitla on LinkedIn",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/enterprise-ai/agentic-enterprise-blueprint.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/enterprise-ai/agentic-enterprise-blueprint.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/enterprise-ai/agentic-enterprise-blueprint.md"
@@ -672,7 +748,7 @@
     {
       "slug": "agentic-erp-intro",
       "name": "Agentic ERP — Introduction",
-      "description": "What is Agentic ERP? The shift from automation to agents as first-class ERP participants.",
+      "description": "What is Agentic ERP? How AI agents become first-class participants in D365 processes — not add-ons, but native participants.",
       "tab": "business",
       "domain": "enterprise-ai",
       "industry_vertical": null,
@@ -680,14 +756,23 @@
       "source_type": "ragnar-custom",
       "tags": [],
       "version": "1.0",
-      "icon_emoji": "🏢",
-      "is_coming_soon": true,
+      "icon_emoji": "🏗️",
+      "is_coming_soon": false,
       "is_featured": true,
       "author": "ragnar",
-      "learning_path": null,
-      "learning_path_position": null,
+      "learning_path": "enterprise-ai-path",
+      "learning_path_position": 2,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "Microsoft AI in Dynamics 365",
+          "url": ""
+        },
+        {
+          "title": "Ragnar Pitla on LinkedIn",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/enterprise-ai/agentic-erp-intro.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/enterprise-ai/agentic-erp-intro.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/enterprise-ai/agentic-erp-intro.md"
@@ -695,38 +780,51 @@
     {
       "slug": "niyam-pattern-explained",
       "name": "Niyam Pattern Explained",
-      "description": "The Niyam pattern: Dataverse policies + D365 ERP MCP + Power Automate = policy-driven agents.",
+      "description": "Ragnar's signature pattern for policy-driven AI agents in D365 — Dataverse policies + D365 MCP + Power Automate, from first principles.",
       "tab": "business",
       "domain": "enterprise-ai",
       "industry_vertical": null,
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
-      "icon_emoji": "🧩",
-      "is_coming_soon": true,
+      "version": "2.0",
+      "icon_emoji": "🏛️",
+      "is_coming_soon": false,
       "is_featured": true,
       "author": "ragnar",
-      "learning_path": null,
-      "learning_path_position": null,
+      "learning_path": "enterprise-ai-path",
+      "learning_path_position": 3,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "Niyam Agent Template (Claude Code Skill)",
+          "url": ""
+        },
+        {
+          "title": "Microsoft Dataverse Documentation",
+          "url": ""
+        },
+        {
+          "title": "Copilot Studio Multi-Agent Patterns",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/enterprise-ai/niyam-pattern-explained.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/enterprise-ai/niyam-pattern-explained.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/enterprise-ai/niyam-pattern-explained.md"
     },
     {
       "slug": "automotive-dealer-ops",
-      "name": "Automotive Dealer Operations",
-      "description": "Agent patterns for automotive dealer operations, vehicle inventory, and service management in D365.",
+      "name": "Automotive Dealer Operations Agent",
+      "description": "AI agent patterns for automotive dealer operations — parts inventory, service scheduling, warranty claims, and customer follow-up.",
       "tab": "business",
       "domain": "industry-verticals",
       "industry_vertical": "automotive",
-      "difficulty": "advanced",
+      "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
       "version": "1.0",
-      "icon_emoji": "🚗",
+      "icon_emoji": "🚘",
       "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
@@ -741,7 +839,7 @@
     {
       "slug": "vin-configuration-validator",
       "name": "VIN Configuration Validator",
-      "description": "Validate VIN-based vehicle configuration rules in D365 against BOM and option constraints for automotive manufacturers.",
+      "description": "Validate VIN-based vehicle configuration rules in D365 against BOM and option constraints before production order release.",
       "tab": "business",
       "domain": "industry-verticals",
       "industry_vertical": "automotive",
@@ -750,7 +848,7 @@
       "tags": [],
       "version": "1.0",
       "icon_emoji": "🚗",
-      "is_coming_soon": true,
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
       "learning_path": null,
@@ -764,7 +862,7 @@
     {
       "slug": "warranty-claim-analyzer",
       "name": "Warranty Claim Analyzer",
-      "description": "Analyze warranty claims against coverage policies, flag exceptions, and generate disposition recommendations in D365.",
+      "description": "Analyze automotive warranty claims against coverage policies, validate eligibility, and generate supplier chargeback requests.",
       "tab": "business",
       "domain": "industry-verticals",
       "industry_vertical": "automotive",
@@ -773,7 +871,7 @@
       "tags": [],
       "version": "1.0",
       "icon_emoji": "🔧",
-      "is_coming_soon": true,
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
       "learning_path": null,
@@ -787,7 +885,7 @@
     {
       "slug": "carrier-relationship-management",
       "name": "Carrier Relationship Management",
-      "description": "Manage carrier portfolios, negotiate freight rates, and track carrier performance.",
+      "description": "Manage carrier portfolios, rate negotiations, performance tracking, and carrier selection optimization in D365 Transportation.",
       "tab": "business",
       "domain": "industry-verticals",
       "industry_vertical": "distribution-logistics",
@@ -802,7 +900,12 @@
       "learning_path": null,
       "learning_path_position": null,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "D365 Transportation Management",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/industry-verticals/distribution-logistics/carrier-relationship-management.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/distribution-logistics/carrier-relationship-management.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/distribution-logistics/carrier-relationship-management.md"
@@ -810,11 +913,11 @@
     {
       "slug": "returns-reverse-logistics",
       "name": "Returns & Reverse Logistics",
-      "description": "Returns authorization, receipt and inspection, disposition decisions, and refund processing.",
+      "description": "Automate returns authorization, receipt inspection, disposition decisions, and refund/credit processing in D365 Commerce and SCM.",
       "tab": "business",
       "domain": "industry-verticals",
       "industry_vertical": "distribution-logistics",
-      "difficulty": "advanced",
+      "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
       "version": "1.0",
@@ -825,7 +928,12 @@
       "learning_path": null,
       "learning_path_position": null,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "D365 Sales Returns",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/industry-verticals/distribution-logistics/returns-reverse-logistics.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/distribution-logistics/returns-reverse-logistics.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/distribution-logistics/returns-reverse-logistics.md"
@@ -833,7 +941,7 @@
     {
       "slug": "route-optimizer",
       "name": "Route Optimizer",
-      "description": "Optimize delivery routes considering vehicle capacity, time windows, traffic patterns, and fuel cost objectives.",
+      "description": "Optimize delivery routes against vehicle capacity, time windows, driver hours, and cost objectives — with D365 Transportation integration.",
       "tab": "business",
       "domain": "industry-verticals",
       "industry_vertical": "distribution-logistics",
@@ -841,22 +949,27 @@
       "source_type": "ragnar-custom",
       "tags": [],
       "version": "1.0",
-      "icon_emoji": "🚚",
-      "is_coming_soon": true,
+      "icon_emoji": "🗺️",
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
       "learning_path": null,
       "learning_path_position": null,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "D365 Transportation Management",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/industry-verticals/distribution-logistics/route-optimizer.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/distribution-logistics/route-optimizer.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/distribution-logistics/route-optimizer.md"
     },
     {
       "slug": "energy-procurement",
-      "name": "Energy Procurement",
-      "description": "Electricity and gas procurement, tariff optimization, and demand charge management.",
+      "name": "Energy Procurement Advisor",
+      "description": "Optimize electricity and gas procurement — tariff analysis, demand charge management, contract timing, and renewable certificate tracking.",
       "tab": "business",
       "domain": "industry-verticals",
       "industry_vertical": "energy-utilities",
@@ -879,7 +992,7 @@
     {
       "slug": "regulatory-rate-calculator",
       "name": "Regulatory Rate Calculator",
-      "description": "Calculate regulated utility rates and tariff structures against filed rate schedules and customer usage profiles.",
+      "description": "Calculate regulated utility rates against filed tariff schedules — billing validation, rate case modeling, and customer rate optimization.",
       "tab": "business",
       "domain": "industry-verticals",
       "industry_vertical": "energy-utilities",
@@ -888,30 +1001,7 @@
       "tags": [],
       "version": "1.0",
       "icon_emoji": "⚡",
-      "is_coming_soon": true,
-      "is_featured": false,
-      "author": "ragnar",
-      "learning_path": null,
-      "learning_path_position": null,
-      "prerequisites": [],
-      "references": [],
-      "file_path": "skills/business/industry-verticals/energy-utilities/regulatory-rate-calculator.md",
-      "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/energy-utilities/regulatory-rate-calculator.md",
-      "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/energy-utilities/regulatory-rate-calculator.md"
-    },
-    {
-      "slug": "aml-transaction-screener",
-      "name": "AML Transaction Screener",
-      "description": "Screen financial transactions against AML rules and watchlists, flag suspicious patterns, and generate SAR-ready summaries.",
-      "tab": "business",
-      "domain": "industry-verticals",
-      "industry_vertical": "financial-services",
-      "difficulty": "advanced",
-      "source_type": "ragnar-custom",
-      "tags": [],
-      "version": "1.0",
-      "icon_emoji": "💳",
-      "is_coming_soon": true,
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
       "learning_path": null,
@@ -919,7 +1009,39 @@
       "prerequisites": [],
       "references": [
         {
-          "title": "FinCEN AML Requirements",
+          "title": "FERC Electric Rate Filing",
+          "url": ""
+        }
+      ],
+      "file_path": "skills/business/industry-verticals/energy-utilities/regulatory-rate-calculator.md",
+      "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/energy-utilities/regulatory-rate-calculator.md",
+      "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/energy-utilities/regulatory-rate-calculator.md"
+    },
+    {
+      "slug": "aml-transaction-screener",
+      "name": "AML Transaction Screener",
+      "description": "Screen financial transactions against AML rules and sanctions lists — detect suspicious patterns and generate SAR-ready documentation.",
+      "tab": "business",
+      "domain": "industry-verticals",
+      "industry_vertical": "financial-services",
+      "difficulty": "advanced",
+      "source_type": "ragnar-custom",
+      "tags": [],
+      "version": "1.0",
+      "icon_emoji": "🔍",
+      "is_coming_soon": false,
+      "is_featured": false,
+      "author": "ragnar",
+      "learning_path": null,
+      "learning_path_position": null,
+      "prerequisites": [],
+      "references": [
+        {
+          "title": "FinCEN AML Program Requirements",
+          "url": ""
+        },
+        {
+          "title": "OFAC Sanctions Lists",
           "url": ""
         }
       ],
@@ -930,7 +1052,7 @@
     {
       "slug": "bank-reconciliation-assistant",
       "name": "Bank Reconciliation Assistant",
-      "description": "Perform bank reconciliation, match statement transactions to GL, and investigate differences in D365.",
+      "description": "AI agent for bank statement reconciliation in D365 Finance — auto-match transactions, surface exceptions, and accelerate month-end close.",
       "tab": "business",
       "domain": "industry-verticals",
       "industry_vertical": "financial-services",
@@ -945,7 +1067,12 @@
       "learning_path": null,
       "learning_path_position": null,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "Bank reconciliation in D365 Finance",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/industry-verticals/financial-services/bank-reconciliation-assistant.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/financial-services/bank-reconciliation-assistant.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/financial-services/bank-reconciliation-assistant.md"
@@ -953,7 +1080,7 @@
     {
       "slug": "budget-vs-actual-analyzer",
       "name": "Budget vs Actual Analyzer",
-      "description": "Analyze budget variances by account or dimension and prepare variance reports in D365 Finance.",
+      "description": "Analyze budget variances in D365 Finance — identify top drivers, generate natural-language explanations, and flag items needing action.",
       "tab": "business",
       "domain": "industry-verticals",
       "industry_vertical": "financial-services",
@@ -968,7 +1095,12 @@
       "learning_path": null,
       "learning_path_position": null,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "Budgeting in D365 Finance",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/industry-verticals/financial-services/budget-vs-actual-analyzer.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/financial-services/budget-vs-actual-analyzer.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/financial-services/budget-vs-actual-analyzer.md"
@@ -976,7 +1108,7 @@
     {
       "slug": "lease-accounting-assistant",
       "name": "Lease Accounting Assistant",
-      "description": "Calculate lease liability and ROU asset values under IFRS 16 and ASC 842, with journal entry generation for D365 Finance.",
+      "description": "Calculate lease liability and ROU asset values under IFRS 16 and ASC 842 — amortization schedules, journal entries, and remeasurement.",
       "tab": "business",
       "domain": "industry-verticals",
       "industry_vertical": "financial-services",
@@ -985,7 +1117,7 @@
       "tags": [],
       "version": "1.0",
       "icon_emoji": "📑",
-      "is_coming_soon": true,
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
       "learning_path": null,
@@ -993,7 +1125,7 @@
       "prerequisites": [],
       "references": [
         {
-          "title": "IFRS 16 Leases Standard",
+          "title": "IFRS 16 Leases",
           "url": ""
         },
         {
@@ -1007,12 +1139,12 @@
     },
     {
       "slug": "asset-health-monitor",
-      "name": "Asset Health Monitor",
-      "description": "Monitor medical equipment and utility infrastructure health, predict failures, and schedule maintenance.",
+      "name": "Medical Asset Health Monitor",
+      "description": "Monitor medical equipment health, maintenance schedules, and calibration compliance in healthcare and life sciences settings.",
       "tab": "business",
       "domain": "industry-verticals",
       "industry_vertical": "healthcare",
-      "difficulty": "advanced",
+      "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
       "version": "1.0",
@@ -1023,7 +1155,12 @@
       "learning_path": null,
       "learning_path_position": null,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "D365 Asset Management",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/industry-verticals/healthcare/asset-health-monitor.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/healthcare/asset-health-monitor.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/healthcare/asset-health-monitor.md"
@@ -1031,7 +1168,7 @@
     {
       "slug": "gxp-compliance-checker",
       "name": "GxP Compliance Checker",
-      "description": "Validate manufacturing and quality processes against GxP (GMP/GLP/GCP) compliance requirements in regulated industries.",
+      "description": "Validate manufacturing and quality records against GxP requirements — batch release, deviation detection, and audit readiness.",
       "tab": "business",
       "domain": "industry-verticals",
       "industry_vertical": "healthcare",
@@ -1039,8 +1176,8 @@
       "source_type": "ragnar-custom",
       "tags": [],
       "version": "1.0",
-      "icon_emoji": "🏥",
-      "is_coming_soon": true,
+      "icon_emoji": "🧬",
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
       "learning_path": null,
@@ -1048,11 +1185,11 @@
       "prerequisites": [],
       "references": [
         {
-          "title": "FDA 21 CFR Part 11 — Electronic Records",
+          "title": "FDA 21 CFR Part 211 — GMP for Finished Pharmaceuticals",
           "url": ""
         },
         {
-          "title": "EU GMP Annex 11",
+          "title": "FDA 21 CFR Part 11 — Electronic Records",
           "url": ""
         }
       ],
@@ -1063,7 +1200,7 @@
     {
       "slug": "lot-genealogy-tracker",
       "name": "Lot Genealogy Tracker",
-      "description": "Trace full forward and backward lot genealogy for regulated products across components, sub-assemblies, and finished goods.",
+      "description": "Trace complete forward and backward lot genealogy for regulated products — critical for recalls, deviations, and regulatory audits.",
       "tab": "business",
       "domain": "industry-verticals",
       "industry_vertical": "healthcare",
@@ -1071,14 +1208,19 @@
       "source_type": "ragnar-custom",
       "tags": [],
       "version": "1.0",
-      "icon_emoji": "🧬",
-      "is_coming_soon": true,
+      "icon_emoji": "🔬",
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
       "learning_path": null,
       "learning_path_position": null,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "FDA Drug Traceability Requirements",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/industry-verticals/healthcare/lot-genealogy-tracker.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/healthcare/lot-genealogy-tracker.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/healthcare/lot-genealogy-tracker.md"
@@ -1086,7 +1228,7 @@
     {
       "slug": "bom-cost-analyzer",
       "name": "BOM Cost Analyzer",
-      "description": "Analyze Bill of Materials cost rollups in D365, identify cost variances, and recommend optimization opportunities.",
+      "description": "Analyze Bill of Materials cost rollups in D365 — identify variance drivers, surface top cost reduction opportunities, and model material substitutions.",
       "tab": "business",
       "domain": "industry-verticals",
       "industry_vertical": "manufacturing-discrete",
@@ -1095,21 +1237,26 @@
       "tags": [],
       "version": "1.0",
       "icon_emoji": "🏭",
-      "is_coming_soon": true,
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
       "learning_path": null,
       "learning_path_position": null,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "D365 Cost Management",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/industry-verticals/manufacturing-discrete/bom-cost-analyzer.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/manufacturing-discrete/bom-cost-analyzer.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/manufacturing-discrete/bom-cost-analyzer.md"
     },
     {
       "slug": "capacity-planner",
-      "name": "Capacity Planner",
-      "description": "Plan and optimize work center capacity with finite scheduling and bottleneck identification.",
+      "name": "Production Capacity Planner",
+      "description": "AI agent for production capacity analysis — work center loads, bottleneck identification, and capacity leveling recommendations in D365.",
       "tab": "business",
       "domain": "industry-verticals",
       "industry_vertical": "manufacturing-discrete",
@@ -1117,14 +1264,19 @@
       "source_type": "ragnar-custom",
       "tags": [],
       "version": "1.0",
-      "icon_emoji": "📐",
+      "icon_emoji": "⚖️",
       "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
       "learning_path": null,
       "learning_path_position": null,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "D365 Production Capacity Planning",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/industry-verticals/manufacturing-discrete/capacity-planner.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/manufacturing-discrete/capacity-planner.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/manufacturing-discrete/capacity-planner.md"
@@ -1132,7 +1284,7 @@
     {
       "slug": "production-variance-analyzer",
       "name": "Production Variance Analyzer",
-      "description": "Analyze production order variances — quantity, material, routing — and generate root cause hypothesis reports.",
+      "description": "Analyze production order variances — material, quantity, routing, and scrap — with ranked root causes and corrective action recommendations.",
       "tab": "business",
       "domain": "industry-verticals",
       "industry_vertical": "manufacturing-discrete",
@@ -1141,13 +1293,18 @@
       "tags": [],
       "version": "1.0",
       "icon_emoji": "📊",
-      "is_coming_soon": true,
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
       "learning_path": null,
       "learning_path_position": null,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "D365 Production Cost Analysis",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/industry-verticals/manufacturing-discrete/production-variance-analyzer.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/manufacturing-discrete/production-variance-analyzer.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/manufacturing-discrete/production-variance-analyzer.md"
@@ -1155,7 +1312,7 @@
     {
       "slug": "batch-order-manager",
       "name": "Batch Order Manager",
-      "description": "Manage batch orders, formulas, and co-product/by-product costing for process manufacturing.",
+      "description": "Manage pharmaceutical and process manufacturing batch orders — potency adjustments, yield tracking, and GxP compliance checkpoints.",
       "tab": "business",
       "domain": "industry-verticals",
       "industry_vertical": "manufacturing-process",
@@ -1163,14 +1320,19 @@
       "source_type": "ragnar-custom",
       "tags": [],
       "version": "1.0",
-      "icon_emoji": "🧪",
-      "is_coming_soon": true,
+      "icon_emoji": "🧫",
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
       "learning_path": null,
       "learning_path_position": null,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "D365 Process Manufacturing",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/industry-verticals/manufacturing-process/batch-order-manager.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/manufacturing-process/batch-order-manager.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/manufacturing-process/batch-order-manager.md"
@@ -1178,7 +1340,7 @@
     {
       "slug": "batch-potency-calculator",
       "name": "Batch Potency Calculator",
-      "description": "Calculate active ingredient potency adjustments for pharmaceutical or specialty chemical batch manufacturing in D365 SCM.",
+      "description": "Calculate active ingredient potency adjustments for pharmaceutical batch manufacturing — CoA reading, formula adjustment, and D365 batch record update.",
       "tab": "business",
       "domain": "industry-verticals",
       "industry_vertical": "manufacturing-process",
@@ -1186,22 +1348,27 @@
       "source_type": "ragnar-custom",
       "tags": [],
       "version": "1.0",
-      "icon_emoji": "🧪",
-      "is_coming_soon": true,
+      "icon_emoji": "⚗️",
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
       "learning_path": null,
       "learning_path_position": null,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "FDA Pharmaceutical Manufacturing — Process Controls",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/industry-verticals/manufacturing-process/batch-potency-calculator.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/manufacturing-process/batch-potency-calculator.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/manufacturing-process/batch-potency-calculator.md"
     },
     {
       "slug": "apa-review",
-      "name": "APA Review Agent",
-      "description": "Validates D365 project quotations for Mercedes-Benz MBTI — multi-agent quote review pipeline.",
+      "name": "Project Quotation Validator",
+      "description": "Validate professional services project quotations — margin analysis, resource fit, scope risk assessment, and approval routing.",
       "tab": "business",
       "domain": "industry-verticals",
       "industry_vertical": "professional-services",
@@ -1216,7 +1383,12 @@
       "learning_path": null,
       "learning_path_position": null,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "D365 Project Operations",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/industry-verticals/professional-services/apa-review.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/professional-services/apa-review.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/professional-services/apa-review.md"
@@ -1224,7 +1396,7 @@
     {
       "slug": "utilization-optimizer",
       "name": "Utilization Optimizer",
-      "description": "Analyze consultant utilization rates and recommend resource allocation adjustments to hit target utilization and maximize billability.",
+      "description": "Analyze consultant utilization rates and recommend reallocation to hit target utilization, maximize billability, and identify resource conflicts.",
       "tab": "business",
       "domain": "industry-verticals",
       "industry_vertical": "professional-services",
@@ -1232,14 +1404,19 @@
       "source_type": "ragnar-custom",
       "tags": [],
       "version": "1.0",
-      "icon_emoji": "👥",
-      "is_coming_soon": true,
+      "icon_emoji": "📈",
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
       "learning_path": null,
       "learning_path_position": null,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "D365 Project Operations",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/industry-verticals/professional-services/utilization-optimizer.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/professional-services/utilization-optimizer.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/professional-services/utilization-optimizer.md"
@@ -1247,7 +1424,7 @@
     {
       "slug": "encumbrance-manager",
       "name": "Encumbrance Manager",
-      "description": "Track budget encumbrances against appropriations, identify over-encumbrances, and generate budget status reports for public sector.",
+      "description": "Track budget encumbrances against appropriations in D365 Public Sector — flag over-encumbrances, generate status reports, and support year-end carry-forwards.",
       "tab": "business",
       "domain": "industry-verticals",
       "industry_vertical": "public-sector",
@@ -1256,13 +1433,18 @@
       "tags": [],
       "version": "1.0",
       "icon_emoji": "🏛️",
-      "is_coming_soon": true,
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
       "learning_path": null,
       "learning_path_position": null,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "D365 Public Sector — Budget Control",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/industry-verticals/public-sector/encumbrance-manager.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/public-sector/encumbrance-manager.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/public-sector/encumbrance-manager.md"
@@ -1270,7 +1452,7 @@
     {
       "slug": "public-sector-compliance-agent",
       "name": "Public Sector Compliance Agent",
-      "description": "Agent patterns for public sector compliance, grant management, and government reporting.",
+      "description": "Compliance monitoring for government and public sector — procurement regulations, fund accounting rules, and audit trail generation.",
       "tab": "business",
       "domain": "industry-verticals",
       "industry_vertical": "public-sector",
@@ -1278,14 +1460,19 @@
       "source_type": "ragnar-custom",
       "tags": [],
       "version": "1.0",
-      "icon_emoji": "🏛️",
-      "is_coming_soon": true,
+      "icon_emoji": "⚖️",
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
       "learning_path": null,
       "learning_path_position": null,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "D365 Public Sector",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/industry-verticals/public-sector/public-sector-compliance-agent.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/public-sector/public-sector-compliance-agent.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/public-sector/public-sector-compliance-agent.md"
@@ -1293,7 +1480,7 @@
     {
       "slug": "markdown-advisor",
       "name": "Markdown Advisor",
-      "description": "Recommend markdown timing and depth for slow-moving inventory using sell-through rates, margin targets, and seasonal curves.",
+      "description": "Recommend markdown timing and depth for slow-moving inventory — sell-through rate analysis, margin targets, and seasonal curve modeling.",
       "tab": "business",
       "domain": "industry-verticals",
       "industry_vertical": "retail",
@@ -1302,13 +1489,18 @@
       "tags": [],
       "version": "1.0",
       "icon_emoji": "🏷️",
-      "is_coming_soon": true,
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
       "learning_path": null,
       "learning_path_position": null,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "D365 Commerce Pricing",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/industry-verticals/retail/markdown-advisor.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/retail/markdown-advisor.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/retail/markdown-advisor.md"
@@ -1316,7 +1508,7 @@
     {
       "slug": "planogram-compliance-checker",
       "name": "Planogram Compliance Checker",
-      "description": "Verify store shelf planogram compliance using image recognition results and generate corrective action reports.",
+      "description": "Verify store shelf planogram compliance from image data and generate corrective action reports with prioritized fixes.",
       "tab": "business",
       "domain": "industry-verticals",
       "industry_vertical": "retail",
@@ -1325,7 +1517,7 @@
       "tags": [],
       "version": "1.0",
       "icon_emoji": "🛒",
-      "is_coming_soon": true,
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
       "learning_path": null,
@@ -1338,8 +1530,8 @@
     },
     {
       "slug": "retail-agent-intro",
-      "name": "Retail Agent Intro",
-      "description": "AI agents in retail: inventory visibility, customer service, and order management patterns.",
+      "name": "Retail AI Agent Introduction",
+      "description": "Where AI agents create the most value in retail — store operations, supply chain, merchandising, and the recommended starting point.",
       "tab": "business",
       "domain": "industry-verticals",
       "industry_vertical": "retail",
@@ -1347,8 +1539,8 @@
       "source_type": "ragnar-custom",
       "tags": [],
       "version": "1.0",
-      "icon_emoji": "🛍️",
-      "is_coming_soon": true,
+      "icon_emoji": "🏪",
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
       "learning_path": null,
@@ -1384,8 +1576,8 @@
     },
     {
       "slug": "mcp-d365-connector",
-      "name": "MCP D365 Connector",
-      "description": "Build MCP servers that connect to D365 F&O OData and DMF APIs for agent access.",
+      "name": "D365 ERP MCP Connector",
+      "description": "Design and build an MCP server that exposes D365 F&O OData entities as agent-consumable tools with pagination and error handling.",
       "tab": "business",
       "domain": "mcp",
       "industry_vertical": null,
@@ -1393,14 +1585,23 @@
       "source_type": "ragnar-custom",
       "tags": [],
       "version": "1.0",
-      "icon_emoji": "🔌",
-      "is_coming_soon": true,
+      "icon_emoji": "⚙️",
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
-      "learning_path": null,
-      "learning_path_position": null,
+      "learning_path": "mcp-path",
+      "learning_path_position": 5,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "D365 OData Documentation",
+          "url": ""
+        },
+        {
+          "title": "MCP TypeScript SDK",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/mcp/mcp-d365-connector.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/mcp/mcp-d365-connector.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/mcp/mcp-d365-connector.md"
@@ -1467,7 +1668,7 @@
     {
       "slug": "mcp-what-is-it",
       "name": "What is MCP?",
-      "description": "MCP explained for everyone — what it is, why agents need it, and how it connects to D365.",
+      "description": "Model Context Protocol explained for business audiences — what it is, why it matters, and how it connects AI agents to enterprise systems.",
       "tab": "business",
       "domain": "mcp",
       "industry_vertical": null,
@@ -1475,14 +1676,23 @@
       "source_type": "ragnar-custom",
       "tags": [],
       "version": "1.0",
-      "icon_emoji": "🔗",
-      "is_coming_soon": true,
-      "is_featured": true,
+      "icon_emoji": "🔌",
+      "is_coming_soon": false,
+      "is_featured": false,
       "author": "ragnar",
-      "learning_path": null,
-      "learning_path_position": null,
+      "learning_path": "mcp-path",
+      "learning_path_position": 1,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "Model Context Protocol Specification",
+          "url": ""
+        },
+        {
+          "title": "Anthropic MCP Documentation",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/mcp/mcp-what-is-it.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/mcp/mcp-what-is-it.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/mcp/mcp-what-is-it.md"
@@ -1522,7 +1732,7 @@
     {
       "slug": "dataverse-table-design",
       "name": "Dataverse Table Design",
-      "description": "Design Dataverse tables: columns, relationships, choice sets, and security roles from scratch.",
+      "description": "Design Dataverse tables — standard vs custom, column types, relationships, alternate keys, and naming conventions for agent workloads.",
       "tab": "business",
       "domain": "power-platform",
       "industry_vertical": null,
@@ -1530,14 +1740,19 @@
       "source_type": "ragnar-custom",
       "tags": [],
       "version": "1.0",
-      "icon_emoji": "📊",
-      "is_coming_soon": true,
+      "icon_emoji": "🗄️",
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
-      "learning_path": null,
-      "learning_path_position": null,
+      "learning_path": "power-platform-path",
+      "learning_path_position": 1,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "Create and edit tables in Dataverse",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/power-platform/dataverse-table-design.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/power-platform/dataverse-table-design.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/power-platform/dataverse-table-design.md"
@@ -1567,8 +1782,8 @@
     },
     {
       "slug": "power-automate-basics",
-      "name": "Power Automate Basics",
-      "description": "Build Power Automate flows: triggers, actions, conditions, loops, and error handling.",
+      "name": "Power Automate for Agents",
+      "description": "Build Power Automate cloud flows that Copilot Studio agents invoke — triggers, inputs/outputs, error handling, and action patterns.",
       "tab": "business",
       "domain": "power-platform",
       "industry_vertical": null,
@@ -1577,13 +1792,22 @@
       "tags": [],
       "version": "1.0",
       "icon_emoji": "⚡",
-      "is_coming_soon": true,
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
-      "learning_path": null,
-      "learning_path_position": null,
+      "learning_path": "power-platform-path",
+      "learning_path_position": 2,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "Power Automate Documentation",
+          "url": ""
+        },
+        {
+          "title": "Call a flow from Copilot Studio",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/power-platform/power-automate-basics.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/power-platform/power-automate-basics.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/power-platform/power-automate-basics.md"
@@ -1760,8 +1984,8 @@
     },
     {
       "slug": "supply-chain-agent-intro",
-      "name": "Supply Chain Agent Intro",
-      "description": "Where AI agents fit in supply chain — demand, inventory, logistics, and exception management.",
+      "name": "Supply Chain Agent Introduction",
+      "description": "Where AI agents add the most value in supply chain — demand planning, inventory optimization, logistics, and where to start.",
       "tab": "business",
       "domain": "supply-chain",
       "industry_vertical": null,
@@ -1770,13 +1994,18 @@
       "tags": [],
       "version": "1.0",
       "icon_emoji": "🔗",
-      "is_coming_soon": true,
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
       "learning_path": null,
       "learning_path_position": null,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "D365 Supply Chain Management",
+          "url": ""
+        }
+      ],
       "file_path": "skills/business/supply-chain/supply-chain-agent-intro.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/supply-chain/supply-chain-agent-intro.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/supply-chain/supply-chain-agent-intro.md"
@@ -1885,7 +2114,7 @@
     {
       "slug": "fine-tuning-workflow",
       "name": "Fine-Tuning Workflow",
-      "description": "End-to-end fine-tuning pipeline: data curation, format conversion, training config, evaluation, and deployment.",
+      "description": "End-to-end fine-tuning pipeline — dataset curation, format conversion, training configuration, evaluation, and when NOT to fine-tune.",
       "tab": "personal",
       "domain": "ai-agent-dev",
       "industry_vertical": null,
@@ -1894,7 +2123,7 @@
       "tags": [],
       "version": "1.0",
       "icon_emoji": "🎯",
-      "is_coming_soon": true,
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
       "learning_path": null,
@@ -1903,6 +2132,10 @@
       "references": [
         {
           "title": "OpenAI Fine-Tuning Guide",
+          "url": ""
+        },
+        {
+          "title": "Anthropic Model Context Protocol",
           "url": ""
         }
       ],
@@ -1913,7 +2146,7 @@
     {
       "slug": "prompt-engineering-101",
       "name": "Prompt Engineering 101",
-      "description": "Core prompt engineering: system prompts, few-shot examples, chain-of-thought, and output control.",
+      "description": "The fundamentals of prompt engineering — system prompts, chain-of-thought, few-shot examples, and the mistakes that kill quality.",
       "tab": "personal",
       "domain": "ai-agent-dev",
       "industry_vertical": null,
@@ -1921,14 +2154,19 @@
       "source_type": "ragnar-custom",
       "tags": [],
       "version": "1.0",
-      "icon_emoji": "✍️",
-      "is_coming_soon": true,
+      "icon_emoji": "✏️",
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
       "learning_path": null,
       "learning_path_position": null,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "Anthropic Prompt Engineering Guide",
+          "url": ""
+        }
+      ],
       "file_path": "skills/personal/ai-agent-dev/prompt-engineering-101.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/ai-agent-dev/prompt-engineering-101.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/ai-agent-dev/prompt-engineering-101.md"
@@ -2105,7 +2343,7 @@
     {
       "slug": "graphql-patterns",
       "name": "GraphQL Patterns",
-      "description": "Design GraphQL APIs with schema-first development, DataLoader for N+1 prevention, subscriptions, and schema federation.",
+      "description": "Design GraphQL APIs — schema-first development, DataLoader for N+1, subscriptions, federation, and when to use REST instead.",
       "tab": "personal",
       "domain": "backend-data",
       "industry_vertical": null,
@@ -2114,7 +2352,7 @@
       "tags": [],
       "version": "1.0",
       "icon_emoji": "🔗",
-      "is_coming_soon": true,
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
       "learning_path": null,
@@ -2122,11 +2360,15 @@
       "prerequisites": [],
       "references": [
         {
-          "title": "GraphQL Official Docs",
+          "title": "GraphQL Official Documentation",
           "url": ""
         },
         {
           "title": "Apollo GraphQL Documentation",
+          "url": ""
+        },
+        {
+          "title": "The Guild — GraphQL Best Practices",
           "url": ""
         }
       ],
@@ -2160,7 +2402,7 @@
     {
       "slug": "real-time-systems",
       "name": "Real-Time Systems",
-      "description": "Build real-time features with WebSockets, SSE, Redis Pub/Sub, event sourcing, and CQRS patterns — with reconnection logic.",
+      "description": "Build real-time features with WebSockets, SSE, Redis Pub/Sub — with reconnection logic, scaling, and when each approach fits.",
       "tab": "personal",
       "domain": "backend-data",
       "industry_vertical": null,
@@ -2168,8 +2410,8 @@
       "source_type": "ragnar-custom",
       "tags": [],
       "version": "1.0",
-      "icon_emoji": "🔴",
-      "is_coming_soon": true,
+      "icon_emoji": "⚡",
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
       "learning_path": null,
@@ -2178,6 +2420,10 @@
       "references": [
         {
           "title": "WebSockets — MDN",
+          "url": ""
+        },
+        {
+          "title": "Server-Sent Events — MDN",
           "url": ""
         }
       ],
@@ -2257,7 +2503,7 @@
     {
       "slug": "podcast-production",
       "name": "Podcast Production",
-      "description": "Episode planning, show notes from transcripts, clip extraction — built for In Our AI Era.",
+      "description": "End-to-end podcast workflow for In Our AI Era — episode planning, lane splits, show notes from transcripts, and clip extraction.",
       "tab": "personal",
       "domain": "content-creation",
       "industry_vertical": null,
@@ -2266,13 +2512,18 @@
       "tags": [],
       "version": "1.0",
       "icon_emoji": "🎙️",
-      "is_coming_soon": true,
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
       "learning_path": null,
       "learning_path_position": null,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "In Our AI Era — YouTube",
+          "url": ""
+        }
+      ],
       "file_path": "skills/personal/content-creation/podcast-production.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/content-creation/podcast-production.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/content-creation/podcast-production.md"
@@ -2436,7 +2687,7 @@
     {
       "slug": "animation-interaction",
       "name": "Animation & Interaction Patterns",
-      "description": "Build performant animations with Framer Motion, CSS, GSAP, and the View Transitions API — with performance budgets.",
+      "description": "Build performant UI animations with Framer Motion, CSS transitions, GSAP, and the View Transitions API — with 60fps performance budgets.",
       "tab": "personal",
       "domain": "frontend",
       "industry_vertical": null,
@@ -2445,7 +2696,7 @@
       "tags": [],
       "version": "1.0",
       "icon_emoji": "✨",
-      "is_coming_soon": true,
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
       "learning_path": null,
@@ -2459,6 +2710,10 @@
         {
           "title": "View Transitions API — MDN",
           "url": ""
+        },
+        {
+          "title": "CSS Animations — MDN",
+          "url": ""
         }
       ],
       "file_path": "skills/personal/frontend/animation-interaction.md",
@@ -2467,8 +2722,8 @@
     },
     {
       "slug": "animation-patterns",
-      "name": "Animation Patterns",
-      "description": "Framer Motion, CSS animations, GSAP, and View Transitions API for polished micro-interactions.",
+      "name": "Frontend Animation Patterns",
+      "description": "Production animation patterns for React — scroll animations, drag interactions, skeleton loaders, and micro-interaction design.",
       "tab": "personal",
       "domain": "frontend",
       "industry_vertical": null,
@@ -2476,14 +2731,23 @@
       "source_type": "ragnar-custom",
       "tags": [],
       "version": "1.0",
-      "icon_emoji": "✨",
-      "is_coming_soon": true,
+      "icon_emoji": "🎭",
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
       "learning_path": null,
       "learning_path_position": null,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "Framer Motion Documentation",
+          "url": ""
+        },
+        {
+          "title": "Intersection Observer API",
+          "url": ""
+        }
+      ],
       "file_path": "skills/personal/frontend/animation-patterns.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/frontend/animation-patterns.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/frontend/animation-patterns.md"
@@ -2812,7 +3076,7 @@
     {
       "slug": "meeting-notes-processor",
       "name": "Meeting Notes Processor",
-      "description": "Extract action items, decisions, and owners from raw meeting notes or transcripts.",
+      "description": "Transform raw meeting notes or transcripts into structured action items, decisions log, and follow-up assignments with deadlines.",
       "tab": "personal",
       "domain": "productivity",
       "industry_vertical": null,
@@ -2821,7 +3085,7 @@
       "tags": [],
       "version": "1.0",
       "icon_emoji": "📝",
-      "is_coming_soon": true,
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
       "learning_path": null,
@@ -2835,7 +3099,7 @@
     {
       "slug": "podcast-production",
       "name": "Podcast Production",
-      "description": "End-to-end podcast workflow: episode planning, show notes from transcripts, guest prep questions, and clip extraction for social.",
+      "description": "End-to-end podcast workflow — episode planning, Ragnar/Tina lane splits, show notes from transcripts, and clip extraction for social.",
       "tab": "personal",
       "domain": "productivity",
       "industry_vertical": null,
@@ -2844,7 +3108,7 @@
       "tags": [],
       "version": "1.0",
       "icon_emoji": "🎙️",
-      "is_coming_soon": true,
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
       "learning_path": null,
@@ -2852,7 +3116,11 @@
       "prerequisites": [],
       "references": [
         {
-          "title": "In Our AI Era Podcast",
+          "title": "In Our AI Era — YouTube Channel",
+          "url": ""
+        },
+        {
+          "title": "Ragnar Pitla LinkedIn",
           "url": ""
         }
       ],
@@ -3075,7 +3343,7 @@
     {
       "slug": "debugging-detective",
       "name": "Debugging Detective",
-      "description": "Systematic debugging workflow: reproduce, isolate, hypothesize, verify — with structured root-cause analysis templates.",
+      "description": "Systematic debugging: reproduce, isolate, hypothesize, verify — with root-cause templates and common failure pattern checklists.",
       "tab": "personal",
       "domain": "software-engineering",
       "industry_vertical": null,
@@ -3084,7 +3352,7 @@
       "tags": [],
       "version": "1.0",
       "icon_emoji": "🔎",
-      "is_coming_soon": true,
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
       "learning_path": null,
@@ -3093,6 +3361,10 @@
       "references": [
         {
           "title": "obra/superpowers Systematic Debugging",
+          "url": ""
+        },
+        {
+          "title": "Debugging — The 9 Indispensable Rules (David Agans)",
           "url": ""
         }
       ],
@@ -3103,22 +3375,31 @@
     {
       "slug": "git-workflow-mastery",
       "name": "Git Workflow Mastery",
-      "description": "Git branching strategies, PR workflows, conflict resolution, and team collaboration patterns.",
+      "description": "Practical Git workflows — branching strategies, PR conventions, commit messages, rebase vs merge, and conflict resolution.",
       "tab": "personal",
       "domain": "software-engineering",
       "industry_vertical": null,
       "difficulty": "starter",
-      "source_type": "ragnar-custom",
+      "source_type": "ragnar-curated",
       "tags": [],
       "version": "1.0",
       "icon_emoji": "🌿",
-      "is_coming_soon": true,
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
       "learning_path": null,
       "learning_path_position": null,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "Conventional Commits Specification",
+          "url": ""
+        },
+        {
+          "title": "GitHub Flow Guide",
+          "url": ""
+        }
+      ],
       "file_path": "skills/personal/software-engineering/git-workflow-mastery.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/software-engineering/git-workflow-mastery.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/software-engineering/git-workflow-mastery.md"
@@ -3126,22 +3407,31 @@
     {
       "slug": "refactoring-patterns",
       "name": "Refactoring Patterns",
-      "description": "Safe refactoring techniques based on Martin Fowler's catalog — extract, rename, move, inline.",
+      "description": "Safe refactoring techniques — extract method, replace conditional, introduce parameter object, and how to refactor without breaking things.",
       "tab": "personal",
       "domain": "software-engineering",
       "industry_vertical": null,
       "difficulty": "intermediate",
-      "source_type": "ragnar-custom",
+      "source_type": "ragnar-curated",
       "tags": [],
       "version": "1.0",
-      "icon_emoji": "♻️",
-      "is_coming_soon": true,
+      "icon_emoji": "🔧",
+      "is_coming_soon": false,
       "is_featured": false,
       "author": "ragnar",
       "learning_path": null,
       "learning_path_position": null,
       "prerequisites": [],
-      "references": [],
+      "references": [
+        {
+          "title": "Refactoring by Martin Fowler",
+          "url": ""
+        },
+        {
+          "title": "Refactoring Catalog",
+          "url": ""
+        }
+      ],
       "file_path": "skills/personal/software-engineering/refactoring-patterns.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/software-engineering/refactoring-patterns.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/software-engineering/refactoring-patterns.md"

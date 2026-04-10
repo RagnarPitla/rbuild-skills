@@ -1,26 +1,94 @@
 ---
 name: "Lot Genealogy Tracker"
 slug: "lot-genealogy-tracker"
-description: "Trace full forward and backward lot genealogy for regulated products across components, sub-assemblies, and finished goods."
+description: "Trace complete forward and backward lot genealogy for regulated products — critical for recalls, deviations, and regulatory audits."
 tab: "business"
 domain: "industry-verticals"
 industry_vertical: "healthcare"
 difficulty: "advanced"
 source_type: "ragnar-custom"
-tags: ["healthcare", "lot-genealogy", "traceability", "d365", "regulated", "pharma"]
+tags: ["healthcare", "lot-genealogy", "traceability", "d365", "recall", "pharma"]
 version: "1.0"
-icon_emoji: "🧬"
-is_coming_soon: true
+icon_emoji: "🔬"
+is_coming_soon: false
 is_featured: false
 author: "ragnar"
 learning_path: null
 learning_path_position: null
 prerequisites: []
-references: []
+references:
+  - title: "FDA Drug Traceability Requirements"
+    url: "https://www.fda.gov/drugs/drug-supply-chain-security-act-dscsa"
 ---
 
 # Lot Genealogy Tracker
 
-> Coming Soon
+Pharmaceutical manufacturers must be able to answer two questions instantly when a quality problem arises:
+1. **Forward trace:** Where did this lot go? (Who received it, is it still in distribution?)
+2. **Backward trace:** What went into this lot? (Which raw materials, which intermediates?)
 
-Builds complete lot genealogy trees from D365 inventory transactions — forward (where did this lot go?) and backward (what went into this lot?). Critical for recalls, deviations, and regulatory audits in pharmaceutical and medical device manufacturing.
+Manual genealogy tracing for a recall can take days. This agent does it in minutes.
+
+## Forward Trace (Where Did It Go?)
+
+Starting from a finished goods lot number:
+
+```
+Lot FG-2026-03-4521 traced forward:
+
+Distribution:
+├── Shipped to Cardinal Health (DC: Cincinnati) — 500 units
+│   └── Cardinal → Walgreens (Chicago, IL) — 250 units [in stock]
+│   └── Cardinal → CVS (Indianapolis, IN) — 250 units [dispensed to patients]
+├── Shipped to McKesson (DC: Atlanta) — 300 units
+│   └── McKesson → hospital systems — 300 units [dispensed]
+└── Retained as retention sample — 50 units [in QC storage]
+
+RECALL IMPACT:
+  Total lots at risk: 1
+  Units distributed: 800
+  Units potentially at patients: 550
+  Units recoverable from distribution: 250
+  Regulatory notification required: FDA 15-day safety report
+```
+
+## Backward Trace (What Went Into It?)
+
+Starting from the same lot, tracing backward:
+
+```
+Lot FG-2026-03-4521 traced backward:
+
+Finished product: Amoxicillin 500mg Capsules
+  ↑
+Intermediate: Granulation batch GB-2026-03-112
+  ↑
+├── Active Pharmaceutical Ingredient (API)
+│   Lot API-2026-01-8834 | Supplier: ABC Pharma, India
+│   CoA Date: 2026-01-15 | Potency: 99.7%
+├── Microcrystalline Cellulose
+│   Lot EX-2025-12-7721 | Supplier: FMC Corp
+└── Magnesium Stearate
+    Lot LU-2026-02-3341 | Supplier: Mallinckrodt
+
+Equipment used: Granulator G-04, Tablet Press TP-02, Coater CT-01
+Personnel: [linked to training records at time of manufacture]
+Environmental record: Room 204, 2026-03-10 through 2026-03-14
+```
+
+## D365 Integration
+
+D365 SCM provides the data through inventory transactions and batch tracking:
+- `InventBatchEntity` — batch master data and attributes
+- `InventTransEntity` — all inventory movements for a batch
+- `ProdTableEntity` — production orders that consumed/produced the batch
+- Custom Dataverse tables — supplier CoAs, equipment records, environmental monitoring
+
+## Recall Readiness Metrics
+
+The agent continuously monitors genealogy data quality:
+- % of lots with complete forward trace to end customer
+- % of lots with complete backward trace to raw materials
+- Average time to generate a complete genealogy report (target: <5 minutes)
+
+FDA expectations: complete genealogy in 24 hours for a recall. This agent gets there in minutes.

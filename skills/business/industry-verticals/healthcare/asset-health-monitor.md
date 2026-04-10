@@ -1,13 +1,13 @@
 ---
-name: "Asset Health Monitor"
+name: "Medical Asset Health Monitor"
 slug: "asset-health-monitor"
-description: "Monitor medical equipment and utility infrastructure health, predict failures, and schedule maintenance."
+description: "Monitor medical equipment health, maintenance schedules, and calibration compliance in healthcare and life sciences settings."
 tab: "business"
 domain: "industry-verticals"
 industry_vertical: "healthcare"
-difficulty: "advanced"
+difficulty: "intermediate"
 source_type: "ragnar-custom"
-tags: ["healthcare", "assets", "monitoring"]
+tags: ["healthcare", "asset-management", "medical-equipment", "maintenance", "compliance"]
 version: "1.0"
 icon_emoji: "🏥"
 is_coming_soon: false
@@ -17,11 +17,43 @@ learning_path: null
 learning_path_position: null
 prerequisites: []
 references:
-  []
+  - title: "D365 Asset Management"
+    url: "https://learn.microsoft.com/en-us/dynamics365/supply-chain/asset-management/"
 ---
 
-# Asset Health Monitor
+# Medical Asset Health Monitor
 
-Monitor medical equipment and utility infrastructure health, predict failures, and schedule maintenance.
+Medical equipment requires rigorous maintenance and calibration tracking. Regulatory compliance (FDA, ISO 13485) mandates documented maintenance records. This agent keeps equipment compliant and available.
 
-Full skill content and instructions available above.
+## What the Agent Monitors
+
+**Preventive maintenance due dates**
+- Reads equipment maintenance schedules from D365 Asset Management
+- Alerts maintenance teams 2 weeks before due date
+- Escalates overdue maintenance to department heads
+- Generates work orders automatically for scheduled tasks
+
+**Calibration compliance**
+- Tracks calibration certificates and expiry dates per instrument
+- Alerts lab managers 30 days before expiry
+- Flags equipment where calibration has lapsed (critical: should not be used)
+- Integrates with calibration service provider scheduling
+
+**Equipment utilization**
+- Identifies underutilized equipment (candidates for redeployment or disposal)
+- Identifies over-utilized equipment (candidates for backup/redundancy)
+
+**Downtime tracking**
+- Records unplanned downtime events
+- Calculates Mean Time Between Failures (MTBF) per equipment type
+- Flags equipment with deteriorating reliability for engineering review
+
+## Regulatory Integration
+
+For FDA 21 CFR Part 11 compliant environments, all agent actions are logged with:
+- Timestamp
+- User identity (electronic signature)
+- Action taken
+- Reason for action
+
+Store compliance configuration in Dataverse: which equipment classes require which compliance level, calibration frequency, documentation requirements.

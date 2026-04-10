@@ -1,27 +1,57 @@
 ---
-name: "Automotive Dealer Operations"
+name: "Automotive Dealer Operations Agent"
 slug: "automotive-dealer-ops"
-description: "Agent patterns for automotive dealer operations, vehicle inventory, and service management in D365."
+description: "AI agent patterns for automotive dealer operations — parts inventory, service scheduling, warranty claims, and customer follow-up."
 tab: "business"
 domain: "industry-verticals"
 industry_vertical: "automotive"
-difficulty: "advanced"
+difficulty: "intermediate"
 source_type: "ragnar-custom"
-tags: ["automotive", "dealer", "operations"]
+tags: ["automotive", "dealer", "service", "parts", "crm"]
 version: "1.0"
-icon_emoji: "🚗"
+icon_emoji: "🚘"
 is_coming_soon: false
 is_featured: false
 author: "ragnar"
 learning_path: null
 learning_path_position: null
 prerequisites: []
-references:
-  []
+references: []
 ---
 
-# Automotive Dealer Operations
+# Automotive Dealer Operations Agent
 
-Agent patterns for automotive dealer operations, vehicle inventory, and service management in D365.
+Automotive dealers operate at the intersection of parts management, service scheduling, sales, and customer relationships. Each of these creates agent opportunities.
 
-Full skill content and instructions available above.
+## High-Value Agent Use Cases
+
+### Parts Inventory Advisor
+- Monitors fast-moving parts below reorder point
+- Calculates fill rate impact of stockouts
+- Suggests emergency transfers from other dealer locations
+- Generates supplier order recommendations
+
+### Service Bay Scheduler
+- Matches incoming service requests to available technicians by skill
+- Optimizes bay utilization across the day
+- Proactively notifies customers of delays with revised completion times
+- Escalates vehicles needing additional authorization
+
+### Warranty Claim Processor
+- Reads repair order data against warranty terms
+- Identifies eligible claims automatically
+- Prepares claim submission packages for manufacturer reimbursement
+- Tracks claim status and flags rejected claims for review
+
+### Customer Follow-Up Agent
+- After service completion, sends follow-up messages at optimal timing
+- Routes negative feedback to service manager before it becomes a review
+- Identifies customers due for next service and generates outreach
+
+## Data Sources in Dealer DMS
+
+Most dealer management systems (CDK, Reynolds & Reynolds, DealerSocket) provide APIs. For D365-integrated dealers:
+- Parts inventory → InventOnHandV2
+- Customer records → CustomersV3 + CRM customer entity
+- Service records → Custom Dataverse tables or DMS API
+- Warranty terms → Custom policy table (Niyam pattern)
