@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-10T15:49:38.085Z",
-  "total": 148,
+  "generated_at": "2026-04-10T15:54:51.282Z",
+  "total": 149,
   "skills": [
     {
       "slug": "case-study-generator",
@@ -73,6 +73,32 @@
       "file_path": "skills/business/content-business/linkedin-article-fav.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/content-business/linkedin-article-fav.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/content-business/linkedin-article-fav.md"
+    },
+    {
+      "slug": "outlook-newsletter",
+      "name": "outlook-newsletter",
+      "description": "Create and manage newsletters in Microsoft Outlook — setup, edition drafting, subscriber management, visibility settings, and analytics. Use when user says 'create a newsletter in Outlook', 'Outlook newsletter', 'newsletter edition', 'newsletter subscribers', 'publish a newsletter', 'Microsoft newsletter'.",
+      "tab": "business",
+      "domain": "content-business",
+      "industry_vertical": null,
+      "difficulty": "intermediate",
+      "source_type": "ragnar-custom",
+      "tags": [
+        "beginner",
+        "content",
+        "outlook",
+        "newsletter",
+        "microsoft-365"
+      ],
+      "version": "1.0.0",
+      "icon_emoji": "⚡",
+      "is_coming_soon": false,
+      "is_featured": false,
+      "author": "Ragnar Pitla | skill.rbuild.ai",
+      "has_example": true,
+      "file_path": "skills/business/content-business/outlook-newsletter.md",
+      "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/content-business/outlook-newsletter.md",
+      "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/content-business/outlook-newsletter.md"
     },
     {
       "slug": "cs-agent-creator",
