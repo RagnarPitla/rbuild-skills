@@ -1,25 +1,30 @@
 ---
-name: "Copilot Studio Knowledge Sources"
-slug: "cs-knowledge-sources"
-description: "Configure SharePoint, website, and Dataverse knowledge sources for accurate grounded answers in your Copilot Studio agent."
-tab: "business"
-domain: "copilot-studio"
+name: Copilot Studio Knowledge Sources
+slug: cs-knowledge-sources
+description: Configure SharePoint, website, and Dataverse knowledge sources for accurate grounded answers in your Copilot Studio agent.
+tab: business
+domain: copilot-studio
 industry_vertical: null
-difficulty: "starter"
-source_type: "ragnar-custom"
-tags: ["copilot-studio", "knowledge", "sharepoint", "grounding", "rag"]
-version: "1.0"
-icon_emoji: "📚"
+difficulty: starter
+source_type: ragnar-custom
+tags: "[\"copilot-studio\", \"knowledge\", \"sharepoint\", \"grounding\", \"rag\"]"
+version: 1.0.1
+icon_emoji: 📚
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
-learning_path: "copilot-studio-path"
+author: ragnar
+learning_path: copilot-studio-path
 learning_path_position: 3
-prerequisites: ["cs-first-agent"]
+prerequisites: "[\"cs-first-agent\"]"
 references:
-  - title: "Add knowledge to your agent"
-    url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-add-existing-copilot"
+  - "title: "Add knowledge to your agent"
+requires: Copilot Studio VS Code Extension
+mcp_tools:
+  - "copilot-studio:manage-agent"
+  - "copilot-studio:validate"
+  - "copilot-studio:chat-directline"
 ---
+
 
 # Copilot Studio Knowledge Sources
 
@@ -77,3 +82,27 @@ If you cannot find the answer in these sources, say:
 ## Check Analytics
 
 **Analytics → Knowledge sources** shows which sources are hit most, escalation rates, and topics with no matched knowledge. A high escalation rate means the content needs improvement, not the agent instructions.
+
+## Trigger Phrases
+
+- "Help me with copilot studio knowledge sources"
+- "Copilot Studio Knowledge Sources"
+- "How do I copilot studio knowledge sources"
+
+## Quick Example
+
+> See `cs-knowledge-sources-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

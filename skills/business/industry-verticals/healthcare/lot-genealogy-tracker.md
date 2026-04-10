@@ -1,25 +1,28 @@
 ---
-name: "Lot Genealogy Tracker"
-slug: "lot-genealogy-tracker"
-description: "Trace complete forward and backward lot genealogy for regulated products — critical for recalls, deviations, and regulatory audits."
-tab: "business"
-domain: "industry-verticals"
-industry_vertical: "healthcare"
-difficulty: "advanced"
-source_type: "ragnar-custom"
-tags: ["healthcare", "lot-genealogy", "traceability", "d365", "recall", "pharma"]
-version: "1.0"
-icon_emoji: "🔬"
+name: Lot Genealogy Tracker
+slug: lot-genealogy-tracker
+description: Trace complete forward and backward lot genealogy for regulated products — critical for recalls, deviations, and regulatory audits.
+tab: business
+domain: industry-verticals
+industry_vertical: healthcare
+difficulty: advanced
+source_type: ragnar-custom
+tags: "[\"healthcare\", \"lot-genealogy\", \"traceability\", \"d365\", \"recall\", \"pharma\"]"
+version: 1.0.1
+icon_emoji: 🔬
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "FDA Drug Traceability Requirements"
-    url: "https://www.fda.gov/drugs/drug-supply-chain-security-act-dscsa"
+  - "title: "FDA Drug Traceability Requirements"
+requires: D365 F&O MCP Server
+mcp_tools:
+  - "d365-fno-mcp"
 ---
+
 
 # Lot Genealogy Tracker
 
@@ -92,3 +95,27 @@ The agent continuously monitors genealogy data quality:
 - Average time to generate a complete genealogy report (target: <5 minutes)
 
 FDA expectations: complete genealogy in 24 hours for a recall. This agent gets there in minutes.
+
+## Trigger Phrases
+
+- "Help me with lot genealogy tracker"
+- "Lot Genealogy Tracker"
+- "How do I lot genealogy tracker"
+
+## Quick Example
+
+> See `lot-genealogy-tracker-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

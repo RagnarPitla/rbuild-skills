@@ -1,27 +1,31 @@
 ---
-name: "Your First Copilot Studio Agent"
-slug: "your-first-copilot-studio-agent"
-description: "Build your first Copilot Studio agent from scratch — system instructions, greeting topic, fallback, and publish."
-tab: "business"
-domain: "copilot-studio"
+name: Your First Copilot Studio Agent
+slug: your-first-copilot-studio-agent
+description: Build your first Copilot Studio agent from scratch — system instructions, greeting topic, fallback, and publish.
+tab: business
+domain: copilot-studio
 industry_vertical: null
-difficulty: "starter"
-source_type: "ragnar-custom"
-tags: ["copilot-studio", "getting-started", "agent-building", "beginner"]
-version: "1.0"
-icon_emoji: "🤖"
+difficulty: starter
+source_type: ragnar-custom
+tags: "[\"copilot-studio\", \"getting-started\", \"agent-building\", \"beginner\"]"
+version: 1.0.1
+icon_emoji: 🤖
 is_coming_soon: false
 is_featured: true
-author: "ragnar"
-learning_path: "copilot-studio-path"
+author: ragnar
+learning_path: copilot-studio-path
 learning_path_position: 1
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "Microsoft Copilot Studio Documentation"
-    url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/"
-  - title: "Create and deploy a copilot"
-    url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-get-started"
+  - "title: "Microsoft Copilot Studio Documentation"
+  - "title: "Create and deploy a copilot"
+requires: Copilot Studio VS Code Extension
+mcp_tools:
+  - "copilot-studio:manage-agent"
+  - "copilot-studio:validate"
+  - "copilot-studio:chat-directline"
 ---
+
 
 # Your First Copilot Studio Agent
 
@@ -109,3 +113,27 @@ Once you have a working agent, the next step is adding **knowledge sources** (yo
 - **No system instructions** — agents without instructions are unpredictable
 - **Publishing before testing** — always test the fallback, greeting, and at least one real topic before publishing
 - **Forgetting to republish** — changes don't go live until you publish again
+
+## Trigger Phrases
+
+- "Help me with your first copilot studio agent"
+- "Your First Copilot Studio Agent"
+- "How do I your first copilot studio agent"
+
+## Quick Example
+
+> See `your-first-copilot-studio-agent-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

@@ -1,25 +1,28 @@
 ---
-name: "Medical Asset Health Monitor"
-slug: "asset-health-monitor"
-description: "Monitor medical equipment health, maintenance schedules, and calibration compliance in healthcare and life sciences settings."
-tab: "business"
-domain: "industry-verticals"
-industry_vertical: "healthcare"
-difficulty: "intermediate"
-source_type: "ragnar-custom"
-tags: ["healthcare", "asset-management", "medical-equipment", "maintenance", "compliance"]
-version: "1.0"
-icon_emoji: "🏥"
+name: Medical Asset Health Monitor
+slug: asset-health-monitor
+description: Monitor medical equipment health, maintenance schedules, and calibration compliance in healthcare and life sciences settings.
+tab: business
+domain: industry-verticals
+industry_vertical: healthcare
+difficulty: intermediate
+source_type: ragnar-custom
+tags: "[\"healthcare\", \"asset-management\", \"medical-equipment\", \"maintenance\", \"compliance\"]"
+version: 1.0.1
+icon_emoji: 🏥
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "D365 Asset Management"
-    url: "https://learn.microsoft.com/en-us/dynamics365/supply-chain/asset-management/"
+  - "title: "D365 Asset Management"
+requires: D365 F&O MCP Server
+mcp_tools:
+  - "d365-fno-mcp"
 ---
+
 
 # Medical Asset Health Monitor
 
@@ -57,3 +60,27 @@ For FDA 21 CFR Part 11 compliant environments, all agent actions are logged with
 - Reason for action
 
 Store compliance configuration in Dataverse: which equipment classes require which compliance level, calibration frequency, documentation requirements.
+
+## Trigger Phrases
+
+- "Help me with medical asset health monitor"
+- "Medical Asset Health Monitor"
+- "How do I medical asset health monitor"
+
+## Quick Example
+
+> See `asset-health-monitor-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

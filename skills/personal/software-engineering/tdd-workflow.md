@@ -1,27 +1,28 @@
 ---
-name: "TDD Workflow"
-slug: "tdd-workflow"
-description: "Test-driven development enforced at 80%+ coverage — red-green-refactor, testing pyramid, and when TDD is the wrong tool."
-tab: "personal"
-domain: "software-engineering"
+name: TDD Workflow
+slug: tdd-workflow
+description: Test-driven development enforced at 80%+ coverage — red-green-refactor, testing pyramid, and when TDD is the wrong tool.
+tab: personal
+domain: software-engineering
 industry_vertical: null
-difficulty: "intermediate"
-source_type: "ragnar-curated"
-tags: ["tdd", "testing", "red-green-refactor", "coverage", "quality"]
-version: "1.0"
-icon_emoji: "🧪"
+difficulty: intermediate
+source_type: ragnar-curated
+tags: "[\"tdd\", \"testing\", \"red-green-refactor\", \"coverage\", \"quality\"]"
+version: 1.0.1
+icon_emoji: 🧪
 is_coming_soon: false
 is_featured: true
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "obra/superpowers TDD Skill"
-    url: "https://github.com/obra/superpowers"
-  - title: "Test-Driven Development by Kent Beck"
-    url: "https://www.amazon.com/Test-Driven-Development-Kent-Beck/dp/0321146530"
+  - "title: "obra/superpowers TDD Skill"
+  - "title: "Test-Driven Development by Kent Beck"
+requires: None
+mcp_tools: []
 ---
+
 
 # TDD Workflow
 
@@ -88,3 +89,27 @@ describe('calculateDiscount', () => {
 ```
 
 Test names should read as specifications. If a test fails, the name tells you what broke.
+
+## Trigger Phrases
+
+- "Help me with tdd workflow"
+- "TDD Workflow"
+- "How do I tdd workflow"
+
+## Quick Example
+
+> See `tdd-workflow-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

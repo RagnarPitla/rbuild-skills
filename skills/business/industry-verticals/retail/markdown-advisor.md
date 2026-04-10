@@ -1,25 +1,28 @@
 ---
-name: "Markdown Advisor"
-slug: "markdown-advisor"
-description: "Recommend markdown timing and depth for slow-moving inventory — sell-through rate analysis, margin targets, and seasonal curve modeling."
-tab: "business"
-domain: "industry-verticals"
-industry_vertical: "retail"
-difficulty: "intermediate"
-source_type: "ragnar-custom"
-tags: ["retail", "markdown", "pricing", "inventory", "merchandising", "margin"]
-version: "1.0"
-icon_emoji: "🏷️"
+name: Markdown Advisor
+slug: markdown-advisor
+description: Recommend markdown timing and depth for slow-moving inventory — sell-through rate analysis, margin targets, and seasonal curve modeling.
+tab: business
+domain: industry-verticals
+industry_vertical: retail
+difficulty: intermediate
+source_type: ragnar-custom
+tags: "[\"retail\", \"markdown\", \"pricing\", \"inventory\", \"merchandising\", \"margin\"]"
+version: 1.0.1
+icon_emoji: 🏷️
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "D365 Commerce Pricing"
-    url: "https://learn.microsoft.com/en-us/dynamics365/commerce/price-management"
+  - "title: "D365 Commerce Pricing"
+requires: D365 F&O MCP Server
+mcp_tools:
+  - "d365-fno-mcp"
 ---
+
 
 # Markdown Advisor
 
@@ -93,3 +96,27 @@ The agent recommends markdowns, but a merchandiser reviews and approves before t
 - E-commerce site updated via price API
 
 The agent tracks post-markdown sell-through to improve future models.
+
+## Trigger Phrases
+
+- "Help me with markdown advisor"
+- "Markdown Advisor"
+- "How do I markdown advisor"
+
+## Quick Example
+
+> See `markdown-advisor-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

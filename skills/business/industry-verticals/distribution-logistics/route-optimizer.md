@@ -1,25 +1,28 @@
 ---
-name: "Route Optimizer"
-slug: "route-optimizer"
-description: "Optimize delivery routes against vehicle capacity, time windows, driver hours, and cost objectives — with D365 Transportation integration."
-tab: "business"
-domain: "industry-verticals"
-industry_vertical: "distribution-logistics"
-difficulty: "advanced"
-source_type: "ragnar-custom"
-tags: ["logistics", "routing", "delivery", "d365", "transportation"]
-version: "1.0"
-icon_emoji: "🗺️"
+name: Route Optimizer
+slug: route-optimizer
+description: Optimize delivery routes against vehicle capacity, time windows, driver hours, and cost objectives — with D365 Transportation integration.
+tab: business
+domain: industry-verticals
+industry_vertical: distribution-logistics
+difficulty: advanced
+source_type: ragnar-custom
+tags: "[\"logistics\", \"routing\", \"delivery\", \"d365\", \"transportation\"]"
+version: 1.0.1
+icon_emoji: 🗺️
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "D365 Transportation Management"
-    url: "https://learn.microsoft.com/en-us/dynamics365/supply-chain/transportation/transportation-management-overview"
+  - "title: "D365 Transportation Management"
+requires: D365 F&O MCP Server
+mcp_tools:
+  - "d365-fno-mcp"
 ---
+
 
 # Route Optimizer
 
@@ -85,3 +88,27 @@ Updates during execution:
 | Driver hours | -10 to -20% |
 
 Results vary significantly by starting point. Companies with manual routing see larger gains.
+
+## Trigger Phrases
+
+- "Help me with route optimizer"
+- "Route Optimizer"
+- "How do I route optimizer"
+
+## Quick Example
+
+> See `route-optimizer-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

@@ -1,25 +1,29 @@
 ---
-name: "D365 Plan to Produce"
-slug: "d365-plan-to-produce"
-description: "Configure the Plan to Produce process in D365 SCM — BOMs, routes, production orders, shop floor, and manufacturing agent patterns."
-tab: "business"
-domain: "d365-fno"
+name: D365 Plan to Produce
+slug: d365-plan-to-produce
+description: Configure the Plan to Produce process in D365 SCM — BOMs, routes, production orders, shop floor, and manufacturing agent patterns.
+tab: business
+domain: d365-fno
 industry_vertical: null
-difficulty: "intermediate"
-source_type: "ragnar-custom"
-tags: ["d365-fno", "manufacturing", "production", "bom", "plan-to-produce"]
-version: "1.0"
-icon_emoji: "🏭"
+difficulty: intermediate
+source_type: ragnar-custom
+tags: "[\"d365-fno\", \"manufacturing\", \"production\", \"bom\", \"plan-to-produce\"]"
+version: 1.0.1
+icon_emoji: 🏭
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
-learning_path: "d365-fno-path"
+author: ragnar
+learning_path: d365-fno-path
 learning_path_position: 5
-prerequisites: ["d365-navigation-fundamentals"]
+prerequisites: "[\"d365-navigation-fundamentals\"]"
 references:
-  - title: "D365 Supply Chain — Manufacturing"
-    url: "https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-process-overview"
+  - "title: "D365 Supply Chain — Manufacturing"
+requires: D365 F&O MCP Server
+mcp_tools:
+  - "d365-fno-mcp"
+  - "dataverse-mcp"
 ---
+
 
 # D365 Plan to Produce
 
@@ -109,3 +113,29 @@ Once a production order is released:
 **Capacity exception agent:** When master planning creates planned orders, agent checks work center capacity constraints. Identifies overloads and suggests splitting orders or moving to alternative work centers.
 
 **Quality hold manager:** When a batch is quarantined, agent reads the quality order results, applies disposition rules from Dataverse policy tables, and routes to the right disposition action (rework, scrap, accept with deviation).
+
+## Trigger Phrases
+
+- "How do I d365 plan to produce"
+- "Help me with d365 plan to produce in D365"
+- "Check d365 plan to produce"
+- "Analyze d365 plan to produce"
+- "Show me d365 plan to produce status"
+
+## Quick Example
+
+> See `d365-plan-to-produce-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

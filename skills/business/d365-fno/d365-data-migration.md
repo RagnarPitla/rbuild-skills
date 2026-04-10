@@ -1,27 +1,30 @@
 ---
-name: "D365 Data Migration"
-slug: "d365-data-migration"
-description: "Plan and execute D365 F&O data migration — data entities, DIXF packages, cutover strategy, and validation patterns."
-tab: "business"
-domain: "d365-fno"
+name: D365 Data Migration
+slug: d365-data-migration
+description: Plan and execute D365 F&O data migration — data entities, DIXF packages, cutover strategy, and validation patterns.
+tab: business
+domain: d365-fno
 industry_vertical: null
-difficulty: "intermediate"
-source_type: "ragnar-custom"
-tags: ["d365-fno", "data-migration", "dixf", "implementation", "cutover"]
-version: "1.0"
-icon_emoji: "📦"
+difficulty: intermediate
+source_type: ragnar-custom
+tags: "[\"d365-fno\", \"data-migration\", \"dixf\", \"implementation\", \"cutover\"]"
+version: 1.0.1
+icon_emoji: 📦
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
-learning_path: "d365-fno-path"
+author: ragnar
+learning_path: d365-fno-path
 learning_path_position: 8
-prerequisites: ["d365-navigation-fundamentals"]
+prerequisites: "[\"d365-navigation-fundamentals\"]"
 references:
-  - title: "Data management and integration in D365"
-    url: "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities"
-  - title: "Data import/export framework (DIXF)"
-    url: "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job"
+  - "title: "Data management and integration in D365"
+  - "title: "Data import/export framework (DIXF)"
+requires: D365 F&O MCP Server
+mcp_tools:
+  - "d365-fno-mcp"
+  - "dataverse-mcp"
 ---
+
 
 # D365 Data Migration
 
@@ -126,3 +129,29 @@ After each entity import, run validation:
 **Sample review:** Manually review 5-10% of imported records — spot check that the data looks correct.
 
 **Automated validation queries:** Write SQL/OData queries that compare critical aggregates between source and D365.
+
+## Trigger Phrases
+
+- "How do I d365 data migration"
+- "Help me with d365 data migration in D365"
+- "Check d365 data migration"
+- "Analyze d365 data migration"
+- "Show me d365 data migration status"
+
+## Quick Example
+
+> See `d365-data-migration-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

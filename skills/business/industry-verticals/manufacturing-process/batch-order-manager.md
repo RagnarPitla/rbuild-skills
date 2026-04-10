@@ -1,26 +1,28 @@
 ---
-name: "Batch Order Manager"
-slug: "batch-order-manager"
-description: "Manage pharmaceutical and process manufacturing batch orders — potency adjustments, yield tracking, and GxP compliance checkpoints."
-tab: "business"
-domain: "industry-verticals"
-industry_vertical: "manufacturing-process"
-industry_vertical: "manufacturing-process"
-difficulty: "advanced"
-source_type: "ragnar-custom"
-tags: ["manufacturing-process", "batch", "pharmaceutical", "d365", "compliance"]
-version: "1.0"
-icon_emoji: "🧫"
+name: Batch Order Manager
+slug: batch-order-manager
+description: Manage pharmaceutical and process manufacturing batch orders — potency adjustments, yield tracking, and GxP compliance checkpoints.
+tab: business
+domain: industry-verticals
+industry_vertical: manufacturing-process
+difficulty: advanced
+source_type: ragnar-custom
+tags: "[\"manufacturing-process\", \"batch\", \"pharmaceutical\", \"d365\", \"compliance\"]"
+version: 1.0.1
+icon_emoji: 🧫
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "D365 Process Manufacturing"
-    url: "https://learn.microsoft.com/en-us/dynamics365/supply-chain/process-manufacturing/"
+  - "title: "D365 Process Manufacturing"
+requires: D365 F&O MCP Server
+mcp_tools:
+  - "d365-fno-mcp"
 ---
+
 
 # Batch Order Manager
 
@@ -69,3 +71,27 @@ Configure mandatory checkpoints in Dataverse policy table:
 - Second operator verification required for controlled substances
 
 Agent enforces these gates — production cannot advance until checkpoint is satisfied.
+
+## Trigger Phrases
+
+- "Help me with batch order manager"
+- "Batch Order Manager"
+- "How do I batch order manager"
+
+## Quick Example
+
+> See `batch-order-manager-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

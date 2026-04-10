@@ -1,27 +1,30 @@
 ---
-name: "D365 Source to Pay"
-slug: "d365-source-to-pay"
-description: "Configure S2P in D365 — vendor onboarding, purchase requisitions, POs, invoice matching, payment runs, and agent automation patterns."
-tab: "business"
-domain: "d365-fno"
+name: D365 Source to Pay
+slug: d365-source-to-pay
+description: Configure S2P in D365 — vendor onboarding, purchase requisitions, POs, invoice matching, payment runs, and agent automation patterns.
+tab: business
+domain: d365-fno
 industry_vertical: null
-difficulty: "intermediate"
-source_type: "ragnar-custom"
-tags: ["d365-fno", "source-to-pay", "procurement", "accounts-payable", "purchasing"]
-version: "1.0"
-icon_emoji: "🛒"
+difficulty: intermediate
+source_type: ragnar-custom
+tags: "[\"d365-fno\", \"source-to-pay\", \"procurement\", \"accounts-payable\", \"purchasing\"]"
+version: 1.0.1
+icon_emoji: 🛒
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
-learning_path: "d365-fno-path"
+author: ragnar
+learning_path: d365-fno-path
 learning_path_position: 3
-prerequisites: ["d365-navigation-fundamentals"]
+prerequisites: "[\"d365-navigation-fundamentals\"]"
 references:
-  - title: "D365 Supply Chain — Procurement"
-    url: "https://learn.microsoft.com/en-us/dynamics365/supply-chain/procurement/procurement-sourcing-overview"
-  - title: "Accounts payable in D365 Finance"
-    url: "https://learn.microsoft.com/en-us/dynamics365/finance/accounts-payable/accounts-payable"
+  - "title: "D365 Supply Chain — Procurement"
+  - "title: "Accounts payable in D365 Finance"
+requires: D365 F&O MCP Server
+mcp_tools:
+  - "d365-fno-mcp"
+  - "dataverse-mcp"
 ---
+
 
 # D365 Source to Pay
 
@@ -141,3 +144,29 @@ Payment run process:
 **Vendor onboarding agent:** Guides new vendor through data collection (bank account, tax ID, W-9), validates completeness, routes to AP for approval. Reduces onboarding from weeks to days.
 
 **Payment forecast agent:** Reads upcoming payment runs from D365, cash position from treasury, and recommends which invoices to pay early (to capture discounts) vs defer (when cash is tight).
+
+## Trigger Phrases
+
+- "How do I d365 source to pay"
+- "Help me with d365 source to pay in D365"
+- "Check d365 source to pay"
+- "Analyze d365 source to pay"
+- "Show me d365 source to pay status"
+
+## Quick Example
+
+> See `d365-source-to-pay-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

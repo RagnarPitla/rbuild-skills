@@ -1,23 +1,27 @@
 ---
-name: "Planogram Compliance Checker"
-slug: "planogram-compliance-checker"
-description: "Verify store shelf planogram compliance from image data and generate corrective action reports with prioritized fixes."
-tab: "business"
-domain: "industry-verticals"
-industry_vertical: "retail"
-difficulty: "intermediate"
-source_type: "ragnar-custom"
-tags: ["retail", "planogram", "merchandising", "store-ops", "compliance"]
-version: "1.0"
-icon_emoji: "🛒"
+name: Planogram Compliance Checker
+slug: planogram-compliance-checker
+description: Verify store shelf planogram compliance from image data and generate corrective action reports with prioritized fixes.
+tab: business
+domain: industry-verticals
+industry_vertical: retail
+difficulty: intermediate
+source_type: ragnar-custom
+tags: "[\"retail\", \"planogram\", \"merchandising\", \"store-ops\", \"compliance\"]"
+version: 1.0.1
+icon_emoji: 🛒
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
-references: []
+prerequisites: "[]"
+references: "[]"
+requires: D365 F&O MCP Server
+mcp_tools:
+  - "d365-fno-mcp"
 ---
+
 
 # Planogram Compliance Checker
 
@@ -64,3 +68,27 @@ ROUTINE FIXES (next restock):
 ## ROI
 
 Retail studies consistently show 1-3% sales lift from improved planogram compliance. For a store doing $10M/year, that's $100K-$300K in recovered revenue — from better shelf execution.
+
+## Trigger Phrases
+
+- "Help me with planogram compliance checker"
+- "Planogram Compliance Checker"
+- "How do I planogram compliance checker"
+
+## Quick Example
+
+> See `planogram-compliance-checker-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

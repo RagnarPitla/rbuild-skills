@@ -1,25 +1,28 @@
 ---
-name: "Bank Reconciliation Assistant"
-slug: "bank-reconciliation-assistant"
-description: "AI agent for bank statement reconciliation in D365 Finance — auto-match transactions, surface exceptions, and accelerate month-end close."
-tab: "business"
-domain: "industry-verticals"
-industry_vertical: "financial-services"
-difficulty: "intermediate"
-source_type: "ragnar-custom"
-tags: ["financial-services", "bank-reconciliation", "d365", "finance", "month-end"]
-version: "1.0"
-icon_emoji: "🏦"
+name: Bank Reconciliation Assistant
+slug: bank-reconciliation-assistant
+description: AI agent for bank statement reconciliation in D365 Finance — auto-match transactions, surface exceptions, and accelerate month-end close.
+tab: business
+domain: industry-verticals
+industry_vertical: financial-services
+difficulty: intermediate
+source_type: ragnar-custom
+tags: "[\"financial-services\", \"bank-reconciliation\", \"d365\", \"finance\", \"month-end\"]"
+version: 1.0.1
+icon_emoji: 🏦
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "Bank reconciliation in D365 Finance"
-    url: "https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/bank-statement-reconciliation-overview"
+  - "title: "Bank reconciliation in D365 Finance"
+requires: D365 F&O MCP Server
+mcp_tools:
+  - "d365-fno-mcp"
 ---
+
 
 # Bank Reconciliation Assistant
 
@@ -58,3 +61,27 @@ D365 Finance has built-in bank reconciliation (Cash and bank management → Bank
 ## Month-End Impact
 
 A typical $1B company processes 500-2,000 bank transactions per month per account. Manual reconciliation: 4-8 hours per account. With agent-assisted reconciliation: 30-60 minutes per account (review only exceptions).
+
+## Trigger Phrases
+
+- "Help me with bank reconciliation assistant"
+- "Bank Reconciliation Assistant"
+- "How do I bank reconciliation assistant"
+
+## Quick Example
+
+> See `bank-reconciliation-assistant-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

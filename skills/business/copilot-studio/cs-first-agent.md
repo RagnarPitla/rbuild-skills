@@ -1,25 +1,30 @@
 ---
-name: "Your First Copilot Studio Agent"
-slug: "cs-first-agent"
-description: "Build your first Copilot Studio agent in 30 minutes — from blank canvas to published, working agent."
-tab: "business"
-domain: "copilot-studio"
+name: Your First Copilot Studio Agent
+slug: cs-first-agent
+description: Build your first Copilot Studio agent in 30 minutes — from blank canvas to published, working agent.
+tab: business
+domain: copilot-studio
 industry_vertical: null
-difficulty: "starter"
-source_type: "ragnar-custom"
-tags: ["copilot-studio", "beginner", "getting-started", "agent-building"]
-version: "1.0"
-icon_emoji: "🤖"
+difficulty: starter
+source_type: ragnar-custom
+tags: "[\"copilot-studio\", \"beginner\", \"getting-started\", \"agent-building\"]"
+version: 1.0.1
+icon_emoji: 🤖
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
-learning_path: "copilot-studio-path"
+author: ragnar
+learning_path: copilot-studio-path
 learning_path_position: 1
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "Microsoft Copilot Studio Docs"
-    url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/"
+  - "title: "Microsoft Copilot Studio Docs"
+requires: Copilot Studio VS Code Extension
+mcp_tools:
+  - "copilot-studio:manage-agent"
+  - "copilot-studio:validate"
+  - "copilot-studio:chat-directline"
 ---
+
 
 # Your First Copilot Studio Agent
 
@@ -71,3 +76,27 @@ Click **Publish** → **Publish**. Takes 1-2 minutes. Your agent is now live.
 - No system instructions → unpredictable behavior
 - Too many topics too soon → build one, test it, then expand
 - Forgetting to republish after changes → edits don't go live until published
+
+## Trigger Phrases
+
+- "Help me with your first copilot studio agent"
+- "Your First Copilot Studio Agent"
+- "How do I your first copilot studio agent"
+
+## Quick Example
+
+> See `cs-first-agent-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

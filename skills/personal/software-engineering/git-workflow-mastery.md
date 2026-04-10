@@ -1,27 +1,28 @@
 ---
-name: "Git Workflow Mastery"
-slug: "git-workflow-mastery"
-description: "Practical Git workflows — branching strategies, PR conventions, commit messages, rebase vs merge, and conflict resolution."
-tab: "personal"
-domain: "software-engineering"
+name: Git Workflow Mastery
+slug: git-workflow-mastery
+description: Practical Git workflows — branching strategies, PR conventions, commit messages, rebase vs merge, and conflict resolution.
+tab: personal
+domain: software-engineering
 industry_vertical: null
-difficulty: "starter"
-source_type: "ragnar-curated"
-tags: ["git", "workflow", "branching", "commit", "pr", "collaboration"]
-version: "1.0"
-icon_emoji: "🌿"
+difficulty: starter
+source_type: ragnar-curated
+tags: "[\"git\", \"workflow\", \"branching\", \"commit\", \"pr\", \"collaboration\"]"
+version: 1.0.1
+icon_emoji: 🌿
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "Conventional Commits Specification"
-    url: "https://www.conventionalcommits.org/"
-  - title: "GitHub Flow Guide"
-    url: "https://docs.github.com/en/get-started/quickstart/github-flow"
+  - "title: "Conventional Commits Specification"
+  - "title: "GitHub Flow Guide"
+requires: None
+mcp_tools: []
 ---
+
 
 # Git Workflow Mastery
 
@@ -177,3 +178,27 @@ git bisect good v1.0
 git stash push -m "wip: feature xyz"
 git stash pop
 ```
+
+## Trigger Phrases
+
+- "Help me with git workflow mastery"
+- "Git Workflow Mastery"
+- "How do I git workflow mastery"
+
+## Quick Example
+
+> See `git-workflow-mastery-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

@@ -1,25 +1,29 @@
 ---
-name: "YouTube Script"
-slug: "youtube-script"
-description: "Write YouTube scripts for tech thought leadership — the hook formula, 3-shift structure, B-roll cues, and what makes AI topics click."
-tab: "personal"
-domain: "content-creation"
+name: YouTube Script
+slug: youtube-script
+description: Write YouTube scripts for tech thought leadership — the hook formula, 3-shift structure, B-roll cues, and what makes AI topics click.
+tab: personal
+domain: content-creation
 industry_vertical: null
-difficulty: "intermediate"
-source_type: "ragnar-custom"
-tags: ["youtube", "script", "content-creation", "video", "thought-leadership"]
-version: "1.0"
-icon_emoji: "🎬"
+difficulty: intermediate
+source_type: ragnar-custom
+tags: "[\"youtube\", \"script\", \"content-creation\", \"video\", \"thought-leadership\"]"
+version: 1.0.1
+icon_emoji: 🎬
 is_coming_soon: false
 is_featured: true
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "Ragnar's YouTube Channel"
-    url: "https://www.youtube.com/@RagnarPitla"
+  - "title: "Ragnar's YouTube Channel"
+requires: fal.ai MCP or OpenRouter
+mcp_tools:
+  - "fal-ai-mcp"
+  - "openrouter"
 ---
+
 
 # YouTube Script
 
@@ -122,3 +126,27 @@ Specificity always beats generality. "How to build a D365 procurement agent that
 [Value summary — 1 sentence]
 [Next video recommendation]
 ```
+
+## Trigger Phrases
+
+- "Help me with youtube script"
+- "YouTube Script"
+- "How do I youtube script"
+
+## Quick Example
+
+> See `youtube-script-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

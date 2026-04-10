@@ -1,25 +1,28 @@
 ---
-name: "Production Capacity Planner"
-slug: "capacity-planner"
-description: "AI agent for production capacity analysis — work center loads, bottleneck identification, and capacity leveling recommendations in D365."
-tab: "business"
-domain: "industry-verticals"
-industry_vertical: "manufacturing-discrete"
-difficulty: "advanced"
-source_type: "ragnar-custom"
-tags: ["manufacturing", "capacity", "production", "scheduling", "d365"]
-version: "1.0"
-icon_emoji: "⚖️"
+name: Production Capacity Planner
+slug: capacity-planner
+description: AI agent for production capacity analysis — work center loads, bottleneck identification, and capacity leveling recommendations in D365.
+tab: business
+domain: industry-verticals
+industry_vertical: manufacturing-discrete
+difficulty: advanced
+source_type: ragnar-custom
+tags: "[\"manufacturing\", \"capacity\", \"production\", \"scheduling\", \"d365\"]"
+version: 1.0.1
+icon_emoji: ⚖️
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "D365 Production Capacity Planning"
-    url: "https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/capacity-planning"
+  - "title: "D365 Production Capacity Planning"
+requires: D365 F&O MCP Server
+mcp_tools:
+  - "d365-fno-mcp"
 ---
+
 
 # Production Capacity Planner
 
@@ -72,3 +75,27 @@ Store capacity planning rules in Dataverse:
 - Alternative work center mappings
 
 When business rules change, update the Dataverse table — not the agent.
+
+## Trigger Phrases
+
+- "Help me with production capacity planner"
+- "Production Capacity Planner"
+- "How do I production capacity planner"
+
+## Quick Example
+
+> See `capacity-planner-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

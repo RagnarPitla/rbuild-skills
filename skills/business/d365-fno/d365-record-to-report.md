@@ -1,27 +1,30 @@
 ---
-name: "D365 Record to Report"
-slug: "d365-record-to-report"
-description: "Configure the R2R process in D365 Finance — chart of accounts, journal posting, period close, financial reporting, and agent patterns."
-tab: "business"
-domain: "d365-fno"
+name: D365 Record to Report
+slug: d365-record-to-report
+description: Configure the R2R process in D365 Finance — chart of accounts, journal posting, period close, financial reporting, and agent patterns.
+tab: business
+domain: d365-fno
 industry_vertical: null
-difficulty: "intermediate"
-source_type: "ragnar-custom"
-tags: ["d365-fno", "record-to-report", "finance", "general-ledger", "period-close"]
-version: "1.0"
-icon_emoji: "📒"
+difficulty: intermediate
+source_type: ragnar-custom
+tags: "[\"d365-fno\", \"record-to-report\", \"finance\", \"general-ledger\", \"period-close\"]"
+version: 1.0.1
+icon_emoji: 📒
 is_coming_soon: false
 is_featured: true
-author: "ragnar"
-learning_path: "d365-fno-path"
+author: ragnar
+learning_path: d365-fno-path
 learning_path_position: 2
-prerequisites: ["d365-navigation-fundamentals"]
+prerequisites: "[\"d365-navigation-fundamentals\"]"
 references:
-  - title: "D365 Finance — General Ledger"
-    url: "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/general-ledger"
-  - title: "Financial period close in D365"
-    url: "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-period-close-workspace"
+  - "title: "D365 Finance — General Ledger"
+  - "title: "Financial period close in D365"
+requires: D365 F&O MCP Server
+mcp_tools:
+  - "d365-fno-mcp"
+  - "dataverse-mcp"
 ---
+
 
 # D365 Record to Report
 
@@ -156,3 +159,29 @@ R2R is rich territory for AI agents:
 | Income statement | Financial reporting | Revenue and expenses by period |
 | Cash flow | Financial reporting | Cash sources and uses |
 | Budget vs actual | Budgeting module | Variance reporting |
+
+## Trigger Phrases
+
+- "How do I d365 record to report"
+- "Help me with d365 record to report in D365"
+- "Check d365 record to report"
+- "Analyze d365 record to report"
+- "Show me d365 record to report status"
+
+## Quick Example
+
+> See `d365-record-to-report-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

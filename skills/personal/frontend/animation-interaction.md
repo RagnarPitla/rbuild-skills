@@ -1,29 +1,31 @@
 ---
-name: "Animation & Interaction Patterns"
-slug: "animation-interaction"
-description: "Build performant UI animations with Framer Motion, CSS transitions, GSAP, and the View Transitions API — with 60fps performance budgets."
-tab: "personal"
-domain: "frontend"
+name: Animation & Interaction Patterns
+slug: animation-interaction
+description: Build performant UI animations with Framer Motion, CSS transitions, GSAP, and the View Transitions API — with 60fps performance budgets.
+tab: personal
+domain: frontend
 industry_vertical: null
-difficulty: "intermediate"
-source_type: "ragnar-curated"
-tags: ["animation", "framer-motion", "css", "interaction", "performance", "ux"]
-version: "1.0"
-icon_emoji: "✨"
+difficulty: intermediate
+source_type: ragnar-curated
+tags: "[\"animation\", \"framer-motion\", \"css\", \"interaction\", \"performance\", \"ux\"]"
+version: 1.0.1
+icon_emoji: ✨
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "Framer Motion Documentation"
-    url: "https://www.framer.com/motion/"
-  - title: "View Transitions API — MDN"
-    url: "https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API"
-  - title: "CSS Animations — MDN"
-    url: "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations"
+  - "title: "Framer Motion Documentation"
+  - "title: "View Transitions API — MDN"
+  - "title: "CSS Animations — MDN"
+requires: None (Figma MCP optional)
+mcp_tools:
+  - "playwright-mcp"
+  - "figma-mcp"
 ---
+
 
 # Animation & Interaction Patterns
 
@@ -198,3 +200,27 @@ const animation = prefersReducedMotion ? {} : { y: 20, opacity: 0 };
 ```
 
 Always respect `prefers-reduced-motion`. Some users have vestibular disorders where motion causes real physical discomfort.
+
+## Trigger Phrases
+
+- "Help me with animation & interaction patterns"
+- "Animation & Interaction Patterns"
+- "How do I animation & interaction patterns"
+
+## Quick Example
+
+> See `animation-interaction-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

@@ -1,25 +1,28 @@
 ---
-name: "Carrier Relationship Management"
-slug: "carrier-relationship-management"
-description: "Manage carrier portfolios, rate negotiations, performance tracking, and carrier selection optimization in D365 Transportation."
-tab: "business"
-domain: "industry-verticals"
-industry_vertical: "distribution-logistics"
-difficulty: "advanced"
-source_type: "ragnar-custom"
-tags: ["logistics", "carrier", "freight", "d365", "transportation"]
-version: "1.0"
-icon_emoji: "🚛"
+name: Carrier Relationship Management
+slug: carrier-relationship-management
+description: Manage carrier portfolios, rate negotiations, performance tracking, and carrier selection optimization in D365 Transportation.
+tab: business
+domain: industry-verticals
+industry_vertical: distribution-logistics
+difficulty: advanced
+source_type: ragnar-custom
+tags: "[\"logistics\", \"carrier\", \"freight\", \"d365\", \"transportation\"]"
+version: 1.0.1
+icon_emoji: 🚛
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "D365 Transportation Management"
-    url: "https://learn.microsoft.com/en-us/dynamics365/supply-chain/transportation/transportation-management-overview"
+  - "title: "D365 Transportation Management"
+requires: D365 F&O MCP Server
+mcp_tools:
+  - "d365-fno-mcp"
 ---
+
 
 # Carrier Relationship Management
 
@@ -80,3 +83,27 @@ Output: Ranked carrier recommendations with rate and estimated transit time
 - Carrier APIs: real-time rate quotes (where available)
 - Claims system: damage and shortage claim data
 - Market rate benchmarks: external rate intelligence service
+
+## Trigger Phrases
+
+- "Help me with carrier relationship management"
+- "Carrier Relationship Management"
+- "How do I carrier relationship management"
+
+## Quick Example
+
+> See `carrier-relationship-management-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

@@ -1,27 +1,29 @@
 ---
-name: "Fine-Tuning Workflow"
-slug: "fine-tuning-workflow"
-description: "End-to-end fine-tuning pipeline — dataset curation, format conversion, training configuration, evaluation, and when NOT to fine-tune."
-tab: "personal"
-domain: "ai-agent-dev"
+name: Fine-Tuning Workflow
+slug: fine-tuning-workflow
+description: End-to-end fine-tuning pipeline — dataset curation, format conversion, training configuration, evaluation, and when NOT to fine-tune.
+tab: personal
+domain: ai-agent-dev
 industry_vertical: null
-difficulty: "advanced"
-source_type: "ragnar-custom"
-tags: ["fine-tuning", "llm", "training", "dataset", "ml"]
-version: "1.0"
-icon_emoji: "🎯"
+difficulty: advanced
+source_type: ragnar-custom
+tags: "[\"fine-tuning\", \"llm\", \"training\", \"dataset\", \"ml\"]"
+version: 1.0.1
+icon_emoji: 🎯
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: ["prompt-engineering-101", "rag-patterns"]
+prerequisites: "[\"prompt-engineering-101\", \"rag-patterns\"]"
 references:
-  - title: "OpenAI Fine-Tuning Guide"
-    url: "https://platform.openai.com/docs/guides/fine-tuning"
-  - title: "Anthropic Model Context Protocol"
-    url: "https://docs.anthropic.com/en/docs/claude-code/mcp"
+  - "title: "OpenAI Fine-Tuning Guide"
+  - "title: "Anthropic Model Context Protocol"
+requires: Claude API
+mcp_tools:
+  - "claude-api"
 ---
+
 
 # Fine-Tuning Workflow
 
@@ -124,3 +126,27 @@ Compare fine-tuned model vs base model on your validation set:
 - **Version management:** Keep training data versioned. If model degrades, you can retrain.
 - **Monitoring:** Track quality metrics in production. Fine-tuned models can drift.
 - **Fallback:** Always have the base model (with good prompt) as fallback if fine-tuned model fails.
+
+## Trigger Phrases
+
+- "Help me with fine-tuning workflow"
+- "Fine-Tuning Workflow"
+- "How do I fine-tuning workflow"
+
+## Quick Example
+
+> See `fine-tuning-workflow-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

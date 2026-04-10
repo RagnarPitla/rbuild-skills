@@ -1,27 +1,29 @@
 ---
-name: "Lease Accounting Assistant"
-slug: "lease-accounting-assistant"
-description: "Calculate lease liability and ROU asset values under IFRS 16 and ASC 842 — amortization schedules, journal entries, and remeasurement."
-tab: "business"
-domain: "industry-verticals"
-industry_vertical: "financial-services"
-difficulty: "advanced"
-source_type: "ragnar-custom"
-tags: ["financial-services", "lease-accounting", "ifrs16", "asc842", "d365", "compliance"]
-version: "1.0"
-icon_emoji: "📑"
+name: Lease Accounting Assistant
+slug: lease-accounting-assistant
+description: Calculate lease liability and ROU asset values under IFRS 16 and ASC 842 — amortization schedules, journal entries, and remeasurement.
+tab: business
+domain: industry-verticals
+industry_vertical: financial-services
+difficulty: advanced
+source_type: ragnar-custom
+tags: "[\"financial-services\", \"lease-accounting\", \"ifrs16\", \"asc842\", \"d365\", \"compliance\"]"
+version: 1.0.1
+icon_emoji: 📑
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "IFRS 16 Leases"
-    url: "https://www.ifrs.org/issued-standards/list-of-standards/ifrs-16-leases/"
-  - title: "ASC 842 Lease Accounting — FASB"
-    url: "https://fasb.org/page/PageContent?pageId=/standards/asu-2016-02.html"
+  - "title: "IFRS 16 Leases"
+  - "title: "ASC 842 Lease Accounting — FASB"
+requires: D365 F&O MCP Server
+mcp_tools:
+  - "d365-fno-mcp"
 ---
+
 
 # Lease Accounting Assistant
 
@@ -97,3 +99,27 @@ D365 Finance has a built-in Asset Leasing module. The agent:
 | Operating lease P&L | Front-loaded (IFRS 16) | Straight-line (ASC 842) |
 
 This difference means the same lease looks different on an IFRS vs US GAAP income statement — something the agent flags when producing reports for multi-jurisdiction entities.
+
+## Trigger Phrases
+
+- "Help me with lease accounting assistant"
+- "Lease Accounting Assistant"
+- "How do I lease accounting assistant"
+
+## Quick Example
+
+> See `lease-accounting-assistant-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

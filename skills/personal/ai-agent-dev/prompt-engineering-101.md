@@ -1,25 +1,28 @@
 ---
-name: "Prompt Engineering 101"
-slug: "prompt-engineering-101"
-description: "The fundamentals of prompt engineering — system prompts, chain-of-thought, few-shot examples, and the mistakes that kill quality."
-tab: "personal"
-domain: "ai-agent-dev"
+name: Prompt Engineering 101
+slug: prompt-engineering-101
+description: The fundamentals of prompt engineering — system prompts, chain-of-thought, few-shot examples, and the mistakes that kill quality.
+tab: personal
+domain: ai-agent-dev
 industry_vertical: null
-difficulty: "starter"
-source_type: "ragnar-custom"
-tags: ["prompting", "llm", "system-prompts", "beginner", "claude"]
-version: "1.0"
-icon_emoji: "✏️"
+difficulty: starter
+source_type: ragnar-custom
+tags: "[\"prompting\", \"llm\", \"system-prompts\", \"beginner\", \"claude\"]"
+version: 1.0.1
+icon_emoji: ✏️
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "Anthropic Prompt Engineering Guide"
-    url: "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
+  - "title: "Anthropic Prompt Engineering Guide"
+requires: Claude API
+mcp_tools:
+  - "claude-api"
 ---
+
 
 # Prompt Engineering 101
 
@@ -105,3 +108,27 @@ Before shipping a prompt:
 - [ ] What happens with malicious input?
 - [ ] What happens when the model doesn't know the answer?
 - [ ] Is the format exactly what downstream code expects?
+
+## Trigger Phrases
+
+- "Help me with prompt engineering 101"
+- "Prompt Engineering 101"
+- "How do I prompt engineering 101"
+
+## Quick Example
+
+> See `prompt-engineering-101-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

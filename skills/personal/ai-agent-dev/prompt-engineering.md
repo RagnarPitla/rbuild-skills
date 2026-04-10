@@ -1,27 +1,29 @@
 ---
-name: "Prompt Engineering"
-slug: "prompt-engineering"
-description: "Structured prompt design — system prompts, chain-of-thought, few-shot examples, XML tags, and anti-patterns to eliminate."
-tab: "personal"
-domain: "ai-agent-dev"
+name: Prompt Engineering
+slug: prompt-engineering
+description: Structured prompt design — system prompts, chain-of-thought, few-shot examples, XML tags, and anti-patterns to eliminate.
+tab: personal
+domain: ai-agent-dev
 industry_vertical: null
-difficulty: "intermediate"
-source_type: "ragnar-custom"
-tags: ["prompting", "chain-of-thought", "few-shot", "system-prompts", "llm"]
-version: "1.0"
-icon_emoji: "✏️"
+difficulty: intermediate
+source_type: ragnar-custom
+tags: "[\"prompting\", \"chain-of-thought\", \"few-shot\", \"system-prompts\", \"llm\"]"
+version: 1.0.1
+icon_emoji: ✏️
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "Anthropic Prompt Engineering Guide"
-    url: "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
-  - title: "Anthropic Prompt Library"
-    url: "https://docs.anthropic.com/en/prompt-library/"
+  - "title: "Anthropic Prompt Engineering Guide"
+  - "title: "Anthropic Prompt Library"
+requires: Claude API
+mcp_tools:
+  - "claude-api"
 ---
+
 
 # Prompt Engineering
 
@@ -130,3 +132,27 @@ For agents: keep temperature at 0-0.3. Predictability over creativity.
 **Negative-only constraints**: "Don't mention competitors" (the model thinks about competitors). Instead: "When pricing comes up, focus on our own product value."
 
 **Prompt injection vulnerability**: Never interpolate untrusted user input directly into system prompts. Separate user input clearly from your instructions.
+
+## Trigger Phrases
+
+- "Help me with prompt engineering"
+- "Prompt Engineering"
+- "How do I prompt engineering"
+
+## Quick Example
+
+> See `prompt-engineering-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

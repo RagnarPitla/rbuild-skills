@@ -1,27 +1,29 @@
 ---
-name: "GxP Compliance Checker"
-slug: "gxp-compliance-checker"
-description: "Validate manufacturing and quality records against GxP requirements — batch release, deviation detection, and audit readiness."
-tab: "business"
-domain: "industry-verticals"
-industry_vertical: "healthcare"
-difficulty: "advanced"
-source_type: "ragnar-custom"
-tags: ["healthcare", "gxp", "gmp", "compliance", "pharmaceutical", "regulated", "batch"]
-version: "1.0"
-icon_emoji: "🧬"
+name: GxP Compliance Checker
+slug: gxp-compliance-checker
+description: Validate manufacturing and quality records against GxP requirements — batch release, deviation detection, and audit readiness.
+tab: business
+domain: industry-verticals
+industry_vertical: healthcare
+difficulty: advanced
+source_type: ragnar-custom
+tags: "[\"healthcare\", \"gxp\", \"gmp\", \"compliance\", \"pharmaceutical\", \"regulated\", \"batch\"]"
+version: 1.0.1
+icon_emoji: 🧬
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "FDA 21 CFR Part 211 — GMP for Finished Pharmaceuticals"
-    url: "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-C/part-211"
-  - title: "FDA 21 CFR Part 11 — Electronic Records"
-    url: "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-11"
+  - "title: "FDA 21 CFR Part 211 — GMP for Finished Pharmaceuticals"
+  - "title: "FDA 21 CFR Part 11 — Electronic Records"
+requires: D365 F&O MCP Server
+mcp_tools:
+  - "d365-fno-mcp"
 ---
+
 
 # GxP Compliance Checker
 
@@ -80,3 +82,27 @@ Before a regulatory inspection, the agent generates:
 6. **Equipment maintenance status:** All equipment with current calibration and PM
 
 Regulators look for exactly these data points. Having them ready instantly demonstrates control.
+
+## Trigger Phrases
+
+- "Help me with gxp compliance checker"
+- "GxP Compliance Checker"
+- "How do I gxp compliance checker"
+
+## Quick Example
+
+> See `gxp-compliance-checker-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

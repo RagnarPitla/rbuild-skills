@@ -1,25 +1,30 @@
 ---
-name: "Agentic Enterprise Blueprint"
-slug: "agentic-enterprise-blueprint"
-description: "Ragnar's framework for making your company agentic — how to identify agent opportunities, sequence the rollout, and measure success."
-tab: "business"
-domain: "enterprise-ai"
+name: Agentic Enterprise Blueprint
+slug: agentic-enterprise-blueprint
+description: Ragnar's framework for making your company agentic — how to identify agent opportunities, sequence the rollout, and measure success.
+tab: business
+domain: enterprise-ai
 industry_vertical: null
-difficulty: "advanced"
-source_type: "ragnar-custom"
-tags: ["enterprise-ai", "agentic-erp", "strategy", "transformation", "framework"]
-version: "1.0"
-icon_emoji: "🗺️"
+difficulty: advanced
+source_type: ragnar-custom
+tags: "[\"enterprise-ai\", \"agentic-erp\", \"strategy\", \"transformation\", \"framework\"]"
+version: 1.0.1
+icon_emoji: 🗺️
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
-learning_path: "enterprise-ai-path"
+author: ragnar
+learning_path: enterprise-ai-path
 learning_path_position: 5
-prerequisites: ["agent-first-thinking", "agentic-erp-intro"]
+prerequisites: "[\"agent-first-thinking\", \"agentic-erp-intro\"]"
 references:
-  - title: "Ragnar Pitla on LinkedIn"
-    url: "https://www.linkedin.com/in/ragnarpitla/"
+  - "title: "Ragnar Pitla on LinkedIn"
+requires: Copilot Studio, Dataverse MCP
+mcp_tools:
+  - "copilot-studio-mcp"
+  - "dataverse-mcp"
+  - "d365-fno-mcp"
 ---
+
 
 # Agentic Enterprise Blueprint
 
@@ -129,3 +134,27 @@ Payback Period = Implementation Cost / Annual Value
 ```
 
 Typical first agents: 3-6 month payback. Subsequent agents with shared infrastructure: 1-2 month payback.
+
+## Trigger Phrases
+
+- "Help me with agentic enterprise blueprint"
+- "Agentic Enterprise Blueprint"
+- "How do I agentic enterprise blueprint"
+
+## Quick Example
+
+> See `agentic-enterprise-blueprint-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

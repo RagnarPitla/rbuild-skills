@@ -1,25 +1,28 @@
 ---
-name: "Budget vs Actual Analyzer"
-slug: "budget-vs-actual-analyzer"
-description: "Analyze budget variances in D365 Finance — identify top drivers, generate natural-language explanations, and flag items needing action."
-tab: "business"
-domain: "industry-verticals"
-industry_vertical: "financial-services"
-difficulty: "intermediate"
-source_type: "ragnar-custom"
-tags: ["financial-services", "budget", "variance", "d365", "management-reporting"]
-version: "1.0"
-icon_emoji: "📊"
+name: Budget vs Actual Analyzer
+slug: budget-vs-actual-analyzer
+description: Analyze budget variances in D365 Finance — identify top drivers, generate natural-language explanations, and flag items needing action.
+tab: business
+domain: industry-verticals
+industry_vertical: financial-services
+difficulty: intermediate
+source_type: ragnar-custom
+tags: "[\"financial-services\", \"budget\", \"variance\", \"d365\", \"management-reporting\"]"
+version: 1.0.1
+icon_emoji: 📊
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "Budgeting in D365 Finance"
-    url: "https://learn.microsoft.com/en-us/dynamics365/finance/budgeting/budgeting-overview"
+  - "title: "Budgeting in D365 Finance"
+requires: D365 F&O MCP Server
+mcp_tools:
+  - "d365-fno-mcp"
 ---
+
 
 # Budget vs Actual Analyzer
 
@@ -86,3 +89,27 @@ Store materiality thresholds in Dataverse:
 - Percentage threshold: flag variances over X%
 - Trend threshold: flag accounts deteriorating over 3+ months
 - Accounts always flagged regardless of size (e.g., legal expenses, executive comp)
+
+## Trigger Phrases
+
+- "Help me with budget vs actual analyzer"
+- "Budget vs Actual Analyzer"
+- "How do I budget vs actual analyzer"
+
+## Quick Example
+
+> See `budget-vs-actual-analyzer-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

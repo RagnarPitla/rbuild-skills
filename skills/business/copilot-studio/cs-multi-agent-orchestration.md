@@ -1,25 +1,30 @@
 ---
-name: "Copilot Studio Multi-Agent Orchestration"
-slug: "cs-multi-agent-orchestration"
-description: "Design parent/child agent architecture with description-based routing, context passing, and the Niyam pattern for enterprise agents."
-tab: "business"
-domain: "copilot-studio"
+name: Copilot Studio Multi-Agent Orchestration
+slug: cs-multi-agent-orchestration
+description: Design parent/child agent architecture with description-based routing, context passing, and the Niyam pattern for enterprise agents.
+tab: business
+domain: copilot-studio
 industry_vertical: null
-difficulty: "advanced"
-source_type: "ragnar-custom"
-tags: ["copilot-studio", "multi-agent", "orchestration", "parent-child", "enterprise"]
-version: "1.0"
-icon_emoji: "🕸️"
+difficulty: advanced
+source_type: ragnar-custom
+tags: "[\"copilot-studio\", \"multi-agent\", \"orchestration\", \"parent-child\", \"enterprise\"]"
+version: 1.0.1
+icon_emoji: 🕸️
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
-learning_path: "copilot-studio-path"
+author: ragnar
+learning_path: copilot-studio-path
 learning_path_position: 10
-prerequisites: ["cs-first-agent", "cs-topic-basics"]
+prerequisites: "[\"cs-first-agent\", \"cs-topic-basics\"]"
 references:
-  - title: "Multi-agent orchestration in Copilot Studio"
-    url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-hand-off"
+  - "title: "Multi-agent orchestration in Copilot Studio"
+requires: Copilot Studio VS Code Extension
+mcp_tools:
+  - "copilot-studio:manage-agent"
+  - "copilot-studio:validate"
+  - "copilot-studio:chat-directline"
 ---
+
 
 # Copilot Studio Multi-Agent Orchestration
 
@@ -87,3 +92,27 @@ Always pass: user identity, department, any context from the parent conversation
 ## Adding the Niyam Pattern
 
 For enterprise agents, add policy-driven routing on top: instead of hardcoding routing rules in agent instructions, store them in Dataverse. The agent reads policies at runtime, enabling business users to change routing without touching the agent. See the [Niyam Pattern Explained](../enterprise-ai/niyam-pattern-explained.md) skill.
+
+## Trigger Phrases
+
+- "Help me with copilot studio multi-agent orchestration"
+- "Copilot Studio Multi-Agent Orchestration"
+- "How do I copilot studio multi-agent orchestration"
+
+## Quick Example
+
+> See `cs-multi-agent-orchestration-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

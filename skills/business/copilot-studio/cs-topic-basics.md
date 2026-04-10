@@ -1,25 +1,30 @@
 ---
-name: "Copilot Studio Topic Basics"
-slug: "cs-topic-basics"
-description: "Build well-structured topics — trigger phrases, question nodes, conditions, variables, and the anti-patterns to avoid."
-tab: "business"
-domain: "copilot-studio"
+name: Copilot Studio Topic Basics
+slug: cs-topic-basics
+description: Build well-structured topics — trigger phrases, question nodes, conditions, variables, and the anti-patterns to avoid.
+tab: business
+domain: copilot-studio
 industry_vertical: null
-difficulty: "starter"
-source_type: "ragnar-custom"
-tags: ["copilot-studio", "topics", "conversation-design", "beginner"]
-version: "1.0"
-icon_emoji: "💬"
+difficulty: starter
+source_type: ragnar-custom
+tags: "[\"copilot-studio\", \"topics\", \"conversation-design\", \"beginner\"]"
+version: 1.0.1
+icon_emoji: 💬
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
-learning_path: "copilot-studio-path"
+author: ragnar
+learning_path: copilot-studio-path
 learning_path_position: 2
-prerequisites: ["cs-first-agent"]
+prerequisites: "[\"cs-first-agent\"]"
 references:
-  - title: "Create and edit topics"
-    url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics"
+  - "title: "Create and edit topics"
+requires: Copilot Studio VS Code Extension
+mcp_tools:
+  - "copilot-studio:manage-agent"
+  - "copilot-studio:validate"
+  - "copilot-studio:chat-directline"
 ---
+
 
 # Copilot Studio Topic Basics
 
@@ -105,3 +110,21 @@ Always add a catch-all branch. Users will say unexpected things.
 **No confirmation step** — for any action (submit, approve, update), always confirm before executing.
 
 **Missing error handling** — what happens if the Power Automate action fails? Add an error branch.
+
+## Quick Example
+
+> See `cs-topic-basics-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

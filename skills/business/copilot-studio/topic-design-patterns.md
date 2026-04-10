@@ -1,25 +1,30 @@
 ---
-name: "Topic Design Patterns"
-slug: "topic-design-patterns"
-description: "Design well-structured Copilot Studio topics with trigger phrases, branching, variable scoping, and anti-patterns to avoid."
-tab: "business"
-domain: "copilot-studio"
+name: Topic Design Patterns
+slug: topic-design-patterns
+description: Design well-structured Copilot Studio topics with trigger phrases, branching, variable scoping, and anti-patterns to avoid.
+tab: business
+domain: copilot-studio
 industry_vertical: null
-difficulty: "starter"
-source_type: "ragnar-custom"
-tags: ["copilot-studio", "topics", "conversation-design", "branching"]
-version: "1.0"
-icon_emoji: "💬"
+difficulty: starter
+source_type: ragnar-custom
+tags: "[\"copilot-studio\", \"topics\", \"conversation-design\", \"branching\"]"
+version: 1.0.1
+icon_emoji: 💬
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
-learning_path: "copilot-studio-path"
+author: ragnar
+learning_path: copilot-studio-path
 learning_path_position: 2
-prerequisites: ["your-first-copilot-studio-agent"]
+prerequisites: "[\"your-first-copilot-studio-agent\"]"
 references:
-  - title: "Create and edit topics in Microsoft Copilot Studio"
-    url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics"
+  - "title: "Create and edit topics in Microsoft Copilot Studio"
+requires: Copilot Studio VS Code Extension
+mcp_tools:
+  - "copilot-studio:manage-agent"
+  - "copilot-studio:validate"
+  - "copilot-studio:chat-directline"
 ---
+
 
 # Topic Design Patterns
 
@@ -119,3 +124,21 @@ After building a topic, test these scenarios:
 2. Unexpected input at each Question node
 3. Each conditional branch
 4. What happens if the user types "cancel" mid-flow
+
+## Quick Example
+
+> See `topic-design-patterns-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

@@ -1,27 +1,29 @@
 ---
-name: "What is MCP?"
-slug: "mcp-what-is-it"
-description: "Model Context Protocol explained for business audiences — what it is, why it matters, and how it connects AI agents to enterprise systems."
-tab: "business"
-domain: "mcp"
+name: What is MCP?
+slug: mcp-what-is-it
+description: Model Context Protocol explained for business audiences — what it is, why it matters, and how it connects AI agents to enterprise systems.
+tab: business
+domain: mcp
 industry_vertical: null
-difficulty: "starter"
-source_type: "ragnar-custom"
-tags: ["mcp", "model-context-protocol", "enterprise-ai", "explainer", "d365"]
-version: "1.0"
-icon_emoji: "🔌"
+difficulty: starter
+source_type: ragnar-custom
+tags: "[\"mcp\", \"model-context-protocol\", \"enterprise-ai\", \"explainer\", \"d365\"]"
+version: 1.0.1
+icon_emoji: 🔌
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
-learning_path: "mcp-path"
+author: ragnar
+learning_path: mcp-path
 learning_path_position: 1
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "Model Context Protocol Specification"
-    url: "https://modelcontextprotocol.io"
-  - title: "Anthropic MCP Documentation"
-    url: "https://docs.anthropic.com/en/docs/claude-code/mcp"
+  - "title: "Model Context Protocol Specification"
+  - "title: "Anthropic MCP Documentation"
+requires: Node.js TypeScript SDK
+mcp_tools:
+  - "mcp-server-sdk"
 ---
+
 
 # What is MCP?
 
@@ -104,3 +106,27 @@ It's becoming the standard. Building an MCP server today means your system is co
 - You need one specific integration for one specific agent
 
 For most enterprise teams: both. MCP for data access, Power Automate for actions.
+
+## Trigger Phrases
+
+- "Help me with what is mcp?"
+- "What is MCP?"
+- "How do I what is mcp?"
+
+## Quick Example
+
+> See `mcp-what-is-it-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

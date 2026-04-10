@@ -1,25 +1,28 @@
 ---
-name: "Project Quotation Validator"
-slug: "apa-review"
-description: "Validate professional services project quotations — margin analysis, resource fit, scope risk assessment, and approval routing."
-tab: "business"
-domain: "industry-verticals"
-industry_vertical: "professional-services"
-difficulty: "advanced"
-source_type: "ragnar-custom"
-tags: ["professional-services", "quotation", "project", "d365", "validation"]
-version: "1.0"
-icon_emoji: "📋"
+name: Project Quotation Validator
+slug: apa-review
+description: Validate professional services project quotations — margin analysis, resource fit, scope risk assessment, and approval routing.
+tab: business
+domain: industry-verticals
+industry_vertical: professional-services
+difficulty: advanced
+source_type: ragnar-custom
+tags: "[\"professional-services\", \"quotation\", \"project\", \"d365\", \"validation\"]"
+version: 1.0.1
+icon_emoji: 📋
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "D365 Project Operations"
-    url: "https://learn.microsoft.com/en-us/dynamics365/project-operations/"
+  - "title: "D365 Project Operations"
+requires: D365 F&O MCP Server
+mcp_tools:
+  - "d365-fno-mcp"
 ---
+
 
 # Project Quotation Validator
 
@@ -84,3 +87,27 @@ Reads from:
 - Skill catalog (resource qualifications)
 - Historical project margins (for similar projects)
 - Policy tables (Niyam pattern for thresholds)
+
+## Trigger Phrases
+
+- "Help me with project quotation validator"
+- "Project Quotation Validator"
+- "How do I project quotation validator"
+
+## Quick Example
+
+> See `apa-review-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

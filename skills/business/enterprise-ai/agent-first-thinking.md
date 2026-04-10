@@ -1,25 +1,30 @@
 ---
-name: "Agent-First Thinking for Enterprise"
-slug: "agent-first-thinking"
-description: "The paradigm shift from automation-first to agent-first enterprise design — when to build an agent vs a flow vs a report."
-tab: "business"
-domain: "enterprise-ai"
+name: Agent-First Thinking for Enterprise
+slug: agent-first-thinking
+description: The paradigm shift from automation-first to agent-first enterprise design — when to build an agent vs a flow vs a report.
+tab: business
+domain: enterprise-ai
 industry_vertical: null
-difficulty: "starter"
-source_type: "ragnar-custom"
-tags: ["enterprise-ai", "agentic-erp", "strategy", "architecture", "decision-framework"]
-version: "1.0"
-icon_emoji: "🧠"
+difficulty: starter
+source_type: ragnar-custom
+tags: "[\"enterprise-ai\", \"agentic-erp\", \"strategy\", \"architecture\", \"decision-framework\"]"
+version: 1.0.1
+icon_emoji: 🧠
 is_coming_soon: false
 is_featured: true
-author: "ragnar"
-learning_path: "enterprise-ai-path"
+author: ragnar
+learning_path: enterprise-ai-path
 learning_path_position: 1
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "Agentic AI in Enterprise - Microsoft Research"
-    url: "https://www.microsoft.com/en-us/research/project/ai-agents/"
+  - "title: "Agentic AI in Enterprise - Microsoft Research"
+requires: Copilot Studio, Dataverse MCP
+mcp_tools:
+  - "copilot-studio-mcp"
+  - "dataverse-mcp"
+  - "d365-fno-mcp"
 ---
+
 
 # Agent-First Thinking for Enterprise
 
@@ -99,3 +104,27 @@ When your business changes — and it will — RPA bots need reprogramming. Agen
 5. **Start narrow, expand** — build the agent for one exception type first, prove value, expand
 
 The biggest mistake in enterprise AI is building too broadly too fast. Pick one specific, high-value scenario. Nail it. Then expand.
+
+## Trigger Phrases
+
+- "Help me with agent-first thinking for enterprise"
+- "Agent-First Thinking for Enterprise"
+- "How do I agent-first thinking for enterprise"
+
+## Quick Example
+
+> See `agent-first-thinking-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

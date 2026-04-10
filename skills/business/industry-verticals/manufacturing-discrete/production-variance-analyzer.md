@@ -1,25 +1,28 @@
 ---
-name: "Production Variance Analyzer"
-slug: "production-variance-analyzer"
-description: "Analyze production order variances — material, quantity, routing, and scrap — with ranked root causes and corrective action recommendations."
-tab: "business"
-domain: "industry-verticals"
-industry_vertical: "manufacturing-discrete"
-difficulty: "advanced"
-source_type: "ragnar-custom"
-tags: ["manufacturing", "variance", "production", "d365", "cost", "quality"]
-version: "1.0"
-icon_emoji: "📊"
+name: Production Variance Analyzer
+slug: production-variance-analyzer
+description: Analyze production order variances — material, quantity, routing, and scrap — with ranked root causes and corrective action recommendations.
+tab: business
+domain: industry-verticals
+industry_vertical: manufacturing-discrete
+difficulty: advanced
+source_type: ragnar-custom
+tags: "[\"manufacturing\", \"variance\", \"production\", \"d365\", \"cost\", \"quality\"]"
+version: 1.0.1
+icon_emoji: 📊
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "D365 Production Cost Analysis"
-    url: "https://learn.microsoft.com/en-us/dynamics365/supply-chain/cost-management/production-order-cost-analysis"
+  - "title: "D365 Production Cost Analysis"
+requires: D365 F&O MCP Server
+mcp_tools:
+  - "d365-fno-mcp"
 ---
+
 
 # Production Variance Analyzer
 
@@ -93,3 +96,27 @@ The agent tracks variances over time and identifies patterns:
 - Variances that correlate with specific operators → training opportunity
 - Variances that correlate with specific material lots → supplier quality issue
 - Variances that appear after equipment maintenance → maintenance quality issue
+
+## Trigger Phrases
+
+- "Help me with production variance analyzer"
+- "Production Variance Analyzer"
+- "How do I production variance analyzer"
+
+## Quick Example
+
+> See `production-variance-analyzer-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

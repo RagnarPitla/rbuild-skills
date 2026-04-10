@@ -1,27 +1,28 @@
 ---
-name: "Caching Strategies"
-slug: "caching-strategies"
-description: "Cache at every layer — CDN, Redis, query cache, HTTP headers — with invalidation patterns and the thundering herd solution."
-tab: "personal"
-domain: "backend-data"
+name: Caching Strategies
+slug: caching-strategies
+description: Cache at every layer — CDN, Redis, query cache, HTTP headers — with invalidation patterns and the thundering herd solution.
+tab: personal
+domain: backend-data
 industry_vertical: null
-difficulty: "intermediate"
-source_type: "ragnar-custom"
-tags: ["caching", "redis", "cdn", "performance", "invalidation"]
-version: "1.0"
-icon_emoji: "⚡"
+difficulty: intermediate
+source_type: ragnar-custom
+tags: "[\"caching\", \"redis\", \"cdn\", \"performance\", \"invalidation\"]"
+version: 1.0.1
+icon_emoji: ⚡
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "Redis Documentation"
-    url: "https://redis.io/docs/"
-  - title: "MDN Cache-Control"
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control"
+  - "title: "Redis Documentation"
+  - "title: "MDN Cache-Control"
+requires: None
+mcp_tools: []
 ---
+
 
 # Caching Strategies
 
@@ -133,3 +134,27 @@ Simpler fix: Add random jitter to TTLs so not all entries expire simultaneously.
 - Real-time inventory/availability — staleness has real business consequences
 - Anything that changes more frequently than its TTL — you'll serve stale data more than fresh
 - Authentication tokens — security risk
+
+## Trigger Phrases
+
+- "Help me with caching strategies"
+- "Caching Strategies"
+- "How do I caching strategies"
+
+## Quick Example
+
+> See `caching-strategies-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

@@ -1,25 +1,29 @@
 ---
-name: "Dataverse Table Design"
-slug: "dataverse-table-design"
-description: "Design Dataverse tables — standard vs custom, column types, relationships, alternate keys, and naming conventions for agent workloads."
-tab: "business"
-domain: "power-platform"
+name: Dataverse Table Design
+slug: dataverse-table-design
+description: Design Dataverse tables — standard vs custom, column types, relationships, alternate keys, and naming conventions for agent workloads.
+tab: business
+domain: power-platform
 industry_vertical: null
-difficulty: "starter"
-source_type: "ragnar-custom"
-tags: ["dataverse", "power-platform", "table-design", "low-code", "agents"]
-version: "1.0"
-icon_emoji: "🗄️"
+difficulty: starter
+source_type: ragnar-custom
+tags: "[\"dataverse\", \"power-platform\", \"table-design\", \"low-code\", \"agents\"]"
+version: 1.0.1
+icon_emoji: 🗄️
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
-learning_path: "power-platform-path"
+author: ragnar
+learning_path: power-platform-path
 learning_path_position: 1
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "Create and edit tables in Dataverse"
-    url: "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/create-edit-entities-portal"
+  - "title: "Create and edit tables in Dataverse"
+requires: Dataverse MCP, Power Automate
+mcp_tools:
+  - "dataverse-mcp"
+  - "power-automate"
 ---
+
 
 # Dataverse Table Design
 
@@ -103,3 +107,27 @@ For any new Dataverse table:
 - [ ] Searchable marked on filter columns
 - [ ] Description filled in on table and all columns
 - [ ] Security role configured (who can read/write)
+
+## Trigger Phrases
+
+- "Help me with dataverse table design"
+- "Dataverse Table Design"
+- "How do I dataverse table design"
+
+## Quick Example
+
+> See `dataverse-table-design-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

@@ -1,25 +1,28 @@
 ---
-name: "Encumbrance Manager"
-slug: "encumbrance-manager"
-description: "Track budget encumbrances against appropriations in D365 Public Sector — flag over-encumbrances, generate status reports, and support year-end carry-forwards."
-tab: "business"
-domain: "industry-verticals"
-industry_vertical: "public-sector"
-difficulty: "intermediate"
-source_type: "ragnar-custom"
-tags: ["public-sector", "encumbrance", "budget", "appropriations", "government", "d365"]
-version: "1.0"
-icon_emoji: "🏛️"
+name: Encumbrance Manager
+slug: encumbrance-manager
+description: Track budget encumbrances against appropriations in D365 Public Sector — flag over-encumbrances, generate status reports, and support year-end carry-forwards.
+tab: business
+domain: industry-verticals
+industry_vertical: public-sector
+difficulty: intermediate
+source_type: ragnar-custom
+tags: "[\"public-sector\", \"encumbrance\", \"budget\", \"appropriations\", \"government\", \"d365\"]"
+version: 1.0.1
+icon_emoji: 🏛️
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "D365 Public Sector — Budget Control"
-    url: "https://learn.microsoft.com/en-us/dynamics365/finance/public-sector/budget-control-overview"
+  - "title: "D365 Public Sector — Budget Control"
+requires: D365 F&O MCP Server
+mcp_tools:
+  - "d365-fno-mcp"
 ---
+
 
 # Encumbrance Manager
 
@@ -105,3 +108,27 @@ D365 Finance has built-in budget control for public sector. The agent extends it
 - Natural language budget status queries
 - Consolidated department reporting
 - Year-end workflow automation
+
+## Trigger Phrases
+
+- "Help me with encumbrance manager"
+- "Encumbrance Manager"
+- "How do I encumbrance manager"
+
+## Quick Example
+
+> See `encumbrance-manager-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

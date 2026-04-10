@@ -1,25 +1,27 @@
 ---
-name: "Conference Talk Preparation"
-slug: "conference-talk-prep"
-description: "Structure a 30-45 minute conference talk on AI/enterprise topics — abstract, narrative arc, demo plan, slide outline, and speaker notes."
-tab: "business"
-domain: "content-business"
+name: Conference Talk Preparation
+slug: conference-talk-prep
+description: Structure a 30-45 minute conference talk on AI/enterprise topics — abstract, narrative arc, demo plan, slide outline, and speaker notes.
+tab: business
+domain: content-business
 industry_vertical: null
-difficulty: "intermediate"
-source_type: "ragnar-custom"
-tags: ["conference", "presentation", "speaking", "content", "thought-leadership"]
-version: "1.0"
-icon_emoji: "🎤"
+difficulty: intermediate
+source_type: ragnar-custom
+tags: "[\"conference\", \"presentation\", \"speaking\", \"content\", \"thought-leadership\"]"
+version: 1.0.1
+icon_emoji: 🎤
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "Ragnar Pitla LinkedIn"
-    url: "https://www.linkedin.com/in/ragnarpitla/"
+  - "title: "Ragnar Pitla LinkedIn"
+requires: None
+mcp_tools: []
 ---
+
 
 # Conference Talk Preparation
 
@@ -95,3 +97,27 @@ Questions you don't know: "That's a great question. I don't have data on that �
 Hostile questions: "I can see why you'd think that. In my experience [evidence]. Others may have different experiences."
 
 Never make up an answer to look smart. Admitting you don't know something increases credibility.
+
+## Trigger Phrases
+
+- "Help me with conference talk preparation"
+- "Conference Talk Preparation"
+- "How do I conference talk preparation"
+
+## Quick Example
+
+> See `conference-talk-prep-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

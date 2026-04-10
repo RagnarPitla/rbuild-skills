@@ -1,27 +1,31 @@
 ---
-name: "Agentic ERP — Introduction"
-slug: "agentic-erp-intro"
-description: "What is Agentic ERP? How AI agents become first-class participants in D365 processes — not add-ons, but native participants."
-tab: "business"
-domain: "enterprise-ai"
+name: Agentic ERP — Introduction
+slug: agentic-erp-intro
+description: What is Agentic ERP? How AI agents become first-class participants in D365 processes — not add-ons, but native participants.
+tab: business
+domain: enterprise-ai
 industry_vertical: null
-difficulty: "starter"
-source_type: "ragnar-custom"
-tags: ["agentic-erp", "enterprise-ai", "d365", "strategy", "copilot-studio"]
-version: "1.0"
-icon_emoji: "🏗️"
+difficulty: starter
+source_type: ragnar-custom
+tags: "[\"agentic-erp\", \"enterprise-ai\", \"d365\", \"strategy\", \"copilot-studio\"]"
+version: 1.0.1
+icon_emoji: 🏗️
 is_coming_soon: false
 is_featured: true
-author: "ragnar"
-learning_path: "enterprise-ai-path"
+author: ragnar
+learning_path: enterprise-ai-path
 learning_path_position: 2
-prerequisites: ["agent-first-thinking"]
+prerequisites: "[\"agent-first-thinking\"]"
 references:
-  - title: "Microsoft AI in Dynamics 365"
-    url: "https://learn.microsoft.com/en-us/dynamics365/ai/"
-  - title: "Ragnar Pitla on LinkedIn"
-    url: "https://www.linkedin.com/in/ragnarpitla/"
+  - "title: "Microsoft AI in Dynamics 365"
+  - "title: "Ragnar Pitla on LinkedIn"
+requires: Copilot Studio, Dataverse MCP
+mcp_tools:
+  - "copilot-studio-mcp"
+  - "dataverse-mcp"
+  - "d365-fno-mcp"
 ---
+
 
 # Agentic ERP — Introduction
 
@@ -121,3 +125,27 @@ Agentic ERP in Microsoft's ecosystem uses:
 | **Azure OpenAI** | The reasoning engine (built into Copilot Studio) |
 
 You don't need to build most of this. Microsoft provides the platform. You configure the agent and write the business logic.
+
+## Trigger Phrases
+
+- "Help me with agentic erp — introduction"
+- "Agentic ERP — Introduction"
+- "How do I agentic erp — introduction"
+
+## Quick Example
+
+> See `agentic-erp-intro-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

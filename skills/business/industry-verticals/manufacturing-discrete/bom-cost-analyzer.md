@@ -1,25 +1,28 @@
 ---
-name: "BOM Cost Analyzer"
-slug: "bom-cost-analyzer"
-description: "Analyze Bill of Materials cost rollups in D365 — identify variance drivers, surface top cost reduction opportunities, and model material substitutions."
-tab: "business"
-domain: "industry-verticals"
-industry_vertical: "manufacturing-discrete"
-difficulty: "intermediate"
-source_type: "ragnar-custom"
-tags: ["manufacturing", "bom", "cost", "d365", "variance", "profitability"]
-version: "1.0"
-icon_emoji: "🏭"
+name: BOM Cost Analyzer
+slug: bom-cost-analyzer
+description: Analyze Bill of Materials cost rollups in D365 — identify variance drivers, surface top cost reduction opportunities, and model material substitutions.
+tab: business
+domain: industry-verticals
+industry_vertical: manufacturing-discrete
+difficulty: intermediate
+source_type: ragnar-custom
+tags: "[\"manufacturing\", \"bom\", \"cost\", \"d365\", \"variance\", \"profitability\"]"
+version: 1.0.1
+icon_emoji: 🏭
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "D365 Cost Management"
-    url: "https://learn.microsoft.com/en-us/dynamics365/supply-chain/cost-management/cost-management-home-page"
+  - "title: "D365 Cost Management"
+requires: D365 F&O MCP Server
+mcp_tools:
+  - "d365-fno-mcp"
 ---
+
 
 # BOM Cost Analyzer
 
@@ -92,3 +95,27 @@ Reads from:
 - `InventItemPriceEntity` — standard costs by costing version
 - `ProdCostTransEntity` — actual production costs by order
 - `VendPurchPriceHistoryEntity` — supplier pricing history
+
+## Trigger Phrases
+
+- "Help me with bom cost analyzer"
+- "BOM Cost Analyzer"
+- "How do I bom cost analyzer"
+
+## Quick Example
+
+> See `bom-cost-analyzer-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

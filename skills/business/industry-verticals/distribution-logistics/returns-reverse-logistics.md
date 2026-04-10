@@ -1,25 +1,28 @@
 ---
-name: "Returns & Reverse Logistics"
-slug: "returns-reverse-logistics"
-description: "Automate returns authorization, receipt inspection, disposition decisions, and refund/credit processing in D365 Commerce and SCM."
-tab: "business"
-domain: "industry-verticals"
-industry_vertical: "distribution-logistics"
-difficulty: "intermediate"
-source_type: "ragnar-custom"
-tags: ["logistics", "returns", "reverse-logistics", "d365", "commerce"]
-version: "1.0"
-icon_emoji: "↩️"
+name: Returns & Reverse Logistics
+slug: returns-reverse-logistics
+description: Automate returns authorization, receipt inspection, disposition decisions, and refund/credit processing in D365 Commerce and SCM.
+tab: business
+domain: industry-verticals
+industry_vertical: distribution-logistics
+difficulty: intermediate
+source_type: ragnar-custom
+tags: "[\"logistics\", \"returns\", \"reverse-logistics\", \"d365\", \"commerce\"]"
+version: 1.0.1
+icon_emoji: ↩️
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "D365 Sales Returns"
-    url: "https://learn.microsoft.com/en-us/dynamics365/supply-chain/sales-marketing/sales-returns"
+  - "title: "D365 Sales Returns"
+requires: D365 F&O MCP Server
+mcp_tools:
+  - "d365-fno-mcp"
 ---
+
 
 # Returns & Reverse Logistics
 
@@ -94,3 +97,27 @@ Monthly agent report:
 - Refurbishment yield rate
 - Net recovery rate per returned unit
 - Cost of returns processing per RMA
+
+## Trigger Phrases
+
+- "Help me with returns & reverse logistics"
+- "Returns & Reverse Logistics"
+- "How do I returns & reverse logistics"
+
+## Quick Example
+
+> See `returns-reverse-logistics-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

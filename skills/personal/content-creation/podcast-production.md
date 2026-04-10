@@ -1,25 +1,29 @@
 ---
-name: "Podcast Production"
-slug: "podcast-production"
-description: "End-to-end podcast workflow for In Our AI Era — episode planning, lane splits, show notes from transcripts, and clip extraction."
-tab: "personal"
-domain: "content-creation"
+name: Podcast Production
+slug: podcast-production
+description: End-to-end podcast workflow for In Our AI Era — episode planning, lane splits, show notes from transcripts, and clip extraction.
+tab: personal
+domain: content-creation
 industry_vertical: null
-difficulty: "intermediate"
-source_type: "ragnar-custom"
-tags: ["podcast", "content", "show-notes", "in-our-ai-era", "video"]
-version: "1.0"
-icon_emoji: "🎙️"
+difficulty: intermediate
+source_type: ragnar-custom
+tags: "[\"podcast\", \"content\", \"show-notes\", \"in-our-ai-era\", \"video\"]"
+version: 1.0.1
+icon_emoji: 🎙️
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "In Our AI Era — YouTube"
-    url: "https://www.youtube.com/@RagnarPitla"
+  - "title: "In Our AI Era — YouTube"
+requires: fal.ai MCP or OpenRouter
+mcp_tools:
+  - "fal-ai-mcp"
+  - "openrouter"
 ---
+
 
 # Podcast Production
 
@@ -122,3 +126,27 @@ After each episode, identify 3-5 clips:
 Full episode: [link]
 #AI #EnterpriseAI #[topic]
 ```
+
+## Trigger Phrases
+
+- "Help me with podcast production"
+- "Podcast Production"
+- "How do I podcast production"
+
+## Quick Example
+
+> See `podcast-production-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

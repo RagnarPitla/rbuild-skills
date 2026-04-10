@@ -1,27 +1,28 @@
 ---
-name: "Refactoring Patterns"
-slug: "refactoring-patterns"
-description: "Safe refactoring techniques — extract method, replace conditional, introduce parameter object, and how to refactor without breaking things."
-tab: "personal"
-domain: "software-engineering"
+name: Refactoring Patterns
+slug: refactoring-patterns
+description: Safe refactoring techniques — extract method, replace conditional, introduce parameter object, and how to refactor without breaking things.
+tab: personal
+domain: software-engineering
 industry_vertical: null
-difficulty: "intermediate"
-source_type: "ragnar-curated"
-tags: ["refactoring", "code-quality", "patterns", "clean-code", "design"]
-version: "1.0"
-icon_emoji: "🔧"
+difficulty: intermediate
+source_type: ragnar-curated
+tags: "[\"refactoring\", \"code-quality\", \"patterns\", \"clean-code\", \"design\"]"
+version: 1.0.1
+icon_emoji: 🔧
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: ["code-review", "tdd-workflow"]
+prerequisites: "[\"code-review\", \"tdd-workflow\"]"
 references:
-  - title: "Refactoring by Martin Fowler"
-    url: "https://refactoring.com/"
-  - title: "Refactoring Catalog"
-    url: "https://refactoring.com/catalog/"
+  - "title: "Refactoring by Martin Fowler"
+  - "title: "Refactoring Catalog"
+requires: None
+mcp_tools: []
 ---
+
 
 # Refactoring Patterns
 
@@ -184,3 +185,27 @@ if (canViewContent(user, subscription)) {
 - When the refactoring would require changing multiple systems simultaneously
 
 **The Boy Scout Rule:** Leave the code cleaner than you found it — but only the code you're already touching. Don't refactor code you're not changing.
+
+## Trigger Phrases
+
+- "Help me with refactoring patterns"
+- "Refactoring Patterns"
+- "How do I refactoring patterns"
+
+## Quick Example
+
+> See `refactoring-patterns-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

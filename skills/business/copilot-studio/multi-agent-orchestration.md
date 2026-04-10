@@ -1,27 +1,31 @@
 ---
-name: "Multi-Agent Orchestration (Parent-Child)"
-slug: "multi-agent-orchestration"
-description: "Design parent/child agent architecture in Copilot Studio with description-based routing, context passing, and the Niyam pattern."
-tab: "business"
-domain: "copilot-studio"
+name: Multi-Agent Orchestration (Parent-Child)
+slug: multi-agent-orchestration
+description: Design parent/child agent architecture in Copilot Studio with description-based routing, context passing, and the Niyam pattern.
+tab: business
+domain: copilot-studio
 industry_vertical: null
-difficulty: "advanced"
-source_type: "ragnar-custom"
-tags: ["copilot-studio", "multi-agent", "orchestration", "parent-child", "niyam"]
-version: "1.0"
-icon_emoji: "🕸️"
+difficulty: advanced
+source_type: ragnar-custom
+tags: "[\"copilot-studio\", \"multi-agent\", \"orchestration\", \"parent-child\", \"niyam\"]"
+version: 1.0.1
+icon_emoji: 🕸️
 is_coming_soon: false
 is_featured: true
-author: "ragnar"
-learning_path: "copilot-studio-path"
+author: ragnar
+learning_path: copilot-studio-path
 learning_path_position: 10
-prerequisites: ["your-first-copilot-studio-agent", "topic-design-patterns"]
+prerequisites: "[\"your-first-copilot-studio-agent\", \"topic-design-patterns\"]"
 references:
-  - title: "Configure multi-agent orchestration"
-    url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-hand-off"
-  - title: "Connected agents in Copilot Studio"
-    url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/copilot-studio-connected-agents"
+  - "title: "Configure multi-agent orchestration"
+  - "title: "Connected agents in Copilot Studio"
+requires: Copilot Studio VS Code Extension
+mcp_tools:
+  - "copilot-studio:manage-agent"
+  - "copilot-studio:validate"
+  - "copilot-studio:chat-directline"
 ---
+
 
 # Multi-Agent Orchestration (Parent-Child)
 
@@ -121,3 +125,27 @@ This means you can change routing logic by updating a Dataverse record — no ag
 **Context loss** — if users feel like they're starting over when the child picks up, you're not passing enough context. Always pass user identity and conversation summary.
 
 **Slow response** — the parent LLM call + child invocation adds latency. Keep parent topics lean and minimize the number of routing hops.
+
+## Trigger Phrases
+
+- "Help me with multi-agent orchestration (parent-child)"
+- "Multi-Agent Orchestration (Parent-Child)"
+- "How do I multi-agent orchestration (parent-child)"
+
+## Quick Example
+
+> See `multi-agent-orchestration-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

@@ -1,25 +1,28 @@
 ---
-name: "Supply Chain Agent Introduction"
-slug: "supply-chain-agent-intro"
-description: "Where AI agents add the most value in supply chain — demand planning, inventory optimization, logistics, and where to start."
-tab: "business"
-domain: "supply-chain"
+name: Supply Chain Agent Introduction
+slug: supply-chain-agent-intro
+description: Where AI agents add the most value in supply chain — demand planning, inventory optimization, logistics, and where to start.
+tab: business
+domain: supply-chain
 industry_vertical: null
-difficulty: "starter"
-source_type: "ragnar-custom"
-tags: ["supply-chain", "d365", "enterprise-ai", "getting-started", "demand-planning"]
-version: "1.0"
-icon_emoji: "🔗"
+difficulty: starter
+source_type: ragnar-custom
+tags: "[\"supply-chain\", \"d365\", \"enterprise-ai\", \"getting-started\", \"demand-planning\"]"
+version: 1.0.1
+icon_emoji: 🔗
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: ["agent-first-thinking"]
+prerequisites: "[\"agent-first-thinking\"]"
 references:
-  - title: "D365 Supply Chain Management"
-    url: "https://learn.microsoft.com/en-us/dynamics365/supply-chain/"
+  - "title: "D365 Supply Chain Management"
+requires: D365 F&O MCP Server
+mcp_tools:
+  - "d365-fno-mcp"
 ---
+
 
 # Supply Chain Agent Introduction
 
@@ -102,3 +105,27 @@ Why:
 - Business user can see the value immediately
 
 See the [Inventory Reorder Advisor](./inventory-reorder-advisor.md) skill for the full implementation.
+
+## Trigger Phrases
+
+- "Help me with supply chain agent introduction"
+- "Supply Chain Agent Introduction"
+- "How do I supply chain agent introduction"
+
+## Quick Example
+
+> See `supply-chain-agent-intro-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

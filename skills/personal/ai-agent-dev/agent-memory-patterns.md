@@ -1,27 +1,29 @@
 ---
-name: "Agent Memory Patterns"
-slug: "agent-memory-patterns"
-description: "Memory architecture for AI agents — the four memory types, implementation patterns, and when to use each for cross-session persistence."
-tab: "personal"
-domain: "ai-agent-dev"
+name: Agent Memory Patterns
+slug: agent-memory-patterns
+description: Memory architecture for AI agents — the four memory types, implementation patterns, and when to use each for cross-session persistence.
+tab: personal
+domain: ai-agent-dev
 industry_vertical: null
-difficulty: "advanced"
-source_type: "ragnar-custom"
-tags: ["agent-memory", "vector-search", "long-term-memory", "persistence", "knowledge-graph"]
-version: "1.0"
-icon_emoji: "🧠"
+difficulty: advanced
+source_type: ragnar-custom
+tags: "[\"agent-memory\", \"vector-search\", \"long-term-memory\", \"persistence\", \"knowledge-graph\"]"
+version: 1.0.1
+icon_emoji: 🧠
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: ["rag-patterns"]
+prerequisites: "[\"rag-patterns\"]"
 references:
-  - title: "LangGraph Memory Concepts"
-    url: "https://langchain-ai.github.io/langgraph/concepts/memory/"
-  - title: "Building AI Agents with Memory — Anthropic"
-    url: "https://www.anthropic.com/research"
+  - "title: "LangGraph Memory Concepts"
+  - "title: "Building AI Agents with Memory — Anthropic"
+requires: Claude API
+mcp_tools:
+  - "claude-api"
 ---
+
 
 # Agent Memory Patterns
 
@@ -169,3 +171,27 @@ def decay_memories(user_id: str):
 | "Remember, I prefer..." | Semantic memory (user preferences) |
 | "The Niyam pattern means..." | Semantic memory (domain knowledge) |
 | "How to submit a PO" | Procedural (agent instructions) |
+
+## Trigger Phrases
+
+- "Help me with agent memory patterns"
+- "Agent Memory Patterns"
+- "How do I agent memory patterns"
+
+## Quick Example
+
+> See `agent-memory-patterns-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-10T05:23:17.361Z",
-  "total": 128,
+  "generated_at": "2026-04-10T05:39:50.894Z",
+  "total": 129,
   "skills": [
     {
       "slug": "case-study-generator",
@@ -12,7 +12,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "📋",
       "is_coming_soon": false,
       "is_featured": false,
@@ -26,6 +26,9 @@
           "url": ""
         }
       ],
+      "requires": "None",
+      "mcp_tools": [],
+      "has_example": false,
       "file_path": "skills/business/content-business/case-study-generator.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/content-business/case-study-generator.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/content-business/case-study-generator.md"
@@ -40,7 +43,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🎤",
       "is_coming_soon": false,
       "is_featured": false,
@@ -54,6 +57,9 @@
           "url": ""
         }
       ],
+      "requires": "None",
+      "mcp_tools": [],
+      "has_example": false,
       "file_path": "skills/business/content-business/conference-talk-prep.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/content-business/conference-talk-prep.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/content-business/conference-talk-prep.md"
@@ -68,7 +74,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "💼",
       "is_coming_soon": false,
       "is_featured": false,
@@ -77,6 +83,9 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "None",
+      "mcp_tools": [],
+      "has_example": false,
       "file_path": "skills/business/content-business/linkedin-article-fav.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/content-business/linkedin-article-fav.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/content-business/linkedin-article-fav.md"
@@ -91,7 +100,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "⚙️",
       "is_coming_soon": false,
       "is_featured": false,
@@ -100,6 +109,13 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "Copilot Studio VS Code Extension",
+      "mcp_tools": [
+        "copilot-studio:manage-agent",
+        "copilot-studio:validate",
+        "copilot-studio:chat-directline"
+      ],
+      "has_example": false,
       "file_path": "skills/business/copilot-studio/cs-agent-creator.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/copilot-studio/cs-agent-creator.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/copilot-studio/cs-agent-creator.md"
@@ -114,7 +130,7 @@
       "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🤖",
       "is_coming_soon": false,
       "is_featured": false,
@@ -128,6 +144,13 @@
           "url": ""
         }
       ],
+      "requires": "Copilot Studio VS Code Extension",
+      "mcp_tools": [
+        "copilot-studio:manage-agent",
+        "copilot-studio:validate",
+        "copilot-studio:chat-directline"
+      ],
+      "has_example": false,
       "file_path": "skills/business/copilot-studio/cs-first-agent.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/copilot-studio/cs-first-agent.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/copilot-studio/cs-first-agent.md"
@@ -142,7 +165,7 @@
       "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "📚",
       "is_coming_soon": false,
       "is_featured": false,
@@ -156,6 +179,13 @@
           "url": ""
         }
       ],
+      "requires": "Copilot Studio VS Code Extension",
+      "mcp_tools": [
+        "copilot-studio:manage-agent",
+        "copilot-studio:validate",
+        "copilot-studio:chat-directline"
+      ],
+      "has_example": false,
       "file_path": "skills/business/copilot-studio/cs-knowledge-sources.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/copilot-studio/cs-knowledge-sources.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/copilot-studio/cs-knowledge-sources.md"
@@ -170,7 +200,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🕸️",
       "is_coming_soon": false,
       "is_featured": false,
@@ -184,6 +214,13 @@
           "url": ""
         }
       ],
+      "requires": "Copilot Studio VS Code Extension",
+      "mcp_tools": [
+        "copilot-studio:manage-agent",
+        "copilot-studio:validate",
+        "copilot-studio:chat-directline"
+      ],
+      "has_example": false,
       "file_path": "skills/business/copilot-studio/cs-multi-agent-orchestration.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/copilot-studio/cs-multi-agent-orchestration.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/copilot-studio/cs-multi-agent-orchestration.md"
@@ -198,7 +235,7 @@
       "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "💬",
       "is_coming_soon": false,
       "is_featured": false,
@@ -212,6 +249,13 @@
           "url": ""
         }
       ],
+      "requires": "Copilot Studio VS Code Extension",
+      "mcp_tools": [
+        "copilot-studio:manage-agent",
+        "copilot-studio:validate",
+        "copilot-studio:chat-directline"
+      ],
+      "has_example": false,
       "file_path": "skills/business/copilot-studio/cs-topic-basics.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/copilot-studio/cs-topic-basics.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/copilot-studio/cs-topic-basics.md"
@@ -226,7 +270,7 @@
       "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "📚",
       "is_coming_soon": false,
       "is_featured": false,
@@ -244,6 +288,13 @@
           "url": ""
         }
       ],
+      "requires": "Copilot Studio VS Code Extension",
+      "mcp_tools": [
+        "copilot-studio:manage-agent",
+        "copilot-studio:validate",
+        "copilot-studio:chat-directline"
+      ],
+      "has_example": false,
       "file_path": "skills/business/copilot-studio/knowledge-source-configuration.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/copilot-studio/knowledge-source-configuration.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/copilot-studio/knowledge-source-configuration.md"
@@ -258,7 +309,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🕸️",
       "is_coming_soon": false,
       "is_featured": true,
@@ -276,6 +327,13 @@
           "url": ""
         }
       ],
+      "requires": "Copilot Studio VS Code Extension",
+      "mcp_tools": [
+        "copilot-studio:manage-agent",
+        "copilot-studio:validate",
+        "copilot-studio:chat-directline"
+      ],
+      "has_example": false,
       "file_path": "skills/business/copilot-studio/multi-agent-orchestration.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/copilot-studio/multi-agent-orchestration.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/copilot-studio/multi-agent-orchestration.md"
@@ -290,7 +348,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🏛️",
       "is_coming_soon": false,
       "is_featured": true,
@@ -299,6 +357,13 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "Copilot Studio VS Code Extension",
+      "mcp_tools": [
+        "copilot-studio:manage-agent",
+        "copilot-studio:validate",
+        "copilot-studio:chat-directline"
+      ],
+      "has_example": false,
       "file_path": "skills/business/copilot-studio/niyam-agent-template.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/copilot-studio/niyam-agent-template.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/copilot-studio/niyam-agent-template.md"
@@ -313,7 +378,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "👷",
       "is_coming_soon": false,
       "is_featured": false,
@@ -322,6 +387,13 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "Copilot Studio VS Code Extension",
+      "mcp_tools": [
+        "copilot-studio:manage-agent",
+        "copilot-studio:validate",
+        "copilot-studio:chat-directline"
+      ],
+      "has_example": false,
       "file_path": "skills/business/copilot-studio/niyam-worker-agent-template.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/copilot-studio/niyam-worker-agent-template.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/copilot-studio/niyam-worker-agent-template.md"
@@ -336,7 +408,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🐣",
       "is_coming_soon": false,
       "is_featured": false,
@@ -345,6 +417,13 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "Copilot Studio VS Code Extension",
+      "mcp_tools": [
+        "copilot-studio:manage-agent",
+        "copilot-studio:validate",
+        "copilot-studio:chat-directline"
+      ],
+      "has_example": false,
       "file_path": "skills/business/copilot-studio/tamagotchi-worker-agent-template.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/copilot-studio/tamagotchi-worker-agent-template.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/copilot-studio/tamagotchi-worker-agent-template.md"
@@ -359,7 +438,7 @@
       "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "💬",
       "is_coming_soon": false,
       "is_featured": false,
@@ -373,6 +452,13 @@
           "url": ""
         }
       ],
+      "requires": "Copilot Studio VS Code Extension",
+      "mcp_tools": [
+        "copilot-studio:manage-agent",
+        "copilot-studio:validate",
+        "copilot-studio:chat-directline"
+      ],
+      "has_example": false,
       "file_path": "skills/business/copilot-studio/topic-design-patterns.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/copilot-studio/topic-design-patterns.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/copilot-studio/topic-design-patterns.md"
@@ -387,7 +473,7 @@
       "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🤖",
       "is_coming_soon": false,
       "is_featured": true,
@@ -405,6 +491,13 @@
           "url": ""
         }
       ],
+      "requires": "Copilot Studio VS Code Extension",
+      "mcp_tools": [
+        "copilot-studio:manage-agent",
+        "copilot-studio:validate",
+        "copilot-studio:chat-directline"
+      ],
+      "has_example": true,
       "file_path": "skills/business/copilot-studio/your-first-copilot-studio-agent.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/copilot-studio/your-first-copilot-studio-agent.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/copilot-studio/your-first-copilot-studio-agent.md"
@@ -419,7 +512,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "📋",
       "is_coming_soon": false,
       "is_featured": false,
@@ -428,6 +521,12 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp",
+        "dataverse-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/d365-fno/axtr-reader.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/d365-fno/axtr-reader.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/d365-fno/axtr-reader.md"
@@ -442,7 +541,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "⚙️",
       "is_coming_soon": false,
       "is_featured": false,
@@ -451,6 +550,12 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp",
+        "dataverse-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/d365-fno/d365-config.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/d365-fno/d365-config.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/d365-fno/d365-config.md"
@@ -465,7 +570,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "📦",
       "is_coming_soon": false,
       "is_featured": false,
@@ -483,6 +588,12 @@
           "url": ""
         }
       ],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp",
+        "dataverse-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/d365-fno/d365-data-migration.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/d365-fno/d365-data-migration.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/d365-fno/d365-data-migration.md"
@@ -497,7 +608,7 @@
       "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🗺️",
       "is_coming_soon": false,
       "is_featured": false,
@@ -515,6 +626,12 @@
           "url": ""
         }
       ],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp",
+        "dataverse-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/d365-fno/d365-navigation-fundamentals.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/d365-fno/d365-navigation-fundamentals.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/d365-fno/d365-navigation-fundamentals.md"
@@ -529,7 +646,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "💰",
       "is_coming_soon": false,
       "is_featured": false,
@@ -547,6 +664,12 @@
           "url": ""
         }
       ],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp",
+        "dataverse-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/d365-fno/d365-order-to-cash.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/d365-fno/d365-order-to-cash.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/d365-fno/d365-order-to-cash.md"
@@ -561,7 +684,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🏭",
       "is_coming_soon": false,
       "is_featured": false,
@@ -575,6 +698,12 @@
           "url": ""
         }
       ],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp",
+        "dataverse-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/d365-fno/d365-plan-to-produce.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/d365-fno/d365-plan-to-produce.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/d365-fno/d365-plan-to-produce.md"
@@ -589,7 +718,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "📒",
       "is_coming_soon": false,
       "is_featured": true,
@@ -607,6 +736,12 @@
           "url": ""
         }
       ],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp",
+        "dataverse-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/d365-fno/d365-record-to-report.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/d365-fno/d365-record-to-report.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/d365-fno/d365-record-to-report.md"
@@ -621,7 +756,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🏗️",
       "is_coming_soon": false,
       "is_featured": false,
@@ -630,6 +765,12 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp",
+        "dataverse-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/d365-fno/d365-solution-builder.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/d365-fno/d365-solution-builder.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/d365-fno/d365-solution-builder.md"
@@ -644,7 +785,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🛒",
       "is_coming_soon": false,
       "is_featured": false,
@@ -662,6 +803,12 @@
           "url": ""
         }
       ],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp",
+        "dataverse-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/d365-fno/d365-source-to-pay.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/d365-fno/d365-source-to-pay.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/d365-fno/d365-source-to-pay.md"
@@ -676,7 +823,7 @@
       "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🧠",
       "is_coming_soon": false,
       "is_featured": true,
@@ -690,6 +837,13 @@
           "url": ""
         }
       ],
+      "requires": "Copilot Studio, Dataverse MCP",
+      "mcp_tools": [
+        "copilot-studio-mcp",
+        "dataverse-mcp",
+        "d365-fno-mcp"
+      ],
+      "has_example": true,
       "file_path": "skills/business/enterprise-ai/agent-first-thinking.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/enterprise-ai/agent-first-thinking.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/enterprise-ai/agent-first-thinking.md"
@@ -704,7 +858,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "📋",
       "is_coming_soon": false,
       "is_featured": false,
@@ -713,6 +867,13 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "Copilot Studio, Dataverse MCP",
+      "mcp_tools": [
+        "copilot-studio-mcp",
+        "dataverse-mcp",
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/enterprise-ai/agent-requirements-planner.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/enterprise-ai/agent-requirements-planner.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/enterprise-ai/agent-requirements-planner.md"
@@ -727,7 +888,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🗺️",
       "is_coming_soon": false,
       "is_featured": false,
@@ -741,6 +902,13 @@
           "url": ""
         }
       ],
+      "requires": "Copilot Studio, Dataverse MCP",
+      "mcp_tools": [
+        "copilot-studio-mcp",
+        "dataverse-mcp",
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/enterprise-ai/agentic-enterprise-blueprint.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/enterprise-ai/agentic-enterprise-blueprint.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/enterprise-ai/agentic-enterprise-blueprint.md"
@@ -755,7 +923,7 @@
       "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🏗️",
       "is_coming_soon": false,
       "is_featured": true,
@@ -773,6 +941,13 @@
           "url": ""
         }
       ],
+      "requires": "Copilot Studio, Dataverse MCP",
+      "mcp_tools": [
+        "copilot-studio-mcp",
+        "dataverse-mcp",
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/enterprise-ai/agentic-erp-intro.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/enterprise-ai/agentic-erp-intro.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/enterprise-ai/agentic-erp-intro.md"
@@ -787,7 +962,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "2.0",
+      "version": "1.0.1",
       "icon_emoji": "🏛️",
       "is_coming_soon": false,
       "is_featured": true,
@@ -809,6 +984,13 @@
           "url": ""
         }
       ],
+      "requires": "Copilot Studio, Dataverse MCP",
+      "mcp_tools": [
+        "copilot-studio-mcp",
+        "dataverse-mcp",
+        "d365-fno-mcp"
+      ],
+      "has_example": true,
       "file_path": "skills/business/enterprise-ai/niyam-pattern-explained.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/enterprise-ai/niyam-pattern-explained.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/enterprise-ai/niyam-pattern-explained.md"
@@ -823,7 +1005,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🚘",
       "is_coming_soon": false,
       "is_featured": false,
@@ -832,6 +1014,11 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/industry-verticals/automotive/automotive-dealer-ops.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/automotive/automotive-dealer-ops.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/automotive/automotive-dealer-ops.md"
@@ -846,7 +1033,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🚗",
       "is_coming_soon": false,
       "is_featured": false,
@@ -855,6 +1042,11 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/industry-verticals/automotive/vin-configuration-validator.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/automotive/vin-configuration-validator.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/automotive/vin-configuration-validator.md"
@@ -869,7 +1061,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🔧",
       "is_coming_soon": false,
       "is_featured": false,
@@ -878,6 +1070,11 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/industry-verticals/automotive/warranty-claim-analyzer.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/automotive/warranty-claim-analyzer.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/automotive/warranty-claim-analyzer.md"
@@ -892,7 +1089,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🚛",
       "is_coming_soon": false,
       "is_featured": false,
@@ -906,6 +1103,11 @@
           "url": ""
         }
       ],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/industry-verticals/distribution-logistics/carrier-relationship-management.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/distribution-logistics/carrier-relationship-management.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/distribution-logistics/carrier-relationship-management.md"
@@ -920,7 +1122,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "↩️",
       "is_coming_soon": false,
       "is_featured": false,
@@ -934,6 +1136,11 @@
           "url": ""
         }
       ],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/industry-verticals/distribution-logistics/returns-reverse-logistics.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/distribution-logistics/returns-reverse-logistics.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/distribution-logistics/returns-reverse-logistics.md"
@@ -948,7 +1155,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🗺️",
       "is_coming_soon": false,
       "is_featured": false,
@@ -962,6 +1169,11 @@
           "url": ""
         }
       ],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/industry-verticals/distribution-logistics/route-optimizer.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/distribution-logistics/route-optimizer.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/distribution-logistics/route-optimizer.md"
@@ -976,7 +1188,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "⚡",
       "is_coming_soon": false,
       "is_featured": false,
@@ -985,6 +1197,11 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/industry-verticals/energy-utilities/energy-procurement.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/energy-utilities/energy-procurement.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/energy-utilities/energy-procurement.md"
@@ -999,7 +1216,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "⚡",
       "is_coming_soon": false,
       "is_featured": false,
@@ -1013,6 +1230,11 @@
           "url": ""
         }
       ],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/industry-verticals/energy-utilities/regulatory-rate-calculator.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/energy-utilities/regulatory-rate-calculator.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/energy-utilities/regulatory-rate-calculator.md"
@@ -1027,7 +1249,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🔍",
       "is_coming_soon": false,
       "is_featured": false,
@@ -1045,6 +1267,11 @@
           "url": ""
         }
       ],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/industry-verticals/financial-services/aml-transaction-screener.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/financial-services/aml-transaction-screener.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/financial-services/aml-transaction-screener.md"
@@ -1059,7 +1286,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🏦",
       "is_coming_soon": false,
       "is_featured": false,
@@ -1073,6 +1300,11 @@
           "url": ""
         }
       ],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/industry-verticals/financial-services/bank-reconciliation-assistant.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/financial-services/bank-reconciliation-assistant.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/financial-services/bank-reconciliation-assistant.md"
@@ -1087,7 +1319,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "📊",
       "is_coming_soon": false,
       "is_featured": false,
@@ -1101,6 +1333,11 @@
           "url": ""
         }
       ],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/industry-verticals/financial-services/budget-vs-actual-analyzer.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/financial-services/budget-vs-actual-analyzer.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/financial-services/budget-vs-actual-analyzer.md"
@@ -1115,7 +1352,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "📑",
       "is_coming_soon": false,
       "is_featured": false,
@@ -1133,6 +1370,11 @@
           "url": ""
         }
       ],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/industry-verticals/financial-services/lease-accounting-assistant.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/financial-services/lease-accounting-assistant.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/financial-services/lease-accounting-assistant.md"
@@ -1147,7 +1389,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🏥",
       "is_coming_soon": false,
       "is_featured": false,
@@ -1161,6 +1403,11 @@
           "url": ""
         }
       ],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/industry-verticals/healthcare/asset-health-monitor.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/healthcare/asset-health-monitor.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/healthcare/asset-health-monitor.md"
@@ -1175,7 +1422,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🧬",
       "is_coming_soon": false,
       "is_featured": false,
@@ -1193,6 +1440,11 @@
           "url": ""
         }
       ],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/industry-verticals/healthcare/gxp-compliance-checker.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/healthcare/gxp-compliance-checker.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/healthcare/gxp-compliance-checker.md"
@@ -1207,7 +1459,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🔬",
       "is_coming_soon": false,
       "is_featured": false,
@@ -1221,6 +1473,11 @@
           "url": ""
         }
       ],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/industry-verticals/healthcare/lot-genealogy-tracker.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/healthcare/lot-genealogy-tracker.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/healthcare/lot-genealogy-tracker.md"
@@ -1235,7 +1492,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🏭",
       "is_coming_soon": false,
       "is_featured": false,
@@ -1249,6 +1506,11 @@
           "url": ""
         }
       ],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/industry-verticals/manufacturing-discrete/bom-cost-analyzer.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/manufacturing-discrete/bom-cost-analyzer.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/manufacturing-discrete/bom-cost-analyzer.md"
@@ -1263,7 +1525,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "⚖️",
       "is_coming_soon": false,
       "is_featured": false,
@@ -1277,6 +1539,11 @@
           "url": ""
         }
       ],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/industry-verticals/manufacturing-discrete/capacity-planner.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/manufacturing-discrete/capacity-planner.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/manufacturing-discrete/capacity-planner.md"
@@ -1291,7 +1558,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "📊",
       "is_coming_soon": false,
       "is_featured": false,
@@ -1305,6 +1572,11 @@
           "url": ""
         }
       ],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/industry-verticals/manufacturing-discrete/production-variance-analyzer.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/manufacturing-discrete/production-variance-analyzer.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/manufacturing-discrete/production-variance-analyzer.md"
@@ -1319,7 +1591,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🧫",
       "is_coming_soon": false,
       "is_featured": false,
@@ -1333,6 +1605,11 @@
           "url": ""
         }
       ],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/industry-verticals/manufacturing-process/batch-order-manager.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/manufacturing-process/batch-order-manager.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/manufacturing-process/batch-order-manager.md"
@@ -1347,7 +1624,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "⚗️",
       "is_coming_soon": false,
       "is_featured": false,
@@ -1361,6 +1638,11 @@
           "url": ""
         }
       ],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/industry-verticals/manufacturing-process/batch-potency-calculator.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/manufacturing-process/batch-potency-calculator.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/manufacturing-process/batch-potency-calculator.md"
@@ -1375,7 +1657,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "📋",
       "is_coming_soon": false,
       "is_featured": false,
@@ -1389,6 +1671,11 @@
           "url": ""
         }
       ],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/industry-verticals/professional-services/apa-review.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/professional-services/apa-review.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/professional-services/apa-review.md"
@@ -1403,7 +1690,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "📈",
       "is_coming_soon": false,
       "is_featured": false,
@@ -1417,6 +1704,11 @@
           "url": ""
         }
       ],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/industry-verticals/professional-services/utilization-optimizer.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/professional-services/utilization-optimizer.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/professional-services/utilization-optimizer.md"
@@ -1431,7 +1723,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🏛️",
       "is_coming_soon": false,
       "is_featured": false,
@@ -1445,6 +1737,11 @@
           "url": ""
         }
       ],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/industry-verticals/public-sector/encumbrance-manager.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/public-sector/encumbrance-manager.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/public-sector/encumbrance-manager.md"
@@ -1459,7 +1756,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "⚖️",
       "is_coming_soon": false,
       "is_featured": false,
@@ -1473,6 +1770,11 @@
           "url": ""
         }
       ],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/industry-verticals/public-sector/public-sector-compliance-agent.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/public-sector/public-sector-compliance-agent.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/public-sector/public-sector-compliance-agent.md"
@@ -1487,7 +1789,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🏷️",
       "is_coming_soon": false,
       "is_featured": false,
@@ -1501,6 +1803,11 @@
           "url": ""
         }
       ],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/industry-verticals/retail/markdown-advisor.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/retail/markdown-advisor.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/retail/markdown-advisor.md"
@@ -1515,7 +1822,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🛒",
       "is_coming_soon": false,
       "is_featured": false,
@@ -1524,6 +1831,11 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/industry-verticals/retail/planogram-compliance-checker.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/retail/planogram-compliance-checker.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/retail/planogram-compliance-checker.md"
@@ -1538,7 +1850,7 @@
       "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🏪",
       "is_coming_soon": false,
       "is_featured": false,
@@ -1547,6 +1859,11 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/industry-verticals/retail/retail-agent-intro.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/retail/retail-agent-intro.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/retail/retail-agent-intro.md"
@@ -1561,7 +1878,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🔨",
       "is_coming_soon": false,
       "is_featured": false,
@@ -1570,6 +1887,11 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "Node.js TypeScript SDK",
+      "mcp_tools": [
+        "mcp-server-sdk"
+      ],
+      "has_example": false,
       "file_path": "skills/business/mcp/build-mcp.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/mcp/build-mcp.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/mcp/build-mcp.md"
@@ -1584,7 +1906,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "⚙️",
       "is_coming_soon": false,
       "is_featured": false,
@@ -1602,6 +1924,11 @@
           "url": ""
         }
       ],
+      "requires": "Node.js TypeScript SDK",
+      "mcp_tools": [
+        "mcp-server-sdk"
+      ],
+      "has_example": false,
       "file_path": "skills/business/mcp/mcp-d365-connector.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/mcp/mcp-d365-connector.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/mcp/mcp-d365-connector.md"
@@ -1616,7 +1943,7 @@
       "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🔌",
       "is_coming_soon": false,
       "is_featured": true,
@@ -1638,6 +1965,11 @@
           "url": ""
         }
       ],
+      "requires": "Node.js TypeScript SDK",
+      "mcp_tools": [
+        "mcp-server-sdk"
+      ],
+      "has_example": true,
       "file_path": "skills/business/mcp/mcp-fundamentals.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/mcp/mcp-fundamentals.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/mcp/mcp-fundamentals.md"
@@ -1652,7 +1984,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🛠️",
       "is_coming_soon": false,
       "is_featured": false,
@@ -1661,6 +1993,11 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "Node.js TypeScript SDK",
+      "mcp_tools": [
+        "mcp-server-sdk"
+      ],
+      "has_example": false,
       "file_path": "skills/business/mcp/mcp-server-patterns.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/mcp/mcp-server-patterns.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/mcp/mcp-server-patterns.md"
@@ -1675,7 +2012,7 @@
       "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🔌",
       "is_coming_soon": false,
       "is_featured": false,
@@ -1693,6 +2030,11 @@
           "url": ""
         }
       ],
+      "requires": "Node.js TypeScript SDK",
+      "mcp_tools": [
+        "mcp-server-sdk"
+      ],
+      "has_example": false,
       "file_path": "skills/business/mcp/mcp-what-is-it.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/mcp/mcp-what-is-it.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/mcp/mcp-what-is-it.md"
@@ -1707,7 +2049,7 @@
       "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🗄️",
       "is_coming_soon": false,
       "is_featured": false,
@@ -1725,6 +2067,12 @@
           "url": ""
         }
       ],
+      "requires": "Dataverse MCP, Power Automate",
+      "mcp_tools": [
+        "dataverse-mcp",
+        "power-automate"
+      ],
+      "has_example": false,
       "file_path": "skills/business/power-platform/dataverse-table-design-for-agents.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/power-platform/dataverse-table-design-for-agents.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/power-platform/dataverse-table-design-for-agents.md"
@@ -1739,7 +2087,7 @@
       "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🗄️",
       "is_coming_soon": false,
       "is_featured": false,
@@ -1753,6 +2101,12 @@
           "url": ""
         }
       ],
+      "requires": "Dataverse MCP, Power Automate",
+      "mcp_tools": [
+        "dataverse-mcp",
+        "power-automate"
+      ],
+      "has_example": false,
       "file_path": "skills/business/power-platform/dataverse-table-design.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/power-platform/dataverse-table-design.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/power-platform/dataverse-table-design.md"
@@ -1767,7 +2121,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "📥",
       "is_coming_soon": false,
       "is_featured": false,
@@ -1776,6 +2130,12 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "Dataverse MCP, Power Automate",
+      "mcp_tools": [
+        "dataverse-mcp",
+        "power-automate"
+      ],
+      "has_example": false,
       "file_path": "skills/business/power-platform/import-skills-to-dataverse.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/power-platform/import-skills-to-dataverse.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/power-platform/import-skills-to-dataverse.md"
@@ -1790,7 +2150,7 @@
       "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "⚡",
       "is_coming_soon": false,
       "is_featured": false,
@@ -1808,6 +2168,12 @@
           "url": ""
         }
       ],
+      "requires": "Dataverse MCP, Power Automate",
+      "mcp_tools": [
+        "dataverse-mcp",
+        "power-automate"
+      ],
+      "has_example": false,
       "file_path": "skills/business/power-platform/power-automate-basics.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/power-platform/power-automate-basics.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/power-platform/power-automate-basics.md"
@@ -1822,7 +2188,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🗄️",
       "is_coming_soon": false,
       "is_featured": false,
@@ -1831,6 +2197,12 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "Dataverse MCP, Power Automate",
+      "mcp_tools": [
+        "dataverse-mcp",
+        "power-automate"
+      ],
+      "has_example": false,
       "file_path": "skills/business/power-platform/skills4dataverse.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/power-platform/skills4dataverse.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/power-platform/skills4dataverse.md"
@@ -1845,7 +2217,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🛃",
       "is_coming_soon": false,
       "is_featured": false,
@@ -1854,6 +2226,11 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/supply-chain/customs-trade-compliance.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/supply-chain/customs-trade-compliance.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/supply-chain/customs-trade-compliance.md"
@@ -1868,7 +2245,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "📦",
       "is_coming_soon": false,
       "is_featured": false,
@@ -1877,6 +2254,11 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/supply-chain/inventory-demand-planning.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/supply-chain/inventory-demand-planning.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/supply-chain/inventory-demand-planning.md"
@@ -1891,7 +2273,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "📦",
       "is_coming_soon": false,
       "is_featured": false,
@@ -1909,6 +2291,11 @@
           "url": ""
         }
       ],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp"
+      ],
+      "has_example": true,
       "file_path": "skills/business/supply-chain/inventory-reorder-advisor.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/supply-chain/inventory-reorder-advisor.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/supply-chain/inventory-reorder-advisor.md"
@@ -1923,7 +2310,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🚚",
       "is_coming_soon": false,
       "is_featured": false,
@@ -1932,6 +2319,11 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/supply-chain/logistics-exception-management.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/supply-chain/logistics-exception-management.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/supply-chain/logistics-exception-management.md"
@@ -1946,7 +2338,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🏭",
       "is_coming_soon": false,
       "is_featured": false,
@@ -1955,6 +2347,11 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/supply-chain/production-scheduling.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/supply-chain/production-scheduling.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/supply-chain/production-scheduling.md"
@@ -1969,7 +2366,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "✅",
       "is_coming_soon": false,
       "is_featured": false,
@@ -1978,6 +2375,11 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/supply-chain/quality-nonconformance.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/supply-chain/quality-nonconformance.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/supply-chain/quality-nonconformance.md"
@@ -1992,7 +2394,7 @@
       "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🔗",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2006,6 +2408,11 @@
           "url": ""
         }
       ],
+      "requires": "D365 F&O MCP Server",
+      "mcp_tools": [
+        "d365-fno-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/business/supply-chain/supply-chain-agent-intro.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/supply-chain/supply-chain-agent-intro.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/supply-chain/supply-chain-agent-intro.md"
@@ -2020,7 +2427,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "📊",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2029,6 +2436,11 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "Claude API",
+      "mcp_tools": [
+        "claude-api"
+      ],
+      "has_example": false,
       "file_path": "skills/personal/ai-agent-dev/agent-eval.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/ai-agent-dev/agent-eval.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/ai-agent-dev/agent-eval.md"
@@ -2043,7 +2455,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🧠",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2061,6 +2473,11 @@
           "url": ""
         }
       ],
+      "requires": "Claude API",
+      "mcp_tools": [
+        "claude-api"
+      ],
+      "has_example": false,
       "file_path": "skills/personal/ai-agent-dev/agent-memory-patterns.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/ai-agent-dev/agent-memory-patterns.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/ai-agent-dev/agent-memory-patterns.md"
@@ -2075,7 +2492,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🔄",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2084,6 +2501,11 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "Claude API",
+      "mcp_tools": [
+        "claude-api"
+      ],
+      "has_example": false,
       "file_path": "skills/personal/ai-agent-dev/autonomous-loops.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/ai-agent-dev/autonomous-loops.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/ai-agent-dev/autonomous-loops.md"
@@ -2098,7 +2520,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "💰",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2107,6 +2529,11 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "Claude API",
+      "mcp_tools": [
+        "claude-api"
+      ],
+      "has_example": false,
       "file_path": "skills/personal/ai-agent-dev/cost-aware-llm-pipeline.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/ai-agent-dev/cost-aware-llm-pipeline.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/ai-agent-dev/cost-aware-llm-pipeline.md"
@@ -2121,7 +2548,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🎯",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2139,6 +2566,11 @@
           "url": ""
         }
       ],
+      "requires": "Claude API",
+      "mcp_tools": [
+        "claude-api"
+      ],
+      "has_example": false,
       "file_path": "skills/personal/ai-agent-dev/fine-tuning-workflow.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/ai-agent-dev/fine-tuning-workflow.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/ai-agent-dev/fine-tuning-workflow.md"
@@ -2153,7 +2585,7 @@
       "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "✏️",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2167,6 +2599,11 @@
           "url": ""
         }
       ],
+      "requires": "Claude API",
+      "mcp_tools": [
+        "claude-api"
+      ],
+      "has_example": false,
       "file_path": "skills/personal/ai-agent-dev/prompt-engineering-101.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/ai-agent-dev/prompt-engineering-101.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/ai-agent-dev/prompt-engineering-101.md"
@@ -2181,7 +2618,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "✏️",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2199,6 +2636,11 @@
           "url": ""
         }
       ],
+      "requires": "Claude API",
+      "mcp_tools": [
+        "claude-api"
+      ],
+      "has_example": false,
       "file_path": "skills/personal/ai-agent-dev/prompt-engineering.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/ai-agent-dev/prompt-engineering.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/ai-agent-dev/prompt-engineering.md"
@@ -2213,7 +2655,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🧩",
       "is_coming_soon": false,
       "is_featured": true,
@@ -2235,6 +2677,11 @@
           "url": ""
         }
       ],
+      "requires": "Claude API",
+      "mcp_tools": [
+        "claude-api"
+      ],
+      "has_example": true,
       "file_path": "skills/personal/ai-agent-dev/rag-patterns.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/ai-agent-dev/rag-patterns.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/ai-agent-dev/rag-patterns.md"
@@ -2249,7 +2696,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🎅",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2258,6 +2705,11 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "Claude API",
+      "mcp_tools": [
+        "claude-api"
+      ],
+      "has_example": false,
       "file_path": "skills/personal/ai-agent-dev/santa-method.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/ai-agent-dev/santa-method.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/ai-agent-dev/santa-method.md"
@@ -2272,7 +2724,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-curated",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🖥️",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2281,6 +2733,9 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "None",
+      "mcp_tools": [],
+      "has_example": false,
       "file_path": "skills/personal/backend-data/backend-patterns.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/backend-data/backend-patterns.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/backend-data/backend-patterns.md"
@@ -2295,7 +2750,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "⚡",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2313,6 +2768,9 @@
           "url": ""
         }
       ],
+      "requires": "None",
+      "mcp_tools": [],
+      "has_example": false,
       "file_path": "skills/personal/backend-data/caching-strategies.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/backend-data/caching-strategies.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/backend-data/caching-strategies.md"
@@ -2327,7 +2785,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-curated",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🔀",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2336,6 +2794,9 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "None",
+      "mcp_tools": [],
+      "has_example": false,
       "file_path": "skills/personal/backend-data/database-migrations.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/backend-data/database-migrations.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/backend-data/database-migrations.md"
@@ -2350,7 +2811,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-curated",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🔗",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2372,6 +2833,9 @@
           "url": ""
         }
       ],
+      "requires": "None",
+      "mcp_tools": [],
+      "has_example": false,
       "file_path": "skills/personal/backend-data/graphql-patterns.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/backend-data/graphql-patterns.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/backend-data/graphql-patterns.md"
@@ -2386,7 +2850,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-curated",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🐘",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2395,6 +2859,9 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "None",
+      "mcp_tools": [],
+      "has_example": false,
       "file_path": "skills/personal/backend-data/postgres-patterns.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/backend-data/postgres-patterns.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/backend-data/postgres-patterns.md"
@@ -2409,7 +2876,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "⚡",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2427,6 +2894,9 @@
           "url": ""
         }
       ],
+      "requires": "None",
+      "mcp_tools": [],
+      "has_example": false,
       "file_path": "skills/personal/backend-data/real-time-systems.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/backend-data/real-time-systems.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/backend-data/real-time-systems.md"
@@ -2441,7 +2911,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "✍️",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2450,6 +2920,12 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "fal.ai MCP or OpenRouter",
+      "mcp_tools": [
+        "fal-ai-mcp",
+        "openrouter"
+      ],
+      "has_example": false,
       "file_path": "skills/personal/content-creation/article-writing.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/content-creation/article-writing.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/content-creation/article-writing.md"
@@ -2464,7 +2940,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🚀",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2473,6 +2949,12 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "fal.ai MCP or OpenRouter",
+      "mcp_tools": [
+        "fal-ai-mcp",
+        "openrouter"
+      ],
+      "has_example": false,
       "file_path": "skills/personal/content-creation/content-engine.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/content-creation/content-engine.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/content-creation/content-engine.md"
@@ -2487,7 +2969,7 @@
       "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🖼️",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2496,6 +2978,12 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "fal.ai MCP or OpenRouter",
+      "mcp_tools": [
+        "fal-ai-mcp",
+        "openrouter"
+      ],
+      "has_example": false,
       "file_path": "skills/personal/content-creation/image-prompt-generator.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/content-creation/image-prompt-generator.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/content-creation/image-prompt-generator.md"
@@ -2510,7 +2998,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🎙️",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2524,6 +3012,12 @@
           "url": ""
         }
       ],
+      "requires": "fal.ai MCP or OpenRouter",
+      "mcp_tools": [
+        "fal-ai-mcp",
+        "openrouter"
+      ],
+      "has_example": false,
       "file_path": "skills/personal/content-creation/podcast-production.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/content-creation/podcast-production.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/content-creation/podcast-production.md"
@@ -2538,7 +3032,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🎞️",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2547,6 +3041,12 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "fal.ai MCP or OpenRouter",
+      "mcp_tools": [
+        "fal-ai-mcp",
+        "openrouter"
+      ],
+      "has_example": false,
       "file_path": "skills/personal/content-creation/video-editing.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/content-creation/video-editing.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/content-creation/video-editing.md"
@@ -2561,7 +3061,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🎬",
       "is_coming_soon": false,
       "is_featured": true,
@@ -2575,9 +3075,57 @@
           "url": ""
         }
       ],
+      "requires": "fal.ai MCP or OpenRouter",
+      "mcp_tools": [
+        "fal-ai-mcp",
+        "openrouter"
+      ],
+      "has_example": true,
       "file_path": "skills/personal/content-creation/youtube-script.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/content-creation/youtube-script.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/content-creation/youtube-script.md"
+    },
+    {
+      "slug": "youtube-thumbnail-generator",
+      "name": "YouTube Thumbnail Generator",
+      "description": "Generate high-converting YouTube thumbnails via OpenRouter (Google Nano Banana) — composition rules, A/B variants, and prompt formulas that work.",
+      "tab": "personal",
+      "domain": "content-creation",
+      "industry_vertical": null,
+      "difficulty": "intermediate",
+      "source_type": "ragnar-custom",
+      "tags": [],
+      "version": "1.0.1",
+      "icon_emoji": "🖼️",
+      "is_coming_soon": false,
+      "is_featured": true,
+      "author": "ragnar",
+      "learning_path": null,
+      "learning_path_position": null,
+      "prerequisites": [],
+      "references": [
+        {
+          "title": "OpenRouter API Documentation",
+          "url": ""
+        },
+        {
+          "title": "Google Nano Banana (Imagen 3) via OpenRouter",
+          "url": ""
+        },
+        {
+          "title": "YouTube Creator Academy — Thumbnails",
+          "url": ""
+        }
+      ],
+      "requires": "OpenRouter API Key",
+      "mcp_tools": [
+        "openrouter",
+        "generate-image-open"
+      ],
+      "has_example": true,
+      "file_path": "skills/personal/content-creation/youtube-thumbnail-generator.md",
+      "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/content-creation/youtube-thumbnail-generator.md",
+      "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/content-creation/youtube-thumbnail-generator.md"
     },
     {
       "slug": "deployment-patterns",
@@ -2589,7 +3137,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-curated",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🚢",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2598,6 +3146,11 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "Azure CLI, Docker",
+      "mcp_tools": [
+        "azure-cli"
+      ],
+      "has_example": false,
       "file_path": "skills/personal/devops/deployment-patterns.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/devops/deployment-patterns.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/devops/deployment-patterns.md"
@@ -2612,7 +3165,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-curated",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🐳",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2621,6 +3174,11 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "Azure CLI, Docker",
+      "mcp_tools": [
+        "azure-cli"
+      ],
+      "has_example": false,
       "file_path": "skills/personal/devops/docker-patterns.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/devops/docker-patterns.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/devops/docker-patterns.md"
@@ -2635,7 +3193,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "☁️",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2644,6 +3202,11 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "Azure CLI, Docker",
+      "mcp_tools": [
+        "azure-cli"
+      ],
+      "has_example": false,
       "file_path": "skills/personal/devops/mcp-azure.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/devops/mcp-azure.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/devops/mcp-azure.md"
@@ -2658,7 +3221,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-curated",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "♿",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2680,6 +3243,12 @@
           "url": ""
         }
       ],
+      "requires": "None (Figma MCP optional)",
+      "mcp_tools": [
+        "playwright-mcp",
+        "figma-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/personal/frontend/accessibility-audit.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/frontend/accessibility-audit.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/frontend/accessibility-audit.md"
@@ -2694,7 +3263,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-curated",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "✨",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2716,6 +3285,12 @@
           "url": ""
         }
       ],
+      "requires": "None (Figma MCP optional)",
+      "mcp_tools": [
+        "playwright-mcp",
+        "figma-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/personal/frontend/animation-interaction.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/frontend/animation-interaction.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/frontend/animation-interaction.md"
@@ -2730,7 +3305,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🎭",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2748,6 +3323,12 @@
           "url": ""
         }
       ],
+      "requires": "None (Figma MCP optional)",
+      "mcp_tools": [
+        "playwright-mcp",
+        "figma-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/personal/frontend/animation-patterns.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/frontend/animation-patterns.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/frontend/animation-patterns.md"
@@ -2762,7 +3343,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-curated",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "⚡",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2784,6 +3365,12 @@
           "url": ""
         }
       ],
+      "requires": "None (Figma MCP optional)",
+      "mcp_tools": [
+        "playwright-mcp",
+        "figma-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/personal/frontend/core-web-vitals.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/frontend/core-web-vitals.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/frontend/core-web-vitals.md"
@@ -2798,7 +3385,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-curated",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🎨",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2807,6 +3394,12 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "None (Figma MCP optional)",
+      "mcp_tools": [
+        "playwright-mcp",
+        "figma-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/personal/frontend/design-system.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/frontend/design-system.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/frontend/design-system.md"
@@ -2821,7 +3414,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-curated",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🎭",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2830,6 +3423,12 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "None (Figma MCP optional)",
+      "mcp_tools": [
+        "playwright-mcp",
+        "figma-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/personal/frontend/e2e-testing.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/frontend/e2e-testing.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/frontend/e2e-testing.md"
@@ -2844,7 +3443,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-curated",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "⚛️",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2853,6 +3452,12 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "None (Figma MCP optional)",
+      "mcp_tools": [
+        "playwright-mcp",
+        "figma-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/personal/frontend/frontend-patterns.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/frontend/frontend-patterns.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/frontend/frontend-patterns.md"
@@ -2867,7 +3472,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-curated",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🐹",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2876,6 +3481,9 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "None",
+      "mcp_tools": [],
+      "has_example": false,
       "file_path": "skills/personal/language-specific/golang-patterns.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/language-specific/golang-patterns.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/language-specific/golang-patterns.md"
@@ -2890,7 +3498,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-curated",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🏝️",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2899,6 +3507,9 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "None",
+      "mcp_tools": [],
+      "has_example": false,
       "file_path": "skills/personal/language-specific/kotlin-patterns.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/language-specific/kotlin-patterns.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/language-specific/kotlin-patterns.md"
@@ -2913,7 +3524,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-curated",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🐍",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2922,6 +3533,9 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "None",
+      "mcp_tools": [],
+      "has_example": false,
       "file_path": "skills/personal/language-specific/python-patterns.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/language-specific/python-patterns.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/language-specific/python-patterns.md"
@@ -2936,7 +3550,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-curated",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🦀",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2945,6 +3559,9 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "None",
+      "mcp_tools": [],
+      "has_example": false,
       "file_path": "skills/personal/language-specific/rust-patterns.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/language-specific/rust-patterns.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/language-specific/rust-patterns.md"
@@ -2959,7 +3576,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-curated",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🍎",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2968,6 +3585,9 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "None",
+      "mcp_tools": [],
+      "has_example": false,
       "file_path": "skills/personal/language-specific/swift-concurrency.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/language-specific/swift-concurrency.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/language-specific/swift-concurrency.md"
@@ -2982,7 +3602,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-curated",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🔷",
       "is_coming_soon": false,
       "is_featured": false,
@@ -2991,6 +3611,9 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "None",
+      "mcp_tools": [],
+      "has_example": false,
       "file_path": "skills/personal/language-specific/typescript-patterns.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/language-specific/typescript-patterns.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/language-specific/typescript-patterns.md"
@@ -3005,7 +3628,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🗺️",
       "is_coming_soon": false,
       "is_featured": false,
@@ -3014,6 +3637,12 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "Exa MCP, Firecrawl MCP",
+      "mcp_tools": [
+        "exa-mcp",
+        "firecrawl-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/personal/productivity/blueprint.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/productivity/blueprint.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/productivity/blueprint.md"
@@ -3028,7 +3657,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🔬",
       "is_coming_soon": false,
       "is_featured": false,
@@ -3046,6 +3675,12 @@
           "url": ""
         }
       ],
+      "requires": "Exa MCP, Firecrawl MCP",
+      "mcp_tools": [
+        "exa-mcp",
+        "firecrawl-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/personal/productivity/deep-research.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/productivity/deep-research.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/productivity/deep-research.md"
@@ -3060,7 +3695,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "📊",
       "is_coming_soon": false,
       "is_featured": false,
@@ -3069,6 +3704,12 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "Exa MCP, Firecrawl MCP",
+      "mcp_tools": [
+        "exa-mcp",
+        "firecrawl-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/personal/productivity/market-research.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/productivity/market-research.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/productivity/market-research.md"
@@ -3083,7 +3724,7 @@
       "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "📝",
       "is_coming_soon": false,
       "is_featured": false,
@@ -3092,6 +3733,12 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "Exa MCP, Firecrawl MCP",
+      "mcp_tools": [
+        "exa-mcp",
+        "firecrawl-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/personal/productivity/meeting-notes-processor.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/productivity/meeting-notes-processor.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/productivity/meeting-notes-processor.md"
@@ -3106,7 +3753,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🎙️",
       "is_coming_soon": false,
       "is_featured": false,
@@ -3124,6 +3771,12 @@
           "url": ""
         }
       ],
+      "requires": "Exa MCP, Firecrawl MCP",
+      "mcp_tools": [
+        "exa-mcp",
+        "firecrawl-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/personal/productivity/podcast-production.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/productivity/podcast-production.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/productivity/podcast-production.md"
@@ -3138,7 +3791,7 @@
       "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "💾",
       "is_coming_soon": false,
       "is_featured": false,
@@ -3147,6 +3800,12 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "Exa MCP, Firecrawl MCP",
+      "mcp_tools": [
+        "exa-mcp",
+        "firecrawl-mcp"
+      ],
+      "has_example": false,
       "file_path": "skills/personal/productivity/save-session.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/productivity/save-session.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/productivity/save-session.md"
@@ -3161,7 +3820,7 @@
       "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "⛔",
       "is_coming_soon": false,
       "is_featured": false,
@@ -3170,6 +3829,9 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "None",
+      "mcp_tools": [],
+      "has_example": false,
       "file_path": "skills/personal/security/safety-guard.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/security/safety-guard.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/security/safety-guard.md"
@@ -3184,7 +3846,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-curated",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🔒",
       "is_coming_soon": false,
       "is_featured": false,
@@ -3193,6 +3855,9 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "None",
+      "mcp_tools": [],
+      "has_example": false,
       "file_path": "skills/personal/security/security-review.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/security/security-review.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/security/security-review.md"
@@ -3207,7 +3872,7 @@
       "difficulty": "starter",
       "source_type": "ragnar-curated",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🛡️",
       "is_coming_soon": false,
       "is_featured": false,
@@ -3216,6 +3881,9 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "None",
+      "mcp_tools": [],
+      "has_example": false,
       "file_path": "skills/personal/security/security-scan.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/security/security-scan.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/security/security-scan.md"
@@ -3230,7 +3898,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-curated",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🔌",
       "is_coming_soon": false,
       "is_featured": false,
@@ -3239,6 +3907,9 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "None",
+      "mcp_tools": [],
+      "has_example": false,
       "file_path": "skills/personal/software-engineering/api-design.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/software-engineering/api-design.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/software-engineering/api-design.md"
@@ -3253,7 +3924,7 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "📐",
       "is_coming_soon": false,
       "is_featured": false,
@@ -3262,6 +3933,9 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "None",
+      "mcp_tools": [],
+      "has_example": false,
       "file_path": "skills/personal/software-engineering/architecture-decision-records.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/software-engineering/architecture-decision-records.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/software-engineering/architecture-decision-records.md"
@@ -3276,7 +3950,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-curated",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🔍",
       "is_coming_soon": false,
       "is_featured": false,
@@ -3290,6 +3964,9 @@
           "url": ""
         }
       ],
+      "requires": "None",
+      "mcp_tools": [],
+      "has_example": true,
       "file_path": "skills/personal/software-engineering/code-review.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/software-engineering/code-review.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/software-engineering/code-review.md"
@@ -3304,7 +3981,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🗺️",
       "is_coming_soon": false,
       "is_featured": false,
@@ -3313,6 +3990,9 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "None",
+      "mcp_tools": [],
+      "has_example": false,
       "file_path": "skills/personal/software-engineering/codebase-onboarding.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/software-engineering/codebase-onboarding.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/software-engineering/codebase-onboarding.md"
@@ -3327,7 +4007,7 @@
       "difficulty": "starter",
       "source_type": "ragnar-curated",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "📏",
       "is_coming_soon": false,
       "is_featured": false,
@@ -3336,6 +4016,9 @@
       "learning_path_position": null,
       "prerequisites": [],
       "references": [],
+      "requires": "None",
+      "mcp_tools": [],
+      "has_example": false,
       "file_path": "skills/personal/software-engineering/coding-standards.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/software-engineering/coding-standards.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/software-engineering/coding-standards.md"
@@ -3350,7 +4033,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🔎",
       "is_coming_soon": false,
       "is_featured": false,
@@ -3368,6 +4051,9 @@
           "url": ""
         }
       ],
+      "requires": "None",
+      "mcp_tools": [],
+      "has_example": true,
       "file_path": "skills/personal/software-engineering/debugging-detective.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/software-engineering/debugging-detective.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/software-engineering/debugging-detective.md"
@@ -3382,7 +4068,7 @@
       "difficulty": "starter",
       "source_type": "ragnar-curated",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🌿",
       "is_coming_soon": false,
       "is_featured": false,
@@ -3400,6 +4086,9 @@
           "url": ""
         }
       ],
+      "requires": "None",
+      "mcp_tools": [],
+      "has_example": false,
       "file_path": "skills/personal/software-engineering/git-workflow-mastery.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/software-engineering/git-workflow-mastery.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/software-engineering/git-workflow-mastery.md"
@@ -3414,7 +4103,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-curated",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🔧",
       "is_coming_soon": false,
       "is_featured": false,
@@ -3432,6 +4121,9 @@
           "url": ""
         }
       ],
+      "requires": "None",
+      "mcp_tools": [],
+      "has_example": false,
       "file_path": "skills/personal/software-engineering/refactoring-patterns.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/software-engineering/refactoring-patterns.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/software-engineering/refactoring-patterns.md"
@@ -3446,7 +4138,7 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-curated",
       "tags": [],
-      "version": "1.0",
+      "version": "1.0.1",
       "icon_emoji": "🧪",
       "is_coming_soon": false,
       "is_featured": true,
@@ -3464,6 +4156,9 @@
           "url": ""
         }
       ],
+      "requires": "None",
+      "mcp_tools": [],
+      "has_example": false,
       "file_path": "skills/personal/software-engineering/tdd-workflow.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/software-engineering/tdd-workflow.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/software-engineering/tdd-workflow.md"

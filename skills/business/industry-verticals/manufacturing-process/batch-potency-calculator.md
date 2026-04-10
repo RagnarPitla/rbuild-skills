@@ -1,25 +1,28 @@
 ---
-name: "Batch Potency Calculator"
-slug: "batch-potency-calculator"
-description: "Calculate active ingredient potency adjustments for pharmaceutical batch manufacturing — CoA reading, formula adjustment, and D365 batch record update."
-tab: "business"
-domain: "industry-verticals"
-industry_vertical: "manufacturing-process"
-difficulty: "advanced"
-source_type: "ragnar-custom"
-tags: ["manufacturing-process", "pharma", "potency", "batch", "formula", "gmp"]
-version: "1.0"
-icon_emoji: "⚗️"
+name: Batch Potency Calculator
+slug: batch-potency-calculator
+description: Calculate active ingredient potency adjustments for pharmaceutical batch manufacturing — CoA reading, formula adjustment, and D365 batch record update.
+tab: business
+domain: industry-verticals
+industry_vertical: manufacturing-process
+difficulty: advanced
+source_type: ragnar-custom
+tags: "[\"manufacturing-process\", \"pharma\", \"potency\", \"batch\", \"formula\", \"gmp\"]"
+version: 1.0.1
+icon_emoji: ⚗️
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "FDA Pharmaceutical Manufacturing — Process Controls"
-    url: "https://www.fda.gov/drugs/pharmaceutical-quality-resources/pharmaceutical-cgmps-21st-century-risk-based-approach"
+  - "title: "FDA Pharmaceutical Manufacturing — Process Controls"
+requires: D365 F&O MCP Server
+mcp_tools:
+  - "d365-fno-mcp"
 ---
+
 
 # Batch Potency Calculator
 
@@ -85,3 +88,27 @@ Common potency calculation errors the agent prevents:
 - Not adjusting for water content (anhydrous vs hydrate)
 - Calculation in wrong direction (dividing instead of multiplying)
 - Using outdated CoA (not the lot being dispensed)
+
+## Trigger Phrases
+
+- "Help me with batch potency calculator"
+- "Batch Potency Calculator"
+- "How do I batch potency calculator"
+
+## Quick Example
+
+> See `batch-potency-calculator-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

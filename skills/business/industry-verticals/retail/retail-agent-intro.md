@@ -1,23 +1,27 @@
 ---
-name: "Retail AI Agent Introduction"
-slug: "retail-agent-intro"
-description: "Where AI agents create the most value in retail — store operations, supply chain, merchandising, and the recommended starting point."
-tab: "business"
-domain: "industry-verticals"
-industry_vertical: "retail"
-difficulty: "starter"
-source_type: "ragnar-custom"
-tags: ["retail", "enterprise-ai", "store-ops", "merchandising", "getting-started"]
-version: "1.0"
-icon_emoji: "🏪"
+name: Retail AI Agent Introduction
+slug: retail-agent-intro
+description: Where AI agents create the most value in retail — store operations, supply chain, merchandising, and the recommended starting point.
+tab: business
+domain: industry-verticals
+industry_vertical: retail
+difficulty: starter
+source_type: ragnar-custom
+tags: "[\"retail\", \"enterprise-ai\", \"store-ops\", \"merchandising\", \"getting-started\"]"
+version: 1.0.1
+icon_emoji: 🏪
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: ["agent-first-thinking"]
-references: []
+prerequisites: "[\"agent-first-thinking\"]"
+references: "[]"
+requires: D365 F&O MCP Server
+mcp_tools:
+  - "d365-fno-mcp"
 ---
+
 
 # Retail AI Agent Introduction
 
@@ -72,3 +76,27 @@ Start with replenishment. Prove value. Use that success to fund the next agent.
 | Power Automate | Action execution |
 | Azure AI Vision | Image analysis for planogram compliance |
 | Dataverse | Policy tables, Niyam pattern |
+
+## Trigger Phrases
+
+- "Help me with retail ai agent introduction"
+- "Retail AI Agent Introduction"
+- "How do I retail ai agent introduction"
+
+## Quick Example
+
+> See `retail-agent-intro-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

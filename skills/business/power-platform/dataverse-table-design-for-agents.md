@@ -1,27 +1,30 @@
 ---
-name: "Dataverse Table Design for Agents"
-slug: "dataverse-table-design-for-agents"
-description: "Design Dataverse tables that AI agents consume — column types, naming conventions, the Niyam policy table pattern, and security considerations."
-tab: "business"
-domain: "power-platform"
+name: Dataverse Table Design for Agents
+slug: dataverse-table-design-for-agents
+description: Design Dataverse tables that AI agents consume — column types, naming conventions, the Niyam policy table pattern, and security considerations.
+tab: business
+domain: power-platform
 industry_vertical: null
-difficulty: "starter"
-source_type: "ragnar-custom"
-tags: ["dataverse", "power-platform", "table-design", "agents", "niyam-pattern"]
-version: "1.0"
-icon_emoji: "🗄️"
+difficulty: starter
+source_type: ragnar-custom
+tags: "[\"dataverse\", \"power-platform\", \"table-design\", \"agents\", \"niyam-pattern\"]"
+version: 1.0.1
+icon_emoji: 🗄️
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
-learning_path: "power-platform-path"
+author: ragnar
+learning_path: power-platform-path
 learning_path_position: 1
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "Create and edit tables in Dataverse"
-    url: "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/create-edit-entities-portal"
-  - title: "Dataverse table types"
-    url: "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/types-of-entities"
+  - "title: "Create and edit tables in Dataverse"
+  - "title: "Dataverse table types"
+requires: Dataverse MCP, Power Automate
+mcp_tools:
+  - "dataverse-mcp"
+  - "power-automate"
 ---
+
 
 # Dataverse Table Design for Agents
 
@@ -129,3 +132,27 @@ Business users need a way to edit policy tables without writing code. Build a **
 3. Publish and share with the business team
 
 Now policy changes are a UI operation — no developer required.
+
+## Trigger Phrases
+
+- "Help me with dataverse table design for agents"
+- "Dataverse Table Design for Agents"
+- "How do I dataverse table design for agents"
+
+## Quick Example
+
+> See `dataverse-table-design-for-agents-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

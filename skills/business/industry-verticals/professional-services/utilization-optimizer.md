@@ -1,25 +1,28 @@
 ---
-name: "Utilization Optimizer"
-slug: "utilization-optimizer"
-description: "Analyze consultant utilization rates and recommend reallocation to hit target utilization, maximize billability, and identify resource conflicts."
-tab: "business"
-domain: "industry-verticals"
-industry_vertical: "professional-services"
-difficulty: "intermediate"
-source_type: "ragnar-custom"
-tags: ["professional-services", "utilization", "resource-management", "d365", "project"]
-version: "1.0"
-icon_emoji: "📈"
+name: Utilization Optimizer
+slug: utilization-optimizer
+description: Analyze consultant utilization rates and recommend reallocation to hit target utilization, maximize billability, and identify resource conflicts.
+tab: business
+domain: industry-verticals
+industry_vertical: professional-services
+difficulty: intermediate
+source_type: ragnar-custom
+tags: "[\"professional-services\", \"utilization\", \"resource-management\", \"d365\", \"project\"]"
+version: 1.0.1
+icon_emoji: 📈
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "D365 Project Operations"
-    url: "https://learn.microsoft.com/en-us/dynamics365/project-operations/"
+  - "title: "D365 Project Operations"
+requires: D365 F&O MCP Server
+mcp_tools:
+  - "d365-fno-mcp"
 ---
+
 
 # Utilization Optimizer
 
@@ -94,3 +97,27 @@ Actions the agent can trigger:
 - Notify practice lead of under/over utilization
 - Send availability alerts to sales when bench time opens
 - Generate "available for assignment" notifications for specific skill combinations
+
+## Trigger Phrases
+
+- "Help me with utilization optimizer"
+- "Utilization Optimizer"
+- "How do I utilization optimizer"
+
+## Quick Example
+
+> See `utilization-optimizer-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

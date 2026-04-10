@@ -1,27 +1,29 @@
 ---
-name: "AML Transaction Screener"
-slug: "aml-transaction-screener"
-description: "Screen financial transactions against AML rules and sanctions lists — detect suspicious patterns and generate SAR-ready documentation."
-tab: "business"
-domain: "industry-verticals"
-industry_vertical: "financial-services"
-difficulty: "advanced"
-source_type: "ragnar-custom"
-tags: ["financial-services", "aml", "compliance", "sanctions", "fraud"]
-version: "1.0"
-icon_emoji: "🔍"
+name: AML Transaction Screener
+slug: aml-transaction-screener
+description: Screen financial transactions against AML rules and sanctions lists — detect suspicious patterns and generate SAR-ready documentation.
+tab: business
+domain: industry-verticals
+industry_vertical: financial-services
+difficulty: advanced
+source_type: ragnar-custom
+tags: "[\"financial-services\", \"aml\", \"compliance\", \"sanctions\", \"fraud\"]"
+version: 1.0.1
+icon_emoji: 🔍
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "FinCEN AML Program Requirements"
-    url: "https://www.fincen.gov/resources/statutes-regulations/guidance"
-  - title: "OFAC Sanctions Lists"
-    url: "https://ofac.treasury.gov/sanctions-list-service"
+  - "title: "FinCEN AML Program Requirements"
+  - "title: "OFAC Sanctions Lists"
+requires: D365 F&O MCP Server
+mcp_tools:
+  - "d365-fno-mcp"
 ---
+
 
 # AML Transaction Screener
 
@@ -85,3 +87,27 @@ The agent pre-populates the SAR form with:
 - Narrative draft (what happened, why it's suspicious)
 
 Investigator reviews, edits, and finalizes — reducing SAR preparation time from hours to minutes.
+
+## Trigger Phrases
+
+- "Help me with aml transaction screener"
+- "AML Transaction Screener"
+- "How do I aml transaction screener"
+
+## Quick Example
+
+> See `aml-transaction-screener-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

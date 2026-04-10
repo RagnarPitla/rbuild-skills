@@ -1,27 +1,30 @@
 ---
-name: "D365 F&O Navigation Fundamentals"
-slug: "d365-navigation-fundamentals"
-description: "Navigate D365 Finance & Operations confidently — modules, workspaces, list pages, forms, search, and power user shortcuts."
-tab: "business"
-domain: "d365-fno"
+name: D365 F&O Navigation Fundamentals
+slug: d365-navigation-fundamentals
+description: Navigate D365 Finance & Operations confidently — modules, workspaces, list pages, forms, search, and power user shortcuts.
+tab: business
+domain: d365-fno
 industry_vertical: null
-difficulty: "starter"
-source_type: "ragnar-custom"
-tags: ["d365-fno", "navigation", "getting-started", "workspaces", "beginner"]
-version: "1.0"
-icon_emoji: "🗺️"
+difficulty: starter
+source_type: ragnar-custom
+tags: "[\"d365-fno\", \"navigation\", \"getting-started\", \"workspaces\", \"beginner\"]"
+version: 1.0.1
+icon_emoji: 🗺️
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
-learning_path: "d365-fno-path"
+author: ragnar
+learning_path: d365-fno-path
 learning_path_position: 1
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "Get started with Dynamics 365 Finance"
-    url: "https://learn.microsoft.com/en-us/dynamics365/finance/get-started/learning-catalog-business-user"
-  - title: "Navigation search in finance and operations apps"
-    url: "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/navigation-search"
+  - "title: "Get started with Dynamics 365 Finance"
+  - "title: "Navigation search in finance and operations apps"
+requires: D365 F&O MCP Server
+mcp_tools:
+  - "d365-fno-mcp"
+  - "dataverse-mcp"
 ---
+
 
 # D365 F&O Navigation Fundamentals
 
@@ -116,3 +119,29 @@ Create views for:
 - "Vendors in Germany"
 
 These views persist across sessions and can be shared with your team.
+
+## Trigger Phrases
+
+- "How do I d365 f&o navigation fundamentals"
+- "Help me with d365 f&o navigation fundamentals in D365"
+- "Check d365 f&o navigation fundamentals"
+- "Analyze d365 f&o navigation fundamentals"
+- "Show me d365 f&o navigation fundamentals status"
+
+## Quick Example
+
+> See `d365-navigation-fundamentals-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

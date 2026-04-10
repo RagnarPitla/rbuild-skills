@@ -1,29 +1,30 @@
 ---
-name: "MCP Fundamentals"
-slug: "mcp-fundamentals"
-description: "What is Model Context Protocol? How hosts, clients, and servers work together — and why it matters for enterprise AI agents."
-tab: "business"
-domain: "mcp"
+name: MCP Fundamentals
+slug: mcp-fundamentals
+description: What is Model Context Protocol? How hosts, clients, and servers work together — and why it matters for enterprise AI agents.
+tab: business
+domain: mcp
 industry_vertical: null
-difficulty: "starter"
-source_type: "ragnar-custom"
-tags: ["mcp", "model-context-protocol", "architecture", "enterprise-ai", "d365"]
-version: "1.0"
-icon_emoji: "🔌"
+difficulty: starter
+source_type: ragnar-custom
+tags: "[\"mcp\", \"model-context-protocol\", \"architecture\", \"enterprise-ai\", \"d365\"]"
+version: 1.0.1
+icon_emoji: 🔌
 is_coming_soon: false
 is_featured: true
-author: "ragnar"
-learning_path: "mcp-path"
+author: ragnar
+learning_path: mcp-path
 learning_path_position: 1
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "Model Context Protocol Specification"
-    url: "https://modelcontextprotocol.io"
-  - title: "Claude Code MCP Documentation"
-    url: "https://docs.anthropic.com/en/docs/claude-code/mcp"
-  - title: "MCP Servers GitHub"
-    url: "https://github.com/anthropics/mcp"
+  - "title: "Model Context Protocol Specification"
+  - "title: "Claude Code MCP Documentation"
+  - "title: "MCP Servers GitHub"
+requires: Node.js TypeScript SDK
+mcp_tools:
+  - "mcp-server-sdk"
 ---
+
 
 # MCP Fundamentals
 
@@ -111,3 +112,27 @@ Use MCP when the **agent** needs to decide what to do and when. Use Power Automa
 ## Next Step
 
 Ready to build your first MCP server? See the [Your First MCP Server](./your-first-mcp-server.md) skill.
+
+## Trigger Phrases
+
+- "Help me with mcp fundamentals"
+- "MCP Fundamentals"
+- "How do I mcp fundamentals"
+
+## Quick Example
+
+> See `mcp-fundamentals-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

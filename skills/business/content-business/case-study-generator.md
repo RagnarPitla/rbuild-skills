@@ -1,25 +1,27 @@
 ---
-name: "Case Study Generator"
-slug: "case-study-generator"
-description: "Write compelling customer case studies from project data — pain points, solution architecture, measurable outcomes, and Microsoft story format."
-tab: "business"
-domain: "content-business"
+name: Case Study Generator
+slug: case-study-generator
+description: Write compelling customer case studies from project data — pain points, solution architecture, measurable outcomes, and Microsoft story format.
+tab: business
+domain: content-business
 industry_vertical: null
-difficulty: "intermediate"
-source_type: "ragnar-custom"
-tags: ["case-study", "customer-story", "content", "d365", "copilot-studio"]
-version: "1.0"
-icon_emoji: "📋"
+difficulty: intermediate
+source_type: ragnar-custom
+tags: "[\"case-study\", \"customer-story\", \"content\", \"d365\", \"copilot-studio\"]"
+version: 1.0.1
+icon_emoji: 📋
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "Microsoft Customer Stories"
-    url: "https://customers.microsoft.com/"
+  - "title: "Microsoft Customer Stories"
+requires: None
+mcp_tools: []
 ---
+
 
 # Case Study Generator
 
@@ -105,3 +107,27 @@ For Microsoft customer stories, follow this structure:
 - 800-1,200 words for standard customer story
 - 400-600 words for a case study card/one-pager
 - 200-300 words for a social media case study post
+
+## Trigger Phrases
+
+- "Help me with case study generator"
+- "Case Study Generator"
+- "How do I case study generator"
+
+## Quick Example
+
+> See `case-study-generator-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

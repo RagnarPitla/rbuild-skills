@@ -1,29 +1,32 @@
 ---
-name: "Niyam Pattern Explained"
-slug: "niyam-pattern-explained"
-description: "Ragnar's signature pattern for policy-driven AI agents in D365 — Dataverse policies + D365 MCP + Power Automate, from first principles."
-tab: "business"
-domain: "enterprise-ai"
+name: Niyam Pattern Explained
+slug: niyam-pattern-explained
+description: Ragnar's signature pattern for policy-driven AI agents in D365 — Dataverse policies + D365 MCP + Power Automate, from first principles.
+tab: business
+domain: enterprise-ai
 industry_vertical: null
-difficulty: "intermediate"
-source_type: "ragnar-custom"
-tags: ["niyam-pattern", "copilot-studio", "d365", "dataverse", "policy-driven", "enterprise-ai"]
-version: "2.0"
-icon_emoji: "🏛️"
+difficulty: intermediate
+source_type: ragnar-custom
+tags: "[\"niyam-pattern\", \"copilot-studio\", \"d365\", \"dataverse\", \"policy-driven\", \"enterprise-ai\"]"
+version: 1.0.1
+icon_emoji: 🏛️
 is_coming_soon: false
 is_featured: true
-author: "ragnar"
-learning_path: "enterprise-ai-path"
+author: ragnar
+learning_path: enterprise-ai-path
 learning_path_position: 3
-prerequisites: ["agent-first-thinking", "your-first-copilot-studio-agent"]
+prerequisites: "[\"agent-first-thinking\", \"your-first-copilot-studio-agent\"]"
 references:
-  - title: "Niyam Agent Template (Claude Code Skill)"
-    url: "https://github.com/ragnarpitla/rbuild-skills"
-  - title: "Microsoft Dataverse Documentation"
-    url: "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/"
-  - title: "Copilot Studio Multi-Agent Patterns"
-    url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/"
+  - "title: "Niyam Agent Template (Claude Code Skill)"
+  - "title: "Microsoft Dataverse Documentation"
+  - "title: "Copilot Studio Multi-Agent Patterns"
+requires: Copilot Studio, Dataverse MCP
+mcp_tools:
+  - "copilot-studio-mcp"
+  - "dataverse-mcp"
+  - "d365-fno-mcp"
 ---
+
 
 # The Niyam Pattern
 
@@ -167,3 +170,21 @@ Now policy changes are a 30-second UI operation.
 ## The Claude Code Skill
 
 If you're building in Claude Code, the `niyam-agent-template` skill generates the full architecture — Dataverse table schemas, Power Automate flows, agent system instructions, and Copilot Studio YAML — from your requirements. One command, complete Niyam implementation.
+
+## Quick Example
+
+> See `niyam-pattern-explained-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

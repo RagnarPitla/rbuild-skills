@@ -1,27 +1,29 @@
 ---
-name: "Inventory Reorder Advisor"
-slug: "inventory-reorder-advisor"
-description: "AI agent skill for inventory reorder optimization — EOQ calculations, reorder points, safety stock, and D365 integration patterns."
-tab: "business"
-domain: "supply-chain"
+name: Inventory Reorder Advisor
+slug: inventory-reorder-advisor
+description: AI agent skill for inventory reorder optimization — EOQ calculations, reorder points, safety stock, and D365 integration patterns.
+tab: business
+domain: supply-chain
 industry_vertical: null
-difficulty: "intermediate"
-source_type: "ragnar-custom"
-tags: ["supply-chain", "inventory", "demand-planning", "d365", "reorder", "safety-stock"]
-version: "1.0"
-icon_emoji: "📦"
+difficulty: intermediate
+source_type: ragnar-custom
+tags: "[\"supply-chain\", \"inventory\", \"demand-planning\", \"d365\", \"reorder\", \"safety-stock\"]"
+version: 1.0.1
+icon_emoji: 📦
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "D365 Inventory Management"
-    url: "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-home-page"
-  - title: "Master planning in D365 SCM"
-    url: "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/master-planning-home-page"
+  - "title: "D365 Inventory Management"
+  - "title: "Master planning in D365 SCM"
+requires: D365 F&O MCP Server
+mcp_tools:
+  - "d365-fno-mcp"
 ---
+
 
 # Inventory Reorder Advisor
 
@@ -131,3 +133,27 @@ Priority: CRITICAL / REVIEW / MONITOR
 ```
 
 Include a confidence indicator when data quality is low (e.g., less than 30 days of consumption history).
+
+## Trigger Phrases
+
+- "Help me with inventory reorder advisor"
+- "Inventory Reorder Advisor"
+- "How do I inventory reorder advisor"
+
+## Quick Example
+
+> See `inventory-reorder-advisor-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

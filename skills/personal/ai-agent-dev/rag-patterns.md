@@ -1,29 +1,30 @@
 ---
-name: "RAG Patterns"
-slug: "rag-patterns"
-description: "Retrieval-Augmented Generation from end to end — chunking, embeddings, vector search, reranking, and citation grounding."
-tab: "personal"
-domain: "ai-agent-dev"
+name: RAG Patterns
+slug: rag-patterns
+description: Retrieval-Augmented Generation from end to end — chunking, embeddings, vector search, reranking, and citation grounding.
+tab: personal
+domain: ai-agent-dev
 industry_vertical: null
-difficulty: "intermediate"
-source_type: "ragnar-custom"
-tags: ["rag", "retrieval", "embeddings", "vector-search", "llm", "grounding"]
-version: "1.0"
-icon_emoji: "🧩"
+difficulty: intermediate
+source_type: ragnar-custom
+tags: "[\"rag\", \"retrieval\", \"embeddings\", \"vector-search\", \"llm\", \"grounding\"]"
+version: 1.0.1
+icon_emoji: 🧩
 is_coming_soon: false
 is_featured: true
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "Anthropic Contextual Retrieval"
-    url: "https://www.anthropic.com/research/contextual-retrieval"
-  - title: "LangChain RAG Documentation"
-    url: "https://python.langchain.com/docs/use_cases/question_answering/"
-  - title: "Pinecone RAG Guide"
-    url: "https://www.pinecone.io/learn/retrieval-augmented-generation/"
+  - "title: "Anthropic Contextual Retrieval"
+  - "title: "LangChain RAG Documentation"
+  - "title: "Pinecone RAG Guide"
+requires: Claude API
+mcp_tools:
+  - "claude-api"
 ---
+
 
 # RAG Patterns
 
@@ -133,3 +134,27 @@ Measure these three things:
 - **Answer relevance**: Does the answer address the question?
 
 Use tools like RAGAS or build a small evaluation set of 50 question-answer pairs to track quality over time.
+
+## Trigger Phrases
+
+- "Help me with rag patterns"
+- "RAG Patterns"
+- "How do I rag patterns"
+
+## Quick Example
+
+> See `rag-patterns-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

@@ -1,29 +1,29 @@
 ---
-name: "GraphQL Patterns"
-slug: "graphql-patterns"
-description: "Design GraphQL APIs — schema-first development, DataLoader for N+1, subscriptions, federation, and when to use REST instead."
-tab: "personal"
-domain: "backend-data"
+name: GraphQL Patterns
+slug: graphql-patterns
+description: Design GraphQL APIs — schema-first development, DataLoader for N+1, subscriptions, federation, and when to use REST instead.
+tab: personal
+domain: backend-data
 industry_vertical: null
-difficulty: "intermediate"
-source_type: "ragnar-curated"
-tags: ["graphql", "api", "schema", "dataloading", "subscriptions"]
-version: "1.0"
-icon_emoji: "🔗"
+difficulty: intermediate
+source_type: ragnar-curated
+tags: "[\"graphql\", \"api\", \"schema\", \"dataloading\", \"subscriptions\"]"
+version: 1.0.1
+icon_emoji: 🔗
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: ["api-design"]
+prerequisites: "[\"api-design\"]"
 references:
-  - title: "GraphQL Official Documentation"
-    url: "https://graphql.org/learn/"
-  - title: "Apollo GraphQL Documentation"
-    url: "https://www.apollographql.com/docs/"
-  - title: "The Guild — GraphQL Best Practices"
-    url: "https://the-guild.dev/blog"
+  - "title: "GraphQL Official Documentation"
+  - "title: "Apollo GraphQL Documentation"
+  - "title: "The Guild — GraphQL Best Practices"
+requires: None
+mcp_tools: []
 ---
+
 
 # GraphQL Patterns
 
@@ -204,3 +204,21 @@ const server = new ApolloServer({
   introspection: process.env.NODE_ENV !== 'production'
 });
 ```
+
+## Quick Example
+
+> See `graphql-patterns-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

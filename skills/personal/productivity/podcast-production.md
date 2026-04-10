@@ -1,27 +1,30 @@
 ---
-name: "Podcast Production"
-slug: "podcast-production"
-description: "End-to-end podcast workflow — episode planning, Ragnar/Tina lane splits, show notes from transcripts, and clip extraction for social."
-tab: "personal"
-domain: "productivity"
+name: Podcast Production
+slug: podcast-production
+description: End-to-end podcast workflow — episode planning, Ragnar/Tina lane splits, show notes from transcripts, and clip extraction for social.
+tab: personal
+domain: productivity
 industry_vertical: null
-difficulty: "intermediate"
-source_type: "ragnar-custom"
-tags: ["podcast", "content-creation", "show-notes", "planning", "in-our-ai-era"]
-version: "1.0"
-icon_emoji: "🎙️"
+difficulty: intermediate
+source_type: ragnar-custom
+tags: "[\"podcast\", \"content-creation\", \"show-notes\", \"planning\", \"in-our-ai-era\"]"
+version: 1.0.1
+icon_emoji: 🎙️
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "In Our AI Era — YouTube Channel"
-    url: "https://www.youtube.com/@RagnarPitla"
-  - title: "Ragnar Pitla LinkedIn"
-    url: "https://www.linkedin.com/in/ragnarpitla/"
+  - "title: "In Our AI Era — YouTube Channel"
+  - "title: "Ragnar Pitla LinkedIn"
+requires: Exa MCP, Firecrawl MCP
+mcp_tools:
+  - "exa-mcp"
+  - "firecrawl-mcp"
 ---
+
 
 # Podcast Production
 
@@ -173,3 +176,27 @@ Full episode: [link]
 4. Edit full episode (or send to editor)
 5. Export clips
 6. Schedule: full episode + 3 clips across LinkedIn and YouTube
+
+## Trigger Phrases
+
+- "Help me with podcast production"
+- "Podcast Production"
+- "How do I podcast production"
+
+## Quick Example
+
+> See `podcast-production-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

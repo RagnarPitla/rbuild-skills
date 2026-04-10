@@ -1,27 +1,30 @@
 ---
-name: "D365 Order to Cash"
-slug: "d365-order-to-cash"
-description: "Configure O2C in D365 — customer setup, sales orders, pricing, invoicing, collections, and AI agent automation patterns."
-tab: "business"
-domain: "d365-fno"
+name: D365 Order to Cash
+slug: d365-order-to-cash
+description: Configure O2C in D365 — customer setup, sales orders, pricing, invoicing, collections, and AI agent automation patterns.
+tab: business
+domain: d365-fno
 industry_vertical: null
-difficulty: "intermediate"
-source_type: "ragnar-custom"
-tags: ["d365-fno", "order-to-cash", "sales", "accounts-receivable", "collections"]
-version: "1.0"
-icon_emoji: "💰"
+difficulty: intermediate
+source_type: ragnar-custom
+tags: "[\"d365-fno\", \"order-to-cash\", \"sales\", \"accounts-receivable\", \"collections\"]"
+version: 1.0.1
+icon_emoji: 💰
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
-learning_path: "d365-fno-path"
+author: ragnar
+learning_path: d365-fno-path
 learning_path_position: 4
-prerequisites: ["d365-navigation-fundamentals"]
+prerequisites: "[\"d365-navigation-fundamentals\"]"
 references:
-  - title: "D365 Sales and Marketing"
-    url: "https://learn.microsoft.com/en-us/dynamics365/supply-chain/sales-marketing/overview-sales-marketing"
-  - title: "Accounts receivable in D365 Finance"
-    url: "https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/accounts-receivable"
+  - "title: "D365 Sales and Marketing"
+  - "title: "Accounts receivable in D365 Finance"
+requires: D365 F&O MCP Server
+mcp_tools:
+  - "d365-fno-mcp"
+  - "dataverse-mcp"
 ---
+
 
 # D365 Order to Cash
 
@@ -155,3 +158,29 @@ The collections workspace shows:
 **Collections outreach agent:** For overdue invoices, agent drafts personalized collection emails based on customer relationship, invoice age, payment history. Collector reviews and sends with one click.
 
 **Delivery status agent:** When customers ask "where is my order?", agent queries D365 pick/pack/ship status and carrier tracking — answers in natural language via Teams or web chat.
+
+## Trigger Phrases
+
+- "How do I d365 order to cash"
+- "Help me with d365 order to cash in D365"
+- "Check d365 order to cash"
+- "Analyze d365 order to cash"
+- "Show me d365 order to cash status"
+
+## Quick Example
+
+> See `d365-order-to-cash-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

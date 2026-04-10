@@ -1,29 +1,31 @@
 ---
-name: "Core Web Vitals"
-slug: "core-web-vitals"
-description: "Diagnose and fix LCP, INP, and CLS — the three Core Web Vitals that Google uses for search ranking and UX measurement."
-tab: "personal"
-domain: "frontend"
+name: Core Web Vitals
+slug: core-web-vitals
+description: Diagnose and fix LCP, INP, and CLS — the three Core Web Vitals that Google uses for search ranking and UX measurement.
+tab: personal
+domain: frontend
 industry_vertical: null
-difficulty: "intermediate"
-source_type: "ragnar-curated"
-tags: ["performance", "cwv", "lcp", "inp", "cls", "lighthouse", "seo"]
-version: "1.0"
-icon_emoji: "⚡"
+difficulty: intermediate
+source_type: ragnar-curated
+tags: "[\"performance\", \"cwv\", \"lcp\", \"inp\", \"cls\", \"lighthouse\", \"seo\"]"
+version: 1.0.1
+icon_emoji: ⚡
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "Google Web Vitals"
-    url: "https://web.dev/vitals/"
-  - title: "PageSpeed Insights"
-    url: "https://pagespeed.web.dev/"
-  - title: "Chrome UX Report"
-    url: "https://developer.chrome.com/docs/crux/"
+  - "title: "Google Web Vitals"
+  - "title: "PageSpeed Insights"
+  - "title: "Chrome UX Report"
+requires: None (Figma MCP optional)
+mcp_tools:
+  - "playwright-mcp"
+  - "figma-mcp"
 ---
+
 
 # Core Web Vitals
 
@@ -114,3 +116,27 @@ Add the `web-vitals` library to measure real CWV in production:
 import { onLCP, onINP, onCLS } from 'web-vitals';
 onLCP(metric => sendToAnalytics(metric));
 ```
+
+## Trigger Phrases
+
+- "Help me with core web vitals"
+- "Core Web Vitals"
+- "How do I core web vitals"
+
+## Quick Example
+
+> See `core-web-vitals-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

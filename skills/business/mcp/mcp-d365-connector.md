@@ -1,27 +1,29 @@
 ---
-name: "D365 ERP MCP Connector"
-slug: "mcp-d365-connector"
-description: "Design and build an MCP server that exposes D365 F&O OData entities as agent-consumable tools with pagination and error handling."
-tab: "business"
-domain: "mcp"
+name: D365 ERP MCP Connector
+slug: mcp-d365-connector
+description: Design and build an MCP server that exposes D365 F&O OData entities as agent-consumable tools with pagination and error handling.
+tab: business
+domain: mcp
 industry_vertical: null
-difficulty: "advanced"
-source_type: "ragnar-custom"
-tags: ["mcp", "d365-fno", "odata", "integration", "enterprise-ai"]
-version: "1.0"
-icon_emoji: "⚙️"
+difficulty: advanced
+source_type: ragnar-custom
+tags: "[\"mcp\", \"d365-fno\", \"odata\", \"integration\", \"enterprise-ai\"]"
+version: 1.0.1
+icon_emoji: ⚙️
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
-learning_path: "mcp-path"
+author: ragnar
+learning_path: mcp-path
 learning_path_position: 5
-prerequisites: ["mcp-fundamentals", "d365-navigation-fundamentals"]
+prerequisites: "[\"mcp-fundamentals\", \"d365-navigation-fundamentals\"]"
 references:
-  - title: "D365 OData Documentation"
-    url: "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/odata"
-  - title: "MCP TypeScript SDK"
-    url: "https://github.com/modelcontextprotocol/typescript-sdk"
+  - "title: "D365 OData Documentation"
+  - "title: "MCP TypeScript SDK"
+requires: Node.js TypeScript SDK
+mcp_tools:
+  - "mcp-server-sdk"
 ---
+
 
 # D365 ERP MCP Connector
 
@@ -165,3 +167,27 @@ Deploy to Azure Container Apps for production (use the `mcp-azure` skill for the
 - **Private endpoint** — keep D365 traffic on internal network
 - **Rate limiting** — implement per-agent rate limits to protect D365 performance
 - **Audit logging** — log every tool call with agent identity and parameters
+
+## Trigger Phrases
+
+- "Help me with d365 erp mcp connector"
+- "D365 ERP MCP Connector"
+- "How do I d365 erp mcp connector"
+
+## Quick Example
+
+> See `mcp-d365-connector-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

@@ -1,29 +1,31 @@
 ---
-name: "Accessibility Audit"
-slug: "accessibility-audit"
-description: "Web accessibility audit checklist — WCAG 2.2 AA, ARIA patterns, keyboard navigation, and the fixes that solve 80% of issues."
-tab: "personal"
-domain: "frontend"
+name: Accessibility Audit
+slug: accessibility-audit
+description: Web accessibility audit checklist — WCAG 2.2 AA, ARIA patterns, keyboard navigation, and the fixes that solve 80% of issues.
+tab: personal
+domain: frontend
 industry_vertical: null
-difficulty: "intermediate"
-source_type: "ragnar-curated"
-tags: ["accessibility", "wcag", "aria", "a11y", "screen-reader", "keyboard"]
-version: "1.0"
-icon_emoji: "♿"
+difficulty: intermediate
+source_type: ragnar-curated
+tags: "[\"accessibility\", \"wcag\", \"aria\", \"a11y\", \"screen-reader\", \"keyboard\"]"
+version: 1.0.1
+icon_emoji: ♿
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "WCAG 2.2 Guidelines"
-    url: "https://www.w3.org/TR/WCAG22/"
-  - title: "WebAIM — Web Accessibility In Mind"
-    url: "https://webaim.org"
-  - title: "MDN Accessibility Guide"
-    url: "https://developer.mozilla.org/en-US/docs/Web/Accessibility"
+  - "title: "WCAG 2.2 Guidelines"
+  - "title: "WebAIM — Web Accessibility In Mind"
+  - "title: "MDN Accessibility Guide"
+requires: None (Figma MCP optional)
+mcp_tools:
+  - "playwright-mcp"
+  - "figma-mcp"
 ---
+
 
 # Accessibility Audit
 
@@ -132,3 +134,27 @@ Tab through your entire page with the mouse unplugged:
 - **Lighthouse** (Chrome DevTools) — accessibility score with specific failures listed
 - **WAVE** (webaim.org/wave) — visual overlay showing issues in context
 - **Colour Contrast Analyzer** — desktop app for checking any two colors
+
+## Trigger Phrases
+
+- "Help me with accessibility audit"
+- "Accessibility Audit"
+- "How do I accessibility audit"
+
+## Quick Example
+
+> See `accessibility-audit-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |

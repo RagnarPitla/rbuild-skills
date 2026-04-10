@@ -1,25 +1,28 @@
 ---
-name: "Regulatory Rate Calculator"
-slug: "regulatory-rate-calculator"
-description: "Calculate regulated utility rates against filed tariff schedules — billing validation, rate case modeling, and customer rate optimization."
-tab: "business"
-domain: "industry-verticals"
-industry_vertical: "energy-utilities"
-difficulty: "advanced"
-source_type: "ragnar-custom"
-tags: ["energy", "utilities", "tariff", "regulatory", "billing", "rates"]
-version: "1.0"
-icon_emoji: "⚡"
+name: Regulatory Rate Calculator
+slug: regulatory-rate-calculator
+description: Calculate regulated utility rates against filed tariff schedules — billing validation, rate case modeling, and customer rate optimization.
+tab: business
+domain: industry-verticals
+industry_vertical: energy-utilities
+difficulty: advanced
+source_type: ragnar-custom
+tags: "[\"energy\", \"utilities\", \"tariff\", \"regulatory\", \"billing\", \"rates\"]"
+version: 1.0.1
+icon_emoji: ⚡
 is_coming_soon: false
 is_featured: false
-author: "ragnar"
+author: ragnar
 learning_path: null
 learning_path_position: null
-prerequisites: []
+prerequisites: "[]"
 references:
-  - title: "FERC Electric Rate Filing"
-    url: "https://www.ferc.gov/industries-data/electric/industry-activities/electric-rate-filings"
+  - "title: "FERC Electric Rate Filing"
+requires: D365 F&O MCP Server
+mcp_tools:
+  - "d365-fno-mcp"
 ---
+
 
 # Regulatory Rate Calculator
 
@@ -86,3 +89,27 @@ RECOMMENDATION: Switch to Industrial Interruptible
   Historical impact: Operations can accommodate interruptions with
   1-hour notice (per demand response policy in Dataverse)
 ```
+
+## Trigger Phrases
+
+- "Help me with regulatory rate calculator"
+- "Regulatory Rate Calculator"
+- "How do I regulatory rate calculator"
+
+## Quick Example
+
+> See `regulatory-rate-calculator-example.md` in this folder for a full worked scenario with business impact.
+
+## Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Unexpected output | Unclear input | Add more specific context to your prompt |
+| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+
+
+## Version History
+| Version | Date | Changes |
+|---|---|---|
+| 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
+| 1.0.0 | 2026-04-09 | Initial skill definition |
