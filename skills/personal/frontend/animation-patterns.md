@@ -1,25 +1,9 @@
 ---
-name: Frontend Animation Patterns
-slug: animation-patterns
-description: Production animation patterns for React — scroll animations, drag interactions, skeleton loaders, and micro-interaction design.
-tab: personal
-domain: frontend
-industry_vertical: null
-difficulty: intermediate
-source_type: ragnar-custom
-tags: "[\"animation\", \"react\", \"scroll\", \"skeleton\", \"micro-interactions\", \"ux\"]"
-version: 1.0.1
-icon_emoji: 🎭
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: null
-learning_path_position: null
-prerequisites: "[\"animation-interaction\"]"
-references:
-  - "title: "Framer Motion Documentation"
-  - "title: "Intersection Observer API"
-requires: None (Figma MCP optional)
+name: animation-patterns
+description: Production animation patterns for React including scroll animations, drag interactions, skeleton loaders, and micro-interactions. Use when user says 'scroll animation', 'skeleton loader', 'drag and drop animation', 'number counter animation', 'toast animation', 'loading state animation'.
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [intermediate, frontend, animation, css]
 mcp_tools:
   - "playwright-mcp"
   - "figma-mcp"
@@ -212,9 +196,14 @@ function SubmitButton({ isLoading, isSuccess }) {
 
 ## Trigger Phrases
 
-- "Help me with frontend animation patterns"
-- "Frontend Animation Patterns"
-- "How do I frontend animation patterns"
+- "scroll animation"
+- "skeleton loader"
+- "drag and drop animation"
+- "number counter animation"
+- "toast animation"
+- "loading state animation"
+- "animate on scroll"
+- "progress bar animation"
 
 ## Quick Example
 
@@ -224,12 +213,15 @@ function SubmitButton({ isLoading, isSuccess }) {
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+| Scroll animation fires immediately on mount | `once: true` not set or margin not configured | Add `once: true` to `useInView` options; use negative margin (`'-100px'`) to trigger before fully in view |
+| Skeleton shimmer animation is CPU-heavy | Using box-shadow or outline animations | Use only `background-position` animation on a gradient; avoid properties that trigger paint or layout |
+| Drag interaction feels sluggish | No `dragElastic` or spring physics tuned | Set `dragElastic={0.1}` for tight feel; use `dragMomentum={false}` to remove post-drag drift |
+| AnimatePresence exit animation not playing | Element removed from DOM before exit completes | Ensure element stays in the React tree until exit animation finishes; `AnimatePresence` requires the child to remain mounted during exit |
 
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

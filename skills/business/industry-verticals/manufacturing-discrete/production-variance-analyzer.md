@@ -1,23 +1,9 @@
 ---
-name: Production Variance Analyzer
-slug: production-variance-analyzer
-description: Analyze production order variances — material, quantity, routing, and scrap — with ranked root causes and corrective action recommendations.
-tab: business
-domain: industry-verticals
-industry_vertical: manufacturing-discrete
-difficulty: advanced
-source_type: ragnar-custom
-tags: "[\"manufacturing\", \"variance\", \"production\", \"d365\", \"cost\", \"quality\"]"
-version: 1.0.1
-icon_emoji: 📊
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: null
-learning_path_position: null
-prerequisites: "[]"
-references:
-  - "title: "D365 Production Cost Analysis"
+name: production-variance-analyzer
+description: Analyzes production order variances across material, quantity, routing, and scrap dimensions with ranked root causes and corrective action recommendations. Use when user says "production variance", "standard cost vs actual cost", "material quantity variance", "labor efficiency variance", "scrap variance", "variance roll-up report", or "why is production over cost".
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [intermediate, manufacturing, production, variance]
 requires: D365 F&O MCP Server
 mcp_tools:
   - "d365-fno-mcp"
@@ -99,9 +85,14 @@ The agent tracks variances over time and identifies patterns:
 
 ## Trigger Phrases
 
-- "Help me with production variance analyzer"
-- "Production Variance Analyzer"
-- "How do I production variance analyzer"
+- "production variance"
+- "standard cost vs actual cost"
+- "material quantity variance"
+- "labor efficiency variance"
+- "scrap variance"
+- "variance roll-up report"
+- "why is production over cost"
+- "production cost deviation"
 
 ## Quick Example
 
@@ -111,12 +102,15 @@ The agent tracks variances over time and identifies patterns:
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+| Variance report shows large unexplained residual after accounting for all named drivers | Indirect cost allocation method changed mid-period | Check whether the overhead absorption rate was updated during the period; re-run cost allocation with the consistent rate for the full period and restate the report |
+| Labor efficiency variance attributed to wrong work center | Production order reporting point captures total hours, not work-center-specific hours | Enable operation-level reporting on production orders in D365; require operators to report hours at the routing operation level, not just at job completion |
+| Price variance spike for a material that had no price change | Same item has two active costing versions with different prices | Identify which costing version was used for each production order; deactivate the older version and rerun the standard cost calculation to eliminate the split |
+| Trending analysis showing false improvement in scrap variance | Scrap reporting moved to a different production stage (reducing reported scrap at original stage) | Confirm that scrap reporting points are consistent across periods; align scrap capture to the same routing operation so period-over-period comparison is valid |
 
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

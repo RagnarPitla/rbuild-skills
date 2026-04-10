@@ -1,26 +1,9 @@
 ---
-name: Git Workflow Mastery
-slug: git-workflow-mastery
-description: Practical Git workflows — branching strategies, PR conventions, commit messages, rebase vs merge, and conflict resolution.
-tab: personal
-domain: software-engineering
-industry_vertical: null
-difficulty: starter
-source_type: ragnar-curated
-tags: "[\"git\", \"workflow\", \"branching\", \"commit\", \"pr\", \"collaboration\"]"
-version: 1.0.1
-icon_emoji: 🌿
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: null
-learning_path_position: null
-prerequisites: "[]"
-references:
-  - "title: "Conventional Commits Specification"
-  - "title: "GitHub Flow Guide"
-requires: None
-mcp_tools: []
+name: git-workflow-mastery
+description: Git branching strategies, Conventional Commits, rebase vs merge, stash, bisect, and conflict resolution. Use when user says 'git workflow', 'branching strategy', 'commit message convention', 'rebase vs merge', 'git conflict', 'cherry-pick', 'git bisect'.
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [intermediate, software-engineering, git, workflow]
 ---
 
 
@@ -49,6 +32,8 @@ Rules:
 - Branches are short-lived — open a PR quickly, merge quickly
 
 **When to use GitFlow** (feature branches + develop branch): Only if you have multiple versions in production simultaneously (rare). It's more overhead than most teams need.
+
+**Trunk-based development:** For high-performing teams with strong test coverage. Commit small changes directly to main (or short-lived branches under 1 day). Feature flags hide incomplete work.
 
 ## Commit Message Convention
 
@@ -83,8 +68,8 @@ docs(api): update endpoint documentation for v2
 ```
 
 **The golden rule:** The message completes the sentence "This commit will..."
-- ✅ "fix: handle null user in getProfile"
-- ❌ "fixed stuff" / "wip" / "asdfgh"
+- "fix: handle null user in getProfile"
+- NOT "fixed stuff" / "wip" / "asdfgh"
 
 ## Rebase vs Merge
 
@@ -104,6 +89,60 @@ git rebase main
 - Merge main INTO your feature branch: use `rebase` (cleaner)
 - Merge your feature INTO main: use `merge --no-ff` (preserves the feature branch context)
 - Never rebase commits that are on a shared/remote branch (rewrites history = chaos)
+
+## Interactive Rebase (Clean Up Before PR)
+
+```bash
+# Squash last 3 commits into one
+git rebase -i HEAD~3
+
+# In the editor:
+# pick abc123 add user endpoint
+# squash def456 fix typo
+# squash ghi789 fix tests
+
+# Result: one clean commit with combined message
+```
+
+Use this to clean up "wip", "fix typo", "oops" commits before merging.
+
+## Cherry-Pick
+
+Apply a single commit from one branch to another:
+
+```bash
+# Get the commit hash from git log
+git log --oneline feature/payment-fix
+
+# Apply it to your current branch
+git cherry-pick abc123def
+
+# Cherry-pick a range of commits
+git cherry-pick abc123..def456
+```
+
+Useful when a hotfix on a feature branch also needs to go to main.
+
+## Git Bisect (Find the Bug-Introducing Commit)
+
+When you know HEAD is broken but a previous commit was fine:
+
+```bash
+git bisect start
+git bisect bad HEAD              # Current state is bad
+git bisect good v1.2.0           # This tag/commit was good
+
+# Git checks out the midpoint — run your test
+npm test
+
+git bisect good    # If test passes
+git bisect bad     # If test fails
+
+# Git binary-searches — repeat until it identifies the first bad commit
+git bisect reset   # Clean up when done
+```
+
+Bisect can find the exact commit that introduced a bug in O(log n) steps.
 
 ## PR (Pull Request) Conventions
 
@@ -177,13 +216,21 @@ git bisect good v1.0
 # Save work in progress without committing
 git stash push -m "wip: feature xyz"
 git stash pop
+
+# See all stashes
+git stash list
 ```
 
 ## Trigger Phrases
 
-- "Help me with git workflow mastery"
-- "Git Workflow Mastery"
-- "How do I git workflow mastery"
+- "git workflow"
+- "branching strategy"
+- "commit message convention"
+- "rebase vs merge"
+- "git conflict"
+- "cherry-pick"
+- "git bisect"
+- "conventional commits"
 
 ## Quick Example
 
@@ -193,12 +240,15 @@ git stash pop
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+| Merge conflicts every PR | Branches live too long | Move to shorter branch lifetimes; merge main into your branch daily with `git pull --rebase` |
+| Messy commit history | No squash discipline | Use interactive rebase before PR; require squash-merge in GitHub repo settings |
+| Pushed to wrong branch | Working directly on main | Protect main branch (require PR reviews); use `git reset --soft HEAD~1` to undo before pushing |
+| Cannot find which commit broke something | No systematic approach | Use `git bisect` with a test script to binary-search the exact breaking commit |
 
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

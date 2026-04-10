@@ -1,32 +1,25 @@
 ---
-name: Meeting Notes Processor
-slug: meeting-notes-processor
-description: Transform raw meeting notes or transcripts into structured action items, decisions log, and follow-up assignments with deadlines.
-tab: personal
-domain: productivity
-industry_vertical: null
-difficulty: starter
-source_type: ragnar-custom
-tags: "[\"productivity\", \"meetings\", \"action-items\", \"notes\", \"workflow\"]"
-version: 1.0.1
-icon_emoji: 📝
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: null
-learning_path_position: null
-prerequisites: "[]"
-references: "[]"
-requires: Exa MCP, Firecrawl MCP
-mcp_tools:
-  - "exa-mcp"
-  - "firecrawl-mcp"
+name: meeting-notes-processor
+description: Transforms raw meeting notes or transcripts into structured action items, decisions log, and follow-up assignments with deadlines. Use when user says 'meeting notes', 'process this transcript', 'action items from meeting', 'summarize the meeting', 'decisions from today', 'turn these notes into action items'.
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [beginner, productivity, meeting-notes, action-items]
 ---
-
 
 # Meeting Notes Processor
 
-Raw meeting notes are nearly useless 48 hours after the meeting. Structured output — decisions, actions, owners, deadlines — is what drives follow-through.
+Raw meeting notes are nearly useless 48 hours after the meeting. Structured output (decisions, actions, owners, deadlines) is what drives follow-through.
+
+## Trigger Phrases
+
+- "process these meeting notes"
+- "turn this transcript into action items"
+- "action items from meeting"
+- "summarize the meeting"
+- "decisions from today"
+- "clean up these notes"
+- "meeting summary"
+- "extract action items"
 
 ## Input Formats
 
@@ -45,8 +38,8 @@ For every meeting, produce:
 Date: [Date] | Duration: [Time] | Attendees: [Names]
 
 ## Decisions Made
-- [Decision 1] — decided by [person/group], effective [date]
-- [Decision 2] — ...
+- [Decision 1], decided by [person/group], effective [date]
+- [Decision 2], ...
 
 ## Action Items
 | # | Task | Owner | Due Date | Status |
@@ -127,12 +120,6 @@ After processing, send the structured notes to:
 
 Send within 24 hours while the meeting is still fresh in people's memories.
 
-## Trigger Phrases
-
-- "Help me with meeting notes processor"
-- "Meeting Notes Processor"
-- "How do I meeting notes processor"
-
 ## Quick Example
 
 > See `meeting-notes-processor-example.md` in this folder for a full worked scenario with business impact.
@@ -141,12 +128,14 @@ Send within 24 hours while the meeting is still fresh in people's memories.
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
-
+| Too many action items | Every discussion point became a task | Filter: only items someone explicitly committed to are action items; everything else is a discussion point |
+| Missing owners | Notes don't name who said what | Add names to raw notes as you capture them, or flag for clarification when owners are unknown |
+| Decisions vs. discussions blurred | Meeting lacked explicit decision-making | Surface ambiguous items as "Decision needed on: X" rather than recording them as decided |
+| Follow-through still low after structured notes | Notes sent but not tracked | Paste action items into your task system (Planner, Jira, Notion). Structured notes alone don't drive accountability. |
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

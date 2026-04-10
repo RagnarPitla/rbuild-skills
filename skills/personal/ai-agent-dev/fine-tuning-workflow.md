@@ -1,29 +1,13 @@
 ---
-name: Fine-Tuning Workflow
-slug: fine-tuning-workflow
-description: End-to-end fine-tuning pipeline — dataset curation, format conversion, training configuration, evaluation, and when NOT to fine-tune.
-tab: personal
-domain: ai-agent-dev
-industry_vertical: null
-difficulty: advanced
-source_type: ragnar-custom
-tags: "[\"fine-tuning\", \"llm\", \"training\", \"dataset\", \"ml\"]"
-version: 1.0.1
-icon_emoji: 🎯
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: null
-learning_path_position: null
-prerequisites: "[\"prompt-engineering-101\", \"rag-patterns\"]"
-references:
-  - "title: "OpenAI Fine-Tuning Guide"
-  - "title: "Anthropic Model Context Protocol"
+name: fine-tuning-workflow
+description: "End-to-end fine-tuning pipeline — dataset curation, format conversion, training configuration, evaluation, and when NOT to fine-tune. Use when user says 'fine-tune a model', 'custom training', 'domain-specific LLM', 'train on my data', 'fine-tuning dataset', 'JSONL training format', 'overfitting in fine-tune'."
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [advanced, ai-agent-dev, fine-tuning, training]
 requires: Claude API
 mcp_tools:
   - "claude-api"
 ---
-
 
 # Fine-Tuning Workflow
 
@@ -129,9 +113,14 @@ Compare fine-tuned model vs base model on your validation set:
 
 ## Trigger Phrases
 
-- "Help me with fine-tuning workflow"
-- "Fine-Tuning Workflow"
-- "How do I fine-tuning workflow"
+- "fine-tune a model"
+- "custom training"
+- "domain-specific LLM"
+- "train on my data"
+- "fine-tuning dataset"
+- "JSONL training format"
+- "overfitting in fine-tune"
+- "when to fine-tune vs RAG"
 
 ## Quick Example
 
@@ -141,12 +130,14 @@ Compare fine-tuned model vs base model on your validation set:
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
-
+| Model regurgitates training examples | Overfitting from too many epochs or duplicate examples | Reduce n_epochs to 2, deduplicate training data, check validation loss |
+| Fine-tuned model worse than base on new inputs | Training data not representative, or underfitting | Audit training examples for diversity; try 4-5 epochs if underfitting |
+| High training cost | Dataset too large with low-quality examples | Quality filter: remove ambiguous/inconsistent examples, reduce to 200-500 high-quality pairs |
+| Format compliance regressed | Model learned content but forgot format constraints | Add more format-heavy examples to training set and include format in system prompt |
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

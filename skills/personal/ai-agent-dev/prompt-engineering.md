@@ -1,29 +1,13 @@
 ---
-name: Prompt Engineering
-slug: prompt-engineering
-description: Structured prompt design — system prompts, chain-of-thought, few-shot examples, XML tags, and anti-patterns to eliminate.
-tab: personal
-domain: ai-agent-dev
-industry_vertical: null
-difficulty: intermediate
-source_type: ragnar-custom
-tags: "[\"prompting\", \"chain-of-thought\", \"few-shot\", \"system-prompts\", \"llm\"]"
-version: 1.0.1
-icon_emoji: ✏️
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: null
-learning_path_position: null
-prerequisites: "[]"
-references:
-  - "title: "Anthropic Prompt Engineering Guide"
-  - "title: "Anthropic Prompt Library"
+name: prompt-engineering
+description: "Structured prompt design — system prompts, chain-of-thought, few-shot examples, XML tags, and anti-patterns to eliminate. Use when user says 'prompt engineering', 'advanced prompting', 'XML tags in Claude', 'structured prompt design', 'chain of thought reasoning', 'anti-patterns in prompts', 'instruction overload'."
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [intermediate, ai-agent-dev, prompt-engineering, chain-of-thought]
 requires: Claude API
 mcp_tools:
   - "claude-api"
 ---
-
 
 # Prompt Engineering
 
@@ -68,7 +52,7 @@ Before answering, think through this step by step:
 Then provide your final answer.
 ```
 
-**When CoT helps:** Math, logic, multi-step analysis, decision-making  
+**When CoT helps:** Math, logic, multi-step analysis, decision-making
 **When to skip:** Simple lookups, classification, short responses — CoT adds tokens without benefit
 
 ## Few-Shot Examples
@@ -123,9 +107,9 @@ For agents: keep temperature at 0-0.3. Predictability over creativity.
 
 ## Anti-Patterns
 
-**Vague instructions**: "Be helpful and professional" → "Keep responses under 100 words. Use formal language. Don't use slang."
+**Vague instructions**: "Be helpful and professional" should be "Keep responses under 100 words. Use formal language. Don't use slang."
 
-**Role-play cosplay**: "You are an expert wizard who..." → Just state the actual expertise needed.
+**Role-play cosplay**: "You are an expert wizard who..." should be replaced with the actual expertise needed.
 
 **Instruction overload**: 2,000-word system prompts with 50 rules. Keep it under 500 words. Test what's actually needed.
 
@@ -135,9 +119,14 @@ For agents: keep temperature at 0-0.3. Predictability over creativity.
 
 ## Trigger Phrases
 
-- "Help me with prompt engineering"
-- "Prompt Engineering"
-- "How do I prompt engineering"
+- "prompt engineering"
+- "advanced prompting"
+- "XML tags in Claude"
+- "structured prompt design"
+- "chain of thought reasoning"
+- "anti-patterns in prompts"
+- "instruction overload"
+- "negative constraints in prompts"
 
 ## Quick Example
 
@@ -147,12 +136,14 @@ For agents: keep temperature at 0-0.3. Predictability over creativity.
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
-
+| Model violates negative constraints | Brain still activates concepts when told "don't" | Rewrite as positive direction: instead of "don't discuss X" use "stay focused on Y" |
+| XML tags not working | Tags malformed or model not parsing them | Ensure opening and closing tags match; check for typos in tag names |
+| CoT reasoning is wrong | Model reasoning step is flawed even when explicit | Add "Check your reasoning before giving the final answer" as a closing instruction |
+| Few-shot examples make outputs worse | Examples are inconsistent or represent edge cases as normal | Audit examples; ensure they represent the typical case, not the exception |
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

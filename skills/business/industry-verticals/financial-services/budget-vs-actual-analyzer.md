@@ -1,23 +1,9 @@
 ---
-name: Budget vs Actual Analyzer
-slug: budget-vs-actual-analyzer
-description: Analyze budget variances in D365 Finance — identify top drivers, generate natural-language explanations, and flag items needing action.
-tab: business
-domain: industry-verticals
-industry_vertical: financial-services
-difficulty: intermediate
-source_type: ragnar-custom
-tags: "[\"financial-services\", \"budget\", \"variance\", \"d365\", \"management-reporting\"]"
-version: 1.0.1
-icon_emoji: 📊
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: null
-learning_path_position: null
-prerequisites: "[]"
-references:
-  - "title: "Budgeting in D365 Finance"
+name: budget-vs-actual-analyzer
+description: Analyzes budget variances in D365 Finance, identifies top drivers, generates plain-language explanations, and flags items needing management action. Use when user says "budget vs actual", "variance analysis", "over budget", "under budget", "budget commentary", "management reporting", or "explain budget variance".
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [intermediate, financial-services, budget, variance-analysis]
 requires: D365 F&O MCP Server
 mcp_tools:
   - "d365-fno-mcp"
@@ -92,9 +78,14 @@ Store materiality thresholds in Dataverse:
 
 ## Trigger Phrases
 
-- "Help me with budget vs actual analyzer"
-- "Budget vs Actual Analyzer"
-- "How do I budget vs actual analyzer"
+- "budget vs actual"
+- "variance analysis"
+- "over budget"
+- "under budget"
+- "budget commentary"
+- "explain budget variance"
+- "management reporting variance"
+- "top variance drivers"
 
 ## Quick Example
 
@@ -104,12 +95,15 @@ Store materiality thresholds in Dataverse:
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+| Budget amounts show as zero for some accounts | Budget register entries not posted or wrong budget model selected | Confirm the budget model is set to the current fiscal year's approved model; check that budget entries are in Posted status |
+| Variance explanation is missing for large items | GL transaction descriptions are blank or use generic voucher references | Enforce a description standard on journal posting; use vendor name and PO reference in journal descriptions |
+| Prior year comparison shows wrong numbers | Fiscal year mapping not configured for comparative periods | Set the correct fiscal year offset in the period comparison configuration; verify the comparison period is the same calendar month |
+| Materiality threshold not filtering small variances | Threshold stored in code rather than Dataverse policy table | Move thresholds to Dataverse using the Niyam pattern; update the absolute and percentage fields to match CFO-approved materiality levels |
 
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

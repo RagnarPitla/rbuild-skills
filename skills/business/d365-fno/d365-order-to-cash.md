@@ -1,30 +1,14 @@
 ---
-name: D365 Order to Cash
-slug: d365-order-to-cash
-description: Configure O2C in D365 — customer setup, sales orders, pricing, invoicing, collections, and AI agent automation patterns.
-tab: business
-domain: d365-fno
-industry_vertical: null
-difficulty: intermediate
-source_type: ragnar-custom
-tags: "[\"d365-fno\", \"order-to-cash\", \"sales\", \"accounts-receivable\", \"collections\"]"
-version: 1.0.1
-icon_emoji: 💰
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: d365-fno-path
-learning_path_position: 4
-prerequisites: "[\"d365-navigation-fundamentals\"]"
-references:
-  - "title: "D365 Sales and Marketing"
-  - "title: "Accounts receivable in D365 Finance"
+name: d365-order-to-cash
+description: Configure Order to Cash (O2C) in D365 — customer setup, sales orders, pricing, invoicing, cash application, collections, and AI agent automation patterns. Use when user says "order to cash in D365", "sales order process D365", "configure collections D365", "customer credit limit D365", "invoice a sales order", "cash application D365", "O2C process".
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [intermediate, d365, order-to-cash, accounts-receivable]
 requires: D365 F&O MCP Server
 mcp_tools:
   - "d365-fno-mcp"
   - "dataverse-mcp"
 ---
-
 
 # D365 Order to Cash
 
@@ -102,7 +86,7 @@ The system selects the best price automatically based on the priority you config
 After order confirmation:
 
 1. **Pick list:** Warehouse management → Outbound → Pick routes — generate pick list for warehouse staff
-2. **Packing slip:** When items are packed and ready to ship — **Sales order → Generate → Packing slip** — posts the packing slip, reducing inventory
+2. **Packing slip:** When items are packed and ready to ship: **Sales order → Generate → Packing slip** — posts the packing slip, reducing inventory
 3. **Shipment:** Records actual ship date, carrier, tracking number
 
 **Packing slip posting is the inventory moment.** Revenue is not yet recognized — that happens at invoicing (or when control transfers, per IFRS 15/ASC 606 configuration).
@@ -149,11 +133,65 @@ The collections workspace shows:
 
 **Interest calculation:** D365 can calculate and post interest charges on overdue balances per your credit terms.
 
+## OData Queries for O2C
+
+### Open Sales Orders by Customer
+```
+GET /data/SalesOrderHeadersV2?$filter=SalesOrderStatus eq 'Backorder'&$select=SalesOrderNumber,CustomerAccountNumber,RequestedShipDate,TotalAmount&$orderby=RequestedShipDate
+```
+
+### Overdue AR Balances
+```
+GET /data/CustomerTransactions?$filter=DueDate lt 2026-04-10 and AmountRemaining gt 0&$select=CustomerAccount,InvoiceId,DueDate,AmountRemaining,CurrencyCode
+```
+
+### Shipped but Not Invoiced
+```
+GET /data/SalesOrderLineEntity?$filter=DeliveredQuantity gt InvoicedQuantity&$select=SalesOrderNumber,ItemNumber,DeliveredQuantity,InvoicedQuantity,SalesPrice
+```
+
+### Customer Credit Utilization
+```
+GET /data/CustCreditMaxEntity?$select=CustomerAccount,CreditMaximum,AmountUsed,CurrencyCode
+```
+
+## Core Tasks
+
+### 1. Sales Order Anomaly Detection
+```text
+GIVEN a batch of new sales orders
+WHEN skill analyzes
+THEN flag orders with price below configured threshold
+AND flag orders with unusual quantities (>3 std deviations from customer history)
+AND flag orders shipping to new addresses not in customer profile
+AND return anomaly list with severity and reason
+```
+
+### 2. Credit Check
+```text
+GIVEN a new sales order
+WHEN skill checks credit
+THEN query customer's current AR balance
+AND add open sales order values not yet invoiced
+AND compare total exposure to credit limit
+AND return: approved, warning, or hold with exposure detail
+```
+
+### 3. Collections Prioritization
+```text
+GIVEN overdue AR balances
+WHEN skill prioritizes
+THEN sort by: days overdue × amount × customer risk score
+AND include last payment date and payment history pattern
+AND suggest: call, letter, hold, or escalate for each customer
+AND return prioritized action list for collections team
+```
+
 ## Agent Patterns for O2C
 
 **Sales order anomaly agent:** Flags orders with unusual quantities, pricing below threshold, ship-to addresses not matching customer profile. Routes to sales manager before confirming.
 
-**Credit check agent:** When a new order is placed, agent checks current AR balance + pending orders vs credit limit. Approves within limit, escalates exceptions with customer payment history context.
+**Credit check agent:** When a new order is placed, agent checks current AR balance plus pending orders vs credit limit. Approves within limit, escalates exceptions with customer payment history context.
 
 **Collections outreach agent:** For overdue invoices, agent drafts personalized collection emails based on customer relationship, invoice age, payment history. Collector reviews and sends with one click.
 
@@ -161,26 +199,30 @@ The collections workspace shows:
 
 ## Trigger Phrases
 
-- "How do I d365 order to cash"
-- "Help me with d365 order to cash in D365"
-- "Check d365 order to cash"
-- "Analyze d365 order to cash"
-- "Show me d365 order to cash status"
-
-## Quick Example
-
-> See `d365-order-to-cash-example.md` in this folder for a full worked scenario with business impact.
+- "order to cash in D365"
+- "sales order process D365"
+- "configure collections D365"
+- "customer credit limit D365"
+- "invoice a sales order"
+- "cash application D365"
+- "O2C process"
+- "overdue AR in D365"
 
 ## Troubleshooting
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
-
+| Sales order stuck on credit hold | Customer balance exceeds credit limit | Review customer credit limit in AR → Customers → [customer] → Credit and collections tab; approve manually or increase limit |
+| Packing slip cannot be posted | Inventory pick list not yet completed, or warehouse not confirmed | Complete the pick process in Warehouse management; confirm all pick lines before posting packing slip |
+| Invoice posting fails with "posting profile not found" | Customer group has no AR posting profile assigned | Navigate to AR → Setup → Customer posting profiles; ensure the customer's group has a valid summary account |
+| Revenue posting to wrong account | Item sales tax group or customer posting profile misconfigured | Check the posting profile summary account and item sales tax group on the sales order line |
+| Payment cannot settle against invoice | Invoice and payment are in different legal entities | Confirm intercompany posting is configured; both entities must share the same customer account setup |
+| Collection letter not generating | Customer account excluded from interest/collection letters, or letter sequence not configured | Check AR → Setup → Collections → Collection letter sequence; verify customer is not flagged "Exclude from collection letters" |
+| Batch invoicing misses some orders | Packing slip not posted or order not in "Delivered" status | Verify packing slip status on sales order lines before running batch invoice |
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content — OData queries, GIVEN/WHEN/THEN tasks, D365-specific error table |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

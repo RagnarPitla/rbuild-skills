@@ -1,24 +1,9 @@
 ---
-name: AML Transaction Screener
-slug: aml-transaction-screener
-description: Screen financial transactions against AML rules and sanctions lists — detect suspicious patterns and generate SAR-ready documentation.
-tab: business
-domain: industry-verticals
-industry_vertical: financial-services
-difficulty: advanced
-source_type: ragnar-custom
-tags: "[\"financial-services\", \"aml\", \"compliance\", \"sanctions\", \"fraud\"]"
-version: 1.0.1
-icon_emoji: 🔍
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: null
-learning_path_position: null
-prerequisites: "[]"
-references:
-  - "title: "FinCEN AML Program Requirements"
-  - "title: "OFAC Sanctions Lists"
+name: aml-transaction-screener
+description: Screens financial transactions against AML rules, sanctions lists, and behavioral baselines to detect suspicious patterns and generate SAR-ready documentation. Use when user says "screen transactions for AML", "suspicious transaction", "OFAC check", "structuring detection", "file a SAR", "AML alert", or "sanctions screening".
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [advanced, financial-services, aml, compliance]
 requires: D365 F&O MCP Server
 mcp_tools:
   - "d365-fno-mcp"
@@ -90,9 +75,14 @@ Investigator reviews, edits, and finalizes — reducing SAR preparation time fro
 
 ## Trigger Phrases
 
-- "Help me with aml transaction screener"
-- "AML Transaction Screener"
-- "How do I aml transaction screener"
+- "screen transactions for AML"
+- "suspicious transaction alert"
+- "OFAC sanctions check"
+- "structuring detection"
+- "file a SAR"
+- "AML transaction screening"
+- "sanctions screening"
+- "unusual transaction pattern"
 
 ## Quick Example
 
@@ -102,12 +92,15 @@ Investigator reviews, edits, and finalizes — reducing SAR preparation time fro
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+| High false positive rate on sanctions matching | Match threshold set too low (below 85%) | Raise similarity threshold in Dataverse policy table; review and tune fuzzy match configuration |
+| Structuring alerts firing on legitimate payroll runs | Payroll processor splits batches below reporting threshold | Add payroll counterparty to whitelist rule in Dataverse; exclude batch type from structuring detection |
+| SAR narrative generation is too generic | Transaction cluster context not passed to agent | Ensure the full transaction history window (90 days) is included in the screening context, not just the flagged transaction |
+| Alert score inconsistent across identical transactions | Currency conversion not normalized before scoring | Confirm all transaction amounts are converted to base currency before behavioral comparison logic runs |
 
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

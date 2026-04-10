@@ -1,26 +1,9 @@
 ---
-name: TDD Workflow
-slug: tdd-workflow
-description: Test-driven development enforced at 80%+ coverage — red-green-refactor, testing pyramid, and when TDD is the wrong tool.
-tab: personal
-domain: software-engineering
-industry_vertical: null
-difficulty: intermediate
-source_type: ragnar-curated
-tags: "[\"tdd\", \"testing\", \"red-green-refactor\", \"coverage\", \"quality\"]"
-version: 1.0.1
-icon_emoji: 🧪
-is_coming_soon: false
-is_featured: true
-author: ragnar
-learning_path: null
-learning_path_position: null
-prerequisites: "[]"
-references:
-  - "title: "obra/superpowers TDD Skill"
-  - "title: "Test-Driven Development by Kent Beck"
-requires: None
-mcp_tools: []
+name: tdd-workflow
+description: Test-driven development with red-green-refactor cycle, testing pyramid, test doubles, and TDD for legacy code. Use when user says 'TDD', 'test-driven development', 'write tests first', 'red green refactor', 'testing pyramid', 'when to use mocks'.
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [intermediate, software-engineering, tdd, testing]
 ---
 
 
@@ -48,7 +31,7 @@ The discipline is staying in this cycle. Most developers skip to "write the code
 
 ## What to Test vs Mock
 
-**Test:** Business logic, edge cases, error paths, return values  
+**Test:** Business logic, edge cases, error paths, return values
 **Mock:** External services (APIs, databases), file system, time/dates, random values
 
 The test suite should run without network access and complete in under 30 seconds.
@@ -67,14 +50,36 @@ The test suite should run without network access and complete in under 30 second
 
 Invert this pyramid and you get a test suite that's slow, fragile, and gives false confidence.
 
-## When TDD Slows You Down
+## Test Doubles: Mock vs Stub vs Spy vs Fake
 
-TDD is not always right:
-- **Exploratory code** — when you don't know the shape of the solution yet, write the code first, then add tests
-- **UI/visual work** — behavior-based tests are hard to write for visual components; use snapshot tests sparingly
-- **Throwaway prototypes** — don't test code you'll delete
+These terms are often used interchangeably, but they're different:
 
-For production code that will be maintained: always TDD.
+| Type | What it Does | When to Use |
+|------|-------------|-------------|
+| **Stub** | Returns pre-programmed responses | Replacing external dependencies with fixed data |
+| **Mock** | Stub + verifies it was called correctly | When the call itself (not just the result) matters |
+| **Spy** | Wraps real object, records calls | When you want real behavior but also want to observe calls |
+| **Fake** | Simplified working implementation | In-memory database, fake email server |
+
+```typescript
+// Stub: just returns data
+const userRepo = { findById: jest.fn().mockResolvedValue({ id: '1', name: 'Alice' }) };
+
+// Mock: verifies the call was made with correct arguments
+const emailService = { send: jest.fn() };
+// After test:
+expect(emailService.send).toHaveBeenCalledWith('alice@example.com', expect.stringContaining('Welcome'));
+
+// Spy: real implementation, but you can inspect calls
+const consoleSpy = jest.spyOn(console, 'log');
+
+// Fake: in-memory implementation
+class InMemoryUserRepo {
+  private users = new Map<string, User>();
+  async findById(id: string) { return this.users.get(id) ?? null; }
+  async save(user: User) { this.users.set(user.id, user); return user; }
+}
+```
 
 ## Test Naming Convention
 
@@ -90,11 +95,55 @@ describe('calculateDiscount', () => {
 
 Test names should read as specifications. If a test fails, the name tells you what broke.
 
+## TDD for Legacy Code (Seams and Characterization Tests)
+
+When you need to change code that has no tests:
+
+1. **Write characterization tests** — tests that document what the code currently does (not what it should do)
+2. **Find a seam** — a place where behavior can change without editing the existing code
+3. **Inject the dependency** — pass the dependency as a parameter instead of creating it internally
+4. **Now you can test** — replace the real dependency with a test double
+
+```typescript
+// Legacy: untestable (creates its own dependencies)
+class OrderProcessor {
+  process(order) {
+    const db = new Database(); // Can't inject a fake
+    const emailer = new Emailer(); // Can't inject a mock
+    db.save(order);
+    emailer.send(order.customer.email);
+  }
+}
+
+// Refactored: testable (dependencies injected)
+class OrderProcessor {
+  constructor(private db: Database, private emailer: Emailer) {}
+  process(order) {
+    this.db.save(order);
+    this.emailer.send(order.customer.email);
+  }
+}
+```
+
+## When TDD Slows You Down
+
+TDD is not always right:
+- **Exploratory code** — when you don't know the shape of the solution yet, write the code first, then add tests
+- **UI/visual work** — behavior-based tests are hard to write for visual components; use snapshot tests sparingly
+- **Throwaway prototypes** — don't test code you'll delete
+
+For production code that will be maintained: always TDD.
+
 ## Trigger Phrases
 
-- "Help me with tdd workflow"
-- "TDD Workflow"
-- "How do I tdd workflow"
+- "TDD"
+- "test-driven development"
+- "write tests first"
+- "red green refactor"
+- "testing pyramid"
+- "when to use mocks"
+- "test doubles"
+- "characterization tests"
 
 ## Quick Example
 
@@ -104,12 +153,15 @@ Test names should read as specifications. If a test fails, the name tells you wh
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+| Tests pass but bugs still reach production | Testing implementation, not behavior | Test observable outcomes (return values, side effects) not internal function calls |
+| Test suite takes 10+ minutes | Too many integration/E2E tests, slow stubs | Move to in-memory fakes for databases; stub external HTTP calls; run unit tests in parallel |
+| Tests break on every refactor | Tests depend on implementation details | Test behavior through the public interface; avoid testing private methods directly |
+| Cannot write a test because code is not injectable | Legacy code with hardcoded dependencies | Apply the seam pattern: find a constructor or function parameter where you can inject a test double |
 
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

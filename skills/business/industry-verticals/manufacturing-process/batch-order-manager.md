@@ -1,23 +1,9 @@
 ---
-name: Batch Order Manager
-slug: batch-order-manager
-description: Manage pharmaceutical and process manufacturing batch orders — potency adjustments, yield tracking, and GxP compliance checkpoints.
-tab: business
-domain: industry-verticals
-industry_vertical: manufacturing-process
-difficulty: advanced
-source_type: ragnar-custom
-tags: "[\"manufacturing-process\", \"batch\", \"pharmaceutical\", \"d365\", \"compliance\"]"
-version: 1.0.1
-icon_emoji: 🧫
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: null
-learning_path_position: null
-prerequisites: "[]"
-references:
-  - "title: "D365 Process Manufacturing"
+name: batch-order-manager
+description: Manages pharmaceutical and process manufacturing batch orders including potency adjustments, yield tracking, and GxP compliance checkpoint enforcement. Use when user says "batch order", "create batch", "batch yield", "batch progress", "process manufacturing compliance", "batch record assembly", or "GxP checkpoint".
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [intermediate, manufacturing, batch-order, process-manufacturing]
 requires: D365 F&O MCP Server
 mcp_tools:
   - "d365-fno-mcp"
@@ -74,9 +60,14 @@ Agent enforces these gates — production cannot advance until checkpoint is sat
 
 ## Trigger Phrases
 
-- "Help me with batch order manager"
-- "Batch Order Manager"
-- "How do I batch order manager"
+- "batch order"
+- "create batch"
+- "batch yield"
+- "batch progress tracking"
+- "process manufacturing compliance"
+- "batch record assembly"
+- "GxP checkpoint"
+- "batch phase monitoring"
 
 ## Quick Example
 
@@ -86,12 +77,15 @@ Agent enforces these gates — production cannot advance until checkpoint is sat
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+| Batch order formula quantity not adjusting for potency | Potency adjustment flag not enabled on the formula line for active ingredients | Set the "Potency" flag on the relevant formula line in D365 Process Manufacturing; link the item to the potency attribute and specify the target potency |
+| Yield deviation not triggering investigation | Yield threshold not configured for this product in Dataverse policy table | Add the acceptable yield range (e.g., 95-102%) to the Dataverse batch policy table for the product; the agent compares actual yield against this range |
+| Compliance checkpoint blocking production advance with no clear reason | Checkpoint condition logic evaluates to null rather than pass or fail | Review the checkpoint condition in Dataverse; ensure all required input fields (e.g., environmental monitoring result) have data before the checkpoint evaluates |
+| Batch record assembly missing equipment usage records | Equipment usage not recorded at the work center during batch execution | Require equipment ID entry at each production phase in D365; use the agent's batch record gap detection to identify which phases are missing equipment references before QA review |
 
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

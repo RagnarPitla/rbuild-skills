@@ -1,26 +1,9 @@
 ---
-name: Core Web Vitals
-slug: core-web-vitals
-description: Diagnose and fix LCP, INP, and CLS — the three Core Web Vitals that Google uses for search ranking and UX measurement.
-tab: personal
-domain: frontend
-industry_vertical: null
-difficulty: intermediate
-source_type: ragnar-curated
-tags: "[\"performance\", \"cwv\", \"lcp\", \"inp\", \"cls\", \"lighthouse\", \"seo\"]"
-version: 1.0.1
-icon_emoji: ⚡
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: null
-learning_path_position: null
-prerequisites: "[]"
-references:
-  - "title: "Google Web Vitals"
-  - "title: "PageSpeed Insights"
-  - "title: "Chrome UX Report"
-requires: None (Figma MCP optional)
+name: core-web-vitals
+description: Diagnose and fix LCP, INP, and CLS — the Core Web Vitals Google uses for search ranking and UX measurement. Use when user says 'core web vitals', 'LCP FCP CLS', 'improve Lighthouse score', 'page performance', 'INP optimization', 'layout shift fix'.
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [intermediate, frontend, core-web-vitals, performance]
 mcp_tools:
   - "playwright-mcp"
   - "figma-mcp"
@@ -119,9 +102,14 @@ onLCP(metric => sendToAnalytics(metric));
 
 ## Trigger Phrases
 
-- "Help me with core web vitals"
-- "Core Web Vitals"
-- "How do I core web vitals"
+- "core web vitals"
+- "LCP FCP CLS"
+- "improve Lighthouse score"
+- "page performance"
+- "INP optimization"
+- "layout shift fix"
+- "slow LCP"
+- "CLS layout jumping"
 
 ## Quick Example
 
@@ -131,12 +119,15 @@ onLCP(metric => sendToAnalytics(metric));
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+| Good Lighthouse score but poor field data | Lab data uses fast hardware and connection; real users have slow devices | Check CrUX data in PageSpeed Insights for P75 field metrics; optimize for median user device (mid-range Android) |
+| LCP doesn't improve after adding preload | Preload tag is below the fold in HTML or blocked by render-blocking scripts | Move `<link rel="preload">` to `<head>` before any scripts; confirm with Network tab waterfall that it loads early |
+| CLS score fluctuates between deploys | CLS caused by dynamic content (ads, embeds) that varies by page | Identify the shifting element using Chrome DevTools Layout Instability recording; reserve exact space for each embed |
+| INP is good in dev but poor in production | Production has more third-party scripts (analytics, chat, A/B testing) | Audit third-party scripts with WebPageTest; load non-critical third parties after user interaction (`requestIdleCallback`) |
 
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

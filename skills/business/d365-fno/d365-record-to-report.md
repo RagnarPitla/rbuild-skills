@@ -1,30 +1,14 @@
 ---
-name: D365 Record to Report
-slug: d365-record-to-report
-description: Configure the R2R process in D365 Finance — chart of accounts, journal posting, period close, financial reporting, and agent patterns.
-tab: business
-domain: d365-fno
-industry_vertical: null
-difficulty: intermediate
-source_type: ragnar-custom
-tags: "[\"d365-fno\", \"record-to-report\", \"finance\", \"general-ledger\", \"period-close\"]"
-version: 1.0.1
-icon_emoji: 📒
-is_coming_soon: false
-is_featured: true
-author: ragnar
-learning_path: d365-fno-path
-learning_path_position: 2
-prerequisites: "[\"d365-navigation-fundamentals\"]"
-references:
-  - "title: "D365 Finance — General Ledger"
-  - "title: "Financial period close in D365"
+name: d365-record-to-report
+description: Configure the Record to Report (R2R) process in D365 Finance — chart of accounts, journal posting, period close, financial reporting, subledger reconciliation, and agent patterns. Use when user says "record to report in D365", "period close D365", "general ledger D365", "chart of accounts D365", "close the books D365", "journal posting D365", "financial reporting D365".
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [intermediate, d365, record-to-report, general-ledger]
 requires: D365 F&O MCP Server
 mcp_tools:
   - "d365-fno-mcp"
   - "dataverse-mcp"
 ---
-
 
 # D365 Record to Report
 
@@ -138,6 +122,66 @@ General ledger → Period close → Ledger calendar
 4. Set period status to **Closed** (no further posting)
 5. Open next period
 
+## OData Queries for R2R
+
+### Check Period Status
+```
+GET /data/FiscalCalendarPeriods?$filter=FiscalCalendarId eq 'FY2026'&$select=PeriodName,StartDate,EndDate,Status&$orderby=StartDate
+```
+
+### Trial Balance Snapshot
+```
+GET /data/LedgerAccountStatementEntity?$filter=AccountNumber ge '100000' and AccountNumber le '699999'&$select=AccountNumber,AccountName,OpeningBalance,PeriodDebits,PeriodCredits,ClosingBalance
+```
+
+### Unposted Journals (not yet validated)
+```
+GET /data/LedgerJournalTable?$filter=Posted eq false&$select=JournalBatchNumber,JournalName,Description,CreatedDateTime,CreatedBy
+```
+
+### Large Unusual Journal Entries
+```
+GET /data/LedgerJournalTrans?$filter=AmountCurDebit gt 1000000 or AmountCurCredit gt 1000000&$select=JournalBatchNumber,Voucher,AccountDisplayValue,AmountCurDebit,AmountCurCredit,TransDate,CreatedBy
+```
+
+### Sub-Ledger vs GL Reconciliation Check (AP)
+```
+GET /data/VendTransactionSummaryEntity?$select=VendorAccount,SummaryBalance,CurrencyCode
+```
+
+## Core Tasks
+
+### 1. Journal Validation Before Posting
+```text
+GIVEN a journal batch ready to post
+WHEN skill validates
+THEN check all lines have required financial dimensions populated
+AND check debit total equals credit total (journal is balanced)
+AND check all account numbers exist and are not blocked
+AND check fiscal period on TransDate is open
+AND return: pass or list of validation failures with line numbers
+```
+
+### 2. Period-Close Status Monitor
+```text
+GIVEN the period close workspace template
+WHEN skill checks status
+THEN query all tasks for the current close period
+AND identify overdue tasks (due date passed, not complete)
+AND identify blocking tasks that prevent downstream tasks from starting
+AND return: dashboard with task owner, due date, status, and blocking impact
+```
+
+### 3. Variance Analysis
+```text
+GIVEN current period actuals and prior period or budget
+WHEN skill analyzes variances
+THEN calculate variance by account and dimension
+AND rank accounts by absolute variance amount
+AND generate plain-language explanation for top 10 variances
+AND flag variances exceeding configured threshold as requiring controller sign-off
+```
+
 ## Agent Patterns for R2R
 
 R2R is rich territory for AI agents:
@@ -162,26 +206,30 @@ R2R is rich territory for AI agents:
 
 ## Trigger Phrases
 
-- "How do I d365 record to report"
-- "Help me with d365 record to report in D365"
-- "Check d365 record to report"
-- "Analyze d365 record to report"
-- "Show me d365 record to report status"
-
-## Quick Example
-
-> See `d365-record-to-report-example.md` in this folder for a full worked scenario with business impact.
+- "record to report in D365"
+- "period close D365"
+- "general ledger D365"
+- "chart of accounts D365"
+- "close the books D365"
+- "journal posting D365"
+- "financial reporting D365"
+- "month-end close D365"
 
 ## Troubleshooting
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
-
+| Journal cannot post: "Period is not open" | The fiscal period for the journal date is Closed or On Hold | Navigate to General ledger → Period close → Ledger calendar; open the period or change journal date to an open period |
+| Journal validation error: "Account does not allow dimension" | Account structure does not permit the dimension combination on the journal line | Check General ledger → Chart of accounts → Structures; update allowed dimension segments or correct the journal line |
+| Sub-ledger balance does not match GL | Transactions posted directly to GL summary account outside the subledger, or posting profile misconfigured | Run reconciliation report for the module; identify direct GL postings; correct with adjusting journal or fix posting profile |
+| Period close task stuck in "In progress" | Responsible user did not mark task complete, or a dependency task is still open | Open the period close workspace; mark the task complete manually or resolve the blocking dependency |
+| Batch depreciation did not run | Batch job for fixed asset depreciation failed or was not scheduled | Navigate to System administration → Batch jobs; check for failed depreciation batch; re-run the depreciation proposal in Fixed assets |
+| Financial report shows incorrect period | Report definition uses wrong period date filter or column definition is misconfigured | Review the report definition in Financial reporting designer; verify row and column date filters match the intended period |
+| Consolidation journal imbalanced | Intercompany elimination entries are missing or currency translation adjustment not posted | Run the consolidation wizard; check intercompany matching accounts; post the CTA journal before finalizing consolidation |
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content — OData queries, GIVEN/WHEN/THEN tasks, D365-specific error table |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

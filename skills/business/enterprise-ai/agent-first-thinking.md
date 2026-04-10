@@ -1,23 +1,9 @@
 ---
-name: Agent-First Thinking for Enterprise
-slug: agent-first-thinking
-description: The paradigm shift from automation-first to agent-first enterprise design — when to build an agent vs a flow vs a report.
-tab: business
-domain: enterprise-ai
-industry_vertical: null
-difficulty: starter
-source_type: ragnar-custom
-tags: "[\"enterprise-ai\", \"agentic-erp\", \"strategy\", \"architecture\", \"decision-framework\"]"
-version: 1.0.1
-icon_emoji: 🧠
-is_coming_soon: false
-is_featured: true
-author: ragnar
-learning_path: enterprise-ai-path
-learning_path_position: 1
-prerequisites: "[]"
-references:
-  - "title: "Agentic AI in Enterprise - Microsoft Research"
+name: agent-first-thinking
+description: The paradigm shift from automation-first to agent-first enterprise design. Use when user says "should I build an agent or a flow", "agent vs automation decision", "when does AI add value over RPA", "how do I decide if something needs an agent", "what is agent-first thinking", "stop bolting AI onto workflows".
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [beginner, agentic-erp, strategy, decision-framework]
 requires: Copilot Studio, Dataverse MCP
 mcp_tools:
   - "copilot-studio-mcp"
@@ -30,23 +16,23 @@ mcp_tools:
 
 Most enterprise AI projects fail for the same reason: they bolt an AI chatbot onto an existing workflow and call it agentic. That's not agent-first thinking. That's automation with a chat interface.
 
-Agent-first thinking means redesigning around the assumption that AI agents are first-class participants in your business operations — not assistants, not bots, not automation. Participants.
+Agent-first thinking means redesigning around the assumption that AI agents are first-class participants in your business operations. Not assistants, not bots, not automation. Participants.
 
 ## The Decision Framework: Agent vs Flow vs Report
 
 Before building anything, ask these three questions:
 
-**1. Does it require judgment or decision-making?**  
-If yes → agent is appropriate  
-If no → a flow or report may suffice
+**1. Does it require judgment or decision-making?**
+If yes, an agent is appropriate.
+If no, a flow or report may suffice.
 
-**2. Is the sequence of steps unpredictable?**  
-If yes (the next step depends on what was discovered) → agent  
-If no (steps are always the same) → flow
+**2. Is the sequence of steps unpredictable?**
+If yes (the next step depends on what was discovered), build an agent.
+If no (steps are always the same), build a flow.
 
-**3. Does it need to interact with a human in natural language?**  
-If yes → agent  
-If no → background process, batch job, or flow
+**3. Does it need to interact with a human in natural language?**
+If yes, build an agent.
+If no, use a background process, batch job, or flow.
 
 ### The Decision Matrix
 
@@ -63,21 +49,21 @@ If no → background process, batch job, or flow
 
 An agent adds value when the work involves:
 
-- **Multi-step reasoning** — "Find the root cause of this variance" requires reading multiple data points and forming a hypothesis
-- **Ambiguity handling** — "Something looks wrong with this invoice" requires interpretation, not just rules
-- **Dynamic tool selection** — the agent decides which D365 module, which API, which document to consult
-- **Exception handling** — when the normal path breaks down, agents navigate; flows fail
+- **Multi-step reasoning:** "Find the root cause of this variance" requires reading multiple data points and forming a hypothesis
+- **Ambiguity handling:** "Something looks wrong with this invoice" requires interpretation, not just rules
+- **Dynamic tool selection:** The agent decides which D365 module, which API, which document to consult
+- **Exception handling:** When the normal path breaks down, agents navigate; flows fail
 
 ## Agentic ERP: What It Actually Means
 
-Traditional ERP: humans request → system processes → humans review output  
-Agentic ERP: agents participate in the process, handle exceptions, escalate only when genuinely needed
+Traditional ERP: humans request, system processes, humans review output.
+Agentic ERP: agents participate in the process, handle exceptions, escalate only when genuinely needed.
 
-**Example — Accounts Payable:**
+**Example: Accounts Payable:**
 
-*Traditional:* Invoice arrives → clerk reviews → matches to PO manually → approves in D365 → payment runs  
+Traditional: Invoice arrives, clerk reviews, matches to PO manually, approves in D365, payment runs.
 
-*Agentic:* Invoice arrives → agent reads invoice, matches to PO in D365 via MCP, validates line items, checks vendor payment terms, flags only the 3% of exceptions where something doesn't match → clerk reviews only exceptions
+Agentic: Invoice arrives, agent reads invoice, matches to PO in D365 via MCP, validates line items, checks vendor payment terms, flags only the 3% of exceptions where something doesn't match, clerk reviews only exceptions.
 
 The agent doesn't replace the clerk. It removes the 97% of routine matching so the clerk handles only real decisions.
 
@@ -93,23 +79,28 @@ Many organizations have RPA bots already. They're not agents.
 | No judgment | Makes decisions within guardrails |
 | Fragile | Resilient |
 
-When your business changes — and it will — RPA bots need reprogramming. Agents need updated instructions, which takes minutes.
+When your business changes (and it will), RPA bots need reprogramming. Agents need updated instructions, which takes minutes.
 
 ## How to Start Agent-First
 
-1. **Find a process where exceptions dominate** — if your team spends 80% of their time on 20% of the cases, that's where an agent adds value
-2. **Map the current human decision process** — what does a skilled human check? That's what the agent needs to access
-3. **Identify the data sources** — what systems does the human consult? Those become your MCP servers or connector actions
-4. **Define the escalation rule** — when should the agent stop and involve a human? Be specific
-5. **Start narrow, expand** — build the agent for one exception type first, prove value, expand
+1. **Find a process where exceptions dominate.** If your team spends 80% of their time on 20% of the cases, that's where an agent adds value.
+2. **Map the current human decision process.** What does a skilled human check? That's what the agent needs to access.
+3. **Identify the data sources.** What systems does the human consult? Those become your MCP servers or connector actions.
+4. **Define the escalation rule.** When should the agent stop and involve a human? Be specific.
+5. **Start narrow, expand.** Build the agent for one exception type first, prove value, then expand.
 
 The biggest mistake in enterprise AI is building too broadly too fast. Pick one specific, high-value scenario. Nail it. Then expand.
 
 ## Trigger Phrases
 
-- "Help me with agent-first thinking for enterprise"
-- "Agent-First Thinking for Enterprise"
-- "How do I agent-first thinking for enterprise"
+- "should I build an agent or a flow"
+- "agent vs automation decision"
+- "when does AI add value over RPA"
+- "how do I decide if something needs an agent"
+- "what is agent-first thinking"
+- "stop bolting AI onto workflows"
+- "RPA vs AI agent"
+- "agent-first enterprise design"
 
 ## Quick Example
 
@@ -119,12 +110,15 @@ The biggest mistake in enterprise AI is building too broadly too fast. Pick one 
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+| Team defaults to building flows for everything | RPA/automation mindset carried forward | Run the 3-question decision framework on each scenario before any build decision |
+| Agent built too broadly, poor quality | Tried to handle 20 scenarios at once | Scope to one use case, one happy path, three edge cases maximum |
+| Agent triggers when a flow would do | No clear decision criteria shared with team | Document and circulate the decision matrix; use it in sprint planning |
+| Stakeholders see agents as "just a chatbot" | Framing problem, not a technology problem | Lead with outcomes: "it handled 97% of invoices without human touch" |
 
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

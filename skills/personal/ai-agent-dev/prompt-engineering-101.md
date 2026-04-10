@@ -1,28 +1,13 @@
 ---
-name: Prompt Engineering 101
-slug: prompt-engineering-101
-description: The fundamentals of prompt engineering — system prompts, chain-of-thought, few-shot examples, and the mistakes that kill quality.
-tab: personal
-domain: ai-agent-dev
-industry_vertical: null
-difficulty: starter
-source_type: ragnar-custom
-tags: "[\"prompting\", \"llm\", \"system-prompts\", \"beginner\", \"claude\"]"
-version: 1.0.1
-icon_emoji: ✏️
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: null
-learning_path_position: null
-prerequisites: "[]"
-references:
-  - "title: "Anthropic Prompt Engineering Guide"
+name: prompt-engineering-101
+description: "Prompt engineering fundamentals — system prompts, chain-of-thought, few-shot examples, and the mistakes that kill quality. Use when user says 'prompt engineering basics', 'how to write a system prompt', 'improve my prompt', 'chain of thought', 'few-shot examples', 'why is my LLM output bad', 'prompt injection'."
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [beginner, ai-agent-dev, prompt-engineering, fundamentals]
 requires: Claude API
 mcp_tools:
   - "claude-api"
 ---
-
 
 # Prompt Engineering 101
 
@@ -86,7 +71,7 @@ Choose examples that cover the main cases, especially edge cases you care about.
 
 ## Temperature
 
-- **0** — Deterministic. Same input → same output. Use for: code, classification, data extraction
+- **0** — Deterministic. Same input gives same output. Use for: code, classification, data extraction
 - **0.3-0.5** — Slight variation. Good for: summarization, analysis
 - **0.7-1.0** — Creative variation. Good for: brainstorming, creative writing
 
@@ -111,9 +96,14 @@ Before shipping a prompt:
 
 ## Trigger Phrases
 
-- "Help me with prompt engineering 101"
-- "Prompt Engineering 101"
-- "How do I prompt engineering 101"
+- "prompt engineering basics"
+- "how to write a system prompt"
+- "improve my prompt"
+- "chain of thought"
+- "few-shot examples"
+- "why is my LLM output bad"
+- "prompt injection"
+- "temperature setting for agents"
 
 ## Quick Example
 
@@ -123,12 +113,14 @@ Before shipping a prompt:
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
-
+| Model ignores instructions | System prompt too long, instructions buried | Move the most important constraint to the first sentence; trim prompt to under 500 words |
+| Output format inconsistent | Format only described, not shown | Add a concrete example of the exact output format you want |
+| Model makes up information | No grounding constraints | Add "Only use information from the provided context. If unsure, say so." |
+| Prompt injection succeeds | User input concatenated into system prompt | Always separate user input from system instructions using XML tags or clear delimiters |
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

@@ -1,23 +1,9 @@
 ---
-name: Production Capacity Planner
-slug: capacity-planner
-description: AI agent for production capacity analysis — work center loads, bottleneck identification, and capacity leveling recommendations in D365.
-tab: business
-domain: industry-verticals
-industry_vertical: manufacturing-discrete
-difficulty: advanced
-source_type: ragnar-custom
-tags: "[\"manufacturing\", \"capacity\", \"production\", \"scheduling\", \"d365\"]"
-version: 1.0.1
-icon_emoji: ⚖️
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: null
-learning_path_position: null
-prerequisites: "[]"
-references:
-  - "title: "D365 Production Capacity Planning"
+name: capacity-planner
+description: Analyzes production capacity in D365 by calculating work center loads, identifying bottlenecks, and recommending capacity leveling actions. Use when user says "capacity planning", "work center utilization", "overloaded work center", "capacity exception", "production scheduling", "bottleneck analysis", or "available capacity".
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [intermediate, manufacturing, capacity, planning]
 requires: D365 F&O MCP Server
 mcp_tools:
   - "d365-fno-mcp"
@@ -78,9 +64,14 @@ When business rules change, update the Dataverse table — not the agent.
 
 ## Trigger Phrases
 
-- "Help me with production capacity planner"
-- "Production Capacity Planner"
-- "How do I production capacity planner"
+- "capacity planning"
+- "work center utilization"
+- "overloaded work center"
+- "capacity exception"
+- "bottleneck analysis"
+- "available capacity"
+- "production scheduling capacity"
+- "shift capacity load"
 
 ## Quick Example
 
@@ -90,12 +81,15 @@ When business rules change, update the Dataverse table — not the agent.
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+| Work center shows 0% load even though production orders are planned | Routing operations not linked to the work center in D365 | Verify the route version is active and the operation resource requirement points to the correct work center; run the route scheduling job after updating |
+| Capacity report shows overload but work center is actually idle | Efficiency factor set incorrectly (e.g., 10% instead of 100%) | Check the WrkCtrTable efficiency field for the affected work center; correct the efficiency percentage so available hours calculate correctly |
+| Alternative work center recommendations not appearing | Alternative resource mappings not configured in Dataverse policy table | Add the alternative work center relationships to the Dataverse capacity policy table; map primary to secondary with applicable product families |
+| Planned downtime not reducing available capacity | Downtime entered in the wrong calendar or not linked to the work center | Create the planned downtime record directly on the work center calendar in D365; confirm the date range and shift assignments are correct |
 
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

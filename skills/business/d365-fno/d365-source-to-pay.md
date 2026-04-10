@@ -1,30 +1,14 @@
 ---
-name: D365 Source to Pay
-slug: d365-source-to-pay
-description: Configure S2P in D365 — vendor onboarding, purchase requisitions, POs, invoice matching, payment runs, and agent automation patterns.
-tab: business
-domain: d365-fno
-industry_vertical: null
-difficulty: intermediate
-source_type: ragnar-custom
-tags: "[\"d365-fno\", \"source-to-pay\", \"procurement\", \"accounts-payable\", \"purchasing\"]"
-version: 1.0.1
-icon_emoji: 🛒
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: d365-fno-path
-learning_path_position: 3
-prerequisites: "[\"d365-navigation-fundamentals\"]"
-references:
-  - "title: "D365 Supply Chain — Procurement"
-  - "title: "Accounts payable in D365 Finance"
+name: d365-source-to-pay
+description: Configure Source to Pay (S2P) in D365 — vendor onboarding, purchase requisitions, purchase orders, product receipt, invoice matching, payment runs, and agent automation patterns. Use when user says "source to pay in D365", "purchase order process D365", "vendor invoice matching D365", "AP payment run D365", "purchase requisition D365", "three-way match D365", "S2P process".
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [intermediate, d365, source-to-pay, procurement]
 requires: D365 F&O MCP Server
 mcp_tools:
   - "d365-fno-mcp"
   - "dataverse-mcp"
 ---
-
 
 # D365 Source to Pay
 
@@ -119,7 +103,7 @@ Match types:
 - **3-way:** Invoice matches PO AND product receipt
 - **Charge matching:** Freight/handling charges match
 
-**Invoice matching policy:** Configure in Accounts payable → Setup → Accounts payable parameters → Invoice validation. Set price tolerance (e.g., ±3% price variance auto-approved) and quantity tolerance.
+**Invoice matching policy:** Configure in Accounts payable → Setup → Accounts payable parameters → Invoice validation. Set price tolerance (e.g., plus/minus 3% price variance auto-approved) and quantity tolerance.
 
 Matching discrepancies that exceed tolerance → workflow routes to AP manager for approval.
 
@@ -135,6 +119,66 @@ Payment run process:
 
 **Early payment discounts:** D365 calculates discounts automatically if within the discount period. 2/10 Net 30: pay within 10 days → take 2% off.
 
+## OData Queries for S2P
+
+### Open Purchase Orders Awaiting Receipt
+```
+GET /data/PurchaseOrderHeaderV2?$filter=PurchaseOrderStatus eq 'Confirmed'&$select=PurchaseOrderNumber,VendorAccountNumber,DeliveryDate,TotalInvoiceAmount&$orderby=DeliveryDate
+```
+
+### Vendor Invoices Pending Approval
+```
+GET /data/VendorInvoiceHeadersV2?$filter=ApprovalStatus eq 'InReview'&$select=InvoiceNumber,VendorAccountNumber,InvoiceDate,TotalInvoiceAmount,PurchaseOrderNumber
+```
+
+### Invoice Matching Discrepancies
+```
+GET /data/VendorInvoiceLineEntity?$filter=MatchingStatus eq 'Failed'&$select=InvoiceNumber,ItemNumber,InvoicedQuantity,PurchaseOrderQuantity,UnitPrice,PurchaseUnitPrice
+```
+
+### Invoices Due for Payment This Week
+```
+GET /data/VendTransactionEntity?$filter=DueDate le 2026-04-17 and AmountRemaining lt 0&$select=VendorAccount,InvoiceId,DueDate,AmountRemaining,CurrencyCode&$orderby=DueDate
+```
+
+### Early Payment Discount Opportunities
+```
+GET /data/VendTransactionEntity?$filter=CashDiscountDate ge 2026-04-10 and CashDiscountAmount lt 0&$select=VendorAccount,InvoiceId,CashDiscountDate,CashDiscountAmount,AmountRemaining
+```
+
+## Core Tasks
+
+### 1. Invoice Matching Automation
+```text
+GIVEN a vendor invoice (from email or EDI)
+WHEN skill processes invoice
+THEN extract: vendor, invoice number, date, line items, amounts
+AND find matching open PO in D365 via MCP
+AND compare invoice lines to PO lines (quantity, unit price)
+AND compare to product receipt lines
+AND return: matched (auto-approve), discrepancy detail (route to AP), no PO found (route for manual handling)
+```
+
+### 2. PO Status Tracker
+```text
+GIVEN a purchase order number or requester query
+WHEN skill checks status
+THEN query PO header status (Draft, Confirmed, Received, Invoiced)
+AND query receipt status by line (quantity ordered vs received)
+AND query invoice status (not invoiced, partially invoiced, fully invoiced)
+AND return natural-language status summary
+```
+
+### 3. Payment Forecast
+```text
+GIVEN upcoming AP payment obligations
+WHEN skill forecasts
+THEN query invoices due in next 30 days by due date
+AND identify early payment discount opportunities expiring soon
+AND compare total due to available cash balance
+AND return: pay now (capture discount), pay on due date, defer recommendation per invoice
+```
+
 ## Agent Patterns for S2P
 
 **Invoice matching agent:** Receives invoice (email/EDI), extracts data, matches to open POs in D365 via MCP, identifies mismatches, routes exceptions with full context to AP team. Handles 90%+ of invoices automatically.
@@ -147,26 +191,30 @@ Payment run process:
 
 ## Trigger Phrases
 
-- "How do I d365 source to pay"
-- "Help me with d365 source to pay in D365"
-- "Check d365 source to pay"
-- "Analyze d365 source to pay"
-- "Show me d365 source to pay status"
-
-## Quick Example
-
-> See `d365-source-to-pay-example.md` in this folder for a full worked scenario with business impact.
+- "source to pay in D365"
+- "purchase order process D365"
+- "vendor invoice matching D365"
+- "AP payment run D365"
+- "purchase requisition D365"
+- "three-way match D365"
+- "S2P process"
+- "vendor onboarding D365"
 
 ## Troubleshooting
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
-
+| Invoice matching fails: "No product receipt found" | Goods have not been received in D365, or receipt was posted against wrong PO | Confirm product receipt is posted against the correct PO; if goods are received physically, post the product receipt before re-processing the invoice |
+| PO price tolerance exceeded | Vendor invoiced at a different price than the PO | Check if vendor price change was authorized; update PO price if authorized, or reject the invoice and request a corrected invoice from vendor |
+| Payment run generates no payments | Invoice due dates are in the future, or invoices are not fully approved | Check invoice approval status; confirm "From date" and "To date" on the payment proposal include the target invoices |
+| Vendor bank account not found on payment file | Vendor bank account not set up or linked to method of payment | Navigate to AP → Vendors → [vendor] → Bank accounts; add bank account and link to the correct method of payment |
+| Vendor invoice workflow stuck | Approver is out of office or workflow has no escalation configured | Use the workflow history to identify the stuck step; re-assign manually in the workflow viewer or configure an escalation path |
+| Duplicate invoice warning | Same invoice number from same vendor was already entered | D365 checks for duplicates by vendor + invoice number; if it is a legitimate duplicate (e.g., credit and re-invoice), adjust the invoice number to distinguish it |
+| 1099 amount incorrect on year-end report | Payments were posted to non-1099 accounts or vendor 1099 box not configured | Check vendor 1099 configuration (AP → Vendors → [vendor] → Tax 1099 tab); verify all payments used 1099-reportable accounts |
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content — OData queries, GIVEN/WHEN/THEN tasks, D365-specific error table |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

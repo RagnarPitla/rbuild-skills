@@ -1,30 +1,13 @@
 ---
-name: RAG Patterns
-slug: rag-patterns
-description: Retrieval-Augmented Generation from end to end — chunking, embeddings, vector search, reranking, and citation grounding.
-tab: personal
-domain: ai-agent-dev
-industry_vertical: null
-difficulty: intermediate
-source_type: ragnar-custom
-tags: "[\"rag\", \"retrieval\", \"embeddings\", \"vector-search\", \"llm\", \"grounding\"]"
-version: 1.0.1
-icon_emoji: 🧩
-is_coming_soon: false
-is_featured: true
-author: ragnar
-learning_path: null
-learning_path_position: null
-prerequisites: "[]"
-references:
-  - "title: "Anthropic Contextual Retrieval"
-  - "title: "LangChain RAG Documentation"
-  - "title: "Pinecone RAG Guide"
+name: rag-patterns
+description: "Retrieval-Augmented Generation from end to end — chunking, embeddings, vector search, reranking, and citation grounding. Use when user says 'RAG pipeline', 'retrieval augmented generation', 'vector search', 'embeddings', 'document Q&A', 'semantic search', 'RAGAS evaluation', 'chunking strategy'."
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [intermediate, ai-agent-dev, rag, retrieval]
 requires: Claude API
 mcp_tools:
   - "claude-api"
 ---
-
 
 # RAG Patterns
 
@@ -33,24 +16,24 @@ RAG is how you give an LLM access to your specific data without fine-tuning. Don
 ## The Full Pipeline
 
 ```
-Document → Chunk → Embed → Store in Vector DB
-                                    ↓
-Query → Embed → Similarity Search → Top-K Chunks → LLM → Answer
+Document -> Chunk -> Embed -> Store in Vector DB
+                                    |
+Query -> Embed -> Similarity Search -> Top-K Chunks -> LLM -> Answer
 ```
 
 Each step has decisions that dramatically affect quality.
 
 ## Chunking Strategies
 
-**Fixed-size chunking** (simplest): Split every N tokens with M token overlap.  
-Good for: Homogeneous documents (all PDFs, all emails)  
+**Fixed-size chunking** (simplest): Split every N tokens with M token overlap.
+Good for: Homogeneous documents (all PDFs, all emails)
 Problem: Splits mid-sentence, mid-concept
 
-**Semantic chunking** (better): Split at natural boundaries (paragraphs, sections, topics).  
-Good for: Mixed document types  
+**Semantic chunking** (better): Split at natural boundaries (paragraphs, sections, topics).
+Good for: Mixed document types
 Tool: LangChain's SemanticChunker
 
-**Document-structure chunking** (best for structured docs): Respect headings, tables, lists.  
+**Document-structure chunking** (best for structured docs): Respect headings, tables, lists.
 Good for: Technical documentation, policies, manuals
 
 **Chunk size recommendation:** 256-512 tokens for most use cases. Larger chunks = more context but slower retrieval and higher cost. Smaller = more precise but may miss context.
@@ -137,9 +120,14 @@ Use tools like RAGAS or build a small evaluation set of 50 question-answer pairs
 
 ## Trigger Phrases
 
-- "Help me with rag patterns"
-- "RAG Patterns"
-- "How do I rag patterns"
+- "RAG pipeline"
+- "retrieval augmented generation"
+- "vector search"
+- "embeddings"
+- "document Q&A"
+- "semantic search"
+- "RAGAS evaluation"
+- "chunking strategy"
 
 ## Quick Example
 
@@ -149,12 +137,14 @@ Use tools like RAGAS or build a small evaluation set of 50 question-answer pairs
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
-
+| Retrieval returns irrelevant chunks | Embedding model mismatch between index and query time | Ensure same model version used for both indexing and querying |
+| High hallucination rate despite RAG | LLM not constrained to context | Add "Answer only from provided context" and verify citations post-response |
+| Slow retrieval at scale | No approximate nearest neighbor (ANN) index | Add HNSW index in your vector DB; filter by metadata before running vector search |
+| Chunking splits key concepts | Fixed-size splitting at wrong boundary | Switch to semantic or structure-aware chunking; increase overlap to 20% |
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

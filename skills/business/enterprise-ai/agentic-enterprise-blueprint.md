@@ -1,23 +1,9 @@
 ---
-name: Agentic Enterprise Blueprint
-slug: agentic-enterprise-blueprint
-description: Ragnar's framework for making your company agentic — how to identify agent opportunities, sequence the rollout, and measure success.
-tab: business
-domain: enterprise-ai
-industry_vertical: null
-difficulty: advanced
-source_type: ragnar-custom
-tags: "[\"enterprise-ai\", \"agentic-erp\", \"strategy\", \"transformation\", \"framework\"]"
-version: 1.0.1
-icon_emoji: 🗺️
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: enterprise-ai-path
-learning_path_position: 5
-prerequisites: "[\"agent-first-thinking\", \"agentic-erp-intro\"]"
-references:
-  - "title: "Ragnar Pitla on LinkedIn"
+name: agentic-enterprise-blueprint
+description: "Ragnar's six-phase framework for making your company agentic. How to identify agent opportunities, sequence the rollout, and measure success. Use when user says 'how do I become an agentic enterprise', 'enterprise AI transformation roadmap', 'where do I start with agentic ERP', 'how to scale AI agents across the business', 'agent portfolio strategy', 'ROI framework for AI agents'."
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [advanced, agentic-enterprise, strategy, blueprint]
 requires: Copilot Studio, Dataverse MCP
 mcp_tools:
   - "copilot-studio-mcp"
@@ -30,7 +16,7 @@ mcp_tools:
 
 An agentic enterprise isn't built by deploying 50 agents simultaneously. It's built process by process, proving value at each step before expanding. This is the blueprint I use with enterprise customers.
 
-## Phase 1: Discovery — Find the Right First Agent
+## Phase 1: Discovery - Find the Right First Agent
 
 The first agent sets the tone for the entire program. It needs to:
 - Solve a real, felt pain (not a hypothetical improvement)
@@ -49,13 +35,16 @@ The first agent sets the tone for the entire program. It needs to:
 ```
 
 **Score candidates on:**
-- Frequency (daily > weekly > monthly)
-- Time consumed (hours > minutes)
-- Error impact (high-risk errors > minor annoyances)
-- Data availability (is the data in D365/Dataverse already?)
-- Stakeholder support (champion exists? IT willing to support?)
 
-## Phase 2: Build the First Agent (Narrow + Deep)
+| Criterion | High | Medium | Low |
+|---|---|---|---|
+| Frequency | Daily | Weekly | Monthly |
+| Time consumed | Hours | 30-60 min | Minutes |
+| Error impact | High-risk errors | Minor issues | Edge cases |
+| Data availability | All in D365/Dataverse | Partial | External systems |
+| Stakeholder support | Champion + IT aligned | Champion only | Neither |
+
+## Phase 2: Build the First Agent (Narrow and Deep)
 
 Build ONE use case completely before expanding. Common mistake: building a broad agent that does everything poorly. Build a narrow agent that does one thing exceptionally well.
 
@@ -68,11 +57,12 @@ Build ONE use case completely before expanding. Common mistake: building a broad
 
 **Timeline:** 4-6 weeks for first agent including testing and user training.
 
-## Phase 3: Prove Value — Measure Everything
+## Phase 3: Prove Value - Measure Everything
 
 Before expanding, prove the first agent's value quantitatively.
 
 **Metrics to capture (before and after):**
+
 | Metric | How to Measure |
 |---|---|
 | Time savings | Time-and-motion study on old vs new process |
@@ -83,30 +73,45 @@ Before expanding, prove the first agent's value quantitatively.
 
 **Target for expansion approval:** Agent handles 70%+ of cases without human intervention AND users rate it positively.
 
-## Phase 4: Expand — The Agent Portfolio
+## Phase 4: Expand - The Agent Portfolio
 
 Once the first agent proves value, use it as the blueprint for the next ones. Build an agent portfolio across your core business processes.
 
 **Recommended sequence for D365 customers:**
 
 ```
-Wave 1 (Months 1-3): Invoice matching agent (AP) ← highest ROI, fastest win
-Wave 2 (Months 4-6): PO status tracker (Procurement) + Inventory reorder advisor
-Wave 3 (Months 7-9): Sales order anomaly detector + Period-close checklist agent
-Wave 4 (Months 10-12): Multi-domain orchestrator (parent agent routing to all children)
+Wave 1 (Months 1-3):  Invoice matching agent (AP)
+                       ← highest ROI, fastest win
+
+Wave 2 (Months 4-6):  PO status tracker (Procurement)
+                       + Inventory reorder advisor
+
+Wave 3 (Months 7-9):  Sales order anomaly detector
+                       + Period-close checklist agent
+
+Wave 4 (Months 10-12): Multi-domain orchestrator
+                        (parent agent routing to all children)
 ```
 
 ## Phase 5: The Architecture Foundation
 
 As you scale, invest in the infrastructure that makes agents maintainable:
 
-**1. Shared policy layer (Niyam pattern)** — business rules in Dataverse tables, not hardcoded in agents. Change rules without IT involvement.
+**1. Shared policy layer (Niyam pattern):** Business rules in Dataverse tables, not hardcoded in agents. Change rules without IT involvement.
 
-**2. Shared MCP server** — one D365 MCP server that all agents connect to. Built once, maintained once.
+**2. Shared MCP server:** One D365 MCP server that all agents connect to. Built once, maintained once.
 
-**3. Agent registry** — catalog of all production agents: what they do, who owns them, how to invoke them, current quality metrics.
+**3. Agent registry:** Catalog of all production agents: what they do, who owns them, how to invoke them, current quality metrics.
 
-**4. Governance model** — who can deploy new agents? What testing is required? Who reviews agent changes?
+**4. Governance model:** Who can deploy new agents? What testing is required? Who reviews agent changes?
+
+### Agent Registry Template
+
+| Agent Name | Domain | Owner | Status | Containment Rate | Last Updated |
+|---|---|---|---|---|---|
+| Invoice Matcher | AP | Finance Team | Production | 97% | 2026-03-01 |
+| PO Status Tracker | Procurement | Supply Chain | Production | 91% | 2026-02-15 |
+| Inventory Reorder | Supply Chain | Ops | Pilot | 84% | 2026-03-20 |
 
 ## Phase 6: The Agentic Enterprise
 
@@ -124,9 +129,9 @@ This doesn't happen overnight. Most enterprises take 18-24 months from first age
 For each agent, calculate:
 
 ```
-Annual Value = (Hours saved per week × 52 × hourly cost)
-             + (Error reduction × cost per error)
-             + (Volume capacity increase × revenue impact)
+Annual Value = (Hours saved per week x 52 x hourly cost)
+             + (Error reduction x cost per error)
+             + (Volume capacity increase x revenue impact)
 
 Implementation Cost = Development time + licensing + training
 
@@ -135,11 +140,27 @@ Payback Period = Implementation Cost / Annual Value
 
 Typical first agents: 3-6 month payback. Subsequent agents with shared infrastructure: 1-2 month payback.
 
+## Maturity Model
+
+| Stage | Characteristics | Typical Timeline |
+|---|---|---|
+| **0: Pre-agentic** | No agents in production, AI only in pilots | Starting point |
+| **1: First agent** | One agent live, proving value in one process | Months 1-3 |
+| **2: Agent portfolio** | 3-5 agents live across multiple processes | Months 4-12 |
+| **3: Infrastructure** | Shared MCP server, Niyam policy layer, governance model | Months 6-18 |
+| **4: Agentic operations** | Agents handle 60%+ of routine decisions | Months 18-24 |
+| **5: Agent-native design** | New processes designed with agents as first-class participants | Ongoing |
+
 ## Trigger Phrases
 
-- "Help me with agentic enterprise blueprint"
-- "Agentic Enterprise Blueprint"
-- "How do I agentic enterprise blueprint"
+- "how do I become an agentic enterprise"
+- "enterprise AI transformation roadmap"
+- "where do I start with agentic ERP"
+- "how to scale AI agents across the business"
+- "agent portfolio strategy"
+- "ROI framework for AI agents"
+- "what is an agentic enterprise"
+- "agentic enterprise blueprint"
 
 ## Quick Example
 
@@ -149,12 +170,15 @@ Typical first agents: 3-6 month payback. Subsequent agents with shared infrastru
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+| First agent stalls in pilot, never reaches production | No business champion, no executive sponsorship | Identify a named owner before any build work starts; they must attend weekly reviews |
+| Agents deployed without governance, now unmanageable | Scaled too fast without infrastructure foundation | Pause new builds, implement agent registry and governance model first |
+| ROI hard to prove, executives losing confidence | Wrong metrics or no baseline captured before deployment | Capture time-and-motion baseline before go-live, every time, no exceptions |
+| Agents overlap, users confused about which to use | No parent/child architecture, no routing strategy | Design a parent orchestrator agent that routes to domain-specific child agents |
 
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

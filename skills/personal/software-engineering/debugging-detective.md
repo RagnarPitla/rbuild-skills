@@ -1,26 +1,9 @@
 ---
-name: Debugging Detective
-slug: debugging-detective
-description: "Systematic debugging: reproduce, isolate, hypothesize, verify — with root-cause templates and common failure pattern checklists."
-tab: personal
-domain: software-engineering
-industry_vertical: null
-difficulty: intermediate
-source_type: ragnar-custom
-tags: "[\"debugging\", \"root-cause\", \"troubleshooting\", \"systematic\", \"diagnosis\"]"
-version: 1.0.1
-icon_emoji: 🔎
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: null
-learning_path_position: null
-prerequisites: "[]"
-references:
-  - "title: "obra/superpowers Systematic Debugging"
-  - "title: "Debugging — The 9 Indispensable Rules (David Agans)"
-requires: None
-mcp_tools: []
+name: debugging-detective
+description: Systematic debugging with reproduce, isolate, hypothesize, verify steps plus root-cause templates and common failure patterns. Use when user says 'debug this bug', 'debugging help', 'how to debug', 'find this bug', 'fix this error', 'something is broken'.
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [intermediate, software-engineering, debugging, root-cause]
 ---
 
 
@@ -166,9 +149,14 @@ When asking: provide the reproduction case, what you've already tried, and your 
 
 ## Trigger Phrases
 
-- "Help me with debugging detective"
-- "Debugging Detective"
-- "How do I debugging detective"
+- "debug this bug"
+- "debugging help"
+- "how to debug"
+- "find this bug"
+- "fix this error"
+- "something is broken"
+- "intermittent bug"
+- "race condition debugging"
 
 ## Quick Example
 
@@ -178,12 +166,15 @@ When asking: provide the reproduction case, what you've already tried, and your 
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+| Cannot reproduce the bug | Environment or state dependency | Document exact setup (OS, versions, data state); try reproducing in a Docker container for isolation |
+| Intermittent bug that disappears under observation | Timing or Heisenbug (observer effect) | Add persistent logging instead of interactive debuggers; let the system run and collect log traces |
+| Fixed the bug but don't know why | Changed multiple things at once | Revert all changes, then apply one at a time with a test between each to find the actual fix |
+| Bug is in a dependency, not your code | Third-party library issue | Pin the version, search GitHub issues for the error message, consider workaround or fork |
 
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

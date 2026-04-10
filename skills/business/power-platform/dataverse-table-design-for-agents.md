@@ -1,24 +1,9 @@
 ---
-name: Dataverse Table Design for Agents
-slug: dataverse-table-design-for-agents
-description: Design Dataverse tables that AI agents consume — column types, naming conventions, the Niyam policy table pattern, and security considerations.
-tab: business
-domain: power-platform
-industry_vertical: null
-difficulty: starter
-source_type: ragnar-custom
-tags: "[\"dataverse\", \"power-platform\", \"table-design\", \"agents\", \"niyam-pattern\"]"
-version: 1.0.1
-icon_emoji: 🗄️
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: power-platform-path
-learning_path_position: 1
-prerequisites: "[]"
-references:
-  - "title: "Create and edit tables in Dataverse"
-  - "title: "Dataverse table types"
+name: dataverse-table-design-for-agents
+description: Design Dataverse tables that AI agents consume — column types, naming conventions, the Niyam policy table pattern, and security considerations. Use when user says "design a Dataverse table for agents", "table schema for agents", "Dataverse policy table", "Niyam pattern table", "agent reads from Dataverse", "policy table design".
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [intermediate, dataverse, table-design, agents]
 requires: Dataverse MCP, Power Automate
 mcp_tools:
   - "dataverse-mcp"
@@ -135,9 +120,14 @@ Now policy changes are a UI operation — no developer required.
 
 ## Trigger Phrases
 
-- "Help me with dataverse table design for agents"
-- "Dataverse Table Design for Agents"
-- "How do I dataverse table design for agents"
+- "design a Dataverse table for agents"
+- "table schema for agents"
+- "Dataverse policy table"
+- "Niyam pattern table"
+- "agent reads from Dataverse"
+- "policy table design"
+- "cr023_ naming convention"
+- "agent data table structure"
 
 ## Quick Example
 
@@ -146,13 +136,16 @@ Now policy changes are a UI operation — no developer required.
 ## Troubleshooting
 
 | Issue | Cause | Fix |
-|---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+|-------|-------|-----|
+| Agent cannot find records by policy key | No alternate key set on the lookup column | Table settings > Keys > Add key > select `cr023_policy_key`; rebuild the flow to use the alternate key instead of GUID |
+| Power Automate flow returns empty results when querying policy table | Filter expression syntax error in OData filter | Test the OData query directly in browser: `[envurl]/api/data/v9.2/cr023_pr_policies?$filter=cr023_policy_key eq 'auto_approve_threshold'`; fix syntax before putting in flow |
+| Policy table changes not being picked up by the agent | Copilot Studio agent or flow is caching the response | Add a cache-busting parameter to the query or set the flow to fetch fresh data each invocation; check if any static response is stored in the agent topic |
+| Security error when agent tries to read the table | Agent service account not assigned to the custom security role | Power Platform Admin Center > Security Roles > assign the custom read-only role to the Copilot Studio agent's service account or environment app user |
 
 
 ## Version History
 | Version | Date | Changes |
-|---|---|---|
+|---------|------|---------|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

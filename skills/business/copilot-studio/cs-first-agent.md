@@ -1,23 +1,9 @@
 ---
-name: Your First Copilot Studio Agent
-slug: cs-first-agent
-description: Build your first Copilot Studio agent in 30 minutes — from blank canvas to published, working agent.
-tab: business
-domain: copilot-studio
-industry_vertical: null
-difficulty: starter
-source_type: ragnar-custom
-tags: "[\"copilot-studio\", \"beginner\", \"getting-started\", \"agent-building\"]"
-version: 1.0.1
-icon_emoji: 🤖
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: copilot-studio-path
-learning_path_position: 1
-prerequisites: "[]"
-references:
-  - "title: "Microsoft Copilot Studio Docs"
+name: cs-first-agent
+description: Build your first Copilot Studio agent in 30 minutes, from blank canvas to published working agent. Use when user says 'build my first agent', 'getting started with Copilot Studio', 'create a new Copilot Studio agent', 'how do I publish a Copilot Studio agent', 'set up a Power Platform environment for agents'.
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [beginner, copilot-studio, first-agent, getting-started]
 requires: Copilot Studio VS Code Extension
 mcp_tools:
   - "copilot-studio:manage-agent"
@@ -26,9 +12,20 @@ mcp_tools:
 ---
 
 
-# Your First Copilot Studio Agent
+# CS First Agent
 
 You don't need to understand everything about Copilot Studio to ship your first agent. Here's the exact path from zero to deployed in 30 minutes.
+
+## Trigger Phrases
+
+- "build my first Copilot Studio agent"
+- "getting started with Copilot Studio"
+- "create a new agent in Copilot Studio"
+- "how do I publish a Copilot Studio agent"
+- "set up a Power Platform environment for agents"
+- "what do I need to start with Copilot Studio"
+- "create an agent from scratch"
+- "first agent walkthrough"
 
 ## What You Need
 
@@ -55,48 +52,69 @@ Be professional and concise. If you don't know the answer, say so and
 suggest who to contact. Never make up information.
 ```
 
-Keep instructions under 500 words. Longer instructions reduce quality.
+Keep instructions under 500 words. Longer instructions reduce response quality.
 
-## Step 3: Test It
+## Step 3: Customize System Topics
 
-Click **Test** (top right). Type "Hello". Your agent should respond. Type something it shouldn't know — verify it handles gracefully.
+Before building custom topics, update the two most important system topics:
 
-## Step 4: Publish
+**Greeting** — This fires when the conversation starts. Replace the default text with a clear message of what the agent does:
+```
+Hi! I'm your [name] assistant. I can help you with [capability 1], [capability 2], or [capability 3].
+What can I help you with today?
+```
+
+**Fallback** — This fires when the agent can't understand the user. Make it helpful, not just apologetic:
+```
+I'm not sure I understood that. Could you rephrase? I can help with [list key capabilities].
+```
+
+## Step 4: Test It
+
+Click **Test** (top right). Type "Hello" — verify the greeting fires. Type something it shouldn't know — verify the fallback fires and is graceful.
+
+Test every topic you've built:
+1. Happy path with expected inputs
+2. Unexpected input at each question node
+3. Edge cases (numbers where text expected, empty responses)
+
+## Step 5: Publish
 
 Click **Publish** → **Publish**. Takes 1-2 minutes. Your agent is now live.
 
-## What's Next
+After publishing, deploy to a channel via the **Channels** tab. Teams is the most common first deployment.
 
-- Add **knowledge sources** (SharePoint, websites) so it answers questions about your content
-- Create **topics** for structured conversations
-- Deploy to **Teams** via the Channels tab
+## What to Build Next
+
+| Next Step | Skill |
+|---|---|
+| Add knowledge sources (SharePoint, websites) | cs-knowledge-sources |
+| Build structured conversation flows | cs-topic-basics |
+| Connect to Power Automate for system actions | cs-agent-creator |
+| Multi-agent architecture | cs-multi-agent-orchestration |
 
 ## Common First-Time Mistakes
 
-- No system instructions → unpredictable behavior
-- Too many topics too soon → build one, test it, then expand
-- Forgetting to republish after changes → edits don't go live until published
-
-## Trigger Phrases
-
-- "Help me with your first copilot studio agent"
-- "Your First Copilot Studio Agent"
-- "How do I your first copilot studio agent"
-
-## Quick Example
-
-> See `cs-first-agent-example.md` in this folder for a full worked scenario with business impact.
+| Mistake | Impact | Fix |
+|---|---|---|
+| No system instructions | Unpredictable, off-topic responses | Write instructions before testing |
+| Skipping Fallback customization | Bad user experience when agent fails | Always update Fallback before publishing |
+| Too many topics too soon | Hard to debug, overlapping triggers | Build one topic at a time, test each |
+| Forgetting to republish | Edits invisible to users | Always publish after changes |
+| Publishing before testing | Users hit broken flows | Test every path before publish |
 
 ## Troubleshooting
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
-
+| Agent gives generic responses | System instructions missing or too vague | Write specific, scoped system instructions |
+| Greeting doesn't fire | Greeting system topic not customized or disabled | Check Topics > System topics > Greeting, ensure it's enabled |
+| Agent not finding answers | No knowledge sources connected | Add SharePoint or website knowledge source in Settings > Knowledge |
+| Published agent behaves differently from test | Test canvas uses draft, channel uses published version | Always republish after changes and retest on the channel |
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

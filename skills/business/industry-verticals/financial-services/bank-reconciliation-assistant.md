@@ -1,23 +1,9 @@
 ---
-name: Bank Reconciliation Assistant
-slug: bank-reconciliation-assistant
-description: AI agent for bank statement reconciliation in D365 Finance — auto-match transactions, surface exceptions, and accelerate month-end close.
-tab: business
-domain: industry-verticals
-industry_vertical: financial-services
-difficulty: intermediate
-source_type: ragnar-custom
-tags: "[\"financial-services\", \"bank-reconciliation\", \"d365\", \"finance\", \"month-end\"]"
-version: 1.0.1
-icon_emoji: 🏦
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: null
-learning_path_position: null
-prerequisites: "[]"
-references:
-  - "title: "Bank reconciliation in D365 Finance"
+name: bank-reconciliation-assistant
+description: Automates bank statement reconciliation in D365 Finance by matching transactions, surfacing exceptions, and accelerating month-end close. Use when user says "bank reconciliation", "reconcile bank statement", "outstanding checks", "deposits in transit", "bank statement exceptions", "month-end bank close", or "unmatched bank transactions".
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [intermediate, financial-services, bank-reconciliation, finance]
 requires: D365 F&O MCP Server
 mcp_tools:
   - "d365-fno-mcp"
@@ -64,9 +50,14 @@ A typical $1B company processes 500-2,000 bank transactions per month per accoun
 
 ## Trigger Phrases
 
-- "Help me with bank reconciliation assistant"
-- "Bank Reconciliation Assistant"
-- "How do I bank reconciliation assistant"
+- "bank reconciliation"
+- "reconcile bank statement"
+- "outstanding checks"
+- "deposits in transit"
+- "unmatched bank transactions"
+- "bank statement exceptions"
+- "month-end bank close"
+- "NSF check reversal"
 
 ## Quick Example
 
@@ -76,12 +67,15 @@ A typical $1B company processes 500-2,000 bank transactions per month per accoun
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+| Transactions not matching despite same amount | Bank statement date and GL posting date differ by more than the fuzzy window | Extend the date tolerance window in matching configuration from 2 days to 5 days; review your posting calendar |
+| EFT batch shows as unmatched | Bank posts EFT as single line; D365 has multiple individual GL entries | Enable batch aggregation matching mode to group GL transactions by EFT batch reference before comparing to bank line |
+| Outstanding checks not clearing after payment | Vendor check cashed but GL cleared in different period | Verify the period is open in D365; check that the bank clearing account is not locked by period-end controls |
+| Reconciliation report shows difference that doesn't match any exception | Rounding differences from multi-currency accounts | Identify the functional currency rounding account; post a rounding adjustment journal entry and rerun the reconciliation |
 
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

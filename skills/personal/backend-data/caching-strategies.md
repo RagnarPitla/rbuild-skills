@@ -1,28 +1,10 @@
 ---
-name: Caching Strategies
-slug: caching-strategies
-description: Cache at every layer — CDN, Redis, query cache, HTTP headers — with invalidation patterns and the thundering herd solution.
-tab: personal
-domain: backend-data
-industry_vertical: null
-difficulty: intermediate
-source_type: ragnar-custom
-tags: "[\"caching\", \"redis\", \"cdn\", \"performance\", \"invalidation\"]"
-version: 1.0.1
-icon_emoji: ⚡
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: null
-learning_path_position: null
-prerequisites: "[]"
-references:
-  - "title: "Redis Documentation"
-  - "title: "MDN Cache-Control"
-requires: None
-mcp_tools: []
+name: caching-strategies
+description: "Cache at every layer — CDN, Redis, query cache, HTTP headers — with invalidation patterns and the thundering herd solution. Use when user says 'caching strategy', 'Redis cache', 'cache invalidation', 'thundering herd', 'CDN cache headers', 'stale data problem', 'cache-aside pattern'."
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [intermediate, backend, caching, redis]
 ---
-
 
 # Caching Strategies
 
@@ -32,16 +14,16 @@ The right cache in the right place can take a 500ms API response to 5ms. The wro
 
 ```
 Is it publicly accessible to all users?
-  Yes → CDN cache
+  Yes -> CDN cache
   
 Is it user-specific but read-frequently?
-  Yes → Application cache (Redis)
+  Yes -> Application cache (Redis)
   
 Is it a database query called repeatedly?
-  Yes → Query result cache (Redis or in-memory)
+  Yes -> Query result cache (Redis or in-memory)
   
 Is it a static asset?
-  Yes → CDN + aggressive browser cache (immutable)
+  Yes -> CDN + aggressive browser cache (immutable)
 ```
 
 ## CDN Caching
@@ -137,9 +119,14 @@ Simpler fix: Add random jitter to TTLs so not all entries expire simultaneously.
 
 ## Trigger Phrases
 
-- "Help me with caching strategies"
-- "Caching Strategies"
-- "How do I caching strategies"
+- "caching strategy"
+- "Redis cache"
+- "cache invalidation"
+- "thundering herd"
+- "CDN cache headers"
+- "stale data problem"
+- "cache-aside pattern"
+- "TTL strategy"
 
 ## Quick Example
 
@@ -149,12 +136,14 @@ Simpler fix: Add random jitter to TTLs so not all entries expire simultaneously.
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
-
+| Stale data after update | Cache not invalidated on write | Add explicit Redis delete on every write path; or switch to write-through caching |
+| Thundering herd on cache expiry | All entries have the same TTL, expire simultaneously | Add random jitter (TTL + random 0-10%) to spread expiry across time |
+| Cache memory exhaustion | No eviction policy set, cache grows unbounded | Set `maxmemory-policy allkeys-lru` in Redis config; monitor memory usage |
+| Cache poisoning attack | User-controlled input in cache key | Never include raw user input in cache keys; hash or sanitize all user-derived key components |
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

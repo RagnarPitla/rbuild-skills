@@ -1,23 +1,9 @@
 ---
-name: Supply Chain Agent Introduction
-slug: supply-chain-agent-intro
-description: Where AI agents add the most value in supply chain — demand planning, inventory optimization, logistics, and where to start.
-tab: business
-domain: supply-chain
-industry_vertical: null
-difficulty: starter
-source_type: ragnar-custom
-tags: "[\"supply-chain\", \"d365\", \"enterprise-ai\", \"getting-started\", \"demand-planning\"]"
-version: 1.0.1
-icon_emoji: 🔗
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: null
-learning_path_position: null
-prerequisites: "[\"agent-first-thinking\"]"
-references:
-  - "title: "D365 Supply Chain Management"
+name: supply-chain-agent-intro
+description: Where AI agents add the most value in supply chain operations — demand planning, inventory optimization, logistics exception handling, and how to prioritize your first agent. Use when user says "supply chain agent", "where to start with AI in supply chain", "inventory agent", "demand planning agent", "logistics agent", "supply chain automation".
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [beginner, supply-chain, introduction, agents]
 requires: D365 F&O MCP Server
 mcp_tools:
   - "d365-fno-mcp"
@@ -108,9 +94,14 @@ See the [Inventory Reorder Advisor](./inventory-reorder-advisor.md) skill for th
 
 ## Trigger Phrases
 
-- "Help me with supply chain agent introduction"
-- "Supply Chain Agent Introduction"
-- "How do I supply chain agent introduction"
+- "supply chain agent"
+- "where to start with AI in supply chain"
+- "inventory agent"
+- "demand planning agent"
+- "logistics agent"
+- "supply chain automation"
+- "which supply chain processes are best for agents"
+- "ATP agent"
 
 ## Quick Example
 
@@ -119,13 +110,15 @@ See the [Inventory Reorder Advisor](./inventory-reorder-advisor.md) skill for th
 ## Troubleshooting
 
 | Issue | Cause | Fix |
-|---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+|-------|-------|-----|
+| Not sure which supply chain agent to build first | Too many options, unclear business priority | Start with inventory reorder advisor: read-only, high frequency, clear metric (stockout rate), data already in D365 |
+| D365 data is available but agent responses are slow | MCP server doing full-table scans instead of filtered queries | Always pass site, warehouse, and date range filters in MCP queries; avoid pulling all records and filtering in the agent |
+| Agent built for supply chain but procurement team is not using it | Not involved in design, output format does not match their workflow | Co-design the output format with buyers: show them a mock output before building and get sign-off on what fields matter |
 
 
 ## Version History
 | Version | Date | Changes |
-|---|---|---|
+|---------|------|---------|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

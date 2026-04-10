@@ -1,24 +1,9 @@
 ---
-name: GxP Compliance Checker
-slug: gxp-compliance-checker
-description: Validate manufacturing and quality records against GxP requirements — batch release, deviation detection, and audit readiness.
-tab: business
-domain: industry-verticals
-industry_vertical: healthcare
-difficulty: advanced
-source_type: ragnar-custom
-tags: "[\"healthcare\", \"gxp\", \"gmp\", \"compliance\", \"pharmaceutical\", \"regulated\", \"batch\"]"
-version: 1.0.1
-icon_emoji: 🧬
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: null
-learning_path_position: null
-prerequisites: "[]"
-references:
-  - "title: "FDA 21 CFR Part 211 — GMP for Finished Pharmaceuticals"
-  - "title: "FDA 21 CFR Part 11 — Electronic Records"
+name: gxp-compliance-checker
+description: Validates manufacturing and quality records against GxP requirements for batch release, deviation detection, and audit readiness. Use when user says "GMP compliance", "batch release", "deviation report", "CAPA for GxP", "audit readiness", "OOS investigation", or "21 CFR Part 11 audit trail".
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [advanced, healthcare, gxp, compliance]
 requires: D365 F&O MCP Server
 mcp_tools:
   - "d365-fno-mcp"
@@ -85,9 +70,14 @@ Regulators look for exactly these data points. Having them ready instantly demon
 
 ## Trigger Phrases
 
-- "Help me with gxp compliance checker"
-- "GxP Compliance Checker"
-- "How do I gxp compliance checker"
+- "GMP compliance"
+- "batch release"
+- "deviation report"
+- "CAPA for GxP"
+- "audit readiness"
+- "OOS investigation"
+- "21 CFR Part 11 audit trail"
+- "pre-batch release checklist"
 
 ## Quick Example
 
@@ -97,12 +87,15 @@ Regulators look for exactly these data points. Having them ready instantly demon
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+| Batch release checklist shows incomplete but all records are signed | Electronic signature not captured in the correct field for the agent to read | Confirm the audit trail query is reading from the correct 21 CFR Part 11 signature table; check that the D365 electronic signature configuration is active for the relevant document type |
+| OOS investigation not automatically triggered after result entry | Out-of-specification threshold not configured for this test method | Add the specification limits to the Dataverse test method policy table; the agent compares results against these limits to determine OOS status |
+| Audit readiness report shows stale CAPA data | CAPA closure dates not updated in D365 quality management | Run the CAPA status sync to pull current closure dates from D365 quality orders; verify QA team is closing CAPAs in the system, not just on paper |
+| Environmental monitoring excursion not linking to affected batches | Batch manufacturing timestamps not stored with room/location reference | Require room assignment on production orders; use the Dataverse location table to link environmental records to production events by time window and location |
 
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

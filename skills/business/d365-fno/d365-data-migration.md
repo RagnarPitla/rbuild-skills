@@ -1,30 +1,14 @@
 ---
-name: D365 Data Migration
-slug: d365-data-migration
-description: Plan and execute D365 F&O data migration — data entities, DIXF packages, cutover strategy, and validation patterns.
-tab: business
-domain: d365-fno
-industry_vertical: null
-difficulty: intermediate
-source_type: ragnar-custom
-tags: "[\"d365-fno\", \"data-migration\", \"dixf\", \"implementation\", \"cutover\"]"
-version: 1.0.1
-icon_emoji: 📦
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: d365-fno-path
-learning_path_position: 8
-prerequisites: "[\"d365-navigation-fundamentals\"]"
-references:
-  - "title: "Data management and integration in D365"
-  - "title: "Data import/export framework (DIXF)"
+name: d365-data-migration
+description: Plan and execute D365 F&O data migration — data entities, DIXF packages, cutover strategy, and validation patterns. Use when user says "data migration to D365", "import data into D365", "DIXF import", "data entity import", "migrate customers to D365", "opening balances migration", "cutover data strategy".
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [intermediate, d365, data-migration, dmf]
 requires: D365 F&O MCP Server
 mcp_tools:
   - "d365-fno-mcp"
   - "dataverse-mcp"
 ---
-
 
 # D365 Data Migration
 
@@ -70,7 +54,7 @@ Find entities: **Data management → Data entities** — search by name or modul
 5. Set error handling (stop on first error vs continue)
 6. Run the import
 
-**File format recommendation:** Excel for small datasets (<10K rows), CSV for large datasets. Always use the entity's template file as your starting point — download it from the entity details page.
+**File format recommendation:** Excel for small datasets (under 10K rows), CSV for large datasets. Always use the entity's template file as your starting point — download it from the entity details page.
 
 ## Mapping and Transformation
 
@@ -128,30 +112,77 @@ After each entity import, run validation:
 
 **Sample review:** Manually review 5-10% of imported records — spot check that the data looks correct.
 
-**Automated validation queries:** Write SQL/OData queries that compare critical aggregates between source and D365.
+**Automated validation queries:** Write OData queries that compare critical aggregates between source and D365.
 
-## Trigger Phrases
+### OData Validation Queries
 
-- "How do I d365 data migration"
-- "Help me with d365 data migration in D365"
-- "Check d365 data migration"
-- "Analyze d365 data migration"
-- "Show me d365 data migration status"
+**Count imported customers:**
+```
+GET /data/CustomersV3?$select=CustomerAccount&$count=true
+```
 
-## Quick Example
+**Check vendors missing payment terms:**
+```
+GET /data/VendorsV2?$filter=PaymentTerms eq ''&$select=VendorAccountNumber,VendorName
+```
 
-> See `d365-data-migration-example.md` in this folder for a full worked scenario with business impact.
+**Check open inventory quantities:**
+```
+GET /data/InventoryOnHandEntries?$filter=InventLocationId eq 'MAIN'&$select=ItemNumber,AvailablePhysicalQuantity,UnitId
+```
+
+**Check GL opening balances posted:**
+```
+GET /data/LedgerJournalEntity?$filter=JournalBatchNumber eq 'OPEN-2026'&$select=JournalBatchNumber,AccountDisplayValue,AmountCurDebit,AmountCurCredit
+```
+
+## Core Tasks
+
+### 1. Plan Migration Wave
+```text
+GIVEN list of data objects to migrate
+WHEN skill plans migration
+THEN order objects by dependency (reference data first, master data second, transactions last)
+AND identify which D365 entity handles each object
+AND flag objects with no matching D365 entity (need custom solution)
+AND estimate import time based on record count and entity complexity
+```
+
+### 2. Validate Import File
+```text
+GIVEN a DIXF-formatted CSV or Excel file
+WHEN skill validates before import
+THEN check required columns are present against entity field list
+AND check data types match (dates are dates, numbers are numbers)
+AND check foreign key values exist in D365 (customer groups, UOM codes, currency codes)
+AND return a validation report with row-level errors
+```
+
+### 3. Post-Import Reconciliation
+```text
+GIVEN imported data and source system totals
+WHEN skill reconciles
+THEN compare record counts by entity
+AND compare financial totals (AR balance, AP balance, inventory value)
+AND identify records in source not found in D365
+AND produce a reconciliation report with variance detail
+```
 
 ## Troubleshooting
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
-
+| Import job fails with "Staging to target" error | Required reference data missing (e.g., customer group, payment terms) | Check entity prerequisites; import reference data first before master data |
+| Record count mismatch after import | Duplicate key violations caused records to skip silently | Check the import job execution log; filter by "Error" status; fix and re-import failed rows |
+| Financial dimensions invalid on journal import | Dimension values used in source file do not exist in D365 | Pre-import dimension values first; validate all dimension codes against D365 before running journal import |
+| "Batch number not found" on inventory import | Journal batch number format does not match D365 number sequence | Align the import file batch number format with the D365 number sequence for inventory journals |
+| Vendor invoice matching fails post-migration | Open PO receipts imported but invoice matching tolerance not configured | Configure invoice matching policy in AP parameters before importing open invoices |
+| Duplicate customer accounts after migration | Source had same customer in multiple systems with different codes | De-duplicate in the transformation layer; use a single canonical customer ID before importing |
+| Opening balance journal does not post | Fiscal period for the balance date is closed or on hold | Open the relevant period in General ledger → Period close → Ledger calendar before importing |
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content — OData validation queries, GIVEN/WHEN/THEN tasks, D365-specific error table |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

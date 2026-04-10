@@ -1,29 +1,10 @@
 ---
-name: GraphQL Patterns
-slug: graphql-patterns
-description: Design GraphQL APIs — schema-first development, DataLoader for N+1, subscriptions, federation, and when to use REST instead.
-tab: personal
-domain: backend-data
-industry_vertical: null
-difficulty: intermediate
-source_type: ragnar-curated
-tags: "[\"graphql\", \"api\", \"schema\", \"dataloading\", \"subscriptions\"]"
-version: 1.0.1
-icon_emoji: 🔗
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: null
-learning_path_position: null
-prerequisites: "[\"api-design\"]"
-references:
-  - "title: "GraphQL Official Documentation"
-  - "title: "Apollo GraphQL Documentation"
-  - "title: "The Guild — GraphQL Best Practices"
-requires: None
-mcp_tools: []
+name: graphql-patterns
+description: "Design GraphQL APIs — schema-first development, DataLoader for N+1, subscriptions, federation, and when to use REST instead. Use when user says 'GraphQL schema', 'N+1 problem', 'DataLoader', 'GraphQL subscriptions', 'cursor pagination GraphQL', 'GraphQL vs REST', 'GraphQL security', 'depth limiting'."
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [intermediate, backend, graphql, api]
 ---
-
 
 # GraphQL Patterns
 
@@ -77,7 +58,7 @@ const resolvers = {
     }
   }
 }
-// If you load 100 orders → 100 customer queries
+// If you load 100 orders -> 100 customer queries
 ```
 
 **Fix: DataLoader**
@@ -95,7 +76,7 @@ const resolvers = {
     customer: (order) => customerLoader.load(order.customerId)
   }
 }
-// Now 100 orders → 1 customer query (batched)
+// Now 100 orders -> 1 customer query (batched)
 ```
 
 DataLoader automatically batches requests within the same tick and caches results within a request.
@@ -205,6 +186,17 @@ const server = new ApolloServer({
 });
 ```
 
+## Trigger Phrases
+
+- "GraphQL schema"
+- "N+1 problem"
+- "DataLoader"
+- "GraphQL subscriptions"
+- "cursor pagination GraphQL"
+- "GraphQL vs REST"
+- "GraphQL security"
+- "depth limiting"
+
 ## Quick Example
 
 > See `graphql-patterns-example.md` in this folder for a full worked scenario with business impact.
@@ -213,12 +205,14 @@ const server = new ApolloServer({
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
-
+| Slow queries on nested types | N+1 problem — resolver fires per-row DB query | Wrap all batched lookups in DataLoader; one loader per entity type |
+| Query takes down the database | Deeply nested query with no depth limit | Add depthLimit(7) and complexity limits to validation rules; test with nested query attacks |
+| Subscriptions disconnect frequently | No heartbeat or proxy timeout | Add keepAlive to WebSocket connection; configure proxy timeout to exceed heartbeat interval |
+| Introspection exposes schema in production | Missing introspection guard | Set `introspection: process.env.NODE_ENV !== 'production'` in server config |
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

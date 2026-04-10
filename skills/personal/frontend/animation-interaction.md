@@ -1,26 +1,9 @@
 ---
-name: Animation & Interaction Patterns
-slug: animation-interaction
-description: Build performant UI animations with Framer Motion, CSS transitions, GSAP, and the View Transitions API — with 60fps performance budgets.
-tab: personal
-domain: frontend
-industry_vertical: null
-difficulty: intermediate
-source_type: ragnar-curated
-tags: "[\"animation\", \"framer-motion\", \"css\", \"interaction\", \"performance\", \"ux\"]"
-version: 1.0.1
-icon_emoji: ✨
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: null
-learning_path_position: null
-prerequisites: "[]"
-references:
-  - "title: "Framer Motion Documentation"
-  - "title: "View Transitions API — MDN"
-  - "title: "CSS Animations — MDN"
-requires: None (Figma MCP optional)
+name: animation-interaction
+description: Build performant UI animations with Framer Motion, CSS transitions, and the View Transitions API at 60fps. Use when user says 'animate this component', 'CSS animation', 'Framer Motion', 'UI transitions', 'page transitions', 'smooth animation', 'reduced motion'.
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [intermediate, frontend, animation, interaction]
 mcp_tools:
   - "playwright-mcp"
   - "figma-mcp"
@@ -203,9 +186,14 @@ Always respect `prefers-reduced-motion`. Some users have vestibular disorders wh
 
 ## Trigger Phrases
 
-- "Help me with animation & interaction patterns"
-- "Animation & Interaction Patterns"
-- "How do I animation & interaction patterns"
+- "animate this component"
+- "CSS animation"
+- "Framer Motion"
+- "UI transitions"
+- "page transitions"
+- "smooth animation"
+- "reduced motion"
+- "layout animation"
 
 ## Quick Example
 
@@ -215,12 +203,15 @@ Always respect `prefers-reduced-motion`. Some users have vestibular disorders wh
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+| Animation is janky (dropping frames) | Animating layout-triggering properties (width, height, top, left) | Switch to `transform: translate/scale` and `opacity` only; check with Chrome DevTools Performance tab |
+| Framer Motion layout animation flickers | Multiple layout-animating elements without LayoutGroup | Wrap related elements in `<LayoutGroup>` so Framer Motion can coordinate layout measurements |
+| Animation works in dev but not in production | Reduced motion media query stripping animations | Test with `prefers-reduced-motion: reduce` in DevTools; ensure you handle it with `useReducedMotion` |
+| Page transition causes scroll jump | New page renders at scroll position of previous page | Add `window.scrollTo(0, 0)` at start of view transition, or use `scroll-behavior: auto` during transition |
 
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

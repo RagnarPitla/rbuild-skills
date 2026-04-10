@@ -1,23 +1,9 @@
 ---
-name: Lot Genealogy Tracker
-slug: lot-genealogy-tracker
-description: Trace complete forward and backward lot genealogy for regulated products — critical for recalls, deviations, and regulatory audits.
-tab: business
-domain: industry-verticals
-industry_vertical: healthcare
-difficulty: advanced
-source_type: ragnar-custom
-tags: "[\"healthcare\", \"lot-genealogy\", \"traceability\", \"d365\", \"recall\", \"pharma\"]"
-version: 1.0.1
-icon_emoji: 🔬
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: null
-learning_path_position: null
-prerequisites: "[]"
-references:
-  - "title: "FDA Drug Traceability Requirements"
+name: lot-genealogy-tracker
+description: Traces complete forward and backward lot genealogy for regulated products to support recalls, deviations, and regulatory audits. Use when user says "lot genealogy", "batch traceability", "recall trace", "where did this lot go", "what went into this batch", "forward trace", or "backward trace".
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [advanced, healthcare, lot-traceability, batch]
 requires: D365 F&O MCP Server
 mcp_tools:
   - "d365-fno-mcp"
@@ -98,9 +84,14 @@ FDA expectations: complete genealogy in 24 hours for a recall. This agent gets t
 
 ## Trigger Phrases
 
-- "Help me with lot genealogy tracker"
-- "Lot Genealogy Tracker"
-- "How do I lot genealogy tracker"
+- "lot genealogy"
+- "batch traceability"
+- "recall trace"
+- "where did this lot go"
+- "what went into this batch"
+- "forward trace lot"
+- "backward trace lot"
+- "lot distribution trace"
 
 ## Quick Example
 
@@ -110,12 +101,15 @@ FDA expectations: complete genealogy in 24 hours for a recall. This agent gets t
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+| Forward trace stops at distribution center with no downstream data | Downstream customer inventory transactions not linked to the original lot | Verify that lot tracking is enabled end-to-end in D365 SCM; confirm the distribution center has lot-controlled items and is recording transfers with the correct lot reference |
+| Backward trace missing one raw material component | Component was issued without a lot-controlled inventory transaction | Review item tracking configuration; require lot tracking on all GxP-relevant raw materials; retroactively assign lot numbers to historical untracked receipts if needed |
+| Genealogy report takes more than 5 minutes to generate | Large production order with many sub-levels and thousands of transactions | Create a pre-computed genealogy index (daily batch job); the agent reads from the index for instant results and falls back to live query for new batches only |
+| CoA not appearing in backward trace | Certificate of Analysis stored as an external document not linked to the inventory lot | Link CoA documents to the lot record using D365 document handling with the lot number as reference; store the CoA identifier in the Dataverse lot attribute table |
 
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

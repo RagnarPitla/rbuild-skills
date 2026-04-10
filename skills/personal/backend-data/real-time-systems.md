@@ -1,28 +1,10 @@
 ---
-name: Real-Time Systems
-slug: real-time-systems
-description: Build real-time features with WebSockets, SSE, Redis Pub/Sub — with reconnection logic, scaling, and when each approach fits.
-tab: personal
-domain: backend-data
-industry_vertical: null
-difficulty: advanced
-source_type: ragnar-custom
-tags: "[\"websockets\", \"sse\", \"real-time\", \"redis\", \"pubsub\", \"scaling\"]"
-version: 1.0.1
-icon_emoji: ⚡
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: null
-learning_path_position: null
-prerequisites: "[\"caching-strategies\"]"
-references:
-  - "title: "WebSockets — MDN"
-  - "title: "Server-Sent Events — MDN"
-requires: None
-mcp_tools: []
+name: real-time-systems
+description: "Build real-time features with WebSockets, SSE, Redis Pub/Sub — with reconnection logic, scaling, and when each approach fits. Use when user says 'real-time websocket', 'SSE streaming', 'server-sent events', 'Redis pub/sub', 'WebSocket reconnect', 'scale websockets', 'real-time dashboard', 'long polling vs SSE'."
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [intermediate, backend, real-time, websockets]
 ---
-
 
 # Real-Time Systems
 
@@ -32,8 +14,8 @@ mcp_tools: []
 
 | Transport | Direction | Use For | Scale Complexity |
 |---|---|---|---|
-| **HTTP Polling** | Client → Server | Simple, infrequent updates | Low |
-| **SSE** | Server → Client | Notifications, feeds, streaming | Low |
+| **HTTP Polling** | Client -> Server | Simple, infrequent updates | Low |
+| **SSE** | Server -> Client | Notifications, feeds, streaming | Low |
 | **WebSockets** | Bidirectional | Chat, collaborative editing, games | High |
 | **WebRTC** | P2P | Video/audio, large binary data | Very High |
 
@@ -159,7 +141,7 @@ Redis Pub/Sub delivers messages to all subscribers — so all server instances g
 Track user-to-connection mapping server-side:
 
 ```javascript
-const connections = new Map(); // userId → Set<WebSocket>
+const connections = new Map(); // userId -> Set<WebSocket>
 
 ws.on('message', (message) => {
   const { userId, token } = authenticate(message);
@@ -182,11 +164,43 @@ function sendToUser(userId, data) {
 }
 ```
 
+## LLM Streaming with SSE
+
+A common pattern for streaming AI responses to clients:
+
+```typescript
+// Stream Claude response to browser via SSE
+app.get('/stream-chat', async (req, res) => {
+  res.setHeader('Content-Type', 'text/event-stream');
+  res.setHeader('Cache-Control', 'no-cache');
+  
+  const stream = await anthropic.messages.stream({
+    model: 'claude-sonnet-4-5',
+    max_tokens: 1024,
+    messages: [{ role: 'user', content: req.query.message as string }]
+  });
+  
+  for await (const chunk of stream) {
+    if (chunk.type === 'content_block_delta') {
+      res.write(`data: ${JSON.stringify({ text: chunk.delta.text })}\n\n`);
+    }
+  }
+  
+  res.write('data: [DONE]\n\n');
+  res.end();
+});
+```
+
 ## Trigger Phrases
 
-- "Help me with real-time systems"
-- "Real-Time Systems"
-- "How do I real-time systems"
+- "real-time websocket"
+- "SSE streaming"
+- "server-sent events"
+- "Redis pub/sub"
+- "WebSocket reconnect"
+- "scale websockets"
+- "real-time dashboard"
+- "long polling vs SSE"
 
 ## Quick Example
 
@@ -196,12 +210,14 @@ function sendToUser(userId, data) {
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
-
+| WebSocket connections drop after 60s | Proxy or load balancer timeout with no heartbeat | Add ping/pong heartbeat every 30s; configure proxy timeout to 90s+ |
+| Messages lost on server restart | No message persistence, in-memory only | Use Redis Streams or a message queue for persistence; replay on reconnect using last event ID |
+| Memory leak with many connections | Connections not cleaned up from tracking Map | Ensure ws.on('close') removes from all connection Maps; log connection count periodically |
+| SSE not working behind nginx | Nginx buffering the response | Add `proxy_buffering off;` and `X-Accel-Buffering: no` header for SSE endpoints |
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

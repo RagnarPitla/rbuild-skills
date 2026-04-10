@@ -1,23 +1,9 @@
 ---
-name: Dataverse Table Design
-slug: dataverse-table-design
-description: Design Dataverse tables — standard vs custom, column types, relationships, alternate keys, and naming conventions for agent workloads.
-tab: business
-domain: power-platform
-industry_vertical: null
-difficulty: starter
-source_type: ragnar-custom
-tags: "[\"dataverse\", \"power-platform\", \"table-design\", \"low-code\", \"agents\"]"
-version: 1.0.1
-icon_emoji: 🗄️
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: power-platform-path
-learning_path_position: 1
-prerequisites: "[]"
-references:
-  - "title: "Create and edit tables in Dataverse"
+name: dataverse-table-design
+description: Design Dataverse tables — standard vs custom, column types, relationships, alternate keys, and naming conventions for agent workloads. Use when user says "design a Dataverse table", "Dataverse schema", "table relationships in Dataverse", "alternate key Dataverse", "naming convention Power Platform", "custom table setup".
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [intermediate, dataverse, schema, power-platform]
 requires: Dataverse MCP, Power Automate
 mcp_tools:
   - "dataverse-mcp"
@@ -110,9 +96,14 @@ For any new Dataverse table:
 
 ## Trigger Phrases
 
-- "Help me with dataverse table design"
-- "Dataverse Table Design"
-- "How do I dataverse table design"
+- "design a Dataverse table"
+- "Dataverse schema"
+- "table relationships in Dataverse"
+- "alternate key Dataverse"
+- "naming convention Power Platform"
+- "custom table setup"
+- "cr023_ prefix"
+- "standard vs custom table"
 
 ## Quick Example
 
@@ -121,13 +112,16 @@ For any new Dataverse table:
 ## Troubleshooting
 
 | Issue | Cause | Fix |
-|---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+|-------|-------|-----|
+| Column system name already taken | Another solution uses the same name without a publisher prefix | Always use your publisher prefix (e.g., `cr023_`) in system names; check for conflicts in the environment before creating |
+| Relationships not showing in model-driven app form | Lookup column created but not added to the form layout | Open the table form in the app designer; drag the lookup column onto the form canvas; save and publish |
+| OData query returns different results than expected | Filter uses display name instead of schema name | Use column schema names (with publisher prefix) in OData filters, not display names: `$filter=cr023_policy_key eq 'value'` |
+| Managed solution upgrade fails because of table conflicts | Table schema changed in source environment but not properly versioned | Never manually edit managed solution tables; make changes in the development environment, increment the solution version, and re-export before deploying |
 
 
 ## Version History
 | Version | Date | Changes |
-|---|---|---|
+|---------|------|---------|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

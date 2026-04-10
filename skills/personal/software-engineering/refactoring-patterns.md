@@ -1,26 +1,9 @@
 ---
-name: Refactoring Patterns
-slug: refactoring-patterns
-description: Safe refactoring techniques — extract method, replace conditional, introduce parameter object, and how to refactor without breaking things.
-tab: personal
-domain: software-engineering
-industry_vertical: null
-difficulty: intermediate
-source_type: ragnar-curated
-tags: "[\"refactoring\", \"code-quality\", \"patterns\", \"clean-code\", \"design\"]"
-version: 1.0.1
-icon_emoji: 🔧
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: null
-learning_path_position: null
-prerequisites: "[\"code-review\", \"tdd-workflow\"]"
-references:
-  - "title: "Refactoring by Martin Fowler"
-  - "title: "Refactoring Catalog"
-requires: None
-mcp_tools: []
+name: refactoring-patterns
+description: Safe refactoring techniques including strangler fig, extract method, replace conditional with polymorphism, and decompose conditional. Use when user says 'refactor this code', 'clean up this function', 'refactoring patterns', 'how to refactor safely', 'extract method', 'reduce complexity'.
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [intermediate, software-engineering, refactoring, patterns]
 ---
 
 
@@ -177,6 +160,39 @@ if (canViewContent(user, subscription)) {
 }
 ```
 
+## Pattern 6: Strangler Fig (Large-Scale Refactoring)
+
+**When:** You need to refactor a large system incrementally without a big-bang rewrite.
+
+The strangler fig pattern: build new functionality around the old system, gradually routing traffic to the new implementation until the old system is no longer called and can be removed.
+
+```typescript
+// Old monolithic OrderService
+class OldOrderService {
+  createOrder(data: any) { /* hundreds of lines */ }
+}
+
+// New service — starts handling specific cases
+class NewOrderService {
+  createOrder(data: CreateOrderRequest): Promise<Order> { /* clean implementation */ }
+}
+
+// Router decides which to use
+class OrderServiceRouter {
+  async createOrder(data: any) {
+    // Route new order types to new service
+    if (data.type === 'subscription') {
+      return this.newService.createOrder(data);
+    }
+    // Everything else still goes to old service
+    return this.oldService.createOrder(data);
+  }
+}
+
+// Gradually expand what the new service handles
+// Until old service handles nothing and can be deleted
+```
+
 ## When NOT to Refactor
 
 - When you don't have tests (write them first)
@@ -188,9 +204,14 @@ if (canViewContent(user, subscription)) {
 
 ## Trigger Phrases
 
-- "Help me with refactoring patterns"
-- "Refactoring Patterns"
-- "How do I refactoring patterns"
+- "refactor this code"
+- "clean up this function"
+- "refactoring patterns"
+- "how to refactor safely"
+- "extract method"
+- "reduce complexity"
+- "strangler fig pattern"
+- "replace conditional"
 
 ## Quick Example
 
@@ -200,12 +221,15 @@ if (canViewContent(user, subscription)) {
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+| Refactoring breaks behavior | No tests before starting | Stop, write characterization tests documenting current behavior, then refactor |
+| Refactoring turns into a rewrite | Scope creep during refactor | Set a scope limit before starting; if you find you need to rewrite, make that a separate decision |
+| Team resists refactoring | "It works, don't touch it" culture | Frame refactoring as risk reduction, not cleanup; link specific bugs to unclean code that made them hard to find |
+| Polymorphism over-engineered | Applied to switches that rarely change | Only use replace-conditional-with-polymorphism when new types are regularly added; for 2-3 fixed cases, a switch is fine |
 
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

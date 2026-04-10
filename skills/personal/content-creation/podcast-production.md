@@ -1,38 +1,34 @@
 ---
-name: Podcast Production
-slug: podcast-production
-description: End-to-end podcast workflow for In Our AI Era — episode planning, lane splits, show notes from transcripts, and clip extraction.
-tab: personal
-domain: content-creation
-industry_vertical: null
-difficulty: intermediate
-source_type: ragnar-custom
-tags: "[\"podcast\", \"content\", \"show-notes\", \"in-our-ai-era\", \"video\"]"
-version: 1.0.1
-icon_emoji: 🎙️
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: null
-learning_path_position: null
-prerequisites: "[]"
-references:
-  - "title: "In Our AI Era — YouTube"
+name: podcast-production
+description: End-to-end podcast workflow for In Our AI Era, covering episode planning, lane splits, show notes from transcripts, and clip extraction. Use when user says 'podcast episode', 'episode brief', 'show notes', 'clip from podcast', 'In Our AI Era', 'plan an episode'.
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [intermediate, content, podcast, production]
 requires: fal.ai MCP or OpenRouter
 mcp_tools:
   - "fal-ai-mcp"
   - "openrouter"
 ---
 
-
 # Podcast Production
 
-Built for "In Our AI Era" — co-hosted with Tina van Heerden, 25-35 minutes, video podcast format. But the workflow applies to any technical podcast.
+Built for "In Our AI Era", co-hosted with Tina van Heerden, 25-35 minutes, video podcast format. But the workflow applies to any technical podcast.
+
+## Trigger Phrases
+
+- "podcast episode"
+- "episode brief"
+- "plan an episode"
+- "show notes from transcript"
+- "clip from podcast"
+- "In Our AI Era episode"
+- "extract clips"
+- "podcast outline"
 
 ## Episode Brief Template
 
 ```
-Episode: [N] — [Working Title]
+Episode: [N]: [Working Title]
 Date: [Recording date]
 
 Core question: What does the listener understand/can do after watching?
@@ -107,7 +103,7 @@ After each episode, identify 3-5 clips:
 
 **Good clip criteria:**
 - 45-90 seconds (LinkedIn), 60 seconds (Shorts)
-- Standalone — makes sense without full episode context
+- Standalone: makes sense without full episode context
 - A clear beginning and end (doesn't feel cut mid-thought)
 - Contains one clear insight or counterintuitive statement
 
@@ -127,12 +123,6 @@ Full episode: [link]
 #AI #EnterpriseAI #[topic]
 ```
 
-## Trigger Phrases
-
-- "Help me with podcast production"
-- "Podcast Production"
-- "How do I podcast production"
-
 ## Quick Example
 
 > See `podcast-production-example.md` in this folder for a full worked scenario with business impact.
@@ -141,12 +131,14 @@ Full episode: [link]
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
-
+| Episode feels like two separate talks | Lane split not aligned to one core question | Define the core question first, then assign each host a perspective on the same question |
+| Show notes are too long | Trying to summarize everything | Show notes should surface the 3 insights a viewer can apply, not recap the full episode |
+| Clips don't stand alone | Cut mid-sentence or mid-argument | Each clip needs its own mini-setup and landing. Add 5-10 seconds of context before the insight. |
+| Episode runs long | Segments not time-boxed during planning | Block each segment in the brief with explicit time targets before recording |
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

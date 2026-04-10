@@ -1,23 +1,9 @@
 ---
-name: Batch Potency Calculator
-slug: batch-potency-calculator
-description: Calculate active ingredient potency adjustments for pharmaceutical batch manufacturing — CoA reading, formula adjustment, and D365 batch record update.
-tab: business
-domain: industry-verticals
-industry_vertical: manufacturing-process
-difficulty: advanced
-source_type: ragnar-custom
-tags: "[\"manufacturing-process\", \"pharma\", \"potency\", \"batch\", \"formula\", \"gmp\"]"
-version: 1.0.1
-icon_emoji: ⚗️
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: null
-learning_path_position: null
-prerequisites: "[]"
-references:
-  - "title: "FDA Pharmaceutical Manufacturing — Process Controls"
+name: batch-potency-calculator
+description: Calculates active ingredient potency adjustments for pharmaceutical batch manufacturing by reading CoA values, adjusting formula quantities, and updating D365 batch records. Use when user says "potency calculation", "CoA potency adjustment", "API potency", "batch formula adjustment", "active ingredient quantity", "potency compensation", or "adjust for assay result".
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [advanced, manufacturing, potency, pharmaceutical]
 requires: D365 F&O MCP Server
 mcp_tools:
   - "d365-fno-mcp"
@@ -91,9 +77,14 @@ Common potency calculation errors the agent prevents:
 
 ## Trigger Phrases
 
-- "Help me with batch potency calculator"
-- "Batch Potency Calculator"
-- "How do I batch potency calculator"
+- "potency calculation"
+- "CoA potency adjustment"
+- "API potency"
+- "batch formula adjustment"
+- "active ingredient quantity"
+- "potency compensation"
+- "adjust for assay result"
+- "formula quantity from CoA"
 
 ## Quick Example
 
@@ -103,12 +94,15 @@ Common potency calculation errors the agent prevents:
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+| Adjusted quantity is less than the base formula quantity | Potency entered as a decimal (0.973) instead of a percentage (97.3) | Confirm the CoA potency value is entered as a percentage between 0 and 100; the formula divides by (potency / 100), so a decimal input inverts the calculation |
+| CoA validation failing for an approved supplier | Supplier code in D365 does not exactly match the approved vendor list entry in Dataverse | Check the vendor account format; ensure the Dataverse approved vendor table uses the same D365 vendor account identifier, including leading zeros if applicable |
+| Dispensing ticket shows wrong unit of measure | CoA expresses potency on a w/v basis but formula uses w/w | Explicitly define the potency basis (w/w or w/v) in the item's potency configuration; flag mismatches as a validation error before the calculation proceeds |
+| Second-person verification task not generating | Electronic signature workflow not configured for the calculation document type | Enable the D365 electronic signature requirement for potency calculation records; assign the QA reviewer role to the second-verification signature group |
 
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

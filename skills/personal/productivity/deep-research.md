@@ -1,34 +1,29 @@
 ---
-name: Deep Research
-slug: deep-research
-description: Multi-source research workflow using Claude Code with Exa and Firecrawl MCPs — from question to cited, synthesized report.
-tab: personal
-domain: productivity
-industry_vertical: null
-difficulty: intermediate
-source_type: ragnar-custom
-tags: "[\"research\", \"web-search\", \"synthesis\", \"exa\", \"firecrawl\", \"citations\"]"
-version: 1.0.1
-icon_emoji: 🔬
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: null
-learning_path_position: null
-prerequisites: "[]"
-references:
-  - "title: "Exa Neural Search"
-  - "title: "Firecrawl — Web Scraping for LLMs"
+name: deep-research
+description: Multi-source research workflow using Claude Code with Exa and Firecrawl MCPs, producing cited synthesized reports. Use when user says 'deep research', 'research a topic', 'research this for me', 'competitive analysis', 'what do people say about', 'briefing on'.
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [intermediate, productivity, research, synthesis]
 requires: Exa MCP, Firecrawl MCP
 mcp_tools:
   - "exa-mcp"
   - "firecrawl-mcp"
 ---
 
-
 # Deep Research
 
 Deep research is not just running a web search. It's a structured workflow that produces a synthesized, cited report you can act on. Here's how to do it properly with Claude Code and MCP tools.
+
+## Trigger Phrases
+
+- "deep research on"
+- "research a topic"
+- "research this for me"
+- "competitive analysis of"
+- "what do people say about"
+- "I need a briefing on"
+- "investigate"
+- "landscape for"
 
 ## When to Use Deep Research
 
@@ -74,7 +69,7 @@ Different sources for different question types:
 
 ## Step 3: Exa for Semantic Search
 
-Exa uses neural search — it understands meaning, not just keywords. Better than Google for research:
+Exa uses neural search. It understands meaning, not just keywords. Better than Google for research:
 
 ```
 # In Claude Code with Exa MCP configured:
@@ -120,29 +115,20 @@ Don't just dump what you found. Synthesize:
 [Where sources disagree and why]
 
 ## Confidence Level
-High/Medium/Low — based on source quality and consistency
+High/Medium/Low, based on source quality and consistency
 
 ## Sources
-- [Title](URL) — accessed [date]
+- [Title](URL), accessed [date]
 ```
 
 ## Handling Conflicting Sources
 
 When sources disagree:
-1. Check the publication date — newer is usually more accurate for fast-moving topics
-2. Check the source credibility — primary sources (vendor docs) beat secondary (blog summaries)
-3. Note the conflict explicitly — don't silently pick one
+1. Check the publication date. Newer is usually more accurate for fast-moving topics.
+2. Check the source credibility. Primary sources (vendor docs) beat secondary (blog summaries).
+3. Note the conflict explicitly. Don't silently pick one.
 
 "Source A says X, while Source B (published 6 months later) says Y. The discrepancy likely reflects a product update."
-
-## Trigger Phrases for This Skill
-
-Use this workflow when you say:
-- "Research X for me"
-- "What do people say about Y?"
-- "Do a competitive analysis of Z"
-- "What's the landscape for [topic]?"
-- "I need a briefing on [subject] before my meeting"
 
 ## Quick Example
 
@@ -152,12 +138,14 @@ Use this workflow when you say:
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
-
+| Results too broad | Research question is vague | Rewrite the question with specific constraints: platform, date range, audience |
+| Exa returns irrelevant results | Keywords too generic | Switch to concept-based query or add domain qualifiers ("enterprise", "D365", "production") |
+| Firecrawl fails on a page | Page uses heavy JS or anti-bot protection | Try the cached version via Exa or use a different source URL for the same content |
+| Report not actionable | Synthesis lists facts without conclusions | Always end synthesis with: "What does this mean for [specific decision]?" |
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

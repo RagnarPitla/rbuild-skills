@@ -1,23 +1,9 @@
 ---
-name: BOM Cost Analyzer
-slug: bom-cost-analyzer
-description: Analyze Bill of Materials cost rollups in D365 — identify variance drivers, surface top cost reduction opportunities, and model material substitutions.
-tab: business
-domain: industry-verticals
-industry_vertical: manufacturing-discrete
-difficulty: intermediate
-source_type: ragnar-custom
-tags: "[\"manufacturing\", \"bom\", \"cost\", \"d365\", \"variance\", \"profitability\"]"
-version: 1.0.1
-icon_emoji: 🏭
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: null
-learning_path_position: null
-prerequisites: "[]"
-references:
-  - "title: "D365 Cost Management"
+name: bom-cost-analyzer
+description: Analyzes Bill of Materials cost rollups in D365 to identify variance drivers, surface cost reduction opportunities, and model material substitutions. Use when user says "BOM cost", "standard cost vs actual cost", "cost rollup", "material cost variance", "component cost breakdown", "make vs buy analysis", or "substitute component cost".
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [intermediate, manufacturing, bom, cost-analysis]
 requires: D365 F&O MCP Server
 mcp_tools:
   - "d365-fno-mcp"
@@ -98,9 +84,14 @@ Reads from:
 
 ## Trigger Phrases
 
-- "Help me with bom cost analyzer"
-- "BOM Cost Analyzer"
-- "How do I bom cost analyzer"
+- "BOM cost"
+- "standard cost vs actual cost"
+- "cost rollup"
+- "material cost variance"
+- "component cost breakdown"
+- "make vs buy analysis"
+- "substitute component cost"
+- "scrap rate cost impact"
 
 ## Quick Example
 
@@ -110,12 +101,15 @@ Reads from:
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+| Standard cost rollup doesn't match actual production costs | Standard cost version not activated or not updated after last cost run | Run the standard cost calculation in D365 Cost Management; activate the pending cost version so the rollup reflects current component prices |
+| Component substitution model shows negative savings | Substitute component has higher landed cost than the base item when freight and tooling are included | Include freight, duty, and tooling amortization in the substitution model; the agent's annual impact calculation must use total landed cost, not purchase price only |
+| BOM cost percentage breakdown doesn't add to 100% | Overhead absorption is calculated separately and not included in component-level percentages | Add the overhead absorption line to the cost breakdown table explicitly; confirm the costing sheet is configured to roll overhead into the finished item standard cost |
+| Variance analysis shows large price variance on stable-price materials | Standard cost was not updated at the last period-end cost run | Set a calendar reminder to run the standard cost update at each period-end; configure D365 cost alerts to flag when actual purchase prices deviate more than 5% from standard |
 
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

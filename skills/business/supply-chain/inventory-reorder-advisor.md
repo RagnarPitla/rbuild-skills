@@ -1,24 +1,9 @@
 ---
-name: Inventory Reorder Advisor
-slug: inventory-reorder-advisor
-description: AI agent skill for inventory reorder optimization — EOQ calculations, reorder points, safety stock, and D365 integration patterns.
-tab: business
-domain: supply-chain
-industry_vertical: null
-difficulty: intermediate
-source_type: ragnar-custom
-tags: "[\"supply-chain\", \"inventory\", \"demand-planning\", \"d365\", \"reorder\", \"safety-stock\"]"
-version: 1.0.1
-icon_emoji: 📦
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: null
-learning_path_position: null
-prerequisites: "[]"
-references:
-  - "title: "D365 Inventory Management"
-  - "title: "Master planning in D365 SCM"
+name: inventory-reorder-advisor
+description: AI agent skill for inventory reorder optimization — EOQ calculations, reorder points, safety stock, and D365 integration patterns. Use when user says "reorder point calculation", "safety stock", "EOQ formula", "inventory optimization", "which items need reordering", "days of supply", "reorder quantity".
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [intermediate, supply-chain, inventory, reorder]
 requires: D365 F&O MCP Server
 mcp_tools:
   - "d365-fno-mcp"
@@ -43,18 +28,18 @@ The Inventory Reorder Advisor agent:
 
 ### Reorder Point (ROP)
 ```
-ROP = (Average Daily Demand × Lead Time) + Safety Stock
+ROP = (Average Daily Demand x Lead Time) + Safety Stock
 
 Where:
 - Average Daily Demand = Total consumption in period / Number of days
 - Lead Time = Supplier lead time in days (from vendor record in D365)
-- Safety Stock = Z-score × σ(demand) × √(lead time)
+- Safety Stock = Z-score x sigma(demand) x sqrt(lead time)
   (Z-score = 1.65 for 95% service level)
 ```
 
 ### Economic Order Quantity (EOQ)
 ```
-EOQ = √(2 × Annual Demand × Ordering Cost / Holding Cost)
+EOQ = sqrt(2 x Annual Demand x Ordering Cost / Holding Cost)
 
 Where:
 - Ordering Cost = Cost per purchase order (from policy table)
@@ -71,7 +56,7 @@ The agent needs these from D365 (via MCP server or Power Automate):
 |---|---|---|
 | On-hand inventory | Inventory management | `InventOnHandV2` entity |
 | Consumption history | Inventory transactions | `InventTransList` |
-| Vendor lead times | Procurement → Vendors → Trade agreements | `PurchaseOrderHeadersV2` |
+| Vendor lead times | Procurement > Vendors > Trade agreements | `PurchaseOrderHeadersV2` |
 | Item cost | Cost management | `InventItemPrice` |
 | Warehouse locations | Warehouse management | `WHSLocationTable` |
 
@@ -109,7 +94,7 @@ Store seasonality indices in a Dataverse table (`cr023_inventory_seasonality`) s
 
 The Inventory Reorder Advisor can complement (not replace) D365 master planning:
 - Use for items not in the master plan
-- Use for rapid manual analysis when master plan hasn't run
+- Use for rapid manual analysis when master plan has not run
 - Use for exception items where planners need a second opinion
 
 To trigger a purchase order directly from agent recommendation:
@@ -136,9 +121,14 @@ Include a confidence indicator when data quality is low (e.g., less than 30 days
 
 ## Trigger Phrases
 
-- "Help me with inventory reorder advisor"
-- "Inventory Reorder Advisor"
-- "How do I inventory reorder advisor"
+- "reorder point calculation"
+- "safety stock"
+- "EOQ formula"
+- "which items need reordering"
+- "days of supply"
+- "inventory optimization"
+- "reorder quantity"
+- "stock replenishment"
 
 ## Quick Example
 
@@ -147,13 +137,15 @@ Include a confidence indicator when data quality is low (e.g., less than 30 days
 ## Troubleshooting
 
 | Issue | Cause | Fix |
-|---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
-
+|-------|-------|-----|
+| Reorder recommendations firing too early | Safety stock formula using too-high Z-score or demand variability is overstated | Check service level assignment for the item category; verify sigma_demand calculation excludes outlier demand periods |
+| Agent returns no items despite known stockouts | On-hand query includes reserved stock or items not tagged to the queried warehouse | Filter `InventOnHandV2` by `AvailPhysical` (not `PhysicalInvent`); confirm warehouse and site parameters match |
+| EOQ recommendations below supplier minimum order quantity | EOQ calculation not checking vendor minimum order quantity (MOQ) | Add logic: order max(EOQ, vendor_MOQ); pull MOQ from `PurchaseOrderLines` vendor trade agreement |
+| Consumption rate looks wrong for seasonal items | Using full-year average demand for a product with strong seasonal peaks | Apply seasonality index from `cr023_inventory_seasonality` or calculate rolling 4-week demand for the current season |
 
 ## Version History
 | Version | Date | Changes |
-|---|---|---|
+|---------|------|---------|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

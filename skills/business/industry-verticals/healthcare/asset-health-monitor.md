@@ -1,23 +1,9 @@
 ---
-name: Medical Asset Health Monitor
-slug: asset-health-monitor
-description: Monitor medical equipment health, maintenance schedules, and calibration compliance in healthcare and life sciences settings.
-tab: business
-domain: industry-verticals
-industry_vertical: healthcare
-difficulty: intermediate
-source_type: ragnar-custom
-tags: "[\"healthcare\", \"asset-management\", \"medical-equipment\", \"maintenance\", \"compliance\"]"
-version: 1.0.1
-icon_emoji: 🏥
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: null
-learning_path_position: null
-prerequisites: "[]"
-references:
-  - "title: "D365 Asset Management"
+name: asset-health-monitor
+description: Monitors medical equipment health, maintenance schedules, and calibration compliance in healthcare and life sciences settings. Use when user says "equipment calibration due", "asset maintenance", "equipment qualification", "MTBF analysis", "overdue calibration", "medical device maintenance", or "equipment downtime tracking".
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [intermediate, healthcare, asset-management, gmp]
 requires: D365 F&O MCP Server
 mcp_tools:
   - "d365-fno-mcp"
@@ -63,9 +49,14 @@ Store compliance configuration in Dataverse: which equipment classes require whi
 
 ## Trigger Phrases
 
-- "Help me with medical asset health monitor"
-- "Medical Asset Health Monitor"
-- "How do I medical asset health monitor"
+- "equipment calibration due"
+- "asset maintenance schedule"
+- "equipment qualification"
+- "MTBF analysis"
+- "overdue calibration"
+- "medical device maintenance"
+- "equipment downtime tracking"
+- "calibration certificate expired"
 
 ## Quick Example
 
@@ -75,12 +66,15 @@ Store compliance configuration in Dataverse: which equipment classes require whi
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+| Calibration alert not firing before expiry | Advance notice window not configured for this equipment class | Set the calibration alert lead time (default 30 days) in the Dataverse compliance configuration table for the relevant equipment class |
+| Equipment shows as compliant but calibration certificate is expired | Certificate expiry date not updated after last calibration service | Update the certificate expiry date in D365 Asset Management after each calibration; use the agent's calibration update workflow to automate this |
+| MTBF calculation appears incorrect for new equipment | Insufficient failure history (fewer than 3 failure events) | MTBF requires at least 3 data points to be statistically meaningful; flag the equipment as "insufficient data" and rely on manufacturer MTBF until history accumulates |
+| Work orders not generating automatically for PM due dates | Automatic work order creation not enabled for the asset type | Enable the automatic work order creation flag in D365 Asset Management for the relevant maintenance plan and functional location |
 
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

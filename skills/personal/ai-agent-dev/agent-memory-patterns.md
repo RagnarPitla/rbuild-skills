@@ -1,29 +1,13 @@
 ---
-name: Agent Memory Patterns
-slug: agent-memory-patterns
-description: Memory architecture for AI agents — the four memory types, implementation patterns, and when to use each for cross-session persistence.
-tab: personal
-domain: ai-agent-dev
-industry_vertical: null
-difficulty: advanced
-source_type: ragnar-custom
-tags: "[\"agent-memory\", \"vector-search\", \"long-term-memory\", \"persistence\", \"knowledge-graph\"]"
-version: 1.0.1
-icon_emoji: 🧠
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: null
-learning_path_position: null
-prerequisites: "[\"rag-patterns\"]"
-references:
-  - "title: "LangGraph Memory Concepts"
-  - "title: "Building AI Agents with Memory — Anthropic"
+name: agent-memory-patterns
+description: "Memory architecture for AI agents — four memory types, implementation patterns, and cross-session persistence. Use when user says 'agent memory', 'persist context between sessions', 'long-term memory for agents', 'episodic memory', 'vector memory store', 'how do I remember user preferences in my agent'."
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [intermediate, ai-agent-dev, memory, context]
 requires: Claude API
 mcp_tools:
   - "claude-api"
 ---
-
 
 # Agent Memory Patterns
 
@@ -31,24 +15,24 @@ Without memory, every agent conversation starts from zero. The user re-explains 
 
 ## The Four Memory Types
 
-**1. Working Memory (In-Context)**  
-The current conversation history. Lives in the context window. Automatically available to the LLM.  
-*Limit:* Context window size. Must be managed for long sessions.
+**1. Working Memory (In-Context)**
+The current conversation history. Lives in the context window. Automatically available to the LLM.
+Limit: Context window size. Must be managed for long sessions.
 
-**2. Episodic Memory (Session)**  
-Summaries of past conversations. "Last week, you asked about vendor X and we decided to put them on the approved list."  
-*Storage:* Database (PostgreSQL, Redis)  
-*Retrieval:* By user ID, recency, or topic
+**2. Episodic Memory (Session)**
+Summaries of past conversations. "Last week, you asked about vendor X and we decided to put them on the approved list."
+Storage: Database (PostgreSQL, Redis)
+Retrieval: By user ID, recency, or topic
 
-**3. Semantic Memory (Long-term Knowledge)**  
-Facts, entities, relationships the agent has learned. "User prefers formal language. Department = Finance. Budget authority = $50K."  
-*Storage:* Vector database + structured DB  
-*Retrieval:* Semantic similarity search
+**3. Semantic Memory (Long-term Knowledge)**
+Facts, entities, relationships the agent has learned. "User prefers formal language. Department = Finance. Budget authority = $50K."
+Storage: Vector database + structured DB
+Retrieval: Semantic similarity search
 
-**4. Procedural Memory (Skills)**  
-How to perform tasks. Encoded as: agent instructions, few-shot examples, tool descriptions.  
-*Storage:* In the agent's prompt/system instructions  
-*Update:* Requires prompt engineering
+**4. Procedural Memory (Skills)**
+How to perform tasks. Encoded as: agent instructions, few-shot examples, tool descriptions.
+Storage: In the agent's prompt/system instructions
+Update: Requires prompt engineering
 
 ## Working Memory Management
 
@@ -174,9 +158,14 @@ def decay_memories(user_id: str):
 
 ## Trigger Phrases
 
-- "Help me with agent memory patterns"
-- "Agent Memory Patterns"
-- "How do I agent memory patterns"
+- "agent memory"
+- "persist context between sessions"
+- "long-term memory for agents"
+- "episodic memory"
+- "vector memory store"
+- "remember user preferences in my agent"
+- "cross-session agent context"
+- "semantic memory for AI"
 
 ## Quick Example
 
@@ -186,12 +175,14 @@ def decay_memories(user_id: str):
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
-
+| Agent forgets context mid-conversation | Working memory overflow (context too long) | Implement trim_conversation with rolling summary before each call |
+| Stale memories causing wrong answers | No TTL or confidence decay | Add 90-day TTL on episodic memory, confidence decay on semantic facts |
+| Memory retrieval too slow | No index on vector store or too many full scans | Add metadata filters (user_id) before vector search to reduce search space |
+| Conflicting memories (user changed their mind) | Old memories not updated on explicit override | Listen for correction signals ("actually...", "that changed") and upsert memory |
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

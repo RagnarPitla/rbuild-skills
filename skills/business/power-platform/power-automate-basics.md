@@ -1,24 +1,9 @@
 ---
-name: Power Automate for Agents
-slug: power-automate-basics
-description: Build Power Automate cloud flows that Copilot Studio agents invoke — triggers, inputs/outputs, error handling, and action patterns.
-tab: business
-domain: power-platform
-industry_vertical: null
-difficulty: starter
-source_type: ragnar-custom
-tags: "[\"power-automate\", \"power-platform\", \"flows\", \"agents\", \"copilot-studio\"]"
-version: 1.0.1
-icon_emoji: ⚡
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: power-platform-path
-learning_path_position: 2
-prerequisites: "[\"dataverse-table-design\"]"
-references:
-  - "title: "Power Automate Documentation"
-  - "title: "Call a flow from Copilot Studio"
+name: power-automate-basics
+description: Build Power Automate cloud flows that Copilot Studio agents invoke — triggers, inputs/outputs, error handling, and action patterns. Use when user says "create a flow for agents", "Power Automate for Copilot Studio", "agent-callable flow", "flow trigger for agents", "Power Automate error handling", "flow inputs and outputs".
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [beginner, power-automate, flows, automation]
 requires: Dataverse MCP, Power Automate
 mcp_tools:
   - "dataverse-mcp"
@@ -151,9 +136,14 @@ This makes flows easy to find and maintain, especially as you scale to multiple 
 
 ## Trigger Phrases
 
-- "Help me with power automate for agents"
-- "Power Automate for Agents"
-- "How do I power automate for agents"
+- "create a flow for agents"
+- "Power Automate for Copilot Studio"
+- "agent-callable flow"
+- "flow trigger for agents"
+- "Power Automate error handling"
+- "flow inputs and outputs"
+- "Respond to Copilot Studio action"
+- "start approval from agent"
 
 ## Quick Example
 
@@ -162,13 +152,16 @@ This makes flows easy to find and maintain, especially as you scale to multiple 
 ## Troubleshooting
 
 | Issue | Cause | Fix |
-|---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+|-------|-------|-----|
+| Copilot Studio agent cannot see the flow to add as an action | Flow not using the "When Copilot Studio calls a flow" trigger, or flow is in a different environment | Verify the flow trigger is exactly "When Copilot Studio calls a flow" (Instant); ensure the flow and the agent are in the same Dataverse environment |
+| Flow returns empty string for output that should have a value | Expression path is wrong or the upstream action returned null | Test the flow manually with a known input; use the flow run history to inspect each step's output and correct the expression path |
+| Flow times out when querying D365 | D365 query returns too many rows, causing slow response | Add `$top=50` and specific `$filter` clauses to the D365 connector query; never fetch all records |
+| Approval action is blocking the agent response for too long | Start and wait for approval is synchronous and blocks the flow | Switch to "Start an approval" (non-blocking) and use a separate flow triggered by approval completion to update the record and notify the agent via a callback or status check |
 
 
 ## Version History
 | Version | Date | Changes |
-|---|---|---|
+|---------|------|---------|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

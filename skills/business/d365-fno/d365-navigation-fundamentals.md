@@ -1,34 +1,18 @@
 ---
-name: D365 F&O Navigation Fundamentals
-slug: d365-navigation-fundamentals
-description: Navigate D365 Finance & Operations confidently — modules, workspaces, list pages, forms, search, and power user shortcuts.
-tab: business
-domain: d365-fno
-industry_vertical: null
-difficulty: starter
-source_type: ragnar-custom
-tags: "[\"d365-fno\", \"navigation\", \"getting-started\", \"workspaces\", \"beginner\"]"
-version: 1.0.1
-icon_emoji: 🗺️
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: d365-fno-path
-learning_path_position: 1
-prerequisites: "[]"
-references:
-  - "title: "Get started with Dynamics 365 Finance"
-  - "title: "Navigation search in finance and operations apps"
+name: d365-navigation-fundamentals
+description: Navigate D365 Finance and Operations confidently — modules, workspaces, list pages, forms, search, and power user shortcuts. Use when user says "how do I navigate D365", "find a form in D365", "D365 navigation", "D365 workspaces", "get started with D365", "find menu in D365 F&O", "D365 search bar".
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [beginner, d365, navigation, fundamentals]
 requires: D365 F&O MCP Server
 mcp_tools:
   - "d365-fno-mcp"
   - "dataverse-mcp"
 ---
 
-
 # D365 F&O Navigation Fundamentals
 
-D365 Finance & Operations is a deep system. Most users find their 3-4 daily screens and never venture further. But knowing how to navigate the full system makes you dramatically more effective — and it's essential for anyone building AI agents that interact with it.
+D365 Finance and Operations is a deep system. Most users find their 3-4 daily screens and never venture further. But knowing how to navigate the full system makes you dramatically more effective — and it's essential for anyone building AI agents that interact with it.
 
 ## The Module Structure
 
@@ -41,7 +25,7 @@ D365 F&O organizes everything into modules, accessible from the navigation pane:
 | **Manufacturing** | Production orders, BOM, routes, shop floor |
 | **Project Management** | Projects, timesheets, resource management |
 | **Human Resources** | Employees, positions, leave and absence |
-| **Retail & Commerce** | Point of sale, channels, product catalog |
+| **Retail and Commerce** | Point of sale, channels, product catalog |
 
 Each module has its own **workspace** — a dashboard showing the most important data and actions for that domain.
 
@@ -76,7 +60,7 @@ Type anything — a menu name, a field, a form name:
 - "Posted invoices" → finds the right inquiry
 - "Number sequences" → finds the setup form instantly
 
-This is how I navigate. I almost never use the left menu.
+This is how experienced users navigate. Almost never use the left menu.
 
 ## How to Find Anything
 
@@ -122,26 +106,29 @@ These views persist across sessions and can be shared with your team.
 
 ## Trigger Phrases
 
-- "How do I d365 f&o navigation fundamentals"
-- "Help me with d365 f&o navigation fundamentals in D365"
-- "Check d365 f&o navigation fundamentals"
-- "Analyze d365 f&o navigation fundamentals"
-- "Show me d365 f&o navigation fundamentals status"
-
-## Quick Example
-
-> See `d365-navigation-fundamentals-example.md` in this folder for a full worked scenario with business impact.
+- "how do I navigate D365"
+- "find a form in D365"
+- "D365 navigation"
+- "D365 workspaces"
+- "get started with D365"
+- "find menu in D365 F&O"
+- "D365 search bar"
+- "what module is X in D365"
 
 ## Troubleshooting
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
-
+| Menu item not visible | Security role does not include the privilege for that form | Ask your system administrator to check your assigned roles and add the relevant duty |
+| Form opens but all fields are greyed out | Read-only security permission, or form is in view mode | Check if an Edit button exists on the action pane; confirm your role has update access |
+| Navigation search returns no results | Search term too specific or using an alias not matching D365 menu label | Try broader search terms; use the module workspace to browse instead |
+| Workspace tiles show no data | Filters on the workspace are too restrictive, or data does not exist for your legal entity | Right-click the tile → Personalize → check filter criteria; confirm you are in the right legal entity |
+| Cannot switch legal entity | Your user account is not assigned to the target legal entity | Ask your admin to add your user to the legal entity under System administration → Users |
+| Saved view not available for another user | Views are user-specific by default | Publish the view: Options → Views → Publish — requires Saved views admin privilege |
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting — D365-specific troubleshooting table, updated trigger phrases |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

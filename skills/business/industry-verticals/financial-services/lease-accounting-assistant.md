@@ -1,24 +1,9 @@
 ---
-name: Lease Accounting Assistant
-slug: lease-accounting-assistant
-description: Calculate lease liability and ROU asset values under IFRS 16 and ASC 842 — amortization schedules, journal entries, and remeasurement.
-tab: business
-domain: industry-verticals
-industry_vertical: financial-services
-difficulty: advanced
-source_type: ragnar-custom
-tags: "[\"financial-services\", \"lease-accounting\", \"ifrs16\", \"asc842\", \"d365\", \"compliance\"]"
-version: 1.0.1
-icon_emoji: 📑
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: null
-learning_path_position: null
-prerequisites: "[]"
-references:
-  - "title: "IFRS 16 Leases"
-  - "title: "ASC 842 Lease Accounting — FASB"
+name: lease-accounting-assistant
+description: Calculates lease liability and ROU asset values under IFRS 16 and ASC 842, including amortization schedules, journal entries, and remeasurement events. Use when user says "IFRS 16", "ASC 842", "lease accounting", "ROU asset", "right-of-use asset", "lease liability", "lease amortization schedule", or "remeasure lease".
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [advanced, financial-services, lease-accounting, ifrs-16]
 requires: D365 F&O MCP Server
 mcp_tools:
   - "d365-fno-mcp"
@@ -102,9 +87,14 @@ This difference means the same lease looks different on an IFRS vs US GAAP incom
 
 ## Trigger Phrases
 
-- "Help me with lease accounting assistant"
-- "Lease Accounting Assistant"
-- "How do I lease accounting assistant"
+- "IFRS 16"
+- "ASC 842"
+- "lease accounting"
+- "ROU asset"
+- "right-of-use asset"
+- "lease liability"
+- "lease amortization schedule"
+- "remeasure lease"
 
 ## Quick Example
 
@@ -114,12 +104,15 @@ This difference means the same lease looks different on an IFRS vs US GAAP incom
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+| ROU asset and lease liability don't agree at commencement | Initial direct costs or prepaid payments not included in ROU calculation | Recalculate: ROU Asset = Lease Liability + Initial Direct Costs + Prepaid Lease Payments; update the D365 Asset Leasing commencement entry |
+| Amortization schedule doesn't match D365 calculated values | IBR entered as annual rate but D365 expects periodic (monthly) rate | Confirm D365 is configured to receive the annual IBR and convert internally; if not, divide the annual IBR by 12 before entry |
+| Remeasurement not triggered when lease term extended | Extension option not flagged as reasonably certain in the lease register | Update the extension option field to "Reasonably Certain" in the lease record; this triggers automatic remeasurement in D365 Asset Leasing |
+| IFRS 16 vs ASC 842 P&L difference confusing management | Operating lease straight-line vs front-loaded not explained in reports | Add a disclosure note to the management report explaining the different P&L profiles; tag leases by accounting standard for multi-jurisdiction entities |
 
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

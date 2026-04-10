@@ -1,26 +1,9 @@
 ---
-name: Accessibility Audit
-slug: accessibility-audit
-description: Web accessibility audit checklist — WCAG 2.2 AA, ARIA patterns, keyboard navigation, and the fixes that solve 80% of issues.
-tab: personal
-domain: frontend
-industry_vertical: null
-difficulty: intermediate
-source_type: ragnar-curated
-tags: "[\"accessibility\", \"wcag\", \"aria\", \"a11y\", \"screen-reader\", \"keyboard\"]"
-version: 1.0.1
-icon_emoji: ♿
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: null
-learning_path_position: null
-prerequisites: "[]"
-references:
-  - "title: "WCAG 2.2 Guidelines"
-  - "title: "WebAIM — Web Accessibility In Mind"
-  - "title: "MDN Accessibility Guide"
-requires: None (Figma MCP optional)
+name: accessibility-audit
+description: Web accessibility audit checklist covering WCAG 2.2 AA, ARIA patterns, keyboard navigation, and the fixes that solve 80% of issues. Use when user says 'accessibility audit', 'WCAG compliance', 'a11y check', 'screen reader support', 'keyboard navigation', 'color contrast check'.
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [intermediate, frontend, accessibility, wcag]
 mcp_tools:
   - "playwright-mcp"
   - "figma-mcp"
@@ -137,9 +120,14 @@ Tab through your entire page with the mouse unplugged:
 
 ## Trigger Phrases
 
-- "Help me with accessibility audit"
-- "Accessibility Audit"
-- "How do I accessibility audit"
+- "accessibility audit"
+- "WCAG compliance"
+- "a11y check"
+- "screen reader support"
+- "keyboard navigation"
+- "color contrast check"
+- "ARIA patterns"
+- "fix accessibility issues"
 
 ## Quick Example
 
@@ -149,12 +137,15 @@ Tab through your entire page with the mouse unplugged:
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
+| Automated tools show no issues but screen readers fail | Automated tools only catch ~57% of WCAG issues | Always follow up with manual keyboard navigation and a screen reader (NVDA/VoiceOver) test |
+| Focus trap in modal not working | Focus management not implemented | Use a focus trap library or implement `focusin`/`focusout` event listeners; always return focus to the trigger element on close |
+| Dynamic content not read by screen readers | Missing aria-live region | Wrap status messages and notifications in `<div aria-live="polite">` so screen readers announce changes |
+| Color contrast passes in design but fails in code | Different color values between design spec and implementation | Check computed CSS values in browser devtools, not design files; use axe DevTools to verify against WCAG ratios |
 
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |

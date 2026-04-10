@@ -1,29 +1,14 @@
 ---
-name: D365 Plan to Produce
-slug: d365-plan-to-produce
-description: Configure the Plan to Produce process in D365 SCM — BOMs, routes, production orders, shop floor, and manufacturing agent patterns.
-tab: business
-domain: d365-fno
-industry_vertical: null
-difficulty: intermediate
-source_type: ragnar-custom
-tags: "[\"d365-fno\", \"manufacturing\", \"production\", \"bom\", \"plan-to-produce\"]"
-version: 1.0.1
-icon_emoji: 🏭
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: d365-fno-path
-learning_path_position: 5
-prerequisites: "[\"d365-navigation-fundamentals\"]"
-references:
-  - "title: "D365 Supply Chain — Manufacturing"
+name: d365-plan-to-produce
+description: Configure the Plan to Produce (P2P) process in D365 SCM — bills of materials, routes, master planning, production orders, shop floor reporting, and manufacturing agent patterns. Use when user says "plan to produce in D365", "production order D365", "BOM setup D365", "master planning D365", "shop floor D365", "manufacturing process D365", "production scheduling D365".
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [intermediate, d365, plan-to-produce, manufacturing]
 requires: D365 F&O MCP Server
 mcp_tools:
   - "d365-fno-mcp"
   - "dataverse-mcp"
 ---
-
 
 # D365 Plan to Produce
 
@@ -104,6 +89,65 @@ Once a production order is released:
 
 **Shop floor terminals:** Workers can report operations via handheld devices or PC terminals on the shop floor without needing a full D365 license.
 
+## OData Queries for P2P
+
+### Open Production Orders
+```
+GET /data/ProductionOrderHeaderEntity?$filter=ProductionOrderStatus eq 'Released'&$select=ProductionOrderNumber,ItemNumber,PlannedStartDate,PlannedEndDate,GoodQuantity,ProductionOrderStatus
+```
+
+### Production Orders at Risk (past due date)
+```
+GET /data/ProductionOrderHeaderEntity?$filter=PlannedEndDate lt 2026-04-10 and ProductionOrderStatus ne 'Ended'&$select=ProductionOrderNumber,ItemNumber,PlannedEndDate,ProductionOrderStatus
+```
+
+### BOM Components for a Finished Good
+```
+GET /data/BillOfMaterialsLineEntity?$filter=ItemNumber eq 'FG-1001'&$select=ItemNumber,ComponentItemNumber,BOMQuantity,UnitSymbol,BOMLineType
+```
+
+### Work Center Capacity Loads
+```
+GET /data/RouteOperationEntity?$filter=WorkCenterId eq 'MACHLINE1'&$select=WorkCenterId,OperationNumber,SetupTime,ProcessTime,ResourceGroupId
+```
+
+### Planned Orders from Master Planning
+```
+GET /data/PlannedOrderEntity?$filter=ItemNumber eq 'FG-1001' and PlannedOrderType eq 'Production'&$select=PlannedOrderNumber,ItemNumber,PlannedStartDate,RequirementDate,Quantity
+```
+
+## Core Tasks
+
+### 1. Production Schedule Monitor
+```text
+GIVEN all open production orders
+WHEN skill monitors schedule
+THEN compare PlannedEndDate to today for each order
+AND calculate percentage completion based on reported operations
+AND flag orders where completion percentage is below expected based on elapsed time
+AND return: on-track orders, at-risk orders (behind schedule), critical orders (past due)
+```
+
+### 2. BOM Cost Impact Analysis
+```text
+GIVEN a component item with a price change
+WHEN skill analyzes impact
+THEN find all BOMs that include this component
+AND calculate cost delta per finished good
+AND identify items where standard cost update is recommended
+AND return impact table: finished good, current cost, new cost, variance amount
+```
+
+### 3. Capacity Exception Detection
+```text
+GIVEN a master planning run result
+WHEN skill checks capacity
+THEN sum planned operation hours by work center by day
+AND compare to work center available hours
+AND identify overloaded work centers (utilization above 100%)
+AND suggest: split orders, alternative work centers, or schedule shift
+```
+
 ## Agent Patterns for P2P
 
 **Production schedule monitor:** Monitors open production orders for delays. Compares planned completion vs actual progress, identifies orders at risk of missing due dates, alerts planners with context.
@@ -116,26 +160,30 @@ Once a production order is released:
 
 ## Trigger Phrases
 
-- "How do I d365 plan to produce"
-- "Help me with d365 plan to produce in D365"
-- "Check d365 plan to produce"
-- "Analyze d365 plan to produce"
-- "Show me d365 plan to produce status"
-
-## Quick Example
-
-> See `d365-plan-to-produce-example.md` in this folder for a full worked scenario with business impact.
+- "plan to produce in D365"
+- "production order D365"
+- "BOM setup D365"
+- "master planning D365"
+- "shop floor D365"
+- "manufacturing process D365"
+- "production scheduling D365"
+- "work center capacity D365"
 
 ## Troubleshooting
 
 | Issue | Cause | Fix |
 |---|---|---|
-| Unexpected output | Unclear input | Add more specific context to your prompt |
-| Skill not triggering | Wrong trigger phrase | Use the exact trigger phrases listed above |
-
+| Production order cannot be released | BOM or route version not active for the production site | Check Product information management → BOMs; ensure BOM version status is "Approved" and site matches the production order site |
+| Master planning creates excess planned orders | Demand fence or coverage settings too aggressive | Review master planning parameters: minimum order quantity, coverage group, days fence; adjust to reduce over-planning |
+| BOM explosion shows wrong components | Wrong BOM version is active (date or site mismatch) | Verify BOM version effective dates and site filter; set the correct version to active |
+| Report as finished posts to wrong inventory location | Output location on route or production order header is incorrect | Update the output warehouse/location on the production order header before reporting as finished |
+| Production order cost variance is unexpectedly high | Component prices updated after production order was created without refreshing cost estimate | Run BOM calculation on the finished good; update the production order cost estimate before ending the order |
+| Work center scheduling conflict | Two production orders scheduled simultaneously on same work center | Use Operations scheduling or Job scheduling in D365 with finite capacity enabled; re-plan one order |
+| Quality order blocking goods receipt | Sampling plan requires inspection before stock is released | Process the quality order in Quality management → Quality orders; record results and set order status to Pass or Fail |
 
 ## Version History
 | Version | Date | Changes |
 |---|---|---|
+| 1.1.0 | 2026-04-10 | Improved frontmatter, triggers, troubleshooting, and content — OData queries, GIVEN/WHEN/THEN tasks, D365-specific error table |
 | 1.0.1 | 2026-04-10 | Updated format, added triggers, examples, troubleshooting |
 | 1.0.0 | 2026-04-09 | Initial skill definition |
