@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-10T08:42:12.430Z",
-  "total": 148,
+  "generated_at": "2026-04-10T15:46:16.313Z",
+  "total": 147,
   "skills": [
     {
       "slug": "case-study-generator",
@@ -1179,30 +1179,6 @@
       "file_path": "skills/business/industry-verticals/manufacturing-process/batch-potency-calculator.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/manufacturing-process/batch-potency-calculator.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/manufacturing-process/batch-potency-calculator.md"
-    },
-    {
-      "slug": "apa-review",
-      "name": "apa-review",
-      "description": "Mercedes-Benz MBTI Angebots-Prufungs Agent (APA) for validating D365 project quotations against pricing policies, discount thresholds, and margin requirements. Use when user says \"quote review\", \"APA review\", \"Angebots-Prufungs\", \"proposal validation\", \"discount approval\", or \"quotation margin check\".",
-      "tab": "business",
-      "domain": "industry-verticals",
-      "industry_vertical": "professional-services",
-      "difficulty": "advanced",
-      "source_type": "ragnar-custom",
-      "tags": [
-        "professional-services",
-        "quote-review",
-        "mercedes-benz"
-      ],
-      "version": "1.1.0",
-      "icon_emoji": "⚡",
-      "is_coming_soon": false,
-      "is_featured": false,
-      "author": "Ragnar Pitla | skill.rbuild.ai",
-      "has_example": true,
-      "file_path": "skills/business/industry-verticals/professional-services/apa-review.md",
-      "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/business/industry-verticals/professional-services/apa-review.md",
-      "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/business/industry-verticals/professional-services/apa-review.md"
     },
     {
       "slug": "utilization-optimizer",
@@ -3171,19 +3147,23 @@
     },
     {
       "slug": "podcast-production",
-      "name": "Podcast Production",
-      "description": "End-to-end podcast workflow — episode planning, Ragnar/Tina lane splits, show notes from transcripts, and clip extraction for social.",
+      "name": "podcast-production",
+      "description": "End-to-end podcast workflow covering episode planning, host lane splits, show notes from transcripts, and clip extraction for social. Use when user says 'podcast episode', 'episode brief', 'show notes', 'clip from podcast', 'plan an episode', 'podcast production'.",
       "tab": "personal",
       "domain": "productivity",
       "industry_vertical": null,
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
-      "tags": [],
-      "version": "1.0.1",
-      "icon_emoji": "🎙️",
+      "tags": [
+        "content",
+        "podcast",
+        "production"
+      ],
+      "version": "1.1.0",
+      "icon_emoji": "⚡",
       "is_coming_soon": false,
       "is_featured": false,
-      "author": "ragnar",
+      "author": "Ragnar Pitla | skill.rbuild.ai",
       "has_example": false,
       "file_path": "skills/personal/productivity/podcast-production.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/productivity/podcast-production.md",
