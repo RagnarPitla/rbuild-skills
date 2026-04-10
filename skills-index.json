@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-10T08:17:47.561Z",
-  "total": 17,
+  "generated_at": "2026-04-10T08:31:52.639Z",
+  "total": 15,
   "skills": [
     {
       "slug": "route-optimizer",
@@ -71,16 +71,47 @@
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/ai-agent-dev/agent-builder-starter.md"
     },
     {
+      "slug": "build-your-first-ai-agent",
+      "name": "Build Your First AI Agent",
+      "description": "Zero-to-working-agent guide for complete beginners. Goes from 'what is an agent?' to a real deployed agent in one session. No coding required. Use when someone says 'build my first AI agent', 'how do I build an agent', 'create an AI agent', 'I want to make an agent', 'getting started with agents'.",
+      "tab": "personal",
+      "domain": "ai-agent-dev",
+      "industry_vertical": null,
+      "difficulty": "starter",
+      "source_type": "ragnar-custom",
+      "tags": [],
+      "version": "1.0.0",
+      "icon_emoji": "🤖",
+      "is_coming_soon": false,
+      "is_featured": true,
+      "author": "ragnar",
+      "learning_path": null,
+      "learning_path_position": null,
+      "prerequisites": [],
+      "references": [
+        {
+          "title": "Microsoft Copilot Studio Documentation",
+          "url": ""
+        }
+      ],
+      "requires": "None",
+      "mcp_tools": [],
+      "has_example": true,
+      "file_path": "skills/personal/ai-agent-dev/build-your-first-ai-agent.md",
+      "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/ai-agent-dev/build-your-first-ai-agent.md",
+      "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/ai-agent-dev/build-your-first-ai-agent.md"
+    },
+    {
       "slug": "email-writer",
       "name": "Email Writer",
-      "description": "Write any professional email in the right tone — cold outreach, follow-ups, difficult messages, or just cutting through your inbox backlog.",
+      "description": "Writes any email from a brief. Covers cold outreach, follow-ups, difficult conversations, client communication, internal escalations, and apology emails. Adapts tone to context. Use when someone says 'write an email', 'help me write an email', 'email writer', 'draft an email', 'cold outreach email', 'follow-up email', 'how to write this email'.",
       "tab": "personal",
       "domain": "content-creation",
       "industry_vertical": null,
       "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0.1",
+      "version": "1.0.0",
       "icon_emoji": "✉️",
       "is_coming_soon": false,
       "is_featured": true,
@@ -91,7 +122,7 @@
       "references": [],
       "requires": "None",
       "mcp_tools": [],
-      "has_example": false,
+      "has_example": true,
       "file_path": "skills/personal/content-creation/email-writer.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/content-creation/email-writer.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/content-creation/email-writer.md"
@@ -99,14 +130,14 @@
     {
       "slug": "linkedin-post-generator",
       "name": "LinkedIn Post Generator",
-      "description": "Turn any idea, article, experience, or opinion into a high-performing LinkedIn post — with hooks that stop the scroll and endings that drive engagement.",
+      "description": "Turn any input (article, idea, experience, data point, hot take) into a scroll-stopping LinkedIn post optimized for engagement. Adapts to your voice and goal. Use when someone says 'write a LinkedIn post', 'LinkedIn post generator', 'turn this into a LinkedIn post', 'create a LinkedIn post about', 'help me post on LinkedIn', 'write a post for LinkedIn'.",
       "tab": "personal",
       "domain": "content-creation",
       "industry_vertical": null,
       "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0.1",
+      "version": "1.0.0",
       "icon_emoji": "💼",
       "is_coming_soon": false,
       "is_featured": true,
@@ -122,7 +153,7 @@
       ],
       "requires": "None",
       "mcp_tools": [],
-      "has_example": false,
+      "has_example": true,
       "file_path": "skills/personal/content-creation/linkedin-post-generator.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/content-creation/linkedin-post-generator.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/content-creation/linkedin-post-generator.md"
@@ -225,82 +256,16 @@
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/content-creation/voice-dna.md"
     },
     {
-      "slug": "ai-news-briefing",
-      "name": "AI News Briefing",
-      "description": "Get a sharp, no-hype daily briefing on what actually matters in AI — new models, tool updates, industry shifts, and what it means for your work.",
-      "tab": "personal",
-      "domain": "productivity",
-      "industry_vertical": null,
-      "difficulty": "starter",
-      "source_type": "ragnar-custom",
-      "tags": [],
-      "version": "1.0.1",
-      "icon_emoji": "📰",
-      "is_coming_soon": false,
-      "is_featured": true,
-      "author": "ragnar",
-      "learning_path": null,
-      "learning_path_position": null,
-      "prerequisites": [],
-      "references": [
-        {
-          "title": "Exa Neural Search",
-          "url": ""
-        },
-        {
-          "title": "The Neuron — AI Newsletter",
-          "url": ""
-        }
-      ],
-      "requires": "Exa MCP (optional, for live search)",
-      "mcp_tools": [],
-      "has_example": false,
-      "file_path": "skills/personal/productivity/ai-news-briefing.md",
-      "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/productivity/ai-news-briefing.md",
-      "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/productivity/ai-news-briefing.md"
-    },
-    {
-      "slug": "business-case-builder",
-      "name": "Business Case Builder",
-      "description": "Build a rigorous investment or project business case in 6 steps — ROI, payback period, risk assessment, and executive-ready output.",
+      "slug": "competitor-research",
+      "name": "Competitor Research",
+      "description": "Builds a full competitor brief from a name or URL. Covers what they do, who they target, their positioning, pricing signals, strengths and weaknesses, and what differentiates you. Use when someone says 'competitor research', 'research a competitor', 'tell me about [company]', 'competitor brief', 'competitive analysis', 'what do I need to know about [company] before a call'.",
       "tab": "personal",
       "domain": "productivity",
       "industry_vertical": null,
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0.1",
-      "icon_emoji": "📋",
-      "is_coming_soon": false,
-      "is_featured": true,
-      "author": "ragnar",
-      "learning_path": null,
-      "learning_path_position": null,
-      "prerequisites": [],
-      "references": [
-        {
-          "title": "Zain Haseeb — Business Case Builder (original concept)",
-          "url": ""
-        }
-      ],
-      "requires": "None",
-      "mcp_tools": [],
-      "has_example": false,
-      "file_path": "skills/personal/productivity/business-case-builder.md",
-      "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/productivity/business-case-builder.md",
-      "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/productivity/business-case-builder.md"
-    },
-    {
-      "slug": "competitor-research",
-      "name": "Competitor Research",
-      "description": "Research any company, product, or competitor — positioning, pricing, strengths, weaknesses, and where you can win. Done in minutes.",
-      "tab": "personal",
-      "domain": "productivity",
-      "industry_vertical": null,
-      "difficulty": "starter",
-      "source_type": "ragnar-custom",
-      "tags": [],
-      "version": "1.0.1",
+      "version": "1.0.0",
       "icon_emoji": "🔭",
       "is_coming_soon": false,
       "is_featured": true,
@@ -314,9 +279,9 @@
           "url": ""
         }
       ],
-      "requires": "Exa MCP (optional)",
+      "requires": "Exa MCP (optional, for live web research)",
       "mcp_tools": [],
-      "has_example": false,
+      "has_example": true,
       "file_path": "skills/personal/productivity/competitor-research.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/productivity/competitor-research.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/productivity/competitor-research.md"
@@ -372,37 +337,6 @@
       "file_path": "skills/personal/productivity/job-description-analyzer.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/productivity/job-description-analyzer.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/productivity/job-description-analyzer.md"
-    },
-    {
-      "slug": "personal-finance-report",
-      "name": "Personal Finance Report",
-      "description": "Turn your bank statements, credit card exports, or spreadsheet data into a clear monthly finance report with trends, categories, and recommendations.",
-      "tab": "personal",
-      "domain": "productivity",
-      "industry_vertical": null,
-      "difficulty": "starter",
-      "source_type": "ragnar-custom",
-      "tags": [],
-      "version": "1.0.1",
-      "icon_emoji": "💰",
-      "is_coming_soon": false,
-      "is_featured": true,
-      "author": "ragnar",
-      "learning_path": null,
-      "learning_path_position": null,
-      "prerequisites": [],
-      "references": [
-        {
-          "title": "YNAB — You Need A Budget (methodology)",
-          "url": ""
-        }
-      ],
-      "requires": "None",
-      "mcp_tools": [],
-      "has_example": false,
-      "file_path": "skills/personal/productivity/personal-finance-report.md",
-      "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/productivity/personal-finance-report.md",
-      "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/productivity/personal-finance-report.md"
     },
     {
       "slug": "podcast-production",
@@ -480,14 +414,14 @@
     {
       "slug": "summarize-anything",
       "name": "Summarize Anything",
-      "description": "Get the key points from any long content — articles, reports, meeting transcripts, books, papers — in the format that's most useful to you.",
+      "description": "Takes any content (article, document, transcript, email thread, report) and produces a structured summary calibrated to your need: quick scan, detailed briefing, or executive format. Use when someone says 'summarize this', 'summarize anything', 'give me the key points', 'too long didn't read', 'TLDR', 'summarize this article', 'what does this document say', 'key takeaways from'.",
       "tab": "personal",
       "domain": "productivity",
       "industry_vertical": null,
       "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0.1",
+      "version": "1.0.0",
       "icon_emoji": "⚡",
       "is_coming_soon": false,
       "is_featured": true,
@@ -498,7 +432,7 @@
       "references": [],
       "requires": "None",
       "mcp_tools": [],
-      "has_example": false,
+      "has_example": true,
       "file_path": "skills/personal/productivity/summarize-anything.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/productivity/summarize-anything.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/productivity/summarize-anything.md"
@@ -506,14 +440,14 @@
     {
       "slug": "weekly-review",
       "name": "Weekly Review",
-      "description": "Structured end-of-week review — what you shipped, what slipped, lessons learned, and a clear focus for next week. Done in 10 minutes.",
+      "description": "Guides you through a structured 10-minute end-of-week review. Captures what got done, what didn't, what was learned, and sets clear focus for the next week. Use when someone says 'weekly review', 'end of week review', 'weekly reflection', 'review my week', 'plan my next week', 'weekly check-in'.",
       "tab": "personal",
       "domain": "productivity",
       "industry_vertical": null,
       "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [],
-      "version": "1.0.1",
+      "version": "1.0.0",
       "icon_emoji": "📅",
       "is_coming_soon": false,
       "is_featured": true,
@@ -524,7 +458,7 @@
       "references": [],
       "requires": "None",
       "mcp_tools": [],
-      "has_example": false,
+      "has_example": true,
       "file_path": "skills/personal/productivity/weekly-review.md",
       "raw_url": "https://raw.githubusercontent.com/RagnarPitla/rbuild-skills/main/skills/personal/productivity/weekly-review.md",
       "github_url": "https://github.com/RagnarPitla/rbuild-skills/blob/main/skills/personal/productivity/weekly-review.md"
