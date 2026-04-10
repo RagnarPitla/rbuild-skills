@@ -22,8 +22,10 @@ const SKILLS_DIR = path.join(__dirname, '..', 'skills');
 const OUTPUT_FILE = path.join(__dirname, '..', 'skills-index.json');
 
 // Known tag values that map to structured fields
-const DIFFICULTIES  = new Set(['starter', 'intermediate', 'advanced']);
+const DIFFICULTIES  = new Set(['starter', 'intermediate', 'advanced', 'beginner']);
 const SOURCE_TYPES  = new Set(['ragnar-custom', 'ragnar-curated', 'ragnar-modified', 'community']);
+// Normalize difficulty aliases
+const DIFFICULTY_MAP = { beginner: 'starter' };
 
 // Path segment → domain slug
 const PATH_TO_DOMAIN = {
@@ -144,21 +146,40 @@ function inferFromPath(filePath) {
 }
 
 // ── Parse tags array into structured fields ───────────────────────────────────
+// New format: tags[0] = difficulty, tags[1] = domain hint, rest = display tags
+// Old format: any tag matching DIFFICULTIES/SOURCE_TYPES is extracted
 function parseTags(rawTags) {
   const tags = Array.isArray(rawTags) ? rawTags : [];
-  let difficulty  = null;
-  let sourceType  = null;
-  let isFeatured  = false;
+  let difficulty   = null;
+  let sourceType   = null;
+  let isFeatured   = false;
   let isComingSoon = false;
   const displayTags = [];
 
-  for (const tag of tags) {
-    const t = String(tag).toLowerCase().trim();
-    if (DIFFICULTIES.has(t))  { difficulty = t; continue; }
-    if (SOURCE_TYPES.has(t))  { sourceType = t; continue; }
-    if (t === 'featured')     { isFeatured = true; continue; }
-    if (t === 'coming-soon')  { isComingSoon = true; continue; }
-    displayTags.push(t);
+  // Detect new format: first tag is a difficulty value
+  const isNewFormat = tags.length >= 1 && DIFFICULTIES.has(String(tags[0]).toLowerCase().trim());
+
+  if (isNewFormat) {
+    // tags[0] = difficulty, tags[1] = domain (skip it, path is authoritative), tags[2+] = display
+    const raw = String(tags[0]).toLowerCase().trim();
+    difficulty = DIFFICULTY_MAP[raw] || raw;
+    // tags[1] is domain — skip (we use path), tags[2+] are display tags
+    for (let i = 2; i < tags.length; i++) {
+      const t = String(tags[i]).toLowerCase().trim();
+      if (t === 'featured')    { isFeatured = true; continue; }
+      if (t === 'coming-soon') { isComingSoon = true; continue; }
+      displayTags.push(t);
+    }
+  } else {
+    // Old format — scan all tags
+    for (const tag of tags) {
+      const t = String(tag).toLowerCase().trim();
+      if (DIFFICULTIES.has(t))  { const raw = DIFFICULTY_MAP[t] || t; difficulty = raw; continue; }
+      if (SOURCE_TYPES.has(t))  { sourceType = t; continue; }
+      if (t === 'featured')     { isFeatured = true; continue; }
+      if (t === 'coming-soon')  { isComingSoon = true; continue; }
+      displayTags.push(t);
+    }
   }
 
   return { difficulty, sourceType, isFeatured, isComingSoon, displayTags };

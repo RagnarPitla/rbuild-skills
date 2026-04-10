@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-10T15:54:51.282Z",
+  "generated_at": "2026-04-10T15:58:52.429Z",
   "total": 149,
   "skills": [
     {
@@ -12,7 +12,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "content",
         "case-study",
         "writing"
       ],
@@ -36,7 +35,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "content",
         "conference",
         "thought-leadership"
       ],
@@ -60,7 +58,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "content",
         "linkedin",
         "writing"
       ],
@@ -81,11 +78,9 @@
       "tab": "business",
       "domain": "content-business",
       "industry_vertical": null,
-      "difficulty": "intermediate",
+      "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [
-        "beginner",
-        "content",
         "outlook",
         "newsletter",
         "microsoft-365"
@@ -110,7 +105,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "copilot-studio",
         "agent-builder",
         "rapid-creation"
       ],
@@ -131,11 +125,9 @@
       "tab": "business",
       "domain": "copilot-studio",
       "industry_vertical": null,
-      "difficulty": "intermediate",
+      "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [
-        "beginner",
-        "copilot-studio",
         "first-agent",
         "getting-started"
       ],
@@ -159,7 +151,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "copilot-studio",
         "knowledge",
         "sharepoint"
       ],
@@ -183,7 +174,6 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [
-        "copilot-studio",
         "multi-agent",
         "orchestration"
       ],
@@ -204,11 +194,9 @@
       "tab": "business",
       "domain": "copilot-studio",
       "industry_vertical": null,
-      "difficulty": "intermediate",
+      "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [
-        "beginner",
-        "copilot-studio",
         "topics",
         "triggers"
       ],
@@ -232,7 +220,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "copilot-studio",
         "knowledge",
         "configuration"
       ],
@@ -256,7 +243,6 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [
-        "copilot-studio",
         "multi-agent",
         "child-agents"
       ],
@@ -280,7 +266,6 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [
-        "niyam-pattern",
         "policy-driven",
         "dataverse"
       ],
@@ -304,7 +289,6 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [
-        "niyam-pattern",
         "worker-agent",
         "orchestration"
       ],
@@ -328,7 +312,6 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [
-        "self-healing",
         "checkpoints",
         "autonomous"
       ],
@@ -352,7 +335,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "copilot-studio",
         "topics",
         "design-patterns"
       ],
@@ -373,11 +355,9 @@
       "tab": "business",
       "domain": "copilot-studio",
       "industry_vertical": null,
-      "difficulty": "intermediate",
+      "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [
-        "beginner",
-        "copilot-studio",
         "quickstart",
         "tutorial"
       ],
@@ -401,7 +381,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "d365",
         "task-recorder",
         "process-documentation"
       ],
@@ -425,7 +404,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "d365",
         "configuration",
         "setup"
       ],
@@ -449,7 +427,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "d365",
         "data-migration",
         "dmf"
       ],
@@ -470,11 +447,9 @@
       "tab": "business",
       "domain": "d365-fno",
       "industry_vertical": null,
-      "difficulty": "intermediate",
+      "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [
-        "beginner",
-        "d365",
         "navigation",
         "fundamentals"
       ],
@@ -498,7 +473,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "d365",
         "order-to-cash",
         "accounts-receivable"
       ],
@@ -522,7 +496,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "d365",
         "plan-to-produce",
         "manufacturing"
       ],
@@ -546,7 +519,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "d365",
         "record-to-report",
         "general-ledger"
       ],
@@ -570,7 +542,6 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [
-        "d365",
         "solution-design",
         "architecture"
       ],
@@ -594,7 +565,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "d365",
         "source-to-pay",
         "procurement"
       ],
@@ -615,11 +585,9 @@
       "tab": "business",
       "domain": "enterprise-ai",
       "industry_vertical": null,
-      "difficulty": "intermediate",
+      "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [
-        "beginner",
-        "agentic-erp",
         "strategy",
         "decision-framework"
       ],
@@ -643,7 +611,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "requirements",
         "discovery",
         "agent-design"
       ],
@@ -667,7 +634,6 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [
-        "agentic-enterprise",
         "strategy",
         "blueprint"
       ],
@@ -688,11 +654,9 @@
       "tab": "business",
       "domain": "enterprise-ai",
       "industry_vertical": null,
-      "difficulty": "intermediate",
+      "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [
-        "beginner",
-        "agentic-erp",
         "erp",
         "d365"
       ],
@@ -716,7 +680,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "niyam-pattern",
         "architecture",
         "policy-driven"
       ],
@@ -740,7 +703,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "automotive",
         "dealer",
         "operations"
       ],
@@ -764,7 +726,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "automotive",
         "vin",
         "validation"
       ],
@@ -788,7 +749,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "automotive",
         "warranty",
         "claims"
       ],
@@ -812,7 +772,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "logistics",
         "carrier",
         "freight"
       ],
@@ -836,7 +795,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "logistics",
         "returns",
         "reverse-logistics"
       ],
@@ -880,7 +838,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "energy",
         "procurement",
         "tariff"
       ],
@@ -904,7 +861,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "energy",
         "utility",
         "rate-calculation"
       ],
@@ -928,7 +884,6 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [
-        "financial-services",
         "aml",
         "compliance"
       ],
@@ -952,7 +907,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "financial-services",
         "bank-reconciliation",
         "finance"
       ],
@@ -976,7 +930,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "financial-services",
         "budget",
         "variance-analysis"
       ],
@@ -1000,7 +953,6 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [
-        "financial-services",
         "lease-accounting",
         "ifrs-16"
       ],
@@ -1024,7 +976,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "healthcare",
         "asset-management",
         "gmp"
       ],
@@ -1048,7 +999,6 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [
-        "healthcare",
         "gxp",
         "compliance"
       ],
@@ -1072,7 +1022,6 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [
-        "healthcare",
         "lot-traceability",
         "batch"
       ],
@@ -1096,7 +1045,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "manufacturing",
         "bom",
         "cost-analysis"
       ],
@@ -1120,7 +1068,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "manufacturing",
         "capacity",
         "planning"
       ],
@@ -1144,7 +1091,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "manufacturing",
         "production",
         "variance"
       ],
@@ -1168,7 +1114,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "manufacturing",
         "batch-order",
         "process-manufacturing"
       ],
@@ -1192,7 +1137,6 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [
-        "manufacturing",
         "potency",
         "pharmaceutical"
       ],
@@ -1216,7 +1160,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "professional-services",
         "utilization",
         "billable-hours"
       ],
@@ -1240,7 +1183,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "public-sector",
         "encumbrance",
         "fund-accounting"
       ],
@@ -1264,7 +1206,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "public-sector",
         "compliance",
         "procurement"
       ],
@@ -1288,7 +1229,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "retail",
         "markdown",
         "pricing"
       ],
@@ -1312,7 +1252,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "retail",
         "planogram",
         "compliance"
       ],
@@ -1333,11 +1272,9 @@
       "tab": "business",
       "domain": "industry-verticals",
       "industry_vertical": "retail",
-      "difficulty": "intermediate",
+      "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [
-        "beginner",
-        "retail",
         "introduction",
         "agents"
       ],
@@ -1361,7 +1298,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "mcp",
         "typescript",
         "azure"
       ],
@@ -1385,7 +1321,6 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [
-        "mcp",
         "d365",
         "odata"
       ],
@@ -1406,11 +1341,9 @@
       "tab": "business",
       "domain": "mcp",
       "industry_vertical": null,
-      "difficulty": "intermediate",
+      "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [
-        "beginner",
-        "mcp",
         "model-context-protocol",
         "architecture"
       ],
@@ -1434,7 +1367,6 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [
-        "mcp",
         "patterns",
         "caching"
       ],
@@ -1455,11 +1387,9 @@
       "tab": "business",
       "domain": "mcp",
       "industry_vertical": null,
-      "difficulty": "intermediate",
+      "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [
-        "beginner",
-        "mcp",
         "explainer",
         "introduction"
       ],
@@ -1483,7 +1413,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "dataverse",
         "table-design",
         "agents"
       ],
@@ -1507,7 +1436,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "dataverse",
         "schema",
         "power-platform"
       ],
@@ -1531,7 +1459,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "dataverse",
         "import",
         "business-skills"
       ],
@@ -1552,11 +1479,9 @@
       "tab": "business",
       "domain": "power-platform",
       "industry_vertical": null,
-      "difficulty": "intermediate",
+      "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [
-        "beginner",
-        "power-automate",
         "flows",
         "automation"
       ],
@@ -1580,7 +1505,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "dataverse",
         "skills",
         "csv-import"
       ],
@@ -1604,7 +1528,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "supply-chain",
         "customs",
         "hts-codes"
       ],
@@ -1628,7 +1551,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "supply-chain",
         "demand-planning",
         "forecasting"
       ],
@@ -1652,7 +1574,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "supply-chain",
         "inventory",
         "reorder"
       ],
@@ -1676,7 +1597,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "supply-chain",
         "logistics",
         "freight"
       ],
@@ -1700,7 +1620,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "supply-chain",
         "production",
         "scheduling"
       ],
@@ -1724,7 +1643,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "supply-chain",
         "quality",
         "ncr"
       ],
@@ -1745,11 +1663,9 @@
       "tab": "business",
       "domain": "supply-chain",
       "industry_vertical": null,
-      "difficulty": "intermediate",
+      "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [
-        "beginner",
-        "supply-chain",
         "introduction",
         "agents"
       ],
@@ -1777,8 +1693,7 @@
         "getting-started",
         "claude",
         "copilot-studio",
-        "ai-agents",
-        "beginner"
+        "ai-agents"
       ],
       "version": "1.0.1",
       "icon_emoji": "🤖",
@@ -1800,7 +1715,6 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [
-        "ai-agent-dev",
         "evaluation",
         "llm-judge"
       ],
@@ -1824,7 +1738,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "ai-agent-dev",
         "memory",
         "context"
       ],
@@ -1848,7 +1761,6 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [
-        "ai-agent-dev",
         "autonomous",
         "pipelines"
       ],
@@ -1872,8 +1784,6 @@
       "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [
-        "beginner",
-        "universal",
         "ai-agent",
         "getting-started",
         "copilot-studio"
@@ -1898,7 +1808,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "ai-agent-dev",
         "cost-optimization",
         "model-routing"
       ],
@@ -1922,7 +1831,6 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [
-        "ai-agent-dev",
         "fine-tuning",
         "training"
       ],
@@ -1943,11 +1851,9 @@
       "tab": "personal",
       "domain": "ai-agent-dev",
       "industry_vertical": null,
-      "difficulty": "intermediate",
+      "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [
-        "beginner",
-        "ai-agent-dev",
         "prompt-engineering",
         "fundamentals"
       ],
@@ -1971,7 +1877,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "ai-agent-dev",
         "prompt-engineering",
         "chain-of-thought"
       ],
@@ -1995,7 +1900,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "ai-agent-dev",
         "rag",
         "retrieval"
       ],
@@ -2019,7 +1923,6 @@
       "difficulty": "advanced",
       "source_type": "ragnar-custom",
       "tags": [
-        "ai-agent-dev",
         "multi-agent",
         "adversarial"
       ],
@@ -2043,7 +1946,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "backend",
         "api",
         "architecture"
       ],
@@ -2067,7 +1969,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "backend",
         "caching",
         "redis"
       ],
@@ -2091,7 +1992,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "backend",
         "migrations",
         "zero-downtime"
       ],
@@ -2115,7 +2015,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "backend",
         "graphql",
         "api"
       ],
@@ -2139,7 +2038,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "backend",
         "postgres",
         "query-optimization"
       ],
@@ -2163,7 +2061,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "backend",
         "real-time",
         "websockets"
       ],
@@ -2187,7 +2084,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "content",
         "writing",
         "thought-leadership"
       ],
@@ -2211,7 +2107,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "content",
         "repurposing",
         "multi-platform"
       ],
@@ -2235,8 +2130,6 @@
       "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [
-        "beginner",
-        "universal",
         "email",
         "writing",
         "communication",
@@ -2262,7 +2155,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "content",
         "image-prompts",
         "ai-images"
       ],
@@ -2286,8 +2178,6 @@
       "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [
-        "beginner",
-        "universal",
         "linkedin",
         "content",
         "social-media",
@@ -2340,7 +2230,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "content",
         "podcast",
         "production"
       ],
@@ -2392,7 +2281,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "content",
         "video-editing",
         "youtube"
       ],
@@ -2442,7 +2330,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "content",
         "youtube",
         "script"
       ],
@@ -2466,7 +2353,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "content",
         "youtube",
         "thumbnail"
       ],
@@ -2490,7 +2376,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "devops",
         "deployment",
         "ci-cd"
       ],
@@ -2514,7 +2399,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "devops",
         "docker",
         "containers"
       ],
@@ -2538,7 +2422,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "devops",
         "mcp",
         "azure"
       ],
@@ -2562,7 +2445,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "frontend",
         "accessibility",
         "wcag"
       ],
@@ -2586,7 +2468,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "frontend",
         "animation",
         "interaction"
       ],
@@ -2610,7 +2491,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "frontend",
         "animation",
         "css"
       ],
@@ -2634,7 +2514,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "frontend",
         "core-web-vitals",
         "performance"
       ],
@@ -2658,7 +2537,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "frontend",
         "design-system",
         "tokens"
       ],
@@ -2682,7 +2560,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "frontend",
         "e2e",
         "playwright"
       ],
@@ -2706,7 +2583,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "frontend",
         "react",
         "nextjs"
       ],
@@ -2730,7 +2606,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "frontend",
         "playwright",
         "browser-automation",
         "testing"
@@ -2738,7 +2613,7 @@
       "version": "1.0.0",
       "icon_emoji": "⚡",
       "is_coming_soon": false,
-      "is_featured": false,
+      "is_featured": true,
       "author": "Ragnar Pitla | skill.rbuild.ai",
       "has_example": true,
       "file_path": "skills/personal/frontend/playwright-cli.md",
@@ -2755,7 +2630,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "language",
         "golang",
         "patterns"
       ],
@@ -2779,7 +2653,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "language",
         "kotlin",
         "patterns"
       ],
@@ -2803,7 +2676,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "language",
         "python",
         "patterns"
       ],
@@ -2827,7 +2699,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "language",
         "rust",
         "ownership"
       ],
@@ -2851,7 +2722,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "language",
         "swift",
         "concurrency"
       ],
@@ -2875,7 +2745,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "language",
         "typescript",
         "patterns"
       ],
@@ -2896,11 +2765,9 @@
       "tab": "personal",
       "domain": "productivity",
       "industry_vertical": null,
-      "difficulty": "intermediate",
+      "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [
-        "beginner",
-        "universal",
         "ai",
         "news",
         "briefing"
@@ -2925,7 +2792,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "productivity",
         "planning",
         "project"
       ],
@@ -2946,11 +2812,9 @@
       "tab": "personal",
       "domain": "productivity",
       "industry_vertical": null,
-      "difficulty": "intermediate",
+      "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [
-        "beginner",
-        "universal",
         "skills",
         "claude-code",
         "getting-started"
@@ -2975,7 +2839,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "universal",
         "business",
         "strategy",
         "roi"
@@ -3000,7 +2863,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "universal",
         "research",
         "competitive-intelligence",
         "business",
@@ -3051,11 +2913,9 @@
       "tab": "personal",
       "domain": "productivity",
       "industry_vertical": null,
-      "difficulty": "intermediate",
+      "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [
-        "beginner",
-        "universal",
         "data",
         "reporting",
         "analytics"
@@ -3080,7 +2940,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "productivity",
         "research",
         "synthesis"
       ],
@@ -3131,7 +2990,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "productivity",
         "market-research",
         "competitive-analysis"
       ],
@@ -3152,11 +3010,9 @@
       "tab": "personal",
       "domain": "productivity",
       "industry_vertical": null,
-      "difficulty": "intermediate",
+      "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [
-        "beginner",
-        "productivity",
         "meeting-notes",
         "action-items"
       ],
@@ -3177,11 +3033,9 @@
       "tab": "personal",
       "domain": "productivity",
       "industry_vertical": null,
-      "difficulty": "intermediate",
+      "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [
-        "beginner",
-        "universal",
         "finance",
         "budgeting",
         "personal"
@@ -3206,7 +3060,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "content",
         "podcast",
         "production"
       ],
@@ -3227,11 +3080,9 @@
       "tab": "personal",
       "domain": "productivity",
       "industry_vertical": null,
-      "difficulty": "intermediate",
+      "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [
-        "beginner",
-        "productivity",
         "session",
         "context"
       ],
@@ -3282,8 +3133,6 @@
       "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [
-        "beginner",
-        "universal",
         "summarization",
         "reading",
         "research",
@@ -3306,11 +3155,9 @@
       "tab": "personal",
       "domain": "productivity",
       "industry_vertical": null,
-      "difficulty": "intermediate",
+      "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [
-        "beginner",
-        "universal",
         "writing",
         "content",
         "voice"
@@ -3335,8 +3182,6 @@
       "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [
-        "beginner",
-        "universal",
         "productivity",
         "planning",
         "reflection",
@@ -3362,7 +3207,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "security",
         "safety",
         "destructive-ops"
       ],
@@ -3386,7 +3230,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "security",
         "owasp",
         "code-review"
       ],
@@ -3410,7 +3253,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "security",
         "sast",
         "semgrep"
       ],
@@ -3434,7 +3276,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "software-engineering",
         "api",
         "rest"
       ],
@@ -3458,7 +3299,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "software-engineering",
         "adr",
         "architecture"
       ],
@@ -3482,7 +3322,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "software-engineering",
         "code-review",
         "checklist"
       ],
@@ -3506,7 +3345,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "software-engineering",
         "onboarding",
         "codebase"
       ],
@@ -3527,11 +3365,9 @@
       "tab": "personal",
       "domain": "software-engineering",
       "industry_vertical": null,
-      "difficulty": "intermediate",
+      "difficulty": "starter",
       "source_type": "ragnar-custom",
       "tags": [
-        "beginner",
-        "software-engineering",
         "coding-standards",
         "conventions"
       ],
@@ -3555,7 +3391,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "software-engineering",
         "debugging",
         "root-cause"
       ],
@@ -3579,7 +3414,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "software-engineering",
         "git",
         "workflow"
       ],
@@ -3603,7 +3437,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "software-engineering",
         "refactoring",
         "patterns"
       ],
@@ -3627,7 +3460,6 @@
       "difficulty": "intermediate",
       "source_type": "ragnar-custom",
       "tags": [
-        "software-engineering",
         "tdd",
         "testing"
       ],
