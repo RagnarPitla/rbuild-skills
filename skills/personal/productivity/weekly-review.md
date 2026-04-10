@@ -1,14 +1,14 @@
 ---
 name: "Weekly Review"
 slug: "weekly-review"
-description: "Structured end-of-week review — what you shipped, what slipped, lessons learned, and a clear focus for next week. Done in 10 minutes."
+description: "Guides you through a structured 10-minute end-of-week review. Captures what got done, what didn't, what was learned, and sets clear focus for the next week. Use when someone says 'weekly review', 'end of week review', 'weekly reflection', 'review my week', 'plan my next week', 'weekly check-in'."
 tab: "personal"
 domain: "productivity"
 industry_vertical: null
 difficulty: "starter"
 source_type: "ragnar-custom"
-tags: ["productivity", "weekly-review", "planning", "reflection", "goals"]
-version: "1.0.1"
+tags: ["beginner", "universal", "productivity", "planning", "reflection", "goals"]
+version: "1.0.0"
 icon_emoji: "📅"
 is_coming_soon: false
 is_featured: true
@@ -23,103 +23,108 @@ mcp_tools: []
 
 # Weekly Review
 
-Friday afternoons used to end in a blur. What did I actually do this week? What carries into next week? What's the priority?
+## What This Skill Does
 
-This skill turns that blur into a 10-minute structured reflection that closes the week cleanly and opens the next one with clarity.
+Runs a structured 10-minute reflection at the end of each week. Asks five questions in sequence, produces a clean written summary you can keep, and surfaces the one most important thing to focus on next week. After three months of consistent use, you start seeing patterns in where your time actually goes versus where you say it goes.
 
-## How to Use
+## Triggers
 
-At end of week, dump everything you remember into Claude:
+- "weekly review"
+- "end of week review"
+- "weekly reflection"
+- "review my week"
+- "plan my next week"
+- "weekly check-in"
 
-```
-Weekly review time. Here's my dump:
+## How It Works
 
-Shipped: [list what you finished]
-In progress: [what's still going]
-Didn't get to: [what you planned but skipped]
-Random stuff: [anything else from the week]
+### Step 1: Do a Brain Dump First
 
-Goals I set last Monday: [if you have them]
-Next week's big thing: [if you know]
-```
-
-Claude structures it, finds patterns, and helps you think about next week.
-
-## What the Review Covers
-
-**1. Wins (what actually shipped)**
-Specific completions, not "worked on X." Done means done.
-
-**2. Progress (meaningful forward movement)**
-Big projects that moved even if not finished.
-
-**3. Slippage (what didn't happen)**
-Without blame. Just facts. Why did it slip?
-
-**4. Patterns (the meta-learning)**
-- What kept getting pushed? (Recurring avoidance = important signal)
-- What took longer than expected? (Calibration issue)
-- What felt energizing vs draining?
-
-**5. Next week priority stack**
-Top 3. Not 10. The 3 things that must happen.
-
-**6. The one thing**
-If you could only do one thing next week, what would it be?
-
-## Output Format
+Before answering the questions, spend 2 minutes writing down everything from the week with no filter. Meetings, tasks, conversations, things you meant to do, random thoughts. Get it out of your head and onto the screen. This is the raw material the review works from.
 
 ```
-WEEK OF [DATES] — REVIEW
-
-WINS
-✅ [Shipped item 1]
-✅ [Shipped item 2]
-
-PROGRESS
-→ [Project A]: [What moved forward]
-→ [Project B]: [What moved forward]
-
-SLIPPAGE
-⚠ [Item that didn't happen] — [Why]
-
-PATTERNS THIS WEEK
-• [Observation about how the week went]
-• [What kept getting avoided]
-
-NEXT WEEK — TOP 3
-1. [Most important thing]
-2. [Second priority]
-3. [Third priority]
-
-THE ONE THING
-[If I only do one thing next week, it's: X]
+Brain dump example:
+"Finished the pricing deck. Three client calls. Missed the proposal 
+deadline. Spent half of Tuesday in a meeting I should have declined. 
+Had a good conversation with Maya about the Q3 roadmap. Still haven't 
+started the onboarding doc. Team said the new process is working."
 ```
 
-## Trigger Phrases
+### Step 2: Answer the Five Questions
 
-- "Weekly review time"
-- "Help me close out this week"
-- "End of week review"
-- "What should I reflect on this week?"
-- "Weekly planning"
-- "Friday review"
+Claude asks these in sequence. Answer each one honestly before moving to the next.
 
-## Versions of This Review
+**Question 1: What did you accomplish this week?**
+Specific completions, not work in progress. "Shipped" means it's done and out the door.
 
-**5-minute version:** Just wins + next week top 3
-**Full version:** Everything above
-**Team version:** Add "Team" and get a format suitable for a manager's weekly status update
+**Question 2: What didn't get done, and why?**
+No blame, no excuses. Just the facts. Was it a planning problem, a priority shift, or avoidance?
+
+**Question 3: What did you learn?**
+About your work, your team, your customers, or yourself. Even "I learned that I consistently underestimate how long documentation takes" counts.
+
+**Question 4: What is the one most important thing for next week?**
+If the week falls apart and you only complete one thing, what should it be? One answer only.
+
+**Question 5: What do you need to stop doing or let go of?**
+The task that keeps appearing on your list but never happening. The commitment that no longer makes sense. The habit that's not serving you.
+
+### Step 3: Review the Output
+
+The review produces a structured weekly summary:
+
+```
+WEEK OF [DATES]
+
+ACCOMPLISHED
+- [Completed item 1]
+- [Completed item 2]
+
+DIDN'T HAPPEN
+- [Item]: [Why it slipped]
+
+LEARNED
+- [Key insight from the week]
+
+NEXT WEEK'S #1 PRIORITY
+[Single most important thing]
+
+LET GO OF
+[What to stop carrying forward]
+```
+
+### Step 4: File It and Repeat
+
+Keep your weekly reviews. After 4 weeks, look at the patterns:
+- What categories of work keep appearing in "accomplished"?
+- What keeps reappearing in "didn't happen"?
+- Is your stated #1 priority actually what you shipped?
+
+After 8-12 weeks, the patterns become the most valuable part. Most people discover a consistent gap between the work they value and the work that fills their calendar.
+
+## Output
+
+A structured weekly summary with a clearly stated next-week priority. Takes about 10 minutes to complete. Designed to be kept over time.
+
+## Checklist
+
+- [ ] Brain dump done before starting the questions
+- [ ] Answered all five questions honestly (not what sounds good)
+- [ ] #1 priority for next week is ONE thing, not three
+- [ ] "Let go of" contains at least one real thing, not a platitude
+- [ ] Summary saved somewhere you'll see it next Friday
 
 ## Troubleshooting
 
 | Issue | Cause | Fix |
-|---|---|---|
-| Review feels generic | No personal context | Add your goals and role to the prompt |
-| Too long | Overthinking it | Ask for "5-minute version only" |
-| Patterns not useful | Too little data | After 4 weeks, patterns become much clearer |
+|-------|-------|-----|
+| Review feels generic | No personal context given | Add your role, your goals, and what you're working toward |
+| Takes 30+ minutes | Overthinking each answer | Set a timer. One answer per question, 90 seconds max. |
+| Patterns aren't showing up | Too little data | Commit to 4 consecutive weeks, then look back |
+| #1 priority changes every day next week | Picked a project, not a specific outcome | Make the priority a deliverable: "finish X by Wednesday" not "work on X" |
 
 ## Version History
+
 | Version | Date | Changes |
-|---|---|---|
-| 1.0.1 | 2026-04-10 | Initial skill |
+|---------|------|---------|
+| 1.0.0 | 2026-04-10 | Initial skill |

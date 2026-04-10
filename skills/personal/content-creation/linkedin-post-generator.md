@@ -1,14 +1,14 @@
 ---
 name: "LinkedIn Post Generator"
 slug: "linkedin-post-generator"
-description: "Turn any idea, article, experience, or opinion into a high-performing LinkedIn post — with hooks that stop the scroll and endings that drive engagement."
+description: "Turn any input (article, idea, experience, data point, hot take) into a scroll-stopping LinkedIn post optimized for engagement. Adapts to your voice and goal. Use when someone says 'write a LinkedIn post', 'LinkedIn post generator', 'turn this into a LinkedIn post', 'create a LinkedIn post about', 'help me post on LinkedIn', 'write a post for LinkedIn'."
 tab: "personal"
 domain: "content-creation"
 industry_vertical: null
 difficulty: "starter"
 source_type: "ragnar-custom"
-tags: ["linkedin", "social-media", "content-creation", "personal-brand", "writing"]
-version: "1.0.1"
+tags: ["beginner", "universal", "linkedin", "content", "social-media", "personal-brand"]
+version: "1.0.0"
 icon_emoji: "💼"
 is_coming_soon: false
 is_featured: true
@@ -25,116 +25,123 @@ mcp_tools: []
 
 # LinkedIn Post Generator
 
-LinkedIn rewards a specific writing style: short paragraphs, strong hooks, real stories over corporate speak. This skill writes in that style — not generic, not cringe, not "I'm humbled to announce."
+## What This Skill Does
 
-## What You Give It
+Takes any raw input and turns it into a post that earns the "see more" click. Works from a rough idea, a data point, a client story, or an article you want to react to. Adapts to your goal: thought leadership, personal story, controversial take, or announcement. Follows the format patterns that actually perform on LinkedIn.
 
-**Option A: A raw idea**
-```
-"I just realized that the thing everyone calls 'AI replacing jobs' is 
-actually about which parts of jobs get replaced, not whole jobs."
-```
+## Triggers
 
-**Option B: An article or content you want to adapt**
-```
-[Paste the article, blog post, or key points]
-```
+- "write a LinkedIn post"
+- "LinkedIn post generator"
+- "turn this into a LinkedIn post"
+- "create a LinkedIn post about"
+- "help me post on LinkedIn"
+- "write a post for LinkedIn"
 
-**Option C: An experience or story**
-```
-"Yesterday a client told me our AI agent saved his team 14 hours a week.
-6 months ago he thought AI was just hype."
-```
+## How It Works
 
-**Option D: A specific goal**
-```
-"I need a post about why D365 consultants should learn Copilot Studio.
-Audience: Microsoft partners and consultants."
-```
+### Step 1: Give It Your Raw Material
 
-## The LinkedIn Formula That Works
-
-**Line 1 (the hook):** 1 sentence. Stops the scroll. Controversial, surprising, or specific number.
-
-**Lines 2-4 (the tension):** What's the problem, the common belief, or the story setup.
-
-**Lines 5-10 (the meat):** The insight, the story, the value. Short paragraphs. One idea per paragraph.
-
-**Last 2 lines (the landing):** The takeaway + a question or call to action.
-
-**What NOT to do:**
-- "I'm thrilled to share..." → Never
-- "In today's digital landscape..." → Never
-- Paragraphs longer than 3 lines → Never
-- Hashtag dumps at the end → 2-3 max, relevant only
-
-## Hook Formulas
-
-Pick one, adapt to your topic:
+What to provide (pick any one, or combine):
 
 ```
-Contrarian: "Everyone says [X]. I disagree."
-Specific: "6 months ago, [specific thing happened]."
-Number: "[Number] things I wish I knew about [topic]."
-Question: "Why does [strange thing] keep happening?"
-After [time]: "After [doing X for Y time], here's what I learned:"
-Hot take: "[Strong opinion]. Here's why:"
+Option A: Raw idea
+"I just realized that AI replacing jobs is really about which 
+parts of jobs get replaced, not whole roles."
+
+Option B: Experience or story
+"Yesterday a client said our agent saved his team 14 hours a week. 
+Six months ago he told me AI was just hype."
+
+Option C: Data or insight
+"Just saved a client $380K by fixing their reorder point formula. 
+The culprit was using annual average demand instead of seasonal."
+
+Option D: Article or content to react to
+[paste the content or share the link]
+
+Option E: Goal + audience
+"I need a post about why supply chain teams should adopt AI forecasting. 
+Audience: operations managers and logistics directors."
 ```
 
-## Post Types
+### Step 2: Tell It the Post Type
 
-Tell Claude which type:
-- **Story post** — a personal experience with a lesson
-- **Insight post** — a perspective shift or counterintuitive take
-- **List post** — N things about a topic (use sparingly)
-- **Announcement post** — share something new without being annoying
-- **Reaction post** — your take on industry news
+- **Thought leadership:** share a perspective that challenges the status quo
+- **Personal story:** an experience with a lesson others can use
+- **Controversial take:** a strong opinion backed by real reasoning
+- **Data insight:** a number or finding that surprises people
+- **Lesson learned:** what you got wrong and what changed
+- **Announcement:** share something new without sounding like a press release
 
-## Trigger Phrases
+### Step 3: Know the Formula That Works
 
-- "Write a LinkedIn post about [topic/idea]"
-- "Turn this into a LinkedIn post: [paste content]"
-- "LinkedIn post — [raw idea]"
-- "Create a post about [experience]"
-- "Rewrite this for LinkedIn: [paste text]"
+**Line 1 (the hook):** One sentence. Stops the scroll. Specific, surprising, or directly challenges a common belief. This is the only line people see before they decide to click "see more."
 
-## Example
+**Lines 2-4 (the tension):** What's the problem, the common mistake, or the story setup. Why does this matter? What's at stake?
 
-**Input:** "Had a call with a prospect today who said they spent $200K on a custom AI system that doesn't work. Meanwhile they ignored the native AI features in D365 that do the same thing for free."
+**Lines 5-10 (the value):** The insight, the story payoff, the framework. Short paragraphs. One idea per paragraph. Never more than 3 lines per block.
 
-**Output:**
+**Last 1-2 lines (the landing):** The takeaway, plus a question or a specific call to action.
+
+### Step 4: Apply the Rules
+
+**What works:**
+- Start with a specific number, name, or counterintuitive statement
+- Short paragraphs. White space is not wasted space.
+- End with a question that invites real responses, not "what do you think?"
+- 150-300 words for most posts. 400 is the absolute ceiling.
+- 2-3 hashtags maximum, placed at the end, relevant only
+
+**What kills the post:**
+- "I'm excited to announce..." (starts with you, not the reader)
+- "In today's rapidly evolving landscape..." (meaningless opener)
+- "I'm humbled to share..." (no one believes it)
+- Paragraphs longer than 3 lines
+- More than 5 hashtags
+
+### Hook Formulas That Perform
+
 ```
-A prospect just told me they spent $200K on a custom AI system.
-
-It doesn't work.
-
-The worst part? D365 already has built-in AI features that do 
-exactly what they were trying to build.
-
-It's been there the whole time.
-
-This keeps happening because people assume enterprise AI needs 
-to be complex. Custom-built. Expensive.
-
-It doesn't.
-
-The best AI projects I've seen this year weren't the most 
-technically impressive. They were the ones that started with 
-what already existed and actually shipped.
-
-What's the most expensive "solved problem" you've seen someone 
-try to solve from scratch?
+Contrarian:   "Everyone says [X]. They're wrong."
+Specific:     "6 months ago, [specific thing happened]. Here's what changed."
+Number:       "[N] out of [N] [people] don't know [surprising fact]."
+After time:   "After [doing X] for [time], here's what I actually learned:"
+Hot take:     "[Strong claim]. Here's why I stand by it:"
+Story open:   "[Person] just told me [specific thing]. I've been thinking about it since."
 ```
+
+## Output
+
+A complete LinkedIn post with:
+- A hook that earns the "see more" click
+- A structured body (tension, value, landing)
+- 2-3 relevant hashtags
+- A closing question or CTA
+
+Optional: 3 hook variations to choose from if you want options.
+
+## Checklist
+
+- [ ] Hook is in the first line (not the second or third)
+- [ ] No paragraph is longer than 3 lines
+- [ ] Post is under 350 words
+- [ ] Ends with a question or clear CTA
+- [ ] No more than 3 hashtags
+- [ ] Does not start with "I'm excited/thrilled/humbled"
+- [ ] Passes the "would I stop scrolling for this?" test
 
 ## Troubleshooting
 
 | Issue | Cause | Fix |
-|---|---|---|
-| Sounds too corporate | No style guidance given | Add "casual, direct, no buzzwords" |
-| Hook is too weak | Generic opening | Ask for "5 hook variations, I'll pick one" |
-| Too long | No length spec | Add "under 150 words" |
+|-------|-------|-----|
+| Sounds too corporate | No tone guidance given | Add "casual, direct, no buzzwords, like I'm talking to a colleague" |
+| Hook is weak | Too broad or safe | Ask for "5 hook variations, I'll pick the sharpest one" |
+| Too long | No length constraint given | Add "under 200 words, tight" |
+| No engagement after posting | Generic observation, no point of view | Add your actual opinion: "I believe [specific thing] and here's why" |
 
 ## Version History
+
 | Version | Date | Changes |
-|---|---|---|
-| 1.0.1 | 2026-04-10 | Initial skill |
+|---------|------|---------|
+| 1.0.0 | 2026-04-10 | Initial skill |

@@ -1,127 +1,104 @@
 ---
-name: "Business Case Builder"
-slug: "business-case-builder"
-description: "Build a rigorous investment or project business case in 6 steps — ROI, payback period, risk assessment, and executive-ready output."
-tab: "personal"
-domain: "productivity"
-industry_vertical: null
-difficulty: "intermediate"
-source_type: "ragnar-custom"
-tags: ["business-case", "roi", "investment", "planning", "finance", "executive"]
-version: "1.0.1"
-icon_emoji: "📋"
-is_coming_soon: false
-is_featured: true
-author: "ragnar"
-learning_path: null
-learning_path_position: null
-prerequisites: []
-references:
-  - title: "Zain Haseeb — Business Case Builder (original concept)"
-    url: "https://substack.com/@zainhaseeb"
-requires: "None"
-mcp_tools: []
+name: business-case-builder
+description: "Guides the user through building a complete 6-section business case for any investment, project, or initiative. Produces a structured document with problem statement, solution options, ROI calculation, risks, and recommendation. Use when user says 'build a business case', 'help me write a business case', 'ROI analysis', 'justify this investment', 'I need approval for', 'make the case for'."
+version: 1.0.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [intermediate, universal, business, strategy, roi]
 ---
 
 # Business Case Builder
 
-Business cases get rejected for two reasons: not rigorous enough, or so long nobody reads them. This skill builds the right version for your situation — from a quick 1-pager to a comprehensive investment case with NPV analysis.
+## What This Skill Does
 
-## The 6-Step Framework
+You describe what you want to invest in, and the agent guides you through building a complete, credible business case. It asks the right questions first, then produces a structured document with a problem statement, current costs, proposed solution, investment required, ROI calculation, payback period, and risk assessment. The output is ready to present to a manager, VP, or finance team.
 
-**Step 1: Frame the Decision**
-What are you asking for? What problem does it solve? What happens if you do nothing?
+## Triggers
 
-**Step 2: Quantify Costs**
-Implementation cost, ongoing cost, opportunity cost. Use ranges — not single numbers. (Ranges are more credible than false precision.)
+- "build a business case"
+- "help me write a business case"
+- "ROI analysis"
+- "justify this investment"
+- "I need approval for"
+- "make the case for"
 
-**Step 3: Quantify Benefits**
-Revenue gain, cost reduction, time saved × hourly cost, risk reduction, strategic value. Everything in dollars where possible.
+## How It Works
 
-**Step 4: Compare Alternatives**
-Always include "do nothing" as an option. Include 2-3 real alternatives and explain why you rejected them. This is what skeptical finance teams look for.
+### Step 1: Start the Discovery
 
-**Step 5: Calculate Metrics**
-- ROI = (Net Benefit / Total Cost) × 100
-- Payback Period = Total Cost / Annual Net Benefit
-- NPV = Present value of benefits − Present value of costs
-- Use conservative / expected / optimistic scenarios
+Tell the agent what you want to invest in. Don't worry about having all the numbers yet.
 
-**Step 6: Assess Risks**
-What could go wrong? How likely? What's the mitigation?
-
-## Output Formats
-
-Tell Claude which format:
-
-**Quick (1-page):** For internal approvals, small budgets, fast decisions
-**Standard (2-3 pages):** For mid-size investments, department budgets
-**Comprehensive (5+ pages):** For major capital investments, board-level decisions
-
-## Trigger Phrases
-
-- "Build a business case for [project/investment]"
-- "Help me justify [purchase/hire/project] to my leadership"
-- "Create an ROI analysis for [thing]"
-- "I need to get approval for [X] — help me build the case"
-- "Business case — [describe what you want to do]"
-
-## Example Prompt
-
+Example opener:
 ```
-Build a business case for hiring a data analyst ($95K salary + benefits). 
-We're a 40-person SaaS company. Current situation: our marketing team spends 
-15 hours/week on manual reporting at an effective cost of $150/hour. 
-We're also making decisions without proper attribution data.
-Format: Standard (2-3 pages). Audience: CFO.
+I need to build a business case for a new project management tool 
+for our team of 12 people. Current cost is around $85 per seat 
+per month but I think there's a better option.
 ```
 
-## What It Produces
+The agent will ask 5-7 discovery questions to fill in the gaps. Common questions:
+- What is the current situation costing you in time, money, or risk?
+- What happens if you do nothing for another year?
+- Who is the decision-maker, and what do they care about most?
+- What alternatives did you consider?
+- What is your timeline and budget range?
 
-```
-BUSINESS CASE: DATA ANALYST HIRE
-Executive Summary: [3 sentences — the whole argument]
+Answer honestly, including with rough estimates. The agent will mark assumptions clearly so your approver knows what's verified vs estimated.
 
-THE DECISION
-Current state: [what's broken]
-Proposed solution: [what you're asking for]
-Do-nothing consequence: [cost of inaction]
+### Step 2: Build the 6 Sections
 
-COST ANALYSIS
-Year 1 total cost: $127,000 (salary $95K + recruiting $18K + tools $14K)
-Year 2+ annual cost: $109,000 (salary + tools)
+The agent structures the business case into 6 sections:
 
-BENEFIT ANALYSIS — Three Scenarios
-Conservative: $148,000/year
-Expected:     $212,000/year  
-Optimistic:   $310,000/year
+**Section 1: Problem Statement**
+What is broken or suboptimal? What is it costing? What is the risk of doing nothing? This is the opening argument.
 
-[Breakdown of each benefit with assumptions shown]
+**Section 2: Current State Cost**
+The full cost of the status quo. This includes direct costs (what you spend now), indirect costs (time lost, errors made, manual effort), and risk exposure (what goes wrong when things fail).
 
-FINANCIAL METRICS
-ROI (Expected): 95% Year 1, 194% Year 2+
-Payback Period: 7.2 months
-5-Year NPV (8% discount): $487,000
+**Section 3: Proposed Solution**
+What you are proposing, how it works, and why it is better than the alternatives you considered.
 
-ALTERNATIVES CONSIDERED
-[Why you rejected other options]
+**Section 4: Investment Required**
+Total cost broken into: upfront cost, ongoing annual cost, and implementation effort. Ranges are better than single numbers. Range shows rigor, not uncertainty.
 
-RISKS
-[Table of risks, likelihood, mitigation]
+**Section 5: ROI and Payback Period**
+ROI = (Annual Benefit minus Annual Cost) divided by Total Investment, multiplied by 100.
+Payback Period = Total Investment divided by Annual Net Benefit.
+The agent calculates conservative, expected, and optimistic scenarios.
 
-RECOMMENDATION
-[Clear ask + why now]
-```
+**Section 6: Risks and Mitigation**
+What could go wrong? How likely is each risk? What is the plan if it happens? A business case without a risk section looks naive.
+
+### Step 3: Choose Your Format
+
+Tell the agent which format you need:
+
+**1-page version** — for internal approvals, small budgets, fast decisions. Everything on one page.
+
+**Standard 2-3 page version** — for mid-size investments, department budgets, or any decision requiring formal sign-off.
+
+**Comprehensive 5-page version** — for major capital investments, board-level decisions, or any case that will face serious scrutiny.
+
+## Output
+
+A complete, formatted business case document in plain text, ready to paste into Word, Google Docs, or a presentation. Includes all 6 sections with your actual numbers, clear assumptions called out, and a recommendation that names the ask explicitly.
+
+## Checklist
+- [ ] Answered the discovery questions honestly, including rough estimates
+- [ ] Current state cost calculated (time and money)
+- [ ] At least 2 alternatives considered and rejected
+- [ ] ROI calculated for all 3 scenarios (conservative, expected, optimistic)
+- [ ] Risk section included
+- [ ] Format chosen based on audience
 
 ## Troubleshooting
 
 | Issue | Cause | Fix |
-|---|---|---|
-| Numbers feel made up | No real data provided | Start with what you know, Claude will flag assumptions |
-| Too long for audience | Wrong format selected | Specify "1-page version only" |
-| Missing alternatives | Didn't prompt for them | Ask: "Include 3 alternatives and why you rejected each" |
+|-------|-------|-----|
+| Numbers feel made up | No real data provided yet | Start with what you know, say "estimate" where you're guessing, and have the agent flag assumptions |
+| Too long for the audience | Wrong format selected | Ask for "1-page version only, single recommendation" |
+| Missing alternatives | Did not prompt for them | Ask: "Include 3 alternatives considered and why you rejected each" |
+| Finance team skeptical | Benefits not quantified | Trace every benefit back to a dollar amount, even roughly |
 
 ## Version History
 | Version | Date | Changes |
-|---|---|---|
-| 1.0.1 | 2026-04-10 | Initial skill with 6-step framework |
+|---------|------|---------|
+| 1.0.0 | 2026-04-10 | Initial skill |

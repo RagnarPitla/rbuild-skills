@@ -1,14 +1,14 @@
 ---
 name: "Summarize Anything"
 slug: "summarize-anything"
-description: "Get the key points from any long content — articles, reports, meeting transcripts, books, papers — in the format that's most useful to you."
+description: "Takes any content (article, document, transcript, email thread, report) and produces a structured summary calibrated to your need: quick scan, detailed briefing, or executive format. Use when someone says 'summarize this', 'summarize anything', 'give me the key points', 'too long didn't read', 'TLDR', 'summarize this article', 'what does this document say', 'key takeaways from'."
 tab: "personal"
 domain: "productivity"
 industry_vertical: null
 difficulty: "starter"
 source_type: "ragnar-custom"
-tags: ["summary", "reading", "productivity", "research", "tldr", "digest"]
-version: "1.0.1"
+tags: ["beginner", "universal", "summarization", "reading", "research", "tldr"]
+version: "1.0.0"
 icon_emoji: "⚡"
 is_coming_soon: false
 is_featured: true
@@ -23,91 +23,115 @@ mcp_tools: []
 
 # Summarize Anything
 
-Long report you don't have time to read. Meeting transcript from a call you missed. Industry paper you need to understand quickly. Paste it, get what matters.
+## What This Skill Does
 
-## What It Handles
+Takes long content and turns it into exactly what you need: a 30-second scan, a structured briefing, or a decision-ready executive summary. The key difference from basic summarization is that it calibrates to your role, your decision, and your time constraint. A summary that doesn't know what you're trying to decide is just a shorter version of the same problem.
 
-- Articles and blog posts
-- PDF reports (paste the text)
-- Meeting transcripts and call recordings (paste the transcript)
-- Research papers
-- Legal documents (contracts, terms of service)
-- Books and long-form content (paste sections)
-- Email threads
-- Slack/Teams conversation exports
-- YouTube transcripts
+## Triggers
 
-## How to Use
+- "summarize this"
+- "summarize anything"
+- "give me the key points"
+- "too long didn't read"
+- "TLDR"
+- "summarize this article"
+- "what does this document say"
+- "key takeaways from"
 
-**Basic summary:**
+## How It Works
+
+### Step 1: Paste the Content and Add Context
+
+**Basic (works for any content):**
 ```
 Summarize this: [paste content]
 ```
 
-**Directed summary (best results):**
+**Directed (much better results):**
 ```
-Summarize this for me as a [your role].
+Summarize this for me. I'm a [your role].
 I care most about: [what matters to you]
-Format: [bullet points / paragraph / exec brief]
-Length: [one paragraph / under 100 words / 5 bullets]
+I'm trying to decide: [the decision you're making]
+Format: [see options below]
 
 [paste content]
 ```
 
-## Output Formats
+The directed format changes everything. A 47-page logistics report summarized for a VP of Operations making a vendor decision is completely different from the same report summarized for a journalist writing about industry trends.
 
-Tell Claude which format:
+### Step 2: Choose Your Output Format
 
-**TL;DR** — 1-2 sentences. The whole thing in a breath.
+**Quick Scan (30 seconds to read):**
+5 bullets, each containing one complete thought. No sub-bullets. Lead each with the most important word or phrase.
 
-**Exec brief** — 3-5 bullets, each with a clear takeaway
+**Detailed Briefing:**
+Structured summary with sections matching the document's themes. Each section has 2-3 sentences. Good for reports and research papers you'll reference later.
 
-**Key points** — numbered list, ranked by importance to you
+**Executive Format:**
+Four sections only: the problem, the solution or finding, the recommendation, and the next step. Strips everything else. Good for decision-makers with limited time.
 
-**Action items** — only the things that require action
+**Action Items Only:**
+Pulls out only the things that require someone to do something. Includes owner if specified in the content, deadline if mentioned. Good for meeting transcripts.
 
-**Q&A format** — Claude asks and answers the questions you'd want answered
+**Decision Brief:**
+States the decision being asked, the options on the table, the recommended choice, and the reasoning. Good for proposals, RFPs, and strategic documents.
 
-**Decision brief** — what's the decision being asked, what are the options, what's the recommendation
+### Step 3: For Specific Content Types
 
-## Directed Summary Examples
-
+**Meeting transcripts and call recordings:**
 ```
-"Summarize this investor report as a startup founder.
-I care about: market size data, competitor mentions, and any risks.
-Format: 5 bullets, under 150 words."
-```
-
-```
-"Summarize this meeting transcript.
-I missed the call. Extract: decisions made, 
-action items with owners, and anything that 
-requires my input by Friday."
+"Summarize this meeting transcript. I missed the call. 
+Extract: decisions made, action items with owners, 
+open questions, and anything that requires my input."
 ```
 
+**Research papers:**
 ```
-"TL;DR this research paper for someone who 
-understands AI but not academic ML jargon."
+"Explain this paper in plain language. I understand [your field] 
+but not academic [adjacent field] jargon. What's new here vs 
+what already existed? What's the practical application?"
 ```
 
-## Trigger Phrases
+**Long reports:**
+```
+"I'm a [role] and I need to decide [decision].
+Summarize this report with that lens. What's directly 
+relevant to my decision? What can I skip?"
+```
 
-- "Summarize this: [paste]"
-- "TL;DR: [paste]"
-- "Key points from this article: [paste]"
-- "What are the action items in this transcript?"
-- "Summarize for [role/audience]: [paste]"
-- "Give me the 3 most important things from this"
+**Email threads:**
+```
+"Summarize this email thread. Who said what, what was agreed, 
+what's still unresolved, and what do I need to respond to?"
+```
+
+### Step 4: Always Ends With "What Does This Mean for You?"
+
+The most useful summaries connect the content to your situation. If you give context, the summary will end with a direct answer to: given what you told me, what does this mean for you specifically, and what (if anything) should you do next?
+
+## Output
+
+A structured summary in your chosen format, ending with a direct "so what" tied to your role and decision if you provided that context. Length varies by format: Quick Scan is under 100 words, Executive Format is under 200, Detailed Briefing is proportional to the source.
+
+## Checklist
+
+- [ ] Content pasted or clearly described
+- [ ] Role and decision context provided (for best results)
+- [ ] Output format specified
+- [ ] For long documents: stated what you're trying to decide, not just "summarize"
+- [ ] For transcripts: asked for decisions, actions, and open questions separately
 
 ## Troubleshooting
 
 | Issue | Cause | Fix |
-|---|---|---|
-| Too generic | No focus specified | Add "Focus on [specific aspect]" |
-| Missing what matters | Claude doesn't know your role | Add "I'm a [role] making a decision about [X]" |
-| Too long | No length constraint | Add "under [N] words" or "3 bullets only" |
+|-------|-------|-----|
+| Summary is too generic | No role or decision context given | Add "I'm a [role] deciding whether to [action]" |
+| Missing what matters | Claude doesn't know your priorities | Add "Focus specifically on [topic/section]" |
+| Too long | No length constraint | Add "under 100 words" or "5 bullets maximum" |
+| Transcript summary misses actions | Transcript was unstructured | Ask separately: "Now pull only the action items with owners" |
 
 ## Version History
+
 | Version | Date | Changes |
-|---|---|---|
-| 1.0.1 | 2026-04-10 | Initial skill |
+|---------|------|---------|
+| 1.0.0 | 2026-04-10 | Initial skill |
