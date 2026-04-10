@@ -12,7 +12,7 @@ mcp_tools:
 
 # Podcast Production
 
-Built for "In Our AI Era", co-hosted with Tina van Heerden, 25-35 minutes, video podcast format. But the workflow applies to any technical podcast.
+Built for two-host technical podcasts — 25-35 minutes, video podcast format. The workflow applies to any technical podcast with complementary host lanes.
 
 ## Trigger Phrases
 
@@ -55,13 +55,13 @@ Resources to mention: [links]
 
 ## Lane Splits
 
-**Ragnar's lane:**
+**Host A lane (Builder/Architect):**
 - Real implementations ("Here's what I built for a 50K-employee client")
 - MCP, Niyam pattern, Copilot Studio specifics
 - Decision frameworks for technical choices
 - "What I'd do differently next time"
 
-**Tina's lane:**
+**Host B lane (Strategist/Researcher):**
 - Industry context and why this matters now
 - Research-backed frameworks
 - Analogies that make technical concepts accessible
@@ -82,8 +82,8 @@ After recording, provide the transcript and generate:
 [2-3 sentence summary]
 
 ## Key Insights
-- [Ragnar insight]
-- [Tina insight]
+- [Host A insight]
+- [Host B insight]
 - [Core framework introduced]
 
 ## Chapters
@@ -94,7 +94,7 @@ After recording, provide the transcript and generate:
 [all links mentioned]
 
 ## Connect
-Ragnar: linkedin.com/in/ragnarpitla | youtube.com/@RagnarPitla
+Host A: [LinkedIn] | youtube.com/@RagnarPitla
 ```
 
 ## Clip Extraction

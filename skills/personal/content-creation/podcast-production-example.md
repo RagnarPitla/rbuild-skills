@@ -2,9 +2,9 @@
 
 ## Scenario: "In Our AI Era" Episode on Multi-Agent Orchestration Patterns
 
-**Who:** Ragnar Pitla and Tina van Heerden, co-hosts of the "In Our AI Era" podcast
+**Who:** Two co-hosts of a technical AI podcast ("In Our AI Era" format)
 **Where:** Post-recording production workflow, episode ready for publishing on Spotify, YouTube, and LinkedIn
-**The Problem:** Ragnar and Tina just finished a 32-minute recorded conversation on multi-agent orchestration patterns in Copilot Studio. The raw transcript is accurate but messy — false starts, filler words, a three-minute tangent about a customer project that is interesting but does not belong in show notes. They need clean show notes, timestamped chapter markers, a LinkedIn post to announce the episode, and a short audiogram description. Doing this manually takes 90 minutes they do not have.
+**The Problem:** The hosts just finished a 32-minute recorded conversation on multi-agent orchestration patterns in Copilot Studio. The raw transcript is accurate but messy — false starts, filler words, a three-minute tangent about a customer project that is interesting but does not belong in show notes. They need clean show notes, timestamped chapter markers, a LinkedIn post to announce the episode, and a short audiogram description. Doing this manually takes 90 minutes they do not have.
 
 **Prerequisites:** Raw transcript or detailed notes from the episode. Episode title and the two or three key takeaways from the conversation.
 
@@ -22,7 +22,7 @@ Produces three ready-to-publish assets:
 ```
 Episode 12: Multi-Agent Orchestration — The Patterns That Actually Work
 
-Ragnar and Tina unpack the architectural decisions behind building
+The hosts unpack the architectural decisions behind building
 multi-agent systems in Copilot Studio that scale past the demo stage.
 
 What we cover:

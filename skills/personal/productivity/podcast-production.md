@@ -1,56 +1,37 @@
 ---
-name: Podcast Production
-slug: podcast-production
-description: End-to-end podcast workflow — episode planning, Ragnar/Tina lane splits, show notes from transcripts, and clip extraction for social.
-tab: personal
-domain: productivity
-industry_vertical: null
-difficulty: intermediate
-source_type: ragnar-custom
-tags: "[\"podcast\", \"content-creation\", \"show-notes\", \"planning\", \"in-our-ai-era\"]"
-version: 1.0.1
-icon_emoji: 🎙️
-is_coming_soon: false
-is_featured: false
-author: ragnar
-learning_path: null
-learning_path_position: null
-prerequisites: "[]"
-references:
-  - "title: "In Our AI Era — YouTube Channel"
-  - "title: "Ragnar Pitla LinkedIn"
-requires: Exa MCP, Firecrawl MCP
-mcp_tools:
-  - "exa-mcp"
-  - "firecrawl-mcp"
+name: podcast-production
+description: End-to-end podcast workflow covering episode planning, host lane splits, show notes from transcripts, and clip extraction for social. Use when user says 'podcast episode', 'episode brief', 'show notes', 'clip from podcast', 'plan an episode', 'podcast production'.
+version: 1.1.0
+author: Ragnar Pitla | skill.rbuild.ai
+tags: [intermediate, content, podcast, production]
 ---
 
 
 # Podcast Production
 
-Built around the "In Our AI Era" format — co-hosted with Tina van Heerden, 25-35 minutes, video podcast, fun/educational/opinionated. But the workflow applies to any technical podcast.
+Built around a two-host technical podcast format — 25-35 minutes, video podcast, fun/educational/opinionated. The workflow applies to any technical podcast with two complementary hosts.
 
 ## Episode Planning Framework
 
-### Lane Split (Ragnar + Tina Format)
+### Lane Split (Two-Host Format)
 
 Every episode has two lanes that complement each other:
 
-**Ragnar's lane — Builder/Architect:**
+**Host A lane — Builder/Architect:**
 - Real implementations ("here's how I actually built it")
-- MCP, Niyam pattern, Copilot Studio technical deep-dives
-- D365 specifics, configuration details
+- Technical deep-dives: MCP, Niyam pattern, Copilot Studio specifics
+- D365 configuration details
 - "Here's what I'd do differently next time"
 - Decision frameworks for technical choices
 
-**Tina's lane — Strategist/Researcher:**
+**Host B lane — Strategist/Researcher:**
 - Industry context and why this matters now
 - Research-backed frameworks and data
 - Common mistakes companies make (pattern recognition)
 - Analogies that make technical concepts accessible
 - Grounding the hype with real-world constraints
 
-**Good episode:** Both lanes tell the same story from different angles. Tina explains why the industry is moving toward agentic ERP. Ragnar shows the specific Copilot Studio + D365 implementation that proves it.
+**Good episode:** Both lanes tell the same story from different angles. Host B explains why the industry is moving toward agentic ERP. Host A shows the specific Copilot Studio + D365 implementation that proves it.
 
 ### Episode Brief Template
 
@@ -59,22 +40,22 @@ Episode: [Number] — [Working Title]
 
 Core question: What does the listener walk away knowing/able to do?
 
-Ragnar's angle: [specific technical thing to show/explain]
-Tina's angle: [strategic/research context]
+Host A angle: [specific technical thing to show/explain]
+Host B angle: [strategic/research context]
 
 Opening hook (30 sec): [specific contrarian or surprising statement]
 
 Segment 1 (~8 min): Why this matters right now
-  - Ragnar:
-  - Tina:
+  - Host A:
+  - Host B:
 
 Segment 2 (~12 min): How it works / The build
-  - Ragnar:
-  - Tina:
+  - Host A:
+  - Host B:
 
 Segment 3 (~8 min): What to do next / Common mistakes
-  - Ragnar:
-  - Tina:
+  - Host A:
+  - Host B:
 
 Close (~3 min): Key takeaway + next episode teaser
 
@@ -109,8 +90,8 @@ After recording, generate show notes in this format:
 [2-3 sentence summary of the core topic]
 
 ## Key Insights
-- [Ragnar insight 1]
-- [Tina insight 2]
+- [Host A insight 1]
+- [Host B insight 2]
 - [Key framework or concept introduced]
 - [Common mistake discussed]
 
@@ -126,8 +107,8 @@ After recording, generate show notes in this format:
 - [Link 2]
 
 ## Connect
-- Ragnar: linkedin.com/in/ragnarpitla
-- Tina: [Tina's LinkedIn]
+- Host A: [LinkedIn]
+- Host B: [LinkedIn]
 - Subscribe: [channel link]
 ```
 
@@ -142,7 +123,7 @@ After each episode, extract 3-5 clips for LinkedIn and YouTube Shorts:
 - Standalone — understandable without the full episode context
 
 **Clip types that perform:**
-1. **The counterintuitive statement:** Ragnar or Tina says something surprising
+1. **The counterintuitive statement:** Either host says something surprising
 2. **The specific example:** "At one client, we reduced invoice processing from 5 days to 4 hours by..."
 3. **The framework moment:** When a clear 3-step or 2x2 framework gets explained
 4. **The hot take:** A strong opinion on where the industry is going
@@ -160,7 +141,7 @@ Full episode: [link]
 
 ## Pre-Recording Checklist
 
-- [ ] Episode brief shared with Tina 48 hours before
+- [ ] Episode brief shared with co-host 48 hours before
 - [ ] Demo environment set up and tested (D365, Copilot Studio, Claude Code)
 - [ ] Recording software open (Riverside, Zoom, etc.)
 - [ ] Good lighting, clean background
