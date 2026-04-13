@@ -1,13 +1,26 @@
 ---
-name: fine-tuning-workflow
+name: "fine-tuning-workflow"
+slug: "fine-tuning-workflow"
 description: "End-to-end fine-tuning pipeline — dataset curation, format conversion, training configuration, evaluation, and when NOT to fine-tune. Use when user says 'fine-tune a model', 'custom training', 'domain-specific LLM', 'train on my data', 'fine-tuning dataset', 'JSONL training format', 'overfitting in fine-tune'."
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [advanced, ai-agent-dev, fine-tuning, training]
-requires: Claude API
-mcp_tools:
-  - "claude-api"
+tab: "personal"
+domain: "ai-agent-dev"
+industry_vertical: null
+difficulty: "advanced"
+source_type: "ragnar-custom"
+tags: ["advanced", "ai-agent-dev", "fine-tuning", "training"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Claude API"
+mcp_tools: []
 ---
+
 
 # Fine-Tuning Workflow
 

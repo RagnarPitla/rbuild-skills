@@ -1,13 +1,26 @@
 ---
-name: public-sector-compliance-agent
-description: Continuous compliance monitoring for government and public sector covering procurement regulations, fund accounting rules, and audit trail generation. Use when user says "government compliance", "procurement compliance", "vendor debarment", "public sector audit", "fund accounting compliance", or "competitive bidding".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, public-sector, compliance, procurement]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
+name: "public-sector-compliance-agent"
+slug: "public-sector-compliance-agent"
+description: "Continuous compliance monitoring for government and public sector covering procurement regulations, fund accounting rules, and audit trail generation. Use when user says \"government compliance\", \"procurement compliance\", \"vendor debarment\", \"public sector audit\", \"fund accounting compliance\", or \"competitive bidding\"."
+tab: "business"
+domain: "industry-verticals"
+industry_vertical: "public-sector"
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "public-sector", "compliance", "procurement"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 # Public Sector Compliance Agent
 

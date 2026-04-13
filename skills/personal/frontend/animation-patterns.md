@@ -1,13 +1,26 @@
 ---
-name: animation-patterns
-description: Production animation patterns for React including scroll animations, drag interactions, skeleton loaders, and micro-interactions. Use when user says 'scroll animation', 'skeleton loader', 'drag and drop animation', 'number counter animation', 'toast animation', 'loading state animation'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, frontend, animation, css]
-mcp_tools:
-  - "playwright-mcp"
-  - "figma-mcp"
+name: "animation-patterns"
+slug: "animation-patterns"
+description: "Production animation patterns for React including scroll animations, drag interactions, skeleton loaders, and micro-interactions. Use when user says 'scroll animation', 'skeleton loader', 'drag and drop animation', 'number counter animation', 'toast animation', 'loading state animation'."
+tab: "personal"
+domain: "frontend"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "frontend", "animation", "css"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 
 # Frontend Animation Patterns

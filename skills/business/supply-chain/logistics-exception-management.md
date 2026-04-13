@@ -1,13 +1,26 @@
 ---
-name: logistics-exception-management
-description: Handling freight exceptions including carrier delays, shipment damages, losses, and missed deliveries — with escalation workflows and D365 Transportation Management integration. Use when user says "carrier delay", "shipment damaged", "logistics exception", "freight claim", "missing delivery", "shipment at risk", "carrier performance".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, supply-chain, logistics, freight]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
+name: "logistics-exception-management"
+slug: "logistics-exception-management"
+description: "Handling freight exceptions including carrier delays, shipment damages, losses, and missed deliveries — with escalation workflows and D365 Transportation Management integration. Use when user says \"carrier delay\", \"shipment damaged\", \"logistics exception\", \"freight claim\", \"missing delivery\", \"shipment at risk\", \"carrier performance\"."
+tab: "business"
+domain: "supply-chain"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "supply-chain", "logistics", "freight"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 # Logistics Exception Management
 

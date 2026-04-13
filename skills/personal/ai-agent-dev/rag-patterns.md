@@ -1,13 +1,26 @@
 ---
-name: rag-patterns
+name: "rag-patterns"
+slug: "rag-patterns"
 description: "Retrieval-Augmented Generation from end to end — chunking, embeddings, vector search, reranking, and citation grounding. Use when user says 'RAG pipeline', 'retrieval augmented generation', 'vector search', 'embeddings', 'document Q&A', 'semantic search', 'RAGAS evaluation', 'chunking strategy'."
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, ai-agent-dev, rag, retrieval]
-requires: Claude API
-mcp_tools:
-  - "claude-api"
+tab: "personal"
+domain: "ai-agent-dev"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "ai-agent-dev", "rag", "retrieval"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: true
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Claude API"
+mcp_tools: []
 ---
+
 
 # RAG Patterns
 

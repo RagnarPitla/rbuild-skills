@@ -1,10 +1,26 @@
 ---
-name: tdd-workflow
-description: Test-driven development with red-green-refactor cycle, testing pyramid, test doubles, and TDD for legacy code. Use when user says 'TDD', 'test-driven development', 'write tests first', 'red green refactor', 'testing pyramid', 'when to use mocks'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, software-engineering, tdd, testing]
+name: "tdd-workflow"
+slug: "tdd-workflow"
+description: "Test-driven development with red-green-refactor cycle, testing pyramid, test doubles, and TDD for legacy code. Use when user says 'TDD', 'test-driven development', 'write tests first', 'red green refactor', 'testing pyramid', 'when to use mocks'."
+tab: "personal"
+domain: "software-engineering"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "software-engineering", "tdd", "testing"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: true
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 
 # TDD Workflow

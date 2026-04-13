@@ -1,15 +1,26 @@
 ---
-name: cs-agent-creator
-description: Rapid Copilot Studio agent creation workflow covering problem diagnosis, agent design, topic creation, testing, and deployment. Use when user says 'build a Copilot Studio agent', 'create an agent from scratch', 'design a Copilot Studio solution', 'set up agent topics', 'deploy agent to Teams', 'agent not working as expected'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, copilot-studio, agent-builder, rapid-creation]
-requires: Copilot Studio VS Code Extension
-mcp_tools:
-  - "copilot-studio:manage-agent"
-  - "copilot-studio:validate"
-  - "copilot-studio:chat-directline"
+name: "cs-agent-creator"
+slug: "cs-agent-creator"
+description: "Rapid Copilot Studio agent creation workflow covering problem diagnosis, agent design, topic creation, testing, and deployment. Use when user says 'build a Copilot Studio agent', 'create an agent from scratch', 'design a Copilot Studio solution', 'set up agent topics', 'deploy agent to Teams', 'agent not working as expected'."
+tab: "business"
+domain: "copilot-studio"
+industry_vertical: null
+difficulty: "starter"
+source_type: "ragnar-custom"
+tags: ["intermediate", "copilot-studio", "agent-builder", "rapid-creation"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Copilot Studio VS Code Extension"
+mcp_tools: []
 ---
+
 
 
 # CS Agent Creator

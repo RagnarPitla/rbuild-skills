@@ -1,14 +1,26 @@
 ---
-name: skills4dataverse
-description: Converting skill markdown files to Dataverse Business Skills table entries — schema mapping, CSV generation for bulk import, and Power Automate direct API import. Use when user says "skills4dataverse", "convert skills to Dataverse", "skill table schema", "generate skill CSV", "skill import pipeline", "skill markdown to Dataverse record".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, dataverse, skills, csv-import]
-requires: Dataverse MCP, Power Automate
-mcp_tools:
-  - "dataverse-mcp"
-  - "power-automate"
+name: "skills4dataverse"
+slug: "skills4dataverse"
+description: "Converting skill markdown files to Dataverse Business Skills table entries — schema mapping, CSV generation for bulk import, and Power Automate direct API import. Use when user says \"skills4dataverse\", \"convert skills to Dataverse\", \"skill table schema\", \"generate skill CSV\", \"skill import pipeline\", \"skill markdown to Dataverse record\"."
+tab: "business"
+domain: "power-platform"
+industry_vertical: null
+difficulty: "starter"
+source_type: "ragnar-custom"
+tags: ["intermediate", "dataverse", "skills", "csv-import"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Dataverse MCP, Power Automate"
+mcp_tools: []
 ---
+
 
 # Skills4Dataverse
 

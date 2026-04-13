@@ -1,13 +1,26 @@
 ---
-name: quality-nonconformance
-description: NCR workflow, root cause analysis (5-Why, fishbone), corrective and preventive actions (CAPA), and D365 quality management integration. Use when user says "nonconformance report", "NCR", "quality hold", "root cause analysis", "CAPA", "corrective action", "5-Why", "quality order", "inspection failure".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, supply-chain, quality, ncr]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
+name: "quality-nonconformance"
+slug: "quality-nonconformance"
+description: "NCR workflow, root cause analysis (5-Why, fishbone), corrective and preventive actions (CAPA), and D365 quality management integration. Use when user says \"nonconformance report\", \"NCR\", \"quality hold\", \"root cause analysis\", \"CAPA\", \"corrective action\", \"5-Why\", \"quality order\", \"inspection failure\"."
+tab: "business"
+domain: "supply-chain"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "supply-chain", "quality", "ncr"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 # Quality Nonconformance
 

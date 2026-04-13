@@ -1,13 +1,26 @@
 ---
-name: markdown-advisor
-description: Recommend markdown timing and depth for slow-moving inventory based on sell-through rate analysis, margin targets, and seasonal curve modeling. Use when user says "markdown optimization", "price markdown", "slow-moving inventory", "sell-through rate", "clearance pricing", or "seasonal markdown".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, retail, markdown, pricing]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
+name: "markdown-advisor"
+slug: "markdown-advisor"
+description: "Recommend markdown timing and depth for slow-moving inventory based on sell-through rate analysis, margin targets, and seasonal curve modeling. Use when user says \"markdown optimization\", \"price markdown\", \"slow-moving inventory\", \"sell-through rate\", \"clearance pricing\", or \"seasonal markdown\"."
+tab: "business"
+domain: "industry-verticals"
+industry_vertical: "retail"
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "retail", "markdown", "pricing"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 # Markdown Advisor
 

@@ -1,13 +1,26 @@
 ---
-name: lease-accounting-assistant
-description: Calculates lease liability and ROU asset values under IFRS 16 and ASC 842, including amortization schedules, journal entries, and remeasurement events. Use when user says "IFRS 16", "ASC 842", "lease accounting", "ROU asset", "right-of-use asset", "lease liability", "lease amortization schedule", or "remeasure lease".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [advanced, financial-services, lease-accounting, ifrs-16]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
+name: "lease-accounting-assistant"
+slug: "lease-accounting-assistant"
+description: "Calculates lease liability and ROU asset values under IFRS 16 and ASC 842, including amortization schedules, journal entries, and remeasurement events. Use when user says \"IFRS 16\", \"ASC 842\", \"lease accounting\", \"ROU asset\", \"right-of-use asset\", \"lease liability\", \"lease amortization schedule\", or \"remeasure lease\"."
+tab: "business"
+domain: "industry-verticals"
+industry_vertical: "financial-services"
+difficulty: "advanced"
+source_type: "ragnar-custom"
+tags: ["advanced", "financial-services", "lease-accounting", "ifrs-16"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 
 # Lease Accounting Assistant

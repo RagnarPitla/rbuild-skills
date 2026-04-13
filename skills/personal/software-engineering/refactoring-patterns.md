@@ -1,10 +1,26 @@
 ---
-name: refactoring-patterns
-description: Safe refactoring techniques including strangler fig, extract method, replace conditional with polymorphism, and decompose conditional. Use when user says 'refactor this code', 'clean up this function', 'refactoring patterns', 'how to refactor safely', 'extract method', 'reduce complexity'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, software-engineering, refactoring, patterns]
+name: "refactoring-patterns"
+slug: "refactoring-patterns"
+description: "Safe refactoring techniques including strangler fig, extract method, replace conditional with polymorphism, and decompose conditional. Use when user says 'refactor this code', 'clean up this function', 'refactoring patterns', 'how to refactor safely', 'extract method', 'reduce complexity'."
+tab: "personal"
+domain: "software-engineering"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "software-engineering", "refactoring", "patterns"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: true
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 
 # Refactoring Patterns

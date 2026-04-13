@@ -1,13 +1,26 @@
 ---
-name: utilization-optimizer
-description: Analyze consultant utilization rates and recommend reallocation to hit target utilization, maximize billability, and identify resource conflicts. Use when user says "project utilization", "billable hours", "resource allocation", "bench time", "utilization report", or "consultant availability".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, professional-services, utilization, billable-hours]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
+name: "utilization-optimizer"
+slug: "utilization-optimizer"
+description: "Analyze consultant utilization rates and recommend reallocation to hit target utilization, maximize billability, and identify resource conflicts. Use when user says \"project utilization\", \"billable hours\", \"resource allocation\", \"bench time\", \"utilization report\", or \"consultant availability\"."
+tab: "business"
+domain: "industry-verticals"
+industry_vertical: "professional-services"
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "professional-services", "utilization", "billable-hours"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 # Utilization Optimizer
 

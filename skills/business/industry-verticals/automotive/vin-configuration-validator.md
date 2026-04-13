@@ -1,13 +1,26 @@
 ---
-name: vin-configuration-validator
-description: Validate VIN-based vehicle configuration rules in D365 against BOM and option constraints before production order release. Use when user says "VIN validation", "vehicle configuration", "option compatibility", "production order release", "VIN check", or "BOM completeness".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, automotive, vin, validation]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
+name: "vin-configuration-validator"
+slug: "vin-configuration-validator"
+description: "Validate VIN-based vehicle configuration rules in D365 against BOM and option constraints before production order release. Use when user says \"VIN validation\", \"vehicle configuration\", \"option compatibility\", \"production order release\", \"VIN check\", or \"BOM completeness\"."
+tab: "business"
+domain: "industry-verticals"
+industry_vertical: "automotive"
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "automotive", "vin", "validation"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 # VIN Configuration Validator
 

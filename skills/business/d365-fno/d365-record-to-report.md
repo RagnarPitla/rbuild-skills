@@ -1,14 +1,26 @@
 ---
-name: d365-record-to-report
-description: Configure the Record to Report (R2R) process in D365 Finance — chart of accounts, journal posting, period close, financial reporting, subledger reconciliation, and agent patterns. Use when user says "record to report in D365", "period close D365", "general ledger D365", "chart of accounts D365", "close the books D365", "journal posting D365", "financial reporting D365".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, d365, record-to-report, general-ledger]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
-  - "dataverse-mcp"
+name: "d365-record-to-report"
+slug: "d365-record-to-report"
+description: "Configure the Record to Report (R2R) process in D365 Finance — chart of accounts, journal posting, period close, financial reporting, subledger reconciliation, and agent patterns. Use when user says \"record to report in D365\", \"period close D365\", \"general ledger D365\", \"chart of accounts D365\", \"close the books D365\", \"journal posting D365\", \"financial reporting D365\"."
+tab: "business"
+domain: "d365-fno"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "d365", "record-to-report", "general-ledger"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: true
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 # D365 Record to Report
 

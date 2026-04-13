@@ -1,13 +1,26 @@
 ---
-name: agent-memory-patterns
+name: "agent-memory-patterns"
+slug: "agent-memory-patterns"
 description: "Memory architecture for AI agents — four memory types, implementation patterns, and cross-session persistence. Use when user says 'agent memory', 'persist context between sessions', 'long-term memory for agents', 'episodic memory', 'vector memory store', 'how do I remember user preferences in my agent'."
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, ai-agent-dev, memory, context]
-requires: Claude API
-mcp_tools:
-  - "claude-api"
+tab: "personal"
+domain: "ai-agent-dev"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "ai-agent-dev", "memory", "context"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Claude API"
+mcp_tools: []
 ---
+
 
 # Agent Memory Patterns
 

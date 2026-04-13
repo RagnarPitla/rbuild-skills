@@ -1,10 +1,26 @@
 ---
-name: podcast-production
-description: End-to-end podcast workflow covering episode planning, host lane splits, show notes from transcripts, and clip extraction for social. Use when user says 'podcast episode', 'episode brief', 'show notes', 'clip from podcast', 'plan an episode', 'podcast production'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, content, podcast, production]
+name: "podcast-production"
+slug: "podcast-production"
+description: "End-to-end podcast workflow covering episode planning, host lane splits, show notes from transcripts, and clip extraction for social. Use when user says 'podcast episode', 'episode brief', 'show notes', 'clip from podcast', 'plan an episode', 'podcast production'."
+tab: "personal"
+domain: "productivity"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "content", "podcast", "production"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 
 # Podcast Production

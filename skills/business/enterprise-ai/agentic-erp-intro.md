@@ -1,15 +1,26 @@
 ---
-name: agentic-erp-intro
-description: What is Agentic ERP? How AI agents become first-class participants in D365 processes, not add-ons but native participants in business operations. Use when user says "what is agentic ERP", "AI agents in D365 Finance", "how to automate invoice processing with AI", "agents in ERP systems", "D365 AI agent use cases", "Copilot Studio for ERP processes".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [beginner, agentic-erp, erp, d365]
-requires: Copilot Studio, Dataverse MCP
-mcp_tools:
-  - "copilot-studio-mcp"
-  - "dataverse-mcp"
-  - "d365-fno-mcp"
+name: "agentic-erp-intro"
+slug: "agentic-erp-intro"
+description: "What is Agentic ERP? How AI agents become first-class participants in D365 processes, not add-ons but native participants in business operations. Use when user says \"what is agentic ERP\", \"AI agents in D365 Finance\", \"how to automate invoice processing with AI\", \"agents in ERP systems\", \"D365 AI agent use cases\", \"Copilot Studio for ERP processes\"."
+tab: "business"
+domain: "enterprise-ai"
+industry_vertical: null
+difficulty: "starter"
+source_type: "ragnar-custom"
+tags: ["beginner", "agentic-erp", "erp", "d365"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: true
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Copilot Studio, Dataverse MCP"
+mcp_tools: []
 ---
+
 
 
 # Agentic ERP Introduction

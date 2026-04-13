@@ -1,13 +1,26 @@
 ---
-name: gxp-compliance-checker
-description: Validates manufacturing and quality records against GxP requirements for batch release, deviation detection, and audit readiness. Use when user says "GMP compliance", "batch release", "deviation report", "CAPA for GxP", "audit readiness", "OOS investigation", or "21 CFR Part 11 audit trail".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [advanced, healthcare, gxp, compliance]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
+name: "gxp-compliance-checker"
+slug: "gxp-compliance-checker"
+description: "Validates manufacturing and quality records against GxP requirements for batch release, deviation detection, and audit readiness. Use when user says \"GMP compliance\", \"batch release\", \"deviation report\", \"CAPA for GxP\", \"audit readiness\", \"OOS investigation\", or \"21 CFR Part 11 audit trail\"."
+tab: "business"
+domain: "industry-verticals"
+industry_vertical: "healthcare"
+difficulty: "advanced"
+source_type: "ragnar-custom"
+tags: ["advanced", "healthcare", "gxp", "compliance"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 
 # GxP Compliance Checker

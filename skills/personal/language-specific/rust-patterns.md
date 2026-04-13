@@ -1,10 +1,26 @@
 ---
-name: rust-patterns
-description: Rust ownership, borrowing, lifetimes, error handling with Result and Option, and idiomatic patterns for safe concurrent systems. Use when user says 'Rust ownership', 'Rust borrowing', 'Rust patterns', 'Rust error handling', 'Result Option Rust', 'idiomatic Rust'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, language, rust, ownership]
+name: "rust-patterns"
+slug: "rust-patterns"
+description: "Rust ownership, borrowing, lifetimes, error handling with Result and Option, and idiomatic patterns for safe concurrent systems. Use when user says 'Rust ownership', 'Rust borrowing', 'Rust patterns', 'Rust error handling', 'Result Option Rust', 'idiomatic Rust'."
+tab: "personal"
+domain: "language-specific"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "language", "rust", "ownership"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 
 # Rust Patterns

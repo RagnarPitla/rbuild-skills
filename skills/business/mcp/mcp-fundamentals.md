@@ -1,13 +1,26 @@
 ---
-name: mcp-fundamentals
+name: "mcp-fundamentals"
+slug: "mcp-fundamentals"
 description: "What is Model Context Protocol? How hosts, clients, and servers work together, and why it matters for enterprise AI agents. Use when user says 'how does MCP work', 'model context protocol explained', 'what is MCP', 'MCP architecture', 'how do AI agents connect to systems', 'MCP vs REST API vs Power Automate'."
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [beginner, mcp, model-context-protocol, architecture]
-requires: Node.js TypeScript SDK
-mcp_tools:
-  - "mcp-server-sdk"
+tab: "business"
+domain: "mcp"
+industry_vertical: null
+difficulty: "starter"
+source_type: "ragnar-custom"
+tags: ["beginner", "mcp", "model-context-protocol", "architecture"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: true
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Node.js TypeScript SDK"
+mcp_tools: []
 ---
+
 
 
 # MCP Fundamentals

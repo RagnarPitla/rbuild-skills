@@ -1,14 +1,26 @@
 ---
-name: d365-config
-description: D365 Finance and Operations initial configuration workflow covering legal entities, chart of accounts, fiscal calendar, number sequences, currencies, posting profiles, customer/vendor groups, and payment terms. Configuration order matters because later steps depend on earlier ones. Use when user says "configure D365", "set up legal entity", "configure number sequences", "set up chart of accounts", "D365 initial setup", "configure posting profiles", "set up fiscal calendar".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, d365, configuration, setup]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
-  - "dataverse-mcp"
+name: "d365-config"
+slug: "d365-config"
+description: "D365 Finance and Operations initial configuration workflow covering legal entities, chart of accounts, fiscal calendar, number sequences, currencies, posting profiles, customer/vendor groups, and payment terms. Configuration order matters because later steps depend on earlier ones. Use when user says \"configure D365\", \"set up legal entity\", \"configure number sequences\", \"set up chart of accounts\", \"D365 initial setup\", \"configure posting profiles\", \"set up fiscal calendar\"."
+tab: "business"
+domain: "d365-fno"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "d365", "configuration", "setup"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 # D365 Configuration
 

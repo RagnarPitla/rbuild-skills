@@ -1,13 +1,26 @@
 ---
-name: mcp-azure
-description: Deploys and updates MCP servers on Azure Container Apps using Streamable HTTP transport, with authentication, scaling, and monitoring. Step-by-step workflow for first deploy and updates. Use when user says 'deploy MCP server', 'MCP on Azure', 'Azure Container Apps MCP', 'deploy MCP to cloud', 'host MCP server'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, devops, mcp, azure]
-requires: Azure CLI, Docker
-mcp_tools:
-  - "azure-cli"
+name: "mcp-azure"
+slug: "mcp-azure"
+description: "Deploys and updates MCP servers on Azure Container Apps using Streamable HTTP transport, with authentication, scaling, and monitoring. Step-by-step workflow for first deploy and updates. Use when user says 'deploy MCP server', 'MCP on Azure', 'Azure Container Apps MCP', 'deploy MCP to cloud', 'host MCP server'."
+tab: "personal"
+domain: "devops"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "devops", "mcp", "azure"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Azure CLI, Docker"
+mcp_tools: []
 ---
+
 
 # MCP on Azure
 

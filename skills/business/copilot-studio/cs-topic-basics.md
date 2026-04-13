@@ -1,15 +1,26 @@
 ---
-name: cs-topic-basics
-description: Build well-structured Copilot Studio topics with trigger phrases, question nodes, conditions, and variables. Use when user says 'create a topic in Copilot Studio', 'topic not triggering', 'how do I add branching to a topic', 'topic variables not working', 'agent routing to wrong topic', 'how do I collect user input in Copilot Studio'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [beginner, copilot-studio, topics, triggers]
-requires: Copilot Studio VS Code Extension
-mcp_tools:
-  - "copilot-studio:manage-agent"
-  - "copilot-studio:validate"
-  - "copilot-studio:chat-directline"
+name: "cs-topic-basics"
+slug: "cs-topic-basics"
+description: "Build well-structured Copilot Studio topics with trigger phrases, question nodes, conditions, and variables. Use when user says 'create a topic in Copilot Studio', 'topic not triggering', 'how do I add branching to a topic', 'topic variables not working', 'agent routing to wrong topic', 'how do I collect user input in Copilot Studio'."
+tab: "business"
+domain: "copilot-studio"
+industry_vertical: null
+difficulty: "starter"
+source_type: "ragnar-custom"
+tags: ["beginner", "copilot-studio", "topics", "triggers"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Copilot Studio VS Code Extension"
+mcp_tools: []
 ---
+
 
 
 # CS Topic Basics

@@ -1,13 +1,26 @@
 ---
-name: warranty-claim-analyzer
-description: Analyze automotive warranty claims against coverage policies, validate eligibility, and generate supplier chargeback requests. Use when user says "warranty claim", "claim eligibility", "supplier chargeback", "recall analysis", "warranty rejection", or "warranty recovery".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, automotive, warranty, claims]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
+name: "warranty-claim-analyzer"
+slug: "warranty-claim-analyzer"
+description: "Analyze automotive warranty claims against coverage policies, validate eligibility, and generate supplier chargeback requests. Use when user says \"warranty claim\", \"claim eligibility\", \"supplier chargeback\", \"recall analysis\", \"warranty rejection\", or \"warranty recovery\"."
+tab: "business"
+domain: "industry-verticals"
+industry_vertical: "automotive"
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "automotive", "warranty", "claims"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 # Warranty Claim Analyzer
 

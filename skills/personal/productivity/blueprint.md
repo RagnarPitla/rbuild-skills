@@ -1,14 +1,26 @@
 ---
-name: blueprint
-description: Turns a one-line objective into a step-by-step construction plan for multi-session, multi-agent engineering projects. Use when user says 'create a project plan', 'blueprint for a feature', 'plan this project', 'break this down', 'how do I build this', 'project roadmap'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, productivity, planning, project]
-requires: Exa MCP, Firecrawl MCP
-mcp_tools:
-  - "exa-mcp"
-  - "firecrawl-mcp"
+name: "blueprint"
+slug: "blueprint"
+description: "Turns a one-line objective into a step-by-step construction plan for multi-session, multi-agent engineering projects. Use when user says 'create a project plan', 'blueprint for a feature', 'plan this project', 'break this down', 'how do I build this', 'project roadmap'."
+tab: "personal"
+domain: "productivity"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "productivity", "planning", "project"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Exa MCP, Firecrawl MCP"
+mcp_tools: []
 ---
+
 
 # Blueprint
 

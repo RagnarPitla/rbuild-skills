@@ -1,14 +1,26 @@
 ---
-name: market-research
-description: Conducts competitive analysis, investor due diligence, and industry intelligence using SEC filings, LinkedIn, Crunchbase, and industry reports, synthesized into structured briefings. Use when user says 'market research', 'competitive analysis', 'research competitors', 'industry report', 'due diligence on', 'market landscape'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, productivity, market-research, competitive-analysis]
-requires: Exa MCP, Firecrawl MCP
-mcp_tools:
-  - "exa-mcp"
-  - "firecrawl-mcp"
+name: "market-research"
+slug: "market-research"
+description: "Conducts competitive analysis, investor due diligence, and industry intelligence using SEC filings, LinkedIn, Crunchbase, and industry reports, synthesized into structured briefings. Use when user says 'market research', 'competitive analysis', 'research competitors', 'industry report', 'due diligence on', 'market landscape'."
+tab: "personal"
+domain: "productivity"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "productivity", "market-research", "competitive-analysis"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Exa MCP, Firecrawl MCP"
+mcp_tools: []
 ---
+
 
 # Market Research
 

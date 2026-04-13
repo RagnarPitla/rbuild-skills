@@ -1,10 +1,26 @@
 ---
-name: security-review
-description: Pre-deployment security checklist covering input validation, XSS prevention, SQL injection, authentication, authorization, and dependency vulnerabilities. Use when user says 'security review', 'vulnerability check', 'OWASP', 'prevent XSS', 'SQL injection', 'authentication security'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, security, owasp, code-review]
+name: "security-review"
+slug: "security-review"
+description: "Pre-deployment security checklist covering input validation, XSS prevention, SQL injection, authentication, authorization, and dependency vulnerabilities. Use when user says 'security review', 'vulnerability check', 'OWASP', 'prevent XSS', 'SQL injection', 'authentication security'."
+tab: "personal"
+domain: "security"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "security", "owasp", "code-review"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: true
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 
 # Security Review

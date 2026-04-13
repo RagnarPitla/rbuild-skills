@@ -1,13 +1,26 @@
 ---
-name: prompt-engineering
+name: "prompt-engineering"
+slug: "prompt-engineering"
 description: "Structured prompt design — system prompts, chain-of-thought, few-shot examples, XML tags, and anti-patterns to eliminate. Use when user says 'prompt engineering', 'advanced prompting', 'XML tags in Claude', 'structured prompt design', 'chain of thought reasoning', 'anti-patterns in prompts', 'instruction overload'."
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, ai-agent-dev, prompt-engineering, chain-of-thought]
-requires: Claude API
-mcp_tools:
-  - "claude-api"
+tab: "personal"
+domain: "ai-agent-dev"
+industry_vertical: null
+difficulty: "advanced"
+source_type: "ragnar-custom"
+tags: ["intermediate", "ai-agent-dev", "prompt-engineering", "chain-of-thought"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: true
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Claude API"
+mcp_tools: []
 ---
+
 
 # Prompt Engineering
 

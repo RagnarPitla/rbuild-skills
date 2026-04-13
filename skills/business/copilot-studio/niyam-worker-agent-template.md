@@ -1,15 +1,26 @@
 ---
-name: niyam-worker-agent-template
-description: Parent plus reusable Worker agent pattern for scalable Copilot Studio multi-agent architectures. Use when user says 'Niyam worker agent', 'reusable worker agent pattern', 'scalable multi-agent architecture', 'worker agent that handles tasks from a parent', 'build a worker agent for parallel task execution', 'Niyam worker template'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [advanced, niyam-pattern, worker-agent, orchestration]
-requires: Copilot Studio VS Code Extension
-mcp_tools:
-  - "copilot-studio:manage-agent"
-  - "copilot-studio:validate"
-  - "copilot-studio:chat-directline"
+name: "niyam-worker-agent-template"
+slug: "niyam-worker-agent-template"
+description: "Parent plus reusable Worker agent pattern for scalable Copilot Studio multi-agent architectures. Use when user says 'Niyam worker agent', 'reusable worker agent pattern', 'scalable multi-agent architecture', 'worker agent that handles tasks from a parent', 'build a worker agent for parallel task execution', 'Niyam worker template'."
+tab: "business"
+domain: "copilot-studio"
+industry_vertical: null
+difficulty: "advanced"
+source_type: "ragnar-custom"
+tags: ["advanced", "niyam-pattern", "worker-agent", "orchestration"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Copilot Studio VS Code Extension"
+mcp_tools: []
 ---
+
 
 
 # Niyam Worker Agent Template

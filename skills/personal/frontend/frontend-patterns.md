@@ -1,13 +1,26 @@
 ---
-name: frontend-patterns
-description: React architecture patterns covering component composition, custom hooks, context vs state management, performance optimization, and data fetching. Use when user says 'React patterns', 'Next.js patterns', 'component composition', 'custom hooks', 'state management', 'React performance'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, frontend, react, nextjs]
-mcp_tools:
-  - "playwright-mcp"
-  - "figma-mcp"
+name: "frontend-patterns"
+slug: "frontend-patterns"
+description: "React architecture patterns covering component composition, custom hooks, context vs state management, performance optimization, and data fetching. Use when user says 'React patterns', 'Next.js patterns', 'component composition', 'custom hooks', 'state management', 'React performance'."
+tab: "personal"
+domain: "frontend"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "frontend", "react", "nextjs"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 
 # Frontend Patterns

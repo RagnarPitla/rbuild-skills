@@ -1,10 +1,26 @@
 ---
-name: linkedin-article-fav
-description: Write comprehensive LinkedIn long-form articles in Ragnar Pitla's signature thought leadership style. Hook, framework, practitioner voice, and strong call to action. Use when user says "write a LinkedIn article", "help me write a thought leadership piece", "LinkedIn long-form post on AI agents", "article on agentic ERP", "write about Copilot Studio for LinkedIn", "AI evangelism content for LinkedIn".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, content, linkedin, writing]
+name: "linkedin-article-fav"
+slug: "linkedin-article-fav"
+description: "Write comprehensive LinkedIn long-form articles in Ragnar Pitla's signature thought leadership style. Hook, framework, practitioner voice, and strong call to action. Use when user says \"write a LinkedIn article\", \"help me write a thought leadership piece\", \"LinkedIn long-form post on AI agents\", \"article on agentic ERP\", \"write about Copilot Studio for LinkedIn\", \"AI evangelism content for LinkedIn\"."
+tab: "business"
+domain: "content-business"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "content", "linkedin", "writing"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 
 # LinkedIn Article

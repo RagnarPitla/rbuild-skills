@@ -1,15 +1,26 @@
 ---
-name: agent-requirements-planner
-description: Interactive discovery workflow that asks the right questions and generates a complete structured agent requirements document. Use when user says "help me plan an agent", "agent requirements gathering", "what do I need to know before building an agent", "scope an AI agent project", "agent design document", "what questions should I ask before building a Copilot Studio agent".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, requirements, discovery, agent-design]
-requires: Copilot Studio, Dataverse MCP
-mcp_tools:
-  - "copilot-studio-mcp"
-  - "dataverse-mcp"
-  - "d365-fno-mcp"
+name: "agent-requirements-planner"
+slug: "agent-requirements-planner"
+description: "Interactive discovery workflow that asks the right questions and generates a complete structured agent requirements document. Use when user says \"help me plan an agent\", \"agent requirements gathering\", \"what do I need to know before building an agent\", \"scope an AI agent project\", \"agent design document\", \"what questions should I ask before building a Copilot Studio agent\"."
+tab: "business"
+domain: "enterprise-ai"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "requirements", "discovery", "agent-design"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Copilot Studio, Dataverse MCP"
+mcp_tools: []
 ---
+
 
 
 # Agent Requirements Planner

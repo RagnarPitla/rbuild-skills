@@ -1,10 +1,26 @@
 ---
-name: safety-guard
-description: Prevent destructive operations in AI agent workflows with confirmation patterns, double-confirmation for high-risk operations, and audit log patterns. Use when user says 'safety guard', 'prevent destructive operations', 'confirm before delete', 'dangerous operation check', 'bulk update safety', 'irreversible action'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, security, safety, destructive-ops]
+name: "safety-guard"
+slug: "safety-guard"
+description: "Prevent destructive operations in AI agent workflows with confirmation patterns, double-confirmation for high-risk operations, and audit log patterns. Use when user says 'safety guard', 'prevent destructive operations', 'confirm before delete', 'dangerous operation check', 'bulk update safety', 'irreversible action'."
+tab: "personal"
+domain: "security"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "security", "safety", "destructive-ops"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 
 # Safety Guard

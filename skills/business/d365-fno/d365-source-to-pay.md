@@ -1,14 +1,26 @@
 ---
-name: d365-source-to-pay
-description: Configure Source to Pay (S2P) in D365 — vendor onboarding, purchase requisitions, purchase orders, product receipt, invoice matching, payment runs, and agent automation patterns. Use when user says "source to pay in D365", "purchase order process D365", "vendor invoice matching D365", "AP payment run D365", "purchase requisition D365", "three-way match D365", "S2P process".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, d365, source-to-pay, procurement]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
-  - "dataverse-mcp"
+name: "d365-source-to-pay"
+slug: "d365-source-to-pay"
+description: "Configure Source to Pay (S2P) in D365 — vendor onboarding, purchase requisitions, purchase orders, product receipt, invoice matching, payment runs, and agent automation patterns. Use when user says \"source to pay in D365\", \"purchase order process D365\", \"vendor invoice matching D365\", \"AP payment run D365\", \"purchase requisition D365\", \"three-way match D365\", \"S2P process\"."
+tab: "business"
+domain: "d365-fno"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "d365", "source-to-pay", "procurement"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 # D365 Source to Pay
 

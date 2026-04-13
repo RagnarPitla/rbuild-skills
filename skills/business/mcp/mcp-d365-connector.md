@@ -1,13 +1,26 @@
 ---
-name: mcp-d365-connector
-description: Design and build an MCP server that exposes D365 F&O OData entities as agent-consumable tools with pagination, authentication, and error handling. Use when user says "connect D365 to Claude", "MCP server for ERP", "expose D365 tools to AI agent", "build D365 F&O MCP server", "D365 OData MCP integration", "give my agent access to D365 data".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [advanced, mcp, d365, odata]
-requires: Node.js TypeScript SDK
-mcp_tools:
-  - "mcp-server-sdk"
+name: "mcp-d365-connector"
+slug: "mcp-d365-connector"
+description: "Design and build an MCP server that exposes D365 F&O OData entities as agent-consumable tools with pagination, authentication, and error handling. Use when user says \"connect D365 to Claude\", \"MCP server for ERP\", \"expose D365 tools to AI agent\", \"build D365 F&O MCP server\", \"D365 OData MCP integration\", \"give my agent access to D365 data\"."
+tab: "business"
+domain: "mcp"
+industry_vertical: null
+difficulty: "advanced"
+source_type: "ragnar-custom"
+tags: ["advanced", "mcp", "d365", "odata"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Node.js TypeScript SDK"
+mcp_tools: []
 ---
+
 
 
 # D365 ERP MCP Connector

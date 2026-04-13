@@ -1,10 +1,26 @@
 ---
-name: personal-finance-report
+name: "personal-finance-report"
+slug: "personal-finance-report"
 description: "Takes raw bank or credit card transaction data and produces a structured spending breakdown with categories, trends, anomalies, and actionable insights. Use when user says 'analyze my spending', 'personal finance report', 'where does my money go', 'spending breakdown', 'budget analysis', 'categorize my transactions'."
-version: 1.0.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [beginner, universal, finance, budgeting, personal]
+tab: "personal"
+domain: "productivity"
+industry_vertical: null
+difficulty: "starter"
+source_type: "ragnar-custom"
+tags: ["beginner", "universal", "finance", "budgeting", "personal"]
+version: "1.0.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: true
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 # Personal Finance Report
 

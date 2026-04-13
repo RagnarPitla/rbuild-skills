@@ -1,13 +1,26 @@
 ---
-name: production-variance-analyzer
-description: Analyzes production order variances across material, quantity, routing, and scrap dimensions with ranked root causes and corrective action recommendations. Use when user says "production variance", "standard cost vs actual cost", "material quantity variance", "labor efficiency variance", "scrap variance", "variance roll-up report", or "why is production over cost".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, manufacturing, production, variance]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
+name: "production-variance-analyzer"
+slug: "production-variance-analyzer"
+description: "Analyzes production order variances across material, quantity, routing, and scrap dimensions with ranked root causes and corrective action recommendations. Use when user says \"production variance\", \"standard cost vs actual cost\", \"material quantity variance\", \"labor efficiency variance\", \"scrap variance\", \"variance roll-up report\", or \"why is production over cost\"."
+tab: "business"
+domain: "industry-verticals"
+industry_vertical: "manufacturing-discrete"
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "manufacturing", "production", "variance"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 
 # Production Variance Analyzer

@@ -1,14 +1,26 @@
 ---
-name: dataverse-table-design
-description: Design Dataverse tables — standard vs custom, column types, relationships, alternate keys, and naming conventions for agent workloads. Use when user says "design a Dataverse table", "Dataverse schema", "table relationships in Dataverse", "alternate key Dataverse", "naming convention Power Platform", "custom table setup".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, dataverse, schema, power-platform]
-requires: Dataverse MCP, Power Automate
-mcp_tools:
-  - "dataverse-mcp"
-  - "power-automate"
+name: "dataverse-table-design"
+slug: "dataverse-table-design"
+description: "Design Dataverse tables — standard vs custom, column types, relationships, alternate keys, and naming conventions for agent workloads. Use when user says \"design a Dataverse table\", \"Dataverse schema\", \"table relationships in Dataverse\", \"alternate key Dataverse\", \"naming convention Power Platform\", \"custom table setup\"."
+tab: "business"
+domain: "power-platform"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "dataverse", "schema", "power-platform"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Dataverse MCP, Power Automate"
+mcp_tools: []
 ---
+
 
 
 # Dataverse Table Design

@@ -1,13 +1,26 @@
 ---
-name: deployment-patterns
-description: CI/CD pipeline design, blue/green and canary deployments, rollback strategies, health checks, feature flags, and zero-downtime deployment patterns. Use when user says 'deployment strategy', 'CI/CD pipeline', 'deploy to Azure', 'zero-downtime deploy', 'rollback strategy', 'feature flags'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, devops, deployment, ci-cd]
-requires: Azure CLI, Docker
-mcp_tools:
-  - "azure-cli"
+name: "deployment-patterns"
+slug: "deployment-patterns"
+description: "CI/CD pipeline design, blue/green and canary deployments, rollback strategies, health checks, feature flags, and zero-downtime deployment patterns. Use when user says 'deployment strategy', 'CI/CD pipeline', 'deploy to Azure', 'zero-downtime deploy', 'rollback strategy', 'feature flags'."
+tab: "personal"
+domain: "devops"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "devops", "deployment", "ci-cd"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: true
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Azure CLI, Docker"
+mcp_tools: []
 ---
+
 
 # Deployment Patterns
 

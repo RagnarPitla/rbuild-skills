@@ -1,13 +1,26 @@
 ---
-name: animation-interaction
-description: Build performant UI animations with Framer Motion, CSS transitions, and the View Transitions API at 60fps. Use when user says 'animate this component', 'CSS animation', 'Framer Motion', 'UI transitions', 'page transitions', 'smooth animation', 'reduced motion'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, frontend, animation, interaction]
-mcp_tools:
-  - "playwright-mcp"
-  - "figma-mcp"
+name: "animation-interaction"
+slug: "animation-interaction"
+description: "Build performant UI animations with Framer Motion, CSS transitions, and the View Transitions API at 60fps. Use when user says 'animate this component', 'CSS animation', 'Framer Motion', 'UI transitions', 'page transitions', 'smooth animation', 'reduced motion'."
+tab: "personal"
+domain: "frontend"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "frontend", "animation", "interaction"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 
 # Animation & Interaction Patterns

@@ -1,10 +1,26 @@
 ---
-name: data-to-report
+name: "data-to-report"
+slug: "data-to-report"
 description: "Takes any spreadsheet, CSV, or raw data table and converts it into a professional executive report with narrative, insights, and recommendations. No code required. Use when user says 'turn this data into a report', 'data to report', 'make a report from this spreadsheet', 'analyze this CSV', 'executive summary from data', 'what does this data show'."
-version: 1.0.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [beginner, universal, data, reporting, analytics]
+tab: "personal"
+domain: "productivity"
+industry_vertical: null
+difficulty: "starter"
+source_type: "ragnar-custom"
+tags: ["beginner", "universal", "data", "reporting", "analytics"]
+version: "1.0.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 # Data to Report
 

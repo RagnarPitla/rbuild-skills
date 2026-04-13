@@ -1,13 +1,26 @@
 ---
-name: core-web-vitals
-description: Diagnose and fix LCP, INP, and CLS — the Core Web Vitals Google uses for search ranking and UX measurement. Use when user says 'core web vitals', 'LCP FCP CLS', 'improve Lighthouse score', 'page performance', 'INP optimization', 'layout shift fix'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, frontend, core-web-vitals, performance]
-mcp_tools:
-  - "playwright-mcp"
-  - "figma-mcp"
+name: "core-web-vitals"
+slug: "core-web-vitals"
+description: "Diagnose and fix LCP, INP, and CLS — the Core Web Vitals Google uses for search ranking and UX measurement. Use when user says 'core web vitals', 'LCP FCP CLS', 'improve Lighthouse score', 'page performance', 'INP optimization', 'layout shift fix'."
+tab: "personal"
+domain: "frontend"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "frontend", "core-web-vitals", "performance"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 
 # Core Web Vitals

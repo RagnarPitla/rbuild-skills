@@ -1,10 +1,26 @@
 ---
-name: case-study-generator
-description: Write compelling customer case studies from project data. Pain points, solution architecture, measurable outcomes, and Microsoft story format. Use when user says "write a customer case study", "help me document this project", "create a customer success story", "before and after AI agent deployment", "Microsoft customer story format", "document our D365 implementation results".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, content, case-study, writing]
+name: "case-study-generator"
+slug: "case-study-generator"
+description: "Write compelling customer case studies from project data. Pain points, solution architecture, measurable outcomes, and Microsoft story format. Use when user says \"write a customer case study\", \"help me document this project\", \"create a customer success story\", \"before and after AI agent deployment\", \"Microsoft customer story format\", \"document our D365 implementation results\"."
+tab: "business"
+domain: "content-business"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "content", "case-study", "writing"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 
 # Case Study Generator

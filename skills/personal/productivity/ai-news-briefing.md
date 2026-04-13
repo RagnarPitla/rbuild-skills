@@ -1,10 +1,26 @@
 ---
-name: ai-news-briefing
+name: "ai-news-briefing"
+slug: "ai-news-briefing"
 description: "Generates a structured daily or weekly AI news briefing that cuts through hype. Covers what's actually shipping, what's signal vs noise, and what it means for enterprise users. Use when user says 'AI news briefing', 'what happened in AI today', 'AI news this week', 'catch me up on AI', 'what's new in AI', 'AI weekly briefing'."
-version: 1.0.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [beginner, universal, ai, news, briefing]
+tab: "personal"
+domain: "productivity"
+industry_vertical: null
+difficulty: "starter"
+source_type: "ragnar-custom"
+tags: ["beginner", "universal", "ai", "news", "briefing"]
+version: "1.0.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: true
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 # AI News Briefing
 

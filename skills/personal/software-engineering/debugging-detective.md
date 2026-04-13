@@ -1,10 +1,26 @@
 ---
-name: debugging-detective
-description: Systematic debugging with reproduce, isolate, hypothesize, verify steps plus root-cause templates and common failure patterns. Use when user says 'debug this bug', 'debugging help', 'how to debug', 'find this bug', 'fix this error', 'something is broken'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, software-engineering, debugging, root-cause]
+name: "debugging-detective"
+slug: "debugging-detective"
+description: "Systematic debugging with reproduce, isolate, hypothesize, verify steps plus root-cause templates and common failure patterns. Use when user says 'debug this bug', 'debugging help', 'how to debug', 'find this bug', 'fix this error', 'something is broken'."
+tab: "personal"
+domain: "software-engineering"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "software-engineering", "debugging", "root-cause"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: true
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 
 # Debugging Detective

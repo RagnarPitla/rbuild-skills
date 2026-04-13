@@ -1,13 +1,26 @@
 ---
-name: returns-reverse-logistics
-description: Automate returns authorization, receipt inspection, disposition decisions, and refund/credit processing in D365 Commerce and SCM. Use when user says "return authorization", "returns processing", "reverse logistics", "RMA", "disposition decision", or "return merchandise authorization".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, logistics, returns, reverse-logistics]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
+name: "returns-reverse-logistics"
+slug: "returns-reverse-logistics"
+description: "Automate returns authorization, receipt inspection, disposition decisions, and refund/credit processing in D365 Commerce and SCM. Use when user says \"return authorization\", \"returns processing\", \"reverse logistics\", \"RMA\", \"disposition decision\", or \"return merchandise authorization\"."
+tab: "business"
+domain: "industry-verticals"
+industry_vertical: "distribution-logistics"
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "logistics", "returns", "reverse-logistics"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 # Returns and Reverse Logistics
 

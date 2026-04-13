@@ -1,14 +1,26 @@
 ---
-name: content-engine
-description: Repurposes one core idea into platform-native content across LinkedIn, YouTube, newsletter, and X. Use when user says 'content calendar', 'repurpose this', 'turn this into content', 'multi-platform content', 'content from this idea', 'create a content week'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, content, repurposing, multi-platform]
-requires: fal.ai MCP or OpenRouter
-mcp_tools:
-  - "fal-ai-mcp"
-  - "openrouter"
+name: "content-engine"
+slug: "content-engine"
+description: "Repurposes one core idea into platform-native content across LinkedIn, YouTube, newsletter, and X. Use when user says 'content calendar', 'repurpose this', 'turn this into content', 'multi-platform content', 'content from this idea', 'create a content week'."
+tab: "personal"
+domain: "content-creation"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "content", "repurposing", "multi-platform"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "fal.ai MCP or OpenRouter"
+mcp_tools: []
 ---
+
 
 # Content Engine
 

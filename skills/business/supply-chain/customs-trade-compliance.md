@@ -1,13 +1,26 @@
 ---
-name: customs-trade-compliance
-description: Customs documentation, tariff classification, duty calculation, restricted party screening, and export control compliance for cross-border shipments. Use when user says "HTS code", "customs compliance", "duty calculation", "restricted party screening", "incoterms", "export control", "import permit", "tariff classification".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, supply-chain, customs, hts-codes]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
+name: "customs-trade-compliance"
+slug: "customs-trade-compliance"
+description: "Customs documentation, tariff classification, duty calculation, restricted party screening, and export control compliance for cross-border shipments. Use when user says \"HTS code\", \"customs compliance\", \"duty calculation\", \"restricted party screening\", \"incoterms\", \"export control\", \"import permit\", \"tariff classification\"."
+tab: "business"
+domain: "supply-chain"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "supply-chain", "customs", "hts-codes"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 # Customs and Trade Compliance
 

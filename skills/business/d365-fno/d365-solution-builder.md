@@ -1,14 +1,26 @@
 ---
-name: d365-solution-builder
-description: End-to-end D365 F&O and Power Platform solution design from business requirements — module selection, integration architecture (MCP, OData, Power Automate), security model, data migration strategy, and go-live checklist. Use when user says "design a D365 solution", "build a D365 agent solution", "D365 implementation architecture", "what modules do I need in D365", "D365 integration design", "D365 security model", "D365 go-live checklist".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [advanced, d365, solution-design, architecture]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
-  - "dataverse-mcp"
+name: "d365-solution-builder"
+slug: "d365-solution-builder"
+description: "End-to-end D365 F&O and Power Platform solution design from business requirements — module selection, integration architecture (MCP, OData, Power Automate), security model, data migration strategy, and go-live checklist. Use when user says \"design a D365 solution\", \"build a D365 agent solution\", \"D365 implementation architecture\", \"what modules do I need in D365\", \"D365 integration design\", \"D365 security model\", \"D365 go-live checklist\"."
+tab: "business"
+domain: "d365-fno"
+industry_vertical: null
+difficulty: "advanced"
+source_type: "ragnar-custom"
+tags: ["advanced", "d365", "solution-design", "architecture"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 # D365 Solution Builder
 

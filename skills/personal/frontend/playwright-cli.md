@@ -1,13 +1,26 @@
 ---
-name: playwright-cli
-description: Automate browser interactions, test web pages, scrape content, and run Playwright tests using the playwright-cli tool. Use when user says 'automate browser', 'playwright', 'browser automation', 'test a webpage', 'scrape a page', 'click a button on a website', 'fill a form', 'take a screenshot', 'playwright-cli'.
-version: 1.0.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, frontend, playwright, browser-automation, testing]
-requires: playwright-cli (npm install -g @playwright/cli@latest)
-mcp_tools:
-  - "playwright-mcp"
+name: "playwright-cli"
+slug: "playwright-cli"
+description: "Automate browser interactions, test web pages, scrape content, and run Playwright tests using the playwright-cli tool. Use when user says 'automate browser', 'playwright', 'browser automation', 'test a webpage', 'scrape a page', 'click a button on a website', 'fill a form', 'take a screenshot', 'playwright-cli'."
+tab: "personal"
+domain: "frontend"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "frontend", "playwright", "browser-automation", "testing"]
+version: "1.0.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "playwright-cli (npm install -g @playwright/cli@latest)"
+mcp_tools: []
 ---
+
 
 # Browser Automation with playwright-cli
 

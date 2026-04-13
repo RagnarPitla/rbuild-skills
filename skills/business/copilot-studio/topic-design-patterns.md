@@ -1,15 +1,26 @@
 ---
-name: topic-design-patterns
-description: Design well-structured Copilot Studio topics with trigger phrases, branching, variable scoping, and anti-patterns to avoid. Use when user says 'topic not triggering correctly', 'how do I design a topic', 'Copilot Studio branching patterns', 'slot filling in topics', 'topic anti-patterns', 'two topics firing for same intent'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, copilot-studio, topics, design-patterns]
-requires: Copilot Studio VS Code Extension
-mcp_tools:
-  - "copilot-studio:manage-agent"
-  - "copilot-studio:validate"
-  - "copilot-studio:chat-directline"
+name: "topic-design-patterns"
+slug: "topic-design-patterns"
+description: "Design well-structured Copilot Studio topics with trigger phrases, branching, variable scoping, and anti-patterns to avoid. Use when user says 'topic not triggering correctly', 'how do I design a topic', 'Copilot Studio branching patterns', 'slot filling in topics', 'topic anti-patterns', 'two topics firing for same intent'."
+tab: "business"
+domain: "copilot-studio"
+industry_vertical: null
+difficulty: "starter"
+source_type: "ragnar-custom"
+tags: ["intermediate", "copilot-studio", "topics", "design-patterns"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Copilot Studio VS Code Extension"
+mcp_tools: []
 ---
+
 
 
 # Topic Design Patterns

@@ -1,10 +1,26 @@
 ---
-name: typescript-patterns
-description: TypeScript strict mode, advanced types, utility types, discriminated unions, and real-world patterns for scalable applications. Use when user says 'TypeScript patterns', 'TypeScript types', 'TypeScript strict mode', 'discriminated union', 'utility types', 'TypeScript best practices'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, language, typescript, patterns]
+name: "typescript-patterns"
+slug: "typescript-patterns"
+description: "TypeScript strict mode, advanced types, utility types, discriminated unions, and real-world patterns for scalable applications. Use when user says 'TypeScript patterns', 'TypeScript types', 'TypeScript strict mode', 'discriminated union', 'utility types', 'TypeScript best practices'."
+tab: "personal"
+domain: "language-specific"
+industry_vertical: null
+difficulty: "advanced"
+source_type: "ragnar-custom"
+tags: ["intermediate", "language", "typescript", "patterns"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 
 # TypeScript Patterns

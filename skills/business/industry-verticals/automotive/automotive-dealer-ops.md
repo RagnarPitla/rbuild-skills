@@ -1,13 +1,26 @@
 ---
-name: automotive-dealer-ops
-description: AI agent patterns for automotive dealer operations covering parts inventory, service scheduling, warranty claims, and customer follow-up. Use when user says "dealer operations", "parts inventory", "service bay", "dealer network performance", "dealer agent", or "automotive CRM".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, automotive, dealer, operations]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
+name: "automotive-dealer-ops"
+slug: "automotive-dealer-ops"
+description: "AI agent patterns for automotive dealer operations covering parts inventory, service scheduling, warranty claims, and customer follow-up. Use when user says \"dealer operations\", \"parts inventory\", \"service bay\", \"dealer network performance\", \"dealer agent\", or \"automotive CRM\"."
+tab: "business"
+domain: "industry-verticals"
+industry_vertical: "automotive"
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "automotive", "dealer", "operations"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 # Automotive Dealer Operations Agent
 

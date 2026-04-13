@@ -1,13 +1,26 @@
 ---
-name: inventory-reorder-advisor
-description: AI agent skill for inventory reorder optimization — EOQ calculations, reorder points, safety stock, and D365 integration patterns. Use when user says "reorder point calculation", "safety stock", "EOQ formula", "inventory optimization", "which items need reordering", "days of supply", "reorder quantity".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, supply-chain, inventory, reorder]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
+name: "inventory-reorder-advisor"
+slug: "inventory-reorder-advisor"
+description: "AI agent skill for inventory reorder optimization — EOQ calculations, reorder points, safety stock, and D365 integration patterns. Use when user says \"reorder point calculation\", \"safety stock\", \"EOQ formula\", \"inventory optimization\", \"which items need reordering\", \"days of supply\", \"reorder quantity\"."
+tab: "business"
+domain: "supply-chain"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "supply-chain", "inventory", "reorder"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: true
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 
 # Inventory Reorder Advisor

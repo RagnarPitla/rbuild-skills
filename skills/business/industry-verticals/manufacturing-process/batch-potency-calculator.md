@@ -1,13 +1,26 @@
 ---
-name: batch-potency-calculator
-description: Calculates active ingredient potency adjustments for pharmaceutical batch manufacturing by reading CoA values, adjusting formula quantities, and updating D365 batch records. Use when user says "potency calculation", "CoA potency adjustment", "API potency", "batch formula adjustment", "active ingredient quantity", "potency compensation", or "adjust for assay result".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [advanced, manufacturing, potency, pharmaceutical]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
+name: "batch-potency-calculator"
+slug: "batch-potency-calculator"
+description: "Calculates active ingredient potency adjustments for pharmaceutical batch manufacturing by reading CoA values, adjusting formula quantities, and updating D365 batch records. Use when user says \"potency calculation\", \"CoA potency adjustment\", \"API potency\", \"batch formula adjustment\", \"active ingredient quantity\", \"potency compensation\", or \"adjust for assay result\"."
+tab: "business"
+domain: "industry-verticals"
+industry_vertical: "manufacturing-process"
+difficulty: "advanced"
+source_type: "ragnar-custom"
+tags: ["advanced", "manufacturing", "potency", "pharmaceutical"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 
 # Batch Potency Calculator

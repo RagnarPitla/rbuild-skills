@@ -1,13 +1,26 @@
 ---
-name: accessibility-audit
-description: Web accessibility audit checklist covering WCAG 2.2 AA, ARIA patterns, keyboard navigation, and the fixes that solve 80% of issues. Use when user says 'accessibility audit', 'WCAG compliance', 'a11y check', 'screen reader support', 'keyboard navigation', 'color contrast check'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, frontend, accessibility, wcag]
-mcp_tools:
-  - "playwright-mcp"
-  - "figma-mcp"
+name: "accessibility-audit"
+slug: "accessibility-audit"
+description: "Web accessibility audit checklist covering WCAG 2.2 AA, ARIA patterns, keyboard navigation, and the fixes that solve 80% of issues. Use when user says 'accessibility audit', 'WCAG compliance', 'a11y check', 'screen reader support', 'keyboard navigation', 'color contrast check'."
+tab: "personal"
+domain: "frontend"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "frontend", "accessibility", "wcag"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 
 # Accessibility Audit

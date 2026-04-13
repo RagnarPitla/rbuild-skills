@@ -1,10 +1,26 @@
 ---
-name: conference-talk-prep
+name: "conference-talk-prep"
+slug: "conference-talk-prep"
 description: "Structure a 30-45 minute conference talk on AI/enterprise topics. Abstract, narrative arc, demo plan, slide outline, and speaker notes. Use when user says 'help me prepare a conference talk', 'write a talk abstract', 'structure my presentation on AI agents', 'conference presentation on Copilot Studio', 'speaker prep for tech conference', 'submit a talk to Microsoft Build or Ignite'."
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, content, conference, thought-leadership]
+tab: "business"
+domain: "content-business"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "content", "conference", "thought-leadership"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 
 # Conference Talk Preparation

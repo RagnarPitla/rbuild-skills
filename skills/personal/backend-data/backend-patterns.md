@@ -1,10 +1,26 @@
 ---
-name: backend-patterns
+name: "backend-patterns"
+slug: "backend-patterns"
 description: "REST API design, service layer architecture, dependency injection, async processing, and queue-based decoupling for Node.js and TypeScript backends. Use when user says 'backend architecture', 'API design patterns', 'service layer', 'dependency injection Node', 'async queue processing', 'REST resource naming', 'error handling middleware'."
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, backend, api, architecture]
+tab: "personal"
+domain: "backend-data"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "backend", "api", "architecture"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 # Backend Patterns
 

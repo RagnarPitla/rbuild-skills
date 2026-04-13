@@ -1,14 +1,26 @@
 ---
-name: power-automate-basics
-description: Build Power Automate cloud flows that Copilot Studio agents invoke — triggers, inputs/outputs, error handling, and action patterns. Use when user says "create a flow for agents", "Power Automate for Copilot Studio", "agent-callable flow", "flow trigger for agents", "Power Automate error handling", "flow inputs and outputs".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [beginner, power-automate, flows, automation]
-requires: Dataverse MCP, Power Automate
-mcp_tools:
-  - "dataverse-mcp"
-  - "power-automate"
+name: "power-automate-basics"
+slug: "power-automate-basics"
+description: "Build Power Automate cloud flows that Copilot Studio agents invoke — triggers, inputs/outputs, error handling, and action patterns. Use when user says \"create a flow for agents\", \"Power Automate for Copilot Studio\", \"agent-callable flow\", \"flow trigger for agents\", \"Power Automate error handling\", \"flow inputs and outputs\"."
+tab: "business"
+domain: "power-platform"
+industry_vertical: null
+difficulty: "starter"
+source_type: "ragnar-custom"
+tags: ["beginner", "power-automate", "flows", "automation"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Dataverse MCP, Power Automate"
+mcp_tools: []
 ---
+
 
 
 # Power Automate for Agents

@@ -1,15 +1,26 @@
 ---
-name: niyam-agent-template
-description: Build policy-driven Copilot Studio agents using the Niyam pattern with Dataverse policy tables, D365 F&O MCP server, and Power Automate enforcement flows. Use when user says 'Niyam pattern', 'policy-driven agent', 'build a D365 agent with Dataverse policies', 'agent that enforces business rules', 'connect Copilot Studio to D365 with MCP', 'Niyam agent template'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [advanced, niyam-pattern, policy-driven, dataverse]
-requires: Copilot Studio VS Code Extension
-mcp_tools:
-  - "copilot-studio:manage-agent"
-  - "copilot-studio:validate"
-  - "copilot-studio:chat-directline"
+name: "niyam-agent-template"
+slug: "niyam-agent-template"
+description: "Build policy-driven Copilot Studio agents using the Niyam pattern with Dataverse policy tables, D365 F&O MCP server, and Power Automate enforcement flows. Use when user says 'Niyam pattern', 'policy-driven agent', 'build a D365 agent with Dataverse policies', 'agent that enforces business rules', 'connect Copilot Studio to D365 with MCP', 'Niyam agent template'."
+tab: "business"
+domain: "copilot-studio"
+industry_vertical: null
+difficulty: "advanced"
+source_type: "ragnar-custom"
+tags: ["advanced", "niyam-pattern", "policy-driven", "dataverse"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Copilot Studio VS Code Extension"
+mcp_tools: []
 ---
+
 
 
 # Niyam Agent Template

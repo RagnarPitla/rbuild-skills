@@ -1,13 +1,26 @@
 ---
-name: bank-reconciliation-assistant
-description: Automates bank statement reconciliation in D365 Finance by matching transactions, surfacing exceptions, and accelerating month-end close. Use when user says "bank reconciliation", "reconcile bank statement", "outstanding checks", "deposits in transit", "bank statement exceptions", "month-end bank close", or "unmatched bank transactions".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, financial-services, bank-reconciliation, finance]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
+name: "bank-reconciliation-assistant"
+slug: "bank-reconciliation-assistant"
+description: "Automates bank statement reconciliation in D365 Finance by matching transactions, surfacing exceptions, and accelerating month-end close. Use when user says \"bank reconciliation\", \"reconcile bank statement\", \"outstanding checks\", \"deposits in transit\", \"bank statement exceptions\", \"month-end bank close\", or \"unmatched bank transactions\"."
+tab: "business"
+domain: "industry-verticals"
+industry_vertical: "financial-services"
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "financial-services", "bank-reconciliation", "finance"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 
 # Bank Reconciliation Assistant

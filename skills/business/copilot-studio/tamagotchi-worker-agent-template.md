@@ -1,15 +1,26 @@
 ---
-name: tamagotchi-worker-agent-template
-description: Self-healing Copilot Studio agents with step-based control plane and autonomous recovery. Use when user says 'self-healing agent', 'agent stuck in a loop', 'Tamagotchi pattern', 'agent that monitors itself', 'checkpoint-based agent recovery', 'autonomous agent recovery Copilot Studio', 'agent step control plane'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [advanced, self-healing, checkpoints, autonomous]
-requires: Copilot Studio VS Code Extension
-mcp_tools:
-  - "copilot-studio:manage-agent"
-  - "copilot-studio:validate"
-  - "copilot-studio:chat-directline"
+name: "tamagotchi-worker-agent-template"
+slug: "tamagotchi-worker-agent-template"
+description: "Self-healing Copilot Studio agents with step-based control plane and autonomous recovery. Use when user says 'self-healing agent', 'agent stuck in a loop', 'Tamagotchi pattern', 'agent that monitors itself', 'checkpoint-based agent recovery', 'autonomous agent recovery Copilot Studio', 'agent step control plane'."
+tab: "business"
+domain: "copilot-studio"
+industry_vertical: null
+difficulty: "advanced"
+source_type: "ragnar-custom"
+tags: ["advanced", "self-healing", "checkpoints", "autonomous"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Copilot Studio VS Code Extension"
+mcp_tools: []
 ---
+
 
 
 # Tamagotchi Worker Agent Template

@@ -1,13 +1,26 @@
 ---
-name: prompt-engineering-101
+name: "prompt-engineering-101"
+slug: "prompt-engineering-101"
 description: "Prompt engineering fundamentals — system prompts, chain-of-thought, few-shot examples, and the mistakes that kill quality. Use when user says 'prompt engineering basics', 'how to write a system prompt', 'improve my prompt', 'chain of thought', 'few-shot examples', 'why is my LLM output bad', 'prompt injection'."
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [beginner, ai-agent-dev, prompt-engineering, fundamentals]
-requires: Claude API
-mcp_tools:
-  - "claude-api"
+tab: "personal"
+domain: "ai-agent-dev"
+industry_vertical: null
+difficulty: "starter"
+source_type: "ragnar-custom"
+tags: ["beginner", "ai-agent-dev", "prompt-engineering", "fundamentals"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Claude API"
+mcp_tools: []
 ---
+
 
 # Prompt Engineering 101
 

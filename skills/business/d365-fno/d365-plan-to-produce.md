@@ -1,14 +1,26 @@
 ---
-name: d365-plan-to-produce
-description: Configure the Plan to Produce (P2P) process in D365 SCM — bills of materials, routes, master planning, production orders, shop floor reporting, and manufacturing agent patterns. Use when user says "plan to produce in D365", "production order D365", "BOM setup D365", "master planning D365", "shop floor D365", "manufacturing process D365", "production scheduling D365".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, d365, plan-to-produce, manufacturing]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
-  - "dataverse-mcp"
+name: "d365-plan-to-produce"
+slug: "d365-plan-to-produce"
+description: "Configure the Plan to Produce (P2P) process in D365 SCM — bills of materials, routes, master planning, production orders, shop floor reporting, and manufacturing agent patterns. Use when user says \"plan to produce in D365\", \"production order D365\", \"BOM setup D365\", \"master planning D365\", \"shop floor D365\", \"manufacturing process D365\", \"production scheduling D365\"."
+tab: "business"
+domain: "d365-fno"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "d365", "plan-to-produce", "manufacturing"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 # D365 Plan to Produce
 

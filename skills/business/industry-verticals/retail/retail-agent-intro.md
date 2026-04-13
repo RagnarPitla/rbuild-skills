@@ -1,13 +1,26 @@
 ---
-name: retail-agent-intro
-description: Where AI agents create the most value in retail covering store operations, supply chain, merchandising, and the recommended starting point for retail AI adoption. Use when user says "retail agent", "retail AI", "where to start with AI in retail", "retail use cases", "store operations AI", or "getting started retail".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [beginner, retail, introduction, agents]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
+name: "retail-agent-intro"
+slug: "retail-agent-intro"
+description: "Where AI agents create the most value in retail covering store operations, supply chain, merchandising, and the recommended starting point for retail AI adoption. Use when user says \"retail agent\", \"retail AI\", \"where to start with AI in retail\", \"retail use cases\", \"store operations AI\", or \"getting started retail\"."
+tab: "business"
+domain: "industry-verticals"
+industry_vertical: "retail"
+difficulty: "starter"
+source_type: "ragnar-custom"
+tags: ["beginner", "retail", "introduction", "agents"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 # Retail AI Agent Introduction
 

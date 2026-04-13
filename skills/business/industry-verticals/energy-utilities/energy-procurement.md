@@ -1,13 +1,26 @@
 ---
-name: energy-procurement
-description: Optimize electricity and gas procurement covering tariff analysis, demand charge management, contract timing, and renewable certificate tracking. Use when user says "energy procurement", "electricity tariff", "demand charge", "power purchase agreement", "REC tracking", or "utility cost optimization".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, energy, procurement, tariff]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
+name: "energy-procurement"
+slug: "energy-procurement"
+description: "Optimize electricity and gas procurement covering tariff analysis, demand charge management, contract timing, and renewable certificate tracking. Use when user says \"energy procurement\", \"electricity tariff\", \"demand charge\", \"power purchase agreement\", \"REC tracking\", or \"utility cost optimization\"."
+tab: "business"
+domain: "industry-verticals"
+industry_vertical: "energy-utilities"
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "energy", "procurement", "tariff"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 # Energy Procurement Advisor
 

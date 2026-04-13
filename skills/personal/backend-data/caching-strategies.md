@@ -1,10 +1,26 @@
 ---
-name: caching-strategies
+name: "caching-strategies"
+slug: "caching-strategies"
 description: "Cache at every layer — CDN, Redis, query cache, HTTP headers — with invalidation patterns and the thundering herd solution. Use when user says 'caching strategy', 'Redis cache', 'cache invalidation', 'thundering herd', 'CDN cache headers', 'stale data problem', 'cache-aside pattern'."
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, backend, caching, redis]
+tab: "personal"
+domain: "backend-data"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "backend", "caching", "redis"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 # Caching Strategies
 

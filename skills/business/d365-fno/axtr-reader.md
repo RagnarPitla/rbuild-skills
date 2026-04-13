@@ -1,14 +1,26 @@
 ---
-name: axtr-reader
-description: Reads, parses, and analyzes D365 Task Recorder .axtr files (ZIP archives containing XML) to extract business process steps, system actions, field values, and generate process documentation or test scripts. Use when user says "parse axtr file", "read task recorder file", "analyze axtr", "extract process steps from axtr", "convert axtr to test script", "open task recorder recording".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, d365, task-recorder, process-documentation]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
-  - "dataverse-mcp"
+name: "axtr-reader"
+slug: "axtr-reader"
+description: "Reads, parses, and analyzes D365 Task Recorder .axtr files (ZIP archives containing XML) to extract business process steps, system actions, field values, and generate process documentation or test scripts. Use when user says \"parse axtr file\", \"read task recorder file\", \"analyze axtr\", \"extract process steps from axtr\", \"convert axtr to test script\", \"open task recorder recording\"."
+tab: "business"
+domain: "d365-fno"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "d365", "task-recorder", "process-documentation"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 # AXTR Reader
 

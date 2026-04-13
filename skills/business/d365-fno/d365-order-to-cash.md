@@ -1,14 +1,26 @@
 ---
-name: d365-order-to-cash
-description: Configure Order to Cash (O2C) in D365 — customer setup, sales orders, pricing, invoicing, cash application, collections, and AI agent automation patterns. Use when user says "order to cash in D365", "sales order process D365", "configure collections D365", "customer credit limit D365", "invoice a sales order", "cash application D365", "O2C process".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, d365, order-to-cash, accounts-receivable]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
-  - "dataverse-mcp"
+name: "d365-order-to-cash"
+slug: "d365-order-to-cash"
+description: "Configure Order to Cash (O2C) in D365 — customer setup, sales orders, pricing, invoicing, cash application, collections, and AI agent automation patterns. Use when user says \"order to cash in D365\", \"sales order process D365\", \"configure collections D365\", \"customer credit limit D365\", \"invoice a sales order\", \"cash application D365\", \"O2C process\"."
+tab: "business"
+domain: "d365-fno"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "d365", "order-to-cash", "accounts-receivable"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 # D365 Order to Cash
 

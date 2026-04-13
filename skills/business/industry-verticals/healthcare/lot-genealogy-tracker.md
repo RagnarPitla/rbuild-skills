@@ -1,13 +1,26 @@
 ---
-name: lot-genealogy-tracker
-description: Traces complete forward and backward lot genealogy for regulated products to support recalls, deviations, and regulatory audits. Use when user says "lot genealogy", "batch traceability", "recall trace", "where did this lot go", "what went into this batch", "forward trace", or "backward trace".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [advanced, healthcare, lot-traceability, batch]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
+name: "lot-genealogy-tracker"
+slug: "lot-genealogy-tracker"
+description: "Traces complete forward and backward lot genealogy for regulated products to support recalls, deviations, and regulatory audits. Use when user says \"lot genealogy\", \"batch traceability\", \"recall trace\", \"where did this lot go\", \"what went into this batch\", \"forward trace\", or \"backward trace\"."
+tab: "business"
+domain: "industry-verticals"
+industry_vertical: "healthcare"
+difficulty: "advanced"
+source_type: "ragnar-custom"
+tags: ["advanced", "healthcare", "lot-traceability", "batch"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 
 # Lot Genealogy Tracker

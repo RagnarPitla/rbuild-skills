@@ -1,13 +1,26 @@
 ---
-name: bom-cost-analyzer
-description: Analyzes Bill of Materials cost rollups in D365 to identify variance drivers, surface cost reduction opportunities, and model material substitutions. Use when user says "BOM cost", "standard cost vs actual cost", "cost rollup", "material cost variance", "component cost breakdown", "make vs buy analysis", or "substitute component cost".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, manufacturing, bom, cost-analysis]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
+name: "bom-cost-analyzer"
+slug: "bom-cost-analyzer"
+description: "Analyzes Bill of Materials cost rollups in D365 to identify variance drivers, surface cost reduction opportunities, and model material substitutions. Use when user says \"BOM cost\", \"standard cost vs actual cost\", \"cost rollup\", \"material cost variance\", \"component cost breakdown\", \"make vs buy analysis\", or \"substitute component cost\"."
+tab: "business"
+domain: "industry-verticals"
+industry_vertical: "manufacturing-discrete"
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "manufacturing", "bom", "cost-analysis"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 
 # BOM Cost Analyzer

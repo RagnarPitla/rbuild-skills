@@ -1,13 +1,26 @@
 ---
-name: production-scheduling
-description: Job sequencing, capacity planning, setup time optimization, and constraint identification for D365 Production Control — production orders, BOMs, routes, work centers, and capacity load. Use when user says "production schedule", "job sequencing", "work center capacity", "production order", "BOM", "routing", "setup time optimization", "capacity load".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, supply-chain, production, scheduling]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
+name: "production-scheduling"
+slug: "production-scheduling"
+description: "Job sequencing, capacity planning, setup time optimization, and constraint identification for D365 Production Control — production orders, BOMs, routes, work centers, and capacity load. Use when user says \"production schedule\", \"job sequencing\", \"work center capacity\", \"production order\", \"BOM\", \"routing\", \"setup time optimization\", \"capacity load\"."
+tab: "business"
+domain: "supply-chain"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "supply-chain", "production", "scheduling"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 # Production Scheduling
 

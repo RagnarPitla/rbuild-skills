@@ -1,13 +1,26 @@
 ---
-name: design-system
-description: Component library design covering tokens, component API design, Storybook documentation, versioning, and consumer migration guides. Use when user says 'design system', 'component library', 'design tokens', 'Storybook setup', 'component API design', 'token-based theming'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, frontend, design-system, tokens]
-mcp_tools:
-  - "playwright-mcp"
-  - "figma-mcp"
+name: "design-system"
+slug: "design-system"
+description: "Component library design covering tokens, component API design, Storybook documentation, versioning, and consumer migration guides. Use when user says 'design system', 'component library', 'design tokens', 'Storybook setup', 'component API design', 'token-based theming'."
+tab: "personal"
+domain: "frontend"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "frontend", "design-system", "tokens"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 
 # Design System

@@ -1,15 +1,26 @@
 ---
-name: multi-agent-orchestration
-description: Design parent and child agent architecture in Copilot Studio with description-based routing, context passing, and the Niyam pattern for enterprise deployments. Use when user says 'parent child agent setup', 'agent not routing to right specialist', 'how do I add child agents', 'connected agents Copilot Studio', 'multi-agent enterprise architecture', 'Niyam pattern routing'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [advanced, copilot-studio, multi-agent, child-agents]
-requires: Copilot Studio VS Code Extension
-mcp_tools:
-  - "copilot-studio:manage-agent"
-  - "copilot-studio:validate"
-  - "copilot-studio:chat-directline"
+name: "multi-agent-orchestration"
+slug: "multi-agent-orchestration"
+description: "Design parent and child agent architecture in Copilot Studio with description-based routing, context passing, and the Niyam pattern for enterprise deployments. Use when user says 'parent child agent setup', 'agent not routing to right specialist', 'how do I add child agents', 'connected agents Copilot Studio', 'multi-agent enterprise architecture', 'Niyam pattern routing'."
+tab: "business"
+domain: "copilot-studio"
+industry_vertical: null
+difficulty: "advanced"
+source_type: "ragnar-custom"
+tags: ["advanced", "copilot-studio", "multi-agent", "child-agents"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: true
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Copilot Studio VS Code Extension"
+mcp_tools: []
 ---
+
 
 
 # Multi-Agent Orchestration (Parent-Child)

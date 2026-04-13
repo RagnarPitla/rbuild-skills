@@ -1,11 +1,26 @@
 ---
-name: outlook-newsletter
-description: Create and manage newsletters in Microsoft Outlook — setup, edition drafting, subscriber management, visibility settings, and analytics. Use when user says 'create a newsletter in Outlook', 'Outlook newsletter', 'newsletter edition', 'newsletter subscribers', 'publish a newsletter', 'Microsoft newsletter'.
-version: 1.0.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [beginner, content, outlook, newsletter, microsoft-365]
-requires: Microsoft 365, Outlook with Newsletters feature
+name: "outlook-newsletter"
+slug: "outlook-newsletter"
+description: "Create and manage newsletters in Microsoft Outlook — setup, edition drafting, subscriber management, visibility settings, and analytics. Use when user says 'create a newsletter in Outlook', 'Outlook newsletter', 'newsletter edition', 'newsletter subscribers', 'publish a newsletter', 'Microsoft newsletter'."
+tab: "business"
+domain: "content-business"
+industry_vertical: null
+difficulty: "starter"
+source_type: "ragnar-custom"
+tags: ["beginner", "content", "outlook", "newsletter", "microsoft-365"]
+version: "1.0.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Microsoft 365, Outlook with Newsletters feature"
+mcp_tools: []
 ---
+
 
 # Outlook Newsletter
 

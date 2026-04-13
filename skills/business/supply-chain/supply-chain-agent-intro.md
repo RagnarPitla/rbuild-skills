@@ -1,13 +1,26 @@
 ---
-name: supply-chain-agent-intro
-description: Where AI agents add the most value in supply chain operations — demand planning, inventory optimization, logistics exception handling, and how to prioritize your first agent. Use when user says "supply chain agent", "where to start with AI in supply chain", "inventory agent", "demand planning agent", "logistics agent", "supply chain automation".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [beginner, supply-chain, introduction, agents]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
+name: "supply-chain-agent-intro"
+slug: "supply-chain-agent-intro"
+description: "Where AI agents add the most value in supply chain operations — demand planning, inventory optimization, logistics exception handling, and how to prioritize your first agent. Use when user says \"supply chain agent\", \"where to start with AI in supply chain\", \"inventory agent\", \"demand planning agent\", \"logistics agent\", \"supply chain automation\"."
+tab: "business"
+domain: "supply-chain"
+industry_vertical: null
+difficulty: "starter"
+source_type: "ragnar-custom"
+tags: ["beginner", "supply-chain", "introduction", "agents"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 
 # Supply Chain Agent Introduction

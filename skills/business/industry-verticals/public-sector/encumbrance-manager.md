@@ -1,13 +1,26 @@
 ---
-name: encumbrance-manager
-description: Track budget encumbrances against appropriations in D365 Public Sector — flag over-encumbrances, generate status reports, and support year-end carry-forwards. Use when user says "encumbrance accounting", "budget commitment", "appropriation balance", "fund accounting", "PO encumbrance", or "budget carry-forward".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, public-sector, encumbrance, fund-accounting]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
+name: "encumbrance-manager"
+slug: "encumbrance-manager"
+description: "Track budget encumbrances against appropriations in D365 Public Sector — flag over-encumbrances, generate status reports, and support year-end carry-forwards. Use when user says \"encumbrance accounting\", \"budget commitment\", \"appropriation balance\", \"fund accounting\", \"PO encumbrance\", or \"budget carry-forward\"."
+tab: "business"
+domain: "industry-verticals"
+industry_vertical: "public-sector"
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "public-sector", "encumbrance", "fund-accounting"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 # Encumbrance Manager
 

@@ -1,10 +1,26 @@
 ---
-name: kotlin-patterns
-description: Idiomatic Kotlin patterns covering coroutines, sealed classes, extension functions, data classes, and KMP-ready architecture. Use when user says 'Kotlin patterns', 'idiomatic Kotlin', 'Kotlin coroutines', 'sealed classes', 'Kotlin extension functions', 'Kotlin best practices'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, language, kotlin, patterns]
+name: "kotlin-patterns"
+slug: "kotlin-patterns"
+description: "Idiomatic Kotlin patterns covering coroutines, sealed classes, extension functions, data classes, and KMP-ready architecture. Use when user says 'Kotlin patterns', 'idiomatic Kotlin', 'Kotlin coroutines', 'sealed classes', 'Kotlin extension functions', 'Kotlin best practices'."
+tab: "personal"
+domain: "language-specific"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "language", "kotlin", "patterns"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 
 # Kotlin Patterns

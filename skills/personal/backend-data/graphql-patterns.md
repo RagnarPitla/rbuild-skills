@@ -1,10 +1,26 @@
 ---
-name: graphql-patterns
+name: "graphql-patterns"
+slug: "graphql-patterns"
 description: "Design GraphQL APIs — schema-first development, DataLoader for N+1, subscriptions, federation, and when to use REST instead. Use when user says 'GraphQL schema', 'N+1 problem', 'DataLoader', 'GraphQL subscriptions', 'cursor pagination GraphQL', 'GraphQL vs REST', 'GraphQL security', 'depth limiting'."
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, backend, graphql, api]
+tab: "personal"
+domain: "backend-data"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "backend", "graphql", "api"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 # GraphQL Patterns
 

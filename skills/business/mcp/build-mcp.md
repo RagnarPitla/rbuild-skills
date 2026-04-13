@@ -1,13 +1,26 @@
 ---
-name: build-mcp
+name: "build-mcp"
+slug: "build-mcp"
 description: "Step-by-step guide to building a production-ready MCP server with Node.js/TypeScript SDK. Define tools with Zod schemas, handle auth, implement transport, deploy to Azure. Use when user says 'build an MCP server', 'how do I create an MCP server', 'MCP server TypeScript', 'write an MCP server from scratch', 'MCP Node.js SDK tutorial', 'production MCP server setup'."
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, mcp, typescript, azure]
-requires: Node.js TypeScript SDK
-mcp_tools:
-  - "mcp-server-sdk"
+tab: "business"
+domain: "mcp"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "mcp", "typescript", "azure"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Node.js TypeScript SDK"
+mcp_tools: []
 ---
+
 
 
 # Build MCP

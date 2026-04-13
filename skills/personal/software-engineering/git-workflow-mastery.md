@@ -1,10 +1,26 @@
 ---
-name: git-workflow-mastery
-description: Git branching strategies, Conventional Commits, rebase vs merge, stash, bisect, and conflict resolution. Use when user says 'git workflow', 'branching strategy', 'commit message convention', 'rebase vs merge', 'git conflict', 'cherry-pick', 'git bisect'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, software-engineering, git, workflow]
+name: "git-workflow-mastery"
+slug: "git-workflow-mastery"
+description: "Git branching strategies, Conventional Commits, rebase vs merge, stash, bisect, and conflict resolution. Use when user says 'git workflow', 'branching strategy', 'commit message convention', 'rebase vs merge', 'git conflict', 'cherry-pick', 'git bisect'."
+tab: "personal"
+domain: "software-engineering"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "software-engineering", "git", "workflow"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: true
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 
 # Git Workflow Mastery

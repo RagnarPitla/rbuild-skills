@@ -1,13 +1,26 @@
 ---
-name: aml-transaction-screener
-description: Screens financial transactions against AML rules, sanctions lists, and behavioral baselines to detect suspicious patterns and generate SAR-ready documentation. Use when user says "screen transactions for AML", "suspicious transaction", "OFAC check", "structuring detection", "file a SAR", "AML alert", or "sanctions screening".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [advanced, financial-services, aml, compliance]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
+name: "aml-transaction-screener"
+slug: "aml-transaction-screener"
+description: "Screens financial transactions against AML rules, sanctions lists, and behavioral baselines to detect suspicious patterns and generate SAR-ready documentation. Use when user says \"screen transactions for AML\", \"suspicious transaction\", \"OFAC check\", \"structuring detection\", \"file a SAR\", \"AML alert\", or \"sanctions screening\"."
+tab: "business"
+domain: "industry-verticals"
+industry_vertical: "financial-services"
+difficulty: "advanced"
+source_type: "ragnar-custom"
+tags: ["advanced", "financial-services", "aml", "compliance"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 
 # AML Transaction Screener

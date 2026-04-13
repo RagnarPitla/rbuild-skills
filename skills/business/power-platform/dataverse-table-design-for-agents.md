@@ -1,14 +1,26 @@
 ---
-name: dataverse-table-design-for-agents
-description: Design Dataverse tables that AI agents consume — column types, naming conventions, the Niyam policy table pattern, and security considerations. Use when user says "design a Dataverse table for agents", "table schema for agents", "Dataverse policy table", "Niyam pattern table", "agent reads from Dataverse", "policy table design".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, dataverse, table-design, agents]
-requires: Dataverse MCP, Power Automate
-mcp_tools:
-  - "dataverse-mcp"
-  - "power-automate"
+name: "dataverse-table-design-for-agents"
+slug: "dataverse-table-design-for-agents"
+description: "Design Dataverse tables that AI agents consume — column types, naming conventions, the Niyam policy table pattern, and security considerations. Use when user says \"design a Dataverse table for agents\", \"table schema for agents\", \"Dataverse policy table\", \"Niyam pattern table\", \"agent reads from Dataverse\", \"policy table design\"."
+tab: "business"
+domain: "power-platform"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "dataverse", "table-design", "agents"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Dataverse MCP, Power Automate"
+mcp_tools: []
 ---
+
 
 
 # Dataverse Table Design for Agents

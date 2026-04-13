@@ -1,14 +1,26 @@
 ---
-name: d365-data-migration
-description: Plan and execute D365 F&O data migration — data entities, DIXF packages, cutover strategy, and validation patterns. Use when user says "data migration to D365", "import data into D365", "DIXF import", "data entity import", "migrate customers to D365", "opening balances migration", "cutover data strategy".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, d365, data-migration, dmf]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
-  - "dataverse-mcp"
+name: "d365-data-migration"
+slug: "d365-data-migration"
+description: "Plan and execute D365 F&O data migration — data entities, DIXF packages, cutover strategy, and validation patterns. Use when user says \"data migration to D365\", \"import data into D365\", \"DIXF import\", \"data entity import\", \"migrate customers to D365\", \"opening balances migration\", \"cutover data strategy\"."
+tab: "business"
+domain: "d365-fno"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "d365", "data-migration", "dmf"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 # D365 Data Migration
 

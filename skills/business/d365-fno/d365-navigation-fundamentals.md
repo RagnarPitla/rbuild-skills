@@ -1,14 +1,26 @@
 ---
-name: d365-navigation-fundamentals
-description: Navigate D365 Finance and Operations confidently — modules, workspaces, list pages, forms, search, and power user shortcuts. Use when user says "how do I navigate D365", "find a form in D365", "D365 navigation", "D365 workspaces", "get started with D365", "find menu in D365 F&O", "D365 search bar".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [beginner, d365, navigation, fundamentals]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
-  - "dataverse-mcp"
+name: "d365-navigation-fundamentals"
+slug: "d365-navigation-fundamentals"
+description: "Navigate D365 Finance and Operations confidently — modules, workspaces, list pages, forms, search, and power user shortcuts. Use when user says \"how do I navigate D365\", \"find a form in D365\", \"D365 navigation\", \"D365 workspaces\", \"get started with D365\", \"find menu in D365 F&O\", \"D365 search bar\"."
+tab: "business"
+domain: "d365-fno"
+industry_vertical: null
+difficulty: "starter"
+source_type: "ragnar-custom"
+tags: ["beginner", "d365", "navigation", "fundamentals"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 # D365 F&O Navigation Fundamentals
 

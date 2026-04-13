@@ -1,15 +1,26 @@
 ---
-name: your-first-copilot-studio-agent
-description: Build your first Copilot Studio agent from scratch with system instructions, greeting topic, fallback, and publish. Use when user says 'build my first Copilot Studio agent', 'getting started with Copilot Studio', 'how do I create and publish a Copilot Studio agent', 'Copilot Studio beginner guide', 'set up Power Platform for Copilot Studio'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [beginner, copilot-studio, quickstart, tutorial]
-requires: Copilot Studio VS Code Extension
-mcp_tools:
-  - "copilot-studio:manage-agent"
-  - "copilot-studio:validate"
-  - "copilot-studio:chat-directline"
+name: "your-first-copilot-studio-agent"
+slug: "your-first-copilot-studio-agent"
+description: "Build your first Copilot Studio agent from scratch with system instructions, greeting topic, fallback, and publish. Use when user says 'build my first Copilot Studio agent', 'getting started with Copilot Studio', 'how do I create and publish a Copilot Studio agent', 'Copilot Studio beginner guide', 'set up Power Platform for Copilot Studio'."
+tab: "business"
+domain: "copilot-studio"
+industry_vertical: null
+difficulty: "starter"
+source_type: "ragnar-custom"
+tags: ["beginner", "copilot-studio", "quickstart", "tutorial"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: true
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Copilot Studio VS Code Extension"
+mcp_tools: []
 ---
+
 
 
 # Your First Copilot Studio Agent

@@ -1,15 +1,26 @@
 ---
-name: knowledge-source-configuration
-description: Configure and optimize Copilot Studio knowledge sources including SharePoint, websites, Dataverse, and files for accurate grounded answers. Use when user says 'add knowledge source to Copilot Studio', 'SharePoint not returning results', 'agent giving wrong answers from documents', 'how do I configure RAG in Copilot Studio', 'knowledge source escalation rate too high'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, copilot-studio, knowledge, configuration]
-requires: Copilot Studio VS Code Extension
-mcp_tools:
-  - "copilot-studio:manage-agent"
-  - "copilot-studio:validate"
-  - "copilot-studio:chat-directline"
+name: "knowledge-source-configuration"
+slug: "knowledge-source-configuration"
+description: "Configure and optimize Copilot Studio knowledge sources including SharePoint, websites, Dataverse, and files for accurate grounded answers. Use when user says 'add knowledge source to Copilot Studio', 'SharePoint not returning results', 'agent giving wrong answers from documents', 'how do I configure RAG in Copilot Studio', 'knowledge source escalation rate too high'."
+tab: "business"
+domain: "copilot-studio"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "copilot-studio", "knowledge", "configuration"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Copilot Studio VS Code Extension"
+mcp_tools: []
 ---
+
 
 
 # Knowledge Source Configuration

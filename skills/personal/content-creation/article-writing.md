@@ -1,14 +1,26 @@
 ---
-name: article-writing
-description: Writes long-form articles, blog posts, tutorials, and newsletter content in Ragnar's practitioner voice. Use when user says 'write an article', 'blog post', 'write a guide', 'newsletter issue', 'medium post', 'thought leadership piece'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, content, writing, thought-leadership]
-requires: fal.ai MCP or OpenRouter
-mcp_tools:
-  - "fal-ai-mcp"
-  - "openrouter"
+name: "article-writing"
+slug: "article-writing"
+description: "Writes long-form articles, blog posts, tutorials, and newsletter content in Ragnar's practitioner voice. Use when user says 'write an article', 'blog post', 'write a guide', 'newsletter issue', 'medium post', 'thought leadership piece'."
+tab: "personal"
+domain: "content-creation"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "content", "writing", "thought-leadership"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "fal.ai MCP or OpenRouter"
+mcp_tools: []
 ---
+
 
 # Article Writing
 

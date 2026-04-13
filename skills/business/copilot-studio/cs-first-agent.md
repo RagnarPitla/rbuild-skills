@@ -1,15 +1,26 @@
 ---
-name: cs-first-agent
-description: Build your first Copilot Studio agent in 30 minutes, from blank canvas to published working agent. Use when user says 'build my first agent', 'getting started with Copilot Studio', 'create a new Copilot Studio agent', 'how do I publish a Copilot Studio agent', 'set up a Power Platform environment for agents'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [beginner, copilot-studio, first-agent, getting-started]
-requires: Copilot Studio VS Code Extension
-mcp_tools:
-  - "copilot-studio:manage-agent"
-  - "copilot-studio:validate"
-  - "copilot-studio:chat-directline"
+name: "cs-first-agent"
+slug: "cs-first-agent"
+description: "Build your first Copilot Studio agent in 30 minutes, from blank canvas to published working agent. Use when user says 'build my first agent', 'getting started with Copilot Studio', 'create a new Copilot Studio agent', 'how do I publish a Copilot Studio agent', 'set up a Power Platform environment for agents'."
+tab: "business"
+domain: "copilot-studio"
+industry_vertical: null
+difficulty: "starter"
+source_type: "ragnar-custom"
+tags: ["beginner", "copilot-studio", "first-agent", "getting-started"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Copilot Studio VS Code Extension"
+mcp_tools: []
 ---
+
 
 
 # CS First Agent

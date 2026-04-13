@@ -1,13 +1,26 @@
 ---
-name: mcp-server-patterns
+name: "mcp-server-patterns"
+slug: "mcp-server-patterns"
 description: "Production patterns for MCP servers. Tool chunking, streaming, error handling, caching, rate limiting, stateful vs stateless design, and batching for ERP systems. Use when user says 'MCP server best practices', 'how to handle large data in MCP', 'MCP caching strategy', 'MCP rate limiting', 'stateful MCP server', 'optimize MCP server for ERP performance'."
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [advanced, mcp, patterns, caching]
-requires: Node.js TypeScript SDK
-mcp_tools:
-  - "mcp-server-sdk"
+tab: "business"
+domain: "mcp"
+industry_vertical: null
+difficulty: "advanced"
+source_type: "ragnar-custom"
+tags: ["advanced", "mcp", "patterns", "caching"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Node.js TypeScript SDK"
+mcp_tools: []
 ---
+
 
 
 # MCP Server Patterns

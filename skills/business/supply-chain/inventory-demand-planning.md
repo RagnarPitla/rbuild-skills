@@ -1,13 +1,26 @@
 ---
-name: inventory-demand-planning
-description: Statistical demand forecasting, safety stock optimization, reorder point calculation, and replenishment planning integrated with D365 Master Planning. Use when user says "demand planning", "safety stock", "reorder point", "forecast accuracy", "slow-moving inventory", "min/max replenishment", "MRP", "master planning".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, supply-chain, demand-planning, forecasting]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
+name: "inventory-demand-planning"
+slug: "inventory-demand-planning"
+description: "Statistical demand forecasting, safety stock optimization, reorder point calculation, and replenishment planning integrated with D365 Master Planning. Use when user says \"demand planning\", \"safety stock\", \"reorder point\", \"forecast accuracy\", \"slow-moving inventory\", \"min/max replenishment\", \"MRP\", \"master planning\"."
+tab: "business"
+domain: "supply-chain"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "supply-chain", "demand-planning", "forecasting"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 # Inventory and Demand Planning
 

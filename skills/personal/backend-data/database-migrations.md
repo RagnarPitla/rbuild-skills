@@ -1,10 +1,26 @@
 ---
-name: database-migrations
+name: "database-migrations"
+slug: "database-migrations"
 description: "Zero-downtime database schema changes — expand/contract pattern, backwards-compatible migrations, feature flags, rollback strategies, and testing. Use when user says 'database migration', 'zero-downtime migration', 'schema change production', 'rename column safely', 'expand contract pattern', 'rollback migration', 'migration testing'."
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, backend, migrations, zero-downtime]
+tab: "personal"
+domain: "backend-data"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "backend", "migrations", "zero-downtime"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 # Database Migrations
 

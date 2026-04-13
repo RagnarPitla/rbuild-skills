@@ -1,13 +1,26 @@
 ---
-name: cost-aware-llm-pipeline
+name: "cost-aware-llm-pipeline"
+slug: "cost-aware-llm-pipeline"
 description: "LLM cost optimization — model routing by task complexity, caching, prompt compression, batch processing, and per-session budget tracking. Use when user says 'LLM cost optimization', 'reduce API costs', 'model routing', 'token budget', 'LLM spending too much', 'cheapest model for this task', 'prompt caching', 'batch API calls'."
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, ai-agent-dev, cost-optimization, model-routing]
-requires: Claude API
-mcp_tools:
-  - "claude-api"
+tab: "personal"
+domain: "ai-agent-dev"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "ai-agent-dev", "cost-optimization", "model-routing"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Claude API"
+mcp_tools: []
 ---
+
 
 # Cost-Aware LLM Pipeline
 

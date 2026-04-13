@@ -1,10 +1,26 @@
 ---
-name: golang-patterns
-description: Idiomatic Go patterns covering goroutines, channels, error handling, interfaces, and production-ready concurrency patterns. Use when user says 'Go patterns', 'idiomatic Go', 'golang best practices', 'goroutines', 'Go error handling', 'Go interfaces'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, language, golang, patterns]
+name: "golang-patterns"
+slug: "golang-patterns"
+description: "Idiomatic Go patterns covering goroutines, channels, error handling, interfaces, and production-ready concurrency patterns. Use when user says 'Go patterns', 'idiomatic Go', 'golang best practices', 'goroutines', 'Go error handling', 'Go interfaces'."
+tab: "personal"
+domain: "language-specific"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "language", "golang", "patterns"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 
 # Go Patterns

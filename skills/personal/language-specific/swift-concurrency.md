@@ -1,10 +1,26 @@
 ---
-name: swift-concurrency
-description: Swift 6.2 async/await, actors, structured concurrency, and single-threaded-by-default patterns for safe concurrent iOS and macOS apps. Use when user says 'Swift concurrency', 'Swift async await', 'Swift actors', 'async concurrent Swift', 'Swift structured concurrency', 'MainActor'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, language, swift, concurrency]
+name: "swift-concurrency"
+slug: "swift-concurrency"
+description: "Swift 6.2 async/await, actors, structured concurrency, and single-threaded-by-default patterns for safe concurrent iOS and macOS apps. Use when user says 'Swift concurrency', 'Swift async await', 'Swift actors', 'async concurrent Swift', 'Swift structured concurrency', 'MainActor'."
+tab: "personal"
+domain: "language-specific"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "language", "swift", "concurrency"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 
 # Swift Concurrency

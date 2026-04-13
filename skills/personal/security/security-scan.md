@@ -1,10 +1,26 @@
 ---
-name: security-scan
-description: Automated security scanning workflow covering SAST tools, dependency scanning, secrets detection, and container scanning with result prioritization. Use when user says 'security scan', 'SAST scan', 'dependency vulnerabilities', 'secrets detection', 'Semgrep CodeQL', 'npm audit snyk'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, security, sast, semgrep]
+name: "security-scan"
+slug: "security-scan"
+description: "Automated security scanning workflow covering SAST tools, dependency scanning, secrets detection, and container scanning with result prioritization. Use when user says 'security scan', 'SAST scan', 'dependency vulnerabilities', 'secrets detection', 'Semgrep CodeQL', 'npm audit snyk'."
+tab: "personal"
+domain: "security"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "security", "sast", "semgrep"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 
 # Security Scan

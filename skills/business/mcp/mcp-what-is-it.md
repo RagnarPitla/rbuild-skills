@@ -1,13 +1,26 @@
 ---
-name: mcp-what-is-it
+name: "mcp-what-is-it"
+slug: "mcp-what-is-it"
 description: "Model Context Protocol explained for business audiences. What it is, why it matters, and how it connects AI agents to enterprise systems. Use when user says 'explain MCP to me', 'what is model context protocol', 'MCP for non-technical audience', 'why does MCP matter for enterprise AI', 'MCP vs API', 'how does Copilot Studio connect to D365 with MCP'."
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [beginner, mcp, explainer, introduction]
-requires: Node.js TypeScript SDK
-mcp_tools:
-  - "mcp-server-sdk"
+tab: "business"
+domain: "mcp"
+industry_vertical: null
+difficulty: "starter"
+source_type: "ragnar-custom"
+tags: ["beginner", "mcp", "explainer", "introduction"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Node.js TypeScript SDK"
+mcp_tools: []
 ---
+
 
 
 # What is MCP?

@@ -1,13 +1,26 @@
 ---
-name: carrier-relationship-management
-description: Manage carrier portfolios, rate negotiations, performance tracking, and carrier selection optimization in D365 Transportation. Use when user says "carrier scorecard", "freight rate negotiation", "carrier performance", "carrier selection", "approved carrier list", or "rate negotiation".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, logistics, carrier, freight]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
+name: "carrier-relationship-management"
+slug: "carrier-relationship-management"
+description: "Manage carrier portfolios, rate negotiations, performance tracking, and carrier selection optimization in D365 Transportation. Use when user says \"carrier scorecard\", \"freight rate negotiation\", \"carrier performance\", \"carrier selection\", \"approved carrier list\", or \"rate negotiation\"."
+tab: "business"
+domain: "industry-verticals"
+industry_vertical: "distribution-logistics"
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "logistics", "carrier", "freight"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 # Carrier Relationship Management
 

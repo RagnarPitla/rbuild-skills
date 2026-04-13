@@ -1,13 +1,26 @@
 ---
-name: e2e-testing
-description: Playwright E2E testing patterns with Page Object Model, test isolation, data setup, CI integration, and network mocking. Use when user says 'E2E test', 'Playwright test', 'end-to-end testing', 'Page Object Model', 'browser testing', 'integration test with Playwright'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, frontend, e2e, playwright]
-mcp_tools:
-  - "playwright-mcp"
-  - "figma-mcp"
+name: "e2e-testing"
+slug: "e2e-testing"
+description: "Playwright E2E testing patterns with Page Object Model, test isolation, data setup, CI integration, and network mocking. Use when user says 'E2E test', 'Playwright test', 'end-to-end testing', 'Page Object Model', 'browser testing', 'integration test with Playwright'."
+tab: "personal"
+domain: "frontend"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "frontend", "e2e", "playwright"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 
 # E2E Testing

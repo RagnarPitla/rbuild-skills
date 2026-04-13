@@ -1,10 +1,26 @@
 ---
-name: python-patterns
-description: Pythonic idioms, PEP 8 standards, type hints, dataclasses, and best practices for robust Python applications. Use when user says 'Python best practices', 'Pythonic code', 'Python type hints', 'Python patterns', 'idiomatic Python', 'Python async await'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, language, python, patterns]
+name: "python-patterns"
+slug: "python-patterns"
+description: "Pythonic idioms, PEP 8 standards, type hints, dataclasses, and best practices for robust Python applications. Use when user says 'Python best practices', 'Pythonic code', 'Python type hints', 'Python patterns', 'idiomatic Python', 'Python async await'."
+tab: "personal"
+domain: "language-specific"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "language", "python", "patterns"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 
 # Python Patterns

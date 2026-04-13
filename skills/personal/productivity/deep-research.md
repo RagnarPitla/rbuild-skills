@@ -1,14 +1,26 @@
 ---
-name: deep-research
-description: Multi-source research workflow using Claude Code with Exa and Firecrawl MCPs, producing cited synthesized reports. Use when user says 'deep research', 'research a topic', 'research this for me', 'competitive analysis', 'what do people say about', 'briefing on'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, productivity, research, synthesis]
-requires: Exa MCP, Firecrawl MCP
-mcp_tools:
-  - "exa-mcp"
-  - "firecrawl-mcp"
+name: "deep-research"
+slug: "deep-research"
+description: "Multi-source research workflow using Claude Code with Exa and Firecrawl MCPs, producing cited synthesized reports. Use when user says 'deep research', 'research a topic', 'research this for me', 'competitive analysis', 'what do people say about', 'briefing on'."
+tab: "personal"
+domain: "productivity"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "productivity", "research", "synthesis"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Exa MCP, Firecrawl MCP"
+mcp_tools: []
 ---
+
 
 # Deep Research
 

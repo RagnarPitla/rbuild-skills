@@ -1,10 +1,26 @@
 ---
-name: meeting-notes-processor
-description: Transforms raw meeting notes or transcripts into structured action items, decisions log, and follow-up assignments with deadlines. Use when user says 'meeting notes', 'process this transcript', 'action items from meeting', 'summarize the meeting', 'decisions from today', 'turn these notes into action items'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [beginner, productivity, meeting-notes, action-items]
+name: "meeting-notes-processor"
+slug: "meeting-notes-processor"
+description: "Transforms raw meeting notes or transcripts into structured action items, decisions log, and follow-up assignments with deadlines. Use when user says 'meeting notes', 'process this transcript', 'action items from meeting', 'summarize the meeting', 'decisions from today', 'turn these notes into action items'."
+tab: "personal"
+domain: "productivity"
+industry_vertical: null
+difficulty: "starter"
+source_type: "ragnar-custom"
+tags: ["beginner", "productivity", "meeting-notes", "action-items"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 # Meeting Notes Processor
 

@@ -1,13 +1,26 @@
 ---
-name: capacity-planner
-description: Analyzes production capacity in D365 by calculating work center loads, identifying bottlenecks, and recommending capacity leveling actions. Use when user says "capacity planning", "work center utilization", "overloaded work center", "capacity exception", "production scheduling", "bottleneck analysis", or "available capacity".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, manufacturing, capacity, planning]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
+name: "capacity-planner"
+slug: "capacity-planner"
+description: "Analyzes production capacity in D365 by calculating work center loads, identifying bottlenecks, and recommending capacity leveling actions. Use when user says \"capacity planning\", \"work center utilization\", \"overloaded work center\", \"capacity exception\", \"production scheduling\", \"bottleneck analysis\", or \"available capacity\"."
+tab: "business"
+domain: "industry-verticals"
+industry_vertical: "manufacturing-discrete"
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "manufacturing", "capacity", "planning"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 
 # Production Capacity Planner

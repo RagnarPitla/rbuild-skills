@@ -1,15 +1,26 @@
 ---
-name: cs-knowledge-sources
-description: Configure SharePoint, website, and Dataverse knowledge sources for accurate grounded answers in Copilot Studio agents. Use when user says 'add knowledge to my agent', 'connect SharePoint to Copilot Studio', 'agent giving wrong answers', 'my agent is hallucinating', 'configure RAG for Copilot Studio', 'knowledge source not returning results'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, copilot-studio, knowledge, sharepoint]
-requires: Copilot Studio VS Code Extension
-mcp_tools:
-  - "copilot-studio:manage-agent"
-  - "copilot-studio:validate"
-  - "copilot-studio:chat-directline"
+name: "cs-knowledge-sources"
+slug: "cs-knowledge-sources"
+description: "Configure SharePoint, website, and Dataverse knowledge sources for accurate grounded answers in Copilot Studio agents. Use when user says 'add knowledge to my agent', 'connect SharePoint to Copilot Studio', 'agent giving wrong answers', 'my agent is hallucinating', 'configure RAG for Copilot Studio', 'knowledge source not returning results'."
+tab: "business"
+domain: "copilot-studio"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "copilot-studio", "knowledge", "sharepoint"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Copilot Studio VS Code Extension"
+mcp_tools: []
 ---
+
 
 
 # CS Knowledge Sources

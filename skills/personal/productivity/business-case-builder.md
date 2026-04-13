@@ -1,10 +1,26 @@
 ---
-name: business-case-builder
+name: "business-case-builder"
+slug: "business-case-builder"
 description: "Guides the user through building a complete 6-section business case for any investment, project, or initiative. Produces a structured document with problem statement, solution options, ROI calculation, risks, and recommendation. Use when user says 'build a business case', 'help me write a business case', 'ROI analysis', 'justify this investment', 'I need approval for', 'make the case for'."
-version: 1.0.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, universal, business, strategy, roi]
+tab: "personal"
+domain: "productivity"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "universal", "business", "strategy", "roi"]
+version: "1.0.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: true
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 # Business Case Builder
 

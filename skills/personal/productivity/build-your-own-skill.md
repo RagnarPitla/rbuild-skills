@@ -1,10 +1,26 @@
 ---
-name: build-your-own-skill
+name: "build-your-own-skill"
+slug: "build-your-own-skill"
 description: "A step-by-step guide for beginners to create their first Claude Code skill from scratch. Covers what a skill is, when to make one, the minimal template, and how to test it. Use when user says 'build my own skill', 'create a skill', 'how do I make a skill', 'write a skill file', 'what is a skill', 'build your own skill'."
-version: 1.0.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [beginner, universal, skills, claude-code, getting-started]
+tab: "personal"
+domain: "productivity"
+industry_vertical: null
+difficulty: "starter"
+source_type: "ragnar-custom"
+tags: ["beginner", "universal", "skills", "claude-code", "getting-started"]
+version: "1.0.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 # Build Your Own Skill
 

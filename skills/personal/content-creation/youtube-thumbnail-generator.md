@@ -1,14 +1,26 @@
 ---
-name: youtube-thumbnail-generator
-description: Generates high-converting YouTube thumbnail prompts via OpenRouter (Google Nano Banana) with composition rules, A/B variants, and prompt formulas. Use when user says 'YouTube thumbnail', 'thumbnail for my video', 'thumbnail idea', 'create a thumbnail', 'generate thumbnail variants'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, content, youtube, thumbnail]
+name: "youtube-thumbnail-generator"
+slug: "youtube-thumbnail-generator"
+description: "Generates high-converting YouTube thumbnail prompts via OpenRouter (Google Nano Banana) with composition rules, A/B variants, and prompt formulas. Use when user says 'YouTube thumbnail', 'thumbnail for my video', 'thumbnail idea', 'create a thumbnail', 'generate thumbnail variants'."
+tab: "personal"
+domain: "content-creation"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "content", "youtube", "thumbnail"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
 requires: "OpenRouter API Key"
-mcp_tools:
-  - "openrouter"
-  - "generate-image-open"
+mcp_tools: []
 ---
+
 
 # YouTube Thumbnail Generator
 

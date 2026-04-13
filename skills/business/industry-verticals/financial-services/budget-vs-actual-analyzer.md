@@ -1,13 +1,26 @@
 ---
-name: budget-vs-actual-analyzer
-description: Analyzes budget variances in D365 Finance, identifies top drivers, generates plain-language explanations, and flags items needing management action. Use when user says "budget vs actual", "variance analysis", "over budget", "under budget", "budget commentary", "management reporting", or "explain budget variance".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, financial-services, budget, variance-analysis]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
+name: "budget-vs-actual-analyzer"
+slug: "budget-vs-actual-analyzer"
+description: "Analyzes budget variances in D365 Finance, identifies top drivers, generates plain-language explanations, and flags items needing management action. Use when user says \"budget vs actual\", \"variance analysis\", \"over budget\", \"under budget\", \"budget commentary\", \"management reporting\", or \"explain budget variance\"."
+tab: "business"
+domain: "industry-verticals"
+industry_vertical: "financial-services"
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "financial-services", "budget", "variance-analysis"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 
 # Budget vs Actual Analyzer

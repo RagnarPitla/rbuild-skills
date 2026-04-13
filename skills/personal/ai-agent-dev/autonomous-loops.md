@@ -1,13 +1,26 @@
 ---
-name: autonomous-loops
+name: "autonomous-loops"
+slug: "autonomous-loops"
 description: "Patterns for continuous autonomous agent loops — sequential pipelines, event-driven, scheduled, multi-agent DAG, quality gates, and recovery. Use when user says 'autonomous agent loop', 'continuous agent pipeline', 'agent runs automatically', 'scheduled agent', 'multi-agent DAG', 'loop termination', 'quality gate in agent pipeline'."
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [advanced, ai-agent-dev, autonomous, pipelines]
-requires: Claude API
-mcp_tools:
-  - "claude-api"
+tab: "personal"
+domain: "ai-agent-dev"
+industry_vertical: null
+difficulty: "advanced"
+source_type: "ragnar-custom"
+tags: ["advanced", "ai-agent-dev", "autonomous", "pipelines"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Claude API"
+mcp_tools: []
 ---
+
 
 # Autonomous Loops
 

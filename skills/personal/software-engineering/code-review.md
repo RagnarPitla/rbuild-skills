@@ -1,10 +1,26 @@
 ---
-name: code-review
-description: Structured code review checklist covering correctness, security, performance, and maintainability. Use when user says 'review my code', 'code review checklist', 'PR review', 'what to look for in a code review', 'review this pull request', 'give feedback on my code'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, software-engineering, code-review, checklist]
+name: "code-review"
+slug: "code-review"
+description: "Structured code review checklist covering correctness, security, performance, and maintainability. Use when user says 'review my code', 'code review checklist', 'PR review', 'what to look for in a code review', 'review this pull request', 'give feedback on my code'."
+tab: "personal"
+domain: "software-engineering"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "software-engineering", "code-review", "checklist"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: true
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 
 # Code Review

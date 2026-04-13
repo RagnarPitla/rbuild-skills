@@ -1,14 +1,26 @@
 ---
-name: image-prompt-generator
-description: Generates optimized prompts for AI image tools including Midjourney, DALL-E, Stable Diffusion, and fal.ai. Covers technical diagrams, LinkedIn featured images, YouTube thumbnails, and infographics. Use when user says 'image prompt', 'generate an image', 'create a visual', 'thumbnail prompt', 'diagram prompt', 'LinkedIn image'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, content, image-prompts, ai-images]
-requires: fal.ai MCP or OpenRouter
-mcp_tools:
-  - "fal-ai-mcp"
-  - "openrouter"
+name: "image-prompt-generator"
+slug: "image-prompt-generator"
+description: "Generates optimized prompts for AI image tools including Midjourney, DALL-E, Stable Diffusion, and fal.ai. Covers technical diagrams, LinkedIn featured images, YouTube thumbnails, and infographics. Use when user says 'image prompt', 'generate an image', 'create a visual', 'thumbnail prompt', 'diagram prompt', 'LinkedIn image'."
+tab: "personal"
+domain: "content-creation"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "content", "image-prompts", "ai-images"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "fal.ai MCP or OpenRouter"
+mcp_tools: []
 ---
+
 
 # Image Prompt Generator
 

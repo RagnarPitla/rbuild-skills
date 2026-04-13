@@ -1,10 +1,26 @@
 ---
-name: api-design
-description: REST API design principles covering resource naming, HTTP semantics, status codes, pagination, versioning, and OpenAPI documentation. Use when user says 'design an API', 'REST API best practices', 'API versioning', 'pagination strategy', 'OpenAPI spec', 'status code selection'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, software-engineering, api, rest]
+name: "api-design"
+slug: "api-design"
+description: "REST API design principles covering resource naming, HTTP semantics, status codes, pagination, versioning, and OpenAPI documentation. Use when user says 'design an API', 'REST API best practices', 'API versioning', 'pagination strategy', 'OpenAPI spec', 'status code selection'."
+tab: "personal"
+domain: "software-engineering"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "software-engineering", "api", "rest"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: true
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 
 # API Design

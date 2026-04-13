@@ -1,13 +1,26 @@
 ---
-name: batch-order-manager
-description: Manages pharmaceutical and process manufacturing batch orders including potency adjustments, yield tracking, and GxP compliance checkpoint enforcement. Use when user says "batch order", "create batch", "batch yield", "batch progress", "process manufacturing compliance", "batch record assembly", or "GxP checkpoint".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, manufacturing, batch-order, process-manufacturing]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
+name: "batch-order-manager"
+slug: "batch-order-manager"
+description: "Manages pharmaceutical and process manufacturing batch orders including potency adjustments, yield tracking, and GxP compliance checkpoint enforcement. Use when user says \"batch order\", \"create batch\", \"batch yield\", \"batch progress\", \"process manufacturing compliance\", \"batch record assembly\", or \"GxP checkpoint\"."
+tab: "business"
+domain: "industry-verticals"
+industry_vertical: "manufacturing-process"
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "manufacturing", "batch-order", "process-manufacturing"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 
 # Batch Order Manager

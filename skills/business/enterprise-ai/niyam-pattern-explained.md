@@ -1,15 +1,26 @@
 ---
-name: niyam-pattern-explained
+name: "niyam-pattern-explained"
+slug: "niyam-pattern-explained"
 description: "Ragnar's signature pattern for policy-driven AI agents in D365. Dataverse policies, D365 MCP, and Power Automate from first principles. Use when user says 'Niyam pattern', 'policy-driven agent', 'business rules in Dataverse', 'how to make agent rules editable by business users', 'avoid hardcoding rules in Copilot Studio', 'agent policy management without IT'."
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, niyam-pattern, architecture, policy-driven]
-requires: Copilot Studio, Dataverse MCP
-mcp_tools:
-  - "copilot-studio-mcp"
-  - "dataverse-mcp"
-  - "d365-fno-mcp"
+tab: "business"
+domain: "enterprise-ai"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "niyam-pattern", "architecture", "policy-driven"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: true
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Copilot Studio, Dataverse MCP"
+mcp_tools: []
 ---
+
 
 
 # The Niyam Pattern

@@ -1,13 +1,26 @@
 ---
-name: docker-patterns
-description: Dockerfile best practices with multi-stage builds, layer caching, non-root user patterns, docker-compose for local dev, networking, volume management, and environment variable handling. Use when user says 'Docker setup', 'containerize my app', 'Dockerfile', 'docker-compose', 'Docker best practices', 'container setup'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, devops, docker, containers]
-requires: Azure CLI, Docker
-mcp_tools:
-  - "azure-cli"
+name: "docker-patterns"
+slug: "docker-patterns"
+description: "Dockerfile best practices with multi-stage builds, layer caching, non-root user patterns, docker-compose for local dev, networking, volume management, and environment variable handling. Use when user says 'Docker setup', 'containerize my app', 'Dockerfile', 'docker-compose', 'Docker best practices', 'container setup'."
+tab: "personal"
+domain: "devops"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "devops", "docker", "containers"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Azure CLI, Docker"
+mcp_tools: []
 ---
+
 
 # Docker Patterns
 

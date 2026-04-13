@@ -1,14 +1,26 @@
 ---
-name: youtube-script
-description: Writes YouTube scripts for tech thought leadership in Ragnar's style, with hook formula, 3-shift structure, B-roll cues, and CTA. Use when user says 'write a YouTube script', 'video script', 'script for my video', 'YouTube video about', 'script for a tech video'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, content, youtube, script]
-requires: fal.ai MCP or OpenRouter
-mcp_tools:
-  - "fal-ai-mcp"
-  - "openrouter"
+name: "youtube-script"
+slug: "youtube-script"
+description: "Writes YouTube scripts for tech thought leadership in Ragnar's style, with hook formula, 3-shift structure, B-roll cues, and CTA. Use when user says 'write a YouTube script', 'video script', 'script for my video', 'YouTube video about', 'script for a tech video'."
+tab: "personal"
+domain: "content-creation"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "content", "youtube", "script"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: true
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "fal.ai MCP or OpenRouter"
+mcp_tools: []
 ---
+
 
 # YouTube Script
 

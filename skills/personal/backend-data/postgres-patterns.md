@@ -1,10 +1,26 @@
 ---
-name: postgres-patterns
+name: "postgres-patterns"
+slug: "postgres-patterns"
 description: "PostgreSQL query optimization, index strategies, EXPLAIN ANALYZE, connection pooling, JSONB patterns, and full-text search. Use when user says 'Postgres optimization', 'slow query Postgres', 'EXPLAIN ANALYZE', 'index strategy', 'partial index', 'covering index', 'PgBouncer', 'JSONB query', 'Postgres full-text search'."
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, backend, postgres, query-optimization]
+tab: "personal"
+domain: "backend-data"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "backend", "postgres", "query-optimization"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 # PostgreSQL Patterns
 

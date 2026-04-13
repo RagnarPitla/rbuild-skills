@@ -1,14 +1,26 @@
 ---
-name: import-skills-to-dataverse
-description: Process for importing skill definition markdown files into Dataverse as Business Skills records — creating structured table entries with category, description, complexity, and MCP tool metadata. Use when user says "import skills to Dataverse", "skills4dataverse import", "upload skill definitions", "create skill records in Dataverse", "bulk import skills", "Power Automate skill import".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, dataverse, import, business-skills]
-requires: Dataverse MCP, Power Automate
-mcp_tools:
-  - "dataverse-mcp"
-  - "power-automate"
+name: "import-skills-to-dataverse"
+slug: "import-skills-to-dataverse"
+description: "Process for importing skill definition markdown files into Dataverse as Business Skills records — creating structured table entries with category, description, complexity, and MCP tool metadata. Use when user says \"import skills to Dataverse\", \"skills4dataverse import\", \"upload skill definitions\", \"create skill records in Dataverse\", \"bulk import skills\", \"Power Automate skill import\"."
+tab: "business"
+domain: "power-platform"
+industry_vertical: null
+difficulty: "starter"
+source_type: "ragnar-custom"
+tags: ["intermediate", "dataverse", "import", "business-skills"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Dataverse MCP, Power Automate"
+mcp_tools: []
 ---
+
 
 # Import Skills to Dataverse
 

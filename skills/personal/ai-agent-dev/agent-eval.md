@@ -1,13 +1,26 @@
 ---
-name: agent-eval
+name: "agent-eval"
+slug: "agent-eval"
 description: "Evaluation framework for AI agents — pass/fail test cases, regression harnesses, RAGAS for RAG pipelines, and using Claude as judge. Use when user says 'evaluate my agent', 'agent evaluation', 'how do I measure agent quality', 'build an eval harness', 'LLM as judge', 'task completion rate', 'agent regression testing'."
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [advanced, ai-agent-dev, evaluation, llm-judge]
-requires: Claude API
-mcp_tools:
-  - "claude-api"
+tab: "personal"
+domain: "ai-agent-dev"
+industry_vertical: null
+difficulty: "advanced"
+source_type: "ragnar-custom"
+tags: ["advanced", "ai-agent-dev", "evaluation", "llm-judge"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Claude API"
+mcp_tools: []
 ---
+
 
 # Agent Eval
 

@@ -1,10 +1,26 @@
 ---
-name: coding-standards
-description: Universal coding standards and language-agnostic principles for clean, maintainable code. Use when user says 'coding standards', 'code style guide', 'naming conventions', 'clean code principles', 'function design', 'error handling patterns'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [beginner, software-engineering, coding-standards, conventions]
+name: "coding-standards"
+slug: "coding-standards"
+description: "Universal coding standards and language-agnostic principles for clean, maintainable code. Use when user says 'coding standards', 'code style guide', 'naming conventions', 'clean code principles', 'function design', 'error handling patterns'."
+tab: "personal"
+domain: "software-engineering"
+industry_vertical: null
+difficulty: "starter"
+source_type: "ragnar-custom"
+tags: ["beginner", "software-engineering", "coding-standards", "conventions"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 
 # Coding Standards

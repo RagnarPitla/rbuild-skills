@@ -1,13 +1,26 @@
 ---
-name: asset-health-monitor
-description: Monitors medical equipment health, maintenance schedules, and calibration compliance in healthcare and life sciences settings. Use when user says "equipment calibration due", "asset maintenance", "equipment qualification", "MTBF analysis", "overdue calibration", "medical device maintenance", or "equipment downtime tracking".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, healthcare, asset-management, gmp]
-requires: D365 F&O MCP Server
-mcp_tools:
-  - "d365-fno-mcp"
+name: "asset-health-monitor"
+slug: "asset-health-monitor"
+description: "Monitors medical equipment health, maintenance schedules, and calibration compliance in healthcare and life sciences settings. Use when user says \"equipment calibration due\", \"asset maintenance\", \"equipment qualification\", \"MTBF analysis\", \"overdue calibration\", \"medical device maintenance\", or \"equipment downtime tracking\"."
+tab: "business"
+domain: "industry-verticals"
+industry_vertical: "healthcare"
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "healthcare", "asset-management", "gmp"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "D365 F&O MCP Server"
+mcp_tools: []
 ---
+
 
 
 # Medical Asset Health Monitor

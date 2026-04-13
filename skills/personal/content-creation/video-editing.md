@@ -1,14 +1,26 @@
 ---
-name: video-editing
-description: AI-assisted video editing workflow for YouTube tech content, covering transcript-based cutting, B-roll selection, chapter markers, auto-captions, and thumbnail frame selection. Use when user says 'edit my video', 'video editing workflow', 'cut my footage', 'add chapters', 'auto captions', 'B-roll ideas'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, content, video-editing, youtube]
-requires: fal.ai MCP or OpenRouter
-mcp_tools:
-  - "fal-ai-mcp"
-  - "openrouter"
+name: "video-editing"
+slug: "video-editing"
+description: "AI-assisted video editing workflow for YouTube tech content, covering transcript-based cutting, B-roll selection, chapter markers, auto-captions, and thumbnail frame selection. Use when user says 'edit my video', 'video editing workflow', 'cut my footage', 'add chapters', 'auto captions', 'B-roll ideas'."
+tab: "personal"
+domain: "content-creation"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "content", "video-editing", "youtube"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "fal.ai MCP or OpenRouter"
+mcp_tools: []
 ---
+
 
 # Video Editing
 

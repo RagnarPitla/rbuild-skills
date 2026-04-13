@@ -1,10 +1,26 @@
 ---
-name: architecture-decision-records
-description: ADR template and workflow for capturing architectural decisions with context, rationale, and alternatives. Use when user says 'ADR template', 'architecture decision', 'document this decision', 'why did we choose', 'record architectural choice', 'decision log'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [intermediate, software-engineering, adr, architecture]
+name: "architecture-decision-records"
+slug: "architecture-decision-records"
+description: "ADR template and workflow for capturing architectural decisions with context, rationale, and alternatives. Use when user says 'ADR template', 'architecture decision', 'document this decision', 'why did we choose', 'record architectural choice', 'decision log'."
+tab: "personal"
+domain: "software-engineering"
+industry_vertical: null
+difficulty: "intermediate"
+source_type: "ragnar-custom"
+tags: ["intermediate", "software-engineering", "adr", "architecture"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 
 # Architecture Decision Records

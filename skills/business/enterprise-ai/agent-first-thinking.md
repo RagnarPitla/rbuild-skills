@@ -1,15 +1,26 @@
 ---
-name: agent-first-thinking
-description: The paradigm shift from automation-first to agent-first enterprise design. Use when user says "should I build an agent or a flow", "agent vs automation decision", "when does AI add value over RPA", "how do I decide if something needs an agent", "what is agent-first thinking", "stop bolting AI onto workflows".
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [beginner, agentic-erp, strategy, decision-framework]
-requires: Copilot Studio, Dataverse MCP
-mcp_tools:
-  - "copilot-studio-mcp"
-  - "dataverse-mcp"
-  - "d365-fno-mcp"
+name: "agent-first-thinking"
+slug: "agent-first-thinking"
+description: "The paradigm shift from automation-first to agent-first enterprise design. Use when user says \"should I build an agent or a flow\", \"agent vs automation decision\", \"when does AI add value over RPA\", \"how do I decide if something needs an agent\", \"what is agent-first thinking\", \"stop bolting AI onto workflows\"."
+tab: "business"
+domain: "enterprise-ai"
+industry_vertical: null
+difficulty: "starter"
+source_type: "ragnar-custom"
+tags: ["beginner", "agentic-erp", "strategy", "decision-framework"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: true
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Copilot Studio, Dataverse MCP"
+mcp_tools: []
 ---
+
 
 
 # Agent-First Thinking for Enterprise

@@ -1,10 +1,26 @@
 ---
-name: save-session
-description: Saves a structured summary of the current Claude Code session and loads it for seamless continuation. Exports decisions, code written, next steps, and open questions as markdown. Use when user says 'save my session', 'save progress', 'wrap up this session', 'export what we did', 'session summary', 'save context'.
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [beginner, productivity, session, context]
+name: "save-session"
+slug: "save-session"
+description: "Saves a structured summary of the current Claude Code session and loads it for seamless continuation. Exports decisions, code written, next steps, and open questions as markdown. Use when user says 'save my session', 'save progress', 'wrap up this session', 'export what we did', 'session summary', 'save context'."
+tab: "personal"
+domain: "productivity"
+industry_vertical: null
+difficulty: "starter"
+source_type: "ragnar-custom"
+tags: ["beginner", "productivity", "session", "context"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "None"
+mcp_tools: []
 ---
+
 
 # Save Session
 

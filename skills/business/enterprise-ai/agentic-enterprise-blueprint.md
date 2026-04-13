@@ -1,15 +1,26 @@
 ---
-name: agentic-enterprise-blueprint
+name: "agentic-enterprise-blueprint"
+slug: "agentic-enterprise-blueprint"
 description: "Ragnar's six-phase framework for making your company agentic. How to identify agent opportunities, sequence the rollout, and measure success. Use when user says 'how do I become an agentic enterprise', 'enterprise AI transformation roadmap', 'where do I start with agentic ERP', 'how to scale AI agents across the business', 'agent portfolio strategy', 'ROI framework for AI agents'."
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [advanced, agentic-enterprise, strategy, blueprint]
-requires: Copilot Studio, Dataverse MCP
-mcp_tools:
-  - "copilot-studio-mcp"
-  - "dataverse-mcp"
-  - "d365-fno-mcp"
+tab: "business"
+domain: "enterprise-ai"
+industry_vertical: null
+difficulty: "advanced"
+source_type: "ragnar-custom"
+tags: ["advanced", "agentic-enterprise", "strategy", "blueprint"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Copilot Studio, Dataverse MCP"
+mcp_tools: []
 ---
+
 
 
 # Agentic Enterprise Blueprint

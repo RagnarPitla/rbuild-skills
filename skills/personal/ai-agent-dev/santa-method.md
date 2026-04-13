@@ -1,13 +1,26 @@
 ---
-name: santa-method
+name: "santa-method"
+slug: "santa-method"
 description: "Multi-agent adversarial verification pattern — two independent review agents analyze a solution from different angles, must both agree before proceeding. Use when user says 'Santa method', 'adversarial review', 'multi-agent verification', 'two agent review', 'convergence loop', 'verify critical output', 'agent checks agent work'."
-version: 1.1.0
-author: Ragnar Pitla | skill.rbuild.ai
-tags: [advanced, ai-agent-dev, multi-agent, adversarial]
-requires: Claude API
-mcp_tools:
-  - "claude-api"
+tab: "personal"
+domain: "ai-agent-dev"
+industry_vertical: null
+difficulty: "advanced"
+source_type: "ragnar-custom"
+tags: ["advanced", "ai-agent-dev", "multi-agent", "adversarial"]
+version: "1.1.0"
+icon_emoji: "⚡"
+is_coming_soon: false
+is_featured: false
+author: "Ragnar Pitla | skill.rbuild.ai"
+learning_path: null
+learning_path_position: null
+prerequisites: []
+references: []
+requires: "Claude API"
+mcp_tools: []
 ---
+
 
 # Santa Method
 
