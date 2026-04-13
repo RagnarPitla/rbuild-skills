@@ -31,6 +31,8 @@ const DIFFICULTY_MAP = { beginner: 'starter' };
 const PATH_TO_DOMAIN = {
   'software-engineering':    'software-engineering',
   'ai-agent-dev':            'ai-agent-dev',
+  'claude-code':             'claude-code',
+  'developer-tools':         'developer-tools',
   'frontend':                'frontend',
   'language-specific':       'language-specific',
   'backend-data':            'backend-data',
