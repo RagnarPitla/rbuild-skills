@@ -1,6 +1,7 @@
 ---
 name: vscode-tasks-terminal
 description: "Configure tasks.json to run build scripts and automate workflows in VS Code. Use when user says 'VS Code tasks.json', 'run build task VS Code', 'VS Code terminal profiles', 'bind task to shortcut', 'VS Code integrated terminal', 'run tests from VS Code task'."
+tab: developer-tools
 version: 1.0.0
 author: Ragnar Pitla | skill.rbuild.ai
 tags: [intermediate, vscode, tasks, terminal]

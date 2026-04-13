@@ -1,6 +1,7 @@
 ---
 name: claude-code-hooks
 description: "Configure shell commands that fire at Claude Code lifecycle events: PreToolUse, PostToolUse, Notification, Stop, SubagentStop. Use when user says 'auto-run prettier after edits', 'block dangerous commands', 'send notifications when Claude finishes', 'enforce code quality automatically', 'run linter on every file change'."
+tab: claude-code
 version: 1.0.0
 author: Ragnar Pitla | skill.rbuild.ai
 tags: [advanced, claude-code, hooks, automation]

@@ -1,6 +1,7 @@
 ---
 name: claude-code-mcp
 description: "Connect Claude Code to external tools and services using MCP (Model Context Protocol) servers. Use when user says 'connect Claude to my database', 'add GitHub MCP', 'use Playwright with Claude Code', 'how do I set up MCP servers', 'give Claude access to my tools'."
+tab: claude-code
 version: 1.0.0
 author: Ragnar Pitla | skill.rbuild.ai
 tags: [intermediate, claude-code, mcp, integrations]

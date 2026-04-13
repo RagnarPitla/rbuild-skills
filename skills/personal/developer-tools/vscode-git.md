@@ -1,6 +1,7 @@
 ---
 name: vscode-git
 description: "Use VS Code's built-in Source Control panel and GitLens for git workflows. Use when user says 'git in VS Code', 'stage and commit in VS Code', 'resolve merge conflicts VS Code', 'GitLens', 'VS Code source control', 'git diff VS Code'."
+tab: developer-tools
 version: 1.0.0
 author: Ragnar Pitla | skill.rbuild.ai
 tags: [intermediate, vscode, git, source-control]

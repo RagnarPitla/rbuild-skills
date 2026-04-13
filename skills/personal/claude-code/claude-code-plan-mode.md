@@ -1,6 +1,7 @@
 ---
 name: claude-code-plan-mode
 description: "Use Plan mode in Claude Code to explore and plan before writing any code. Use when user says 'plan before coding', 'how do I use plan mode', 'make Claude think before acting', 'avoid wrong implementations', 'read-only exploration mode', 'shift tab plan mode'."
+tab: claude-code
 version: 1.0.0
 author: Ragnar Pitla | skill.rbuild.ai
 tags: [intermediate, claude-code, planning, workflow]

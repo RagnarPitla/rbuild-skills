@@ -1,6 +1,7 @@
 ---
 name: github-cli-scripting
 description: "Script and automate GitHub workflows with gh CLI output formatting. Use when user says 'format gh output', 'pipe gh to fzf', 'write a gh script', 'gh json fields', 'gh template output', 'set gh alias', 'use GH_TOKEN in CI'."
+tab: github-cli
 version: 1.0.0
 author: Ragnar Pitla | skill.rbuild.ai
 tags: [advanced, github-cli, scripting, automation]

@@ -1,6 +1,7 @@
 ---
 name: github-cli-actions
 description: "Control GitHub Actions from the terminal. Use when user says 'trigger a workflow', 'watch CI run', 'rerun failed jobs', 'download artifacts', 'set a secret', 'check workflow status'."
+tab: github-cli
 version: 1.0.0
 author: Ragnar Pitla | skill.rbuild.ai
 tags: [intermediate, github-cli, github-actions, ci-cd]

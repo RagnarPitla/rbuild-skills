@@ -1,6 +1,7 @@
 ---
 name: github-cli-pr
 description: "Full PR lifecycle in the terminal. Use when user says 'create a pull request', 'open a PR', 'merge my PR', 'review pull request', 'check PR status', 'auto-merge PR'."
+tab: github-cli
 version: 1.0.0
 author: Ragnar Pitla | skill.rbuild.ai
 tags: [intermediate, github-cli, pull-requests, code-review]

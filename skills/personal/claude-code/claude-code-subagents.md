@@ -1,6 +1,7 @@
 ---
 name: claude-code-subagents
 description: "Spawn specialized subagents in Claude Code for parallel execution and least-privilege task isolation. Use when user says 'parallel agents', 'spawn a subagent', 'define a custom agent', 'code review agent', 'security audit agent', 'multi-agent Claude Code workflow'."
+tab: claude-code
 version: 1.0.0
 author: Ragnar Pitla | skill.rbuild.ai
 tags: [advanced, claude-code, subagents, multi-agent]

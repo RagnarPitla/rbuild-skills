@@ -1,6 +1,7 @@
 ---
 name: github-cli-auth
 description: "Set up and manage GitHub CLI authentication. Use when user says 'login to gh', 'add another GitHub account', 'switch between work and personal account', 'add scopes to token', 'set up gh in CI', 'configure GitHub Enterprise'."
+tab: github-cli
 version: 1.0.0
 author: Ragnar Pitla | skill.rbuild.ai
 tags: [beginner, github-cli, authentication, setup]

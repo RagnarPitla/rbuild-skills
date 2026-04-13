@@ -1,6 +1,7 @@
 ---
 name: claude-code-headless
 description: "Run Claude Code non-interactively in CI/CD pipelines, scripts, and automation. Use when user says 'run Claude in CI', 'non-interactive mode', 'claude -p command', 'automate Claude Code', 'GitHub Actions with Claude', 'pipe output to Claude', 'scheduled Claude tasks'."
+tab: claude-code
 version: 1.0.0
 author: Ragnar Pitla | skill.rbuild.ai
 tags: [advanced, claude-code, ci-cd, automation]

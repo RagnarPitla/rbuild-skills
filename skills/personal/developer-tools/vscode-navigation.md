@@ -1,6 +1,7 @@
 ---
 name: vscode-navigation
 description: "Navigate large codebases efficiently in VS Code. Use when user says 'go to definition VS Code', 'find all references', 'VS Code breadcrumbs', 'navigate code VS Code', 'workspace symbol search', 'VS Code Outline view'."
+tab: developer-tools
 version: 1.0.0
 author: Ragnar Pitla | skill.rbuild.ai
 tags: [beginner, vscode, navigation, code-exploration]

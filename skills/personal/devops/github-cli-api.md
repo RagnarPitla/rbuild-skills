@@ -1,6 +1,7 @@
 ---
 name: github-cli-api
 description: "Call GitHub REST and GraphQL APIs directly from the terminal. Use when user says 'call the GitHub API', 'bulk close issues', 'get PR reviewers', 'update repo settings', 'paginate all results', 'automate GitHub with scripts'."
+tab: github-cli
 version: 1.0.0
 author: Ragnar Pitla | skill.rbuild.ai
 tags: [advanced, github-cli, api, automation]

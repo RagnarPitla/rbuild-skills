@@ -1,6 +1,7 @@
 ---
 name: vscode-customization
 description: "Customize VS Code with settings.json, profiles, snippets, and per-language formatters. Use when user says 'VS Code settings.json', 'create VS Code snippet', 'VS Code profiles', 'format on save VS Code', 'customize VS Code', 'recommended extensions workspace'."
+tab: developer-tools
 version: 1.0.0
 author: Ragnar Pitla | skill.rbuild.ai
 tags: [intermediate, vscode, settings, snippets]

@@ -1,6 +1,7 @@
 ---
 name: claude-code-custom-commands
 description: "Create reusable slash commands for Claude Code by placing markdown files in .claude/commands/ or ~/.claude/commands/. Use when user says 'create a custom command', 'add a slash command', 'make a reusable prompt', 'share commands with my team', 'automate my workflow with commands'."
+tab: claude-code
 version: 1.0.0
 author: Ragnar Pitla | skill.rbuild.ai
 tags: [intermediate, claude-code, custom-commands, productivity]

@@ -1,6 +1,7 @@
 ---
 name: github-cli-repo
 description: "Create, clone, fork, and manage GitHub repositories. Use when user says 'create a new repo', 'fork and clone', 'sync my fork', 'create repo from template', 'create a release', 'change repo visibility'."
+tab: github-cli
 version: 1.0.0
 author: Ragnar Pitla | skill.rbuild.ai
 tags: [beginner, github-cli, repositories, setup]

@@ -1,6 +1,7 @@
 ---
 name: claude-code-memory
 description: "Use CLAUDE.md files to give Claude Code persistent project context, coding standards, and team conventions. Use when user says 'how does Claude remember my project', 'set up project memory', 'create a CLAUDE.md', 'tell Claude about my codebase', 'make Claude follow my coding standards'."
+tab: claude-code
 version: 1.0.0
 author: Ragnar Pitla | skill.rbuild.ai
 tags: [beginner, claude-code, memory, project-setup]

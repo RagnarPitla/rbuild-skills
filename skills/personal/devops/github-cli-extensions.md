@@ -1,6 +1,7 @@
 ---
 name: github-cli-extensions
 description: "Extend gh CLI with community and custom extensions. Use when user says 'install gh extension', 'find gh extensions', 'gh dashboard TUI', 'gh with fzf', 'create a gh extension', 'clean up merged branches with gh'."
+tab: github-cli
 version: 1.0.0
 author: Ragnar Pitla | skill.rbuild.ai
 tags: [intermediate, github-cli, extensions, productivity]

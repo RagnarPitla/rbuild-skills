@@ -1,6 +1,7 @@
 ---
 name: vscode-keyboard-shortcuts
 description: "Master the 20 most valuable VS Code keyboard shortcuts for speed and flow. Use when user says 'VS Code shortcuts', 'keyboard shortcuts vscode', 'speed up coding', 'VS Code hotkeys', 'learn VS Code shortcuts'."
+tab: developer-tools
 version: 1.0.0
 author: Ragnar Pitla | skill.rbuild.ai
 tags: [beginner, vscode, shortcuts, productivity]

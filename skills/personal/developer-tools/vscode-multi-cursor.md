@@ -1,6 +1,7 @@
 ---
 name: vscode-multi-cursor
 description: "Use multi-cursor editing and refactoring tools in VS Code. Use when user says 'select multiple occurrences', 'rename variable VS Code', 'multi cursor', 'select all occurrences', 'VS Code refactoring', 'extract variable VS Code'."
+tab: developer-tools
 version: 1.0.0
 author: Ragnar Pitla | skill.rbuild.ai
 tags: [beginner, vscode, multi-cursor, refactoring]

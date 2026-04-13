@@ -1,6 +1,7 @@
 ---
 name: github-cli-issues
 description: "Manage GitHub issues from the terminal. Use when user says 'create an issue', 'list open issues', 'assign issue', 'create branch from issue', 'close issue', 'check my assigned issues'."
+tab: github-cli
 version: 1.0.0
 author: Ragnar Pitla | skill.rbuild.ai
 tags: [beginner, github-cli, issues, project-management]

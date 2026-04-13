@@ -1,6 +1,7 @@
 ---
 name: vscode-debugging
 description: "Set up and use the VS Code debugger for Node.js and Python. Use when user says 'debug in VS Code', 'set breakpoints', 'launch.json setup', 'VS Code debugger', 'debug Node.js VS Code', 'debug Python VS Code'."
+tab: developer-tools
 version: 1.0.0
 author: Ragnar Pitla | skill.rbuild.ai
 tags: [intermediate, vscode, debugging, launch-json]

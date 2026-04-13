@@ -1,6 +1,7 @@
 ---
 name: claude-code-worktrees
 description: "Use git worktrees with Claude Code to run multiple isolated sessions in parallel without file conflicts. Use when user says 'parallel Claude sessions', 'work on two features at once', 'isolated git branch for Claude', 'claude worktree', 'multi-agent parallel development'."
+tab: claude-code
 version: 1.0.0
 author: Ragnar Pitla | skill.rbuild.ai
 tags: [advanced, claude-code, git-worktrees, parallel-development]

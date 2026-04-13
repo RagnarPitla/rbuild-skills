@@ -1,6 +1,7 @@
 ---
 name: vscode-remote-dev
 description: "Develop remotely with VS Code using SSH, Dev Containers, and WSL. Use when user says 'VS Code remote SSH', 'dev containers VS Code', 'devcontainer.json setup', 'WSL VS Code', 'develop in Docker VS Code', 'share dev environment team'."
+tab: developer-tools
 version: 1.0.0
 author: Ragnar Pitla | skill.rbuild.ai
 tags: [intermediate, vscode, remote-development, containers]
